@@ -18,8 +18,8 @@
 <div align="center">
 
 <picture>
-    <source type="image/png" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/logos/ai-apps/white-green.png">
-    <img width=555 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/logos/ai-apps/black-teal.png">
+    <source type="image/png" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/logos/ai-web-extensions/darkmode.png">
+    <img width=850 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions@4658706/images/logos/ai-web-extensions/lightmode.png">
 </picture>
 <br><br>
 
