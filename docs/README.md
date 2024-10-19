@@ -530,5 +530,5 @@ Create a new discsussion: https://github.com/adamlui/ai-web-extensions/discussio
 
 <img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
 
-<img height=11 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/speech-bubble-square/black.svg"> [Discuss](https://github.com/adamlui/ai-web-extensions/discussions) /
+[Discuss](https://github.com/adamlui/ai-web-extensions/discussions) /
 <a href="#top">Back to top ↑</a>

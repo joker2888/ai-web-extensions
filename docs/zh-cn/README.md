@@ -530,5 +530,5 @@
 
 <img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
 
-<img height=11 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/speech-bubble-square/black.svg"> [讨论](https://github.com/adamlui/ai-web-extensions/discussions) /
+[讨论](https://github.com/adamlui/ai-web-extensions/discussions) /
 <a href="#top">回到顶部 ↑</a>
