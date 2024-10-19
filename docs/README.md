@@ -1,6 +1,6 @@
 <a id="top"></a>
 
-<!-- Language selector -->
+<!-- LANGUAGE SELECTOR -->
 
 <div align="right">
     <h6>
@@ -13,7 +13,7 @@
     </h6>
 </div>
 
-<!-- Header logo -->
+<!-- HEADER LOGO -->
 
 <div align="center">
 
@@ -23,7 +23,7 @@
 </picture>
 <br><br>
 
-<!-- Shields -->
+<!-- SHIELDS -->
 
 <img height=31 src="https://img.shields.io/badge/Users-200,000+-af68ff?logo=weightsandbiases&logoColor=white&labelColor=464646&style=for-the-badge"></img>
 <a href="https://www.codefactor.io/repository/github/adamlui/ai-web-extensions"><img alt="[CodeFactor grade]" height=31 src="https://img.shields.io/codefactor/grade/github/adamlui/ai-web-extensions?label=Code+Quality&logo=codefactor&logoColor=white&labelColor=464646&color=b3ff68&style=for-the-badge"></img></a>
@@ -36,7 +36,7 @@
 
 <img height=10px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
 
-<!-- AmazonGPT -->
+<!-- AMAZONGPT -->
 
 <h3>
     <a href="../amazongpt">
@@ -68,7 +68,7 @@
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">Discuss</a>
 </blockquote>
 
-<!-- Autoclear ChatGPT History -->
+<!-- AUTOCLEAR CHATGPT HISTORY -->
 
 <h3>
     <a href="../autoclear-chatgpt-history">
@@ -101,7 +101,7 @@
         Discuss</a>
 </blockquote>
 
-<!-- Brave Omnibox -->
+<!-- BRAVE OMNIBOX -->
 
 <h3>
     <a href="../brave-omnibox">
@@ -139,7 +139,7 @@
         Discuss</a>
 </blockquote>
 
-<!-- BraveGPT -->
+<!-- BRAVEGPT -->
 
 <h3>
     <a href="../bravegpt">
@@ -170,7 +170,7 @@
         Discuss</a>
 </blockquote>
 
-<!-- ChatGPT Auto-Continue -->
+<!-- CHATGPT AUTO-CONTINUE -->
 
 <h3>
     <a href="../chatgpt-auto-continue">
@@ -215,7 +215,7 @@
         Discuss</a>
 </blockquote>
 
-<!-- ChatGPT Auto Refresh -->
+<!-- CHATGPT AUTO REFRESH -->
 
 <h3>
     <a href="../chatgpt-auto-refresh">
@@ -244,7 +244,7 @@
         Discuss</a>
 </blockquote>
 
-<!-- ChatGPT Auto-Talk -->
+<!-- CHATGPT AUTO-TALK -->
 
 <h3>
     <a href="../chatgpt-auto-talk">
@@ -273,7 +273,7 @@
         Discuss</a>
 </blockquote>
 
-<!-- ChatGPT Infinity -->
+<!-- CHATGPT INFINITY -->
 
 <h3>
     <a href="../chatgpt-infinity">
@@ -318,7 +318,7 @@
         Discuss</a>
 </blockquote>
 
-<!-- ChatGPT Widescreen -->
+<!-- CHATGPT WIDESCREEN -->
 
 <h3>
     <a href="../chatgpt-widescreen">
@@ -365,7 +365,7 @@
         Discuss</a>
 </blockquote>
 
-<!-- DuckDuckGPT -->
+<!-- DUCKDUCKGPT -->
 
 <h3>
     <a href="../duckduckgpt">
@@ -398,7 +398,7 @@
         Discuss</a>
 </blockquote>
 
-<!-- GoogleGPT -->
+<!-- GOOGLEGPT -->
 
 <h3>
     <a href="../googlegpt">
@@ -431,7 +431,7 @@
         Discuss</a>
 </blockquote>
 
-<!-- Perplexity Omnibox -->
+<!-- PERPLEXITY OMNIBOX -->
 
 <h3>
     <a href="../perplexity-omnibox">
@@ -466,7 +466,7 @@
         Discuss</a>
 </blockquote>
 
-<!-- Phind Omnibox -->
+<!-- PHIND OMNIBOX -->
 
 <h3>
     <a href="../phind-omnibox">
@@ -493,7 +493,7 @@
         Discuss</a>
 </blockquote>
 
-<!-- You.com Omnibox -->
+<!-- YOU.COM OMNIBOX -->
 
 <h3>
     <a href="../you.com-omnibox">
@@ -520,7 +520,7 @@
         Discuss</a>
 </blockquote>
 
-<!-- Footer -->
+<!-- FOOTER -->
 
 <img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
 
