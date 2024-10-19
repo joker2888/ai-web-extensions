@@ -524,7 +524,7 @@
 
 <img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
 
-<h3>有应用创意或请求？</h3>
+<h3>有扩展的想法或要求吗？</h3>
 
 创建新讨论：https://github.com/adamlui/ai-web-extensions/discussions/new?category=ideas
 
