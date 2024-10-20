@@ -28,6 +28,10 @@
 
 </div>
 
+<!-- DESCRIPTION -->
+
+### AI 浏览器扩展和用户脚本可增强您的网络体验
+
 <img height=10px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
 
 <!-- AMAZONGPT -->
