@@ -313,13 +313,15 @@
         讨论</a>
 </blockquote>
 
-<!-- SPONSOR BANNER -->
+<!-- IDEA CTA -->
 
-<br>
+<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
 
-<br><a href="https://github.com/sponsors/adamlui"><img height=133 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/banners/sponsor/$10/banner1660x260.png"></a><br>
+<h3>有扩展的想法或要求吗？</h3>
 
-<br>
+创建新讨论：https://github.com/adamlui/ai-web-extensions/discussions/new?category=ideas
+
+<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
 
 <!-- CHATGPT WIDESCREEN -->
 
@@ -522,15 +524,15 @@
         讨论</a>
 </blockquote>
 
+<!-- SPONSOR BANNER -->
+
+<br>
+
+<a href="https://github.com/sponsors/adamlui"><img height=133 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/banners/sponsor/$10/banner1660x260.png"></a>
+
 <!-- FOOTER -->
 
-<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
-
-<h3>有扩展的想法或要求吗？</h3>
-
-创建新讨论：https://github.com/adamlui/ai-web-extensions/discussions/new?category=ideas
-
-<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
+<img height=7px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
 
 [讨论](https://github.com/adamlui/ai-web-extensions/discussions) /
 <a href="#top">回到顶部 ↑</a>

@@ -312,13 +312,15 @@
         Discuss</a>
 </blockquote>
 
-<!-- SPONSOR BANNER -->
+<!-- IDEA CTA -->
 
-<br>
+<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
 
-<br><a href="https://github.com/sponsors/adamlui"><img height=133 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/banners/sponsor/$10/banner1660x260.png"></a><br>
+<h3>Have an extension idea or request?</h3>
 
-<br>
+Create a new discsussion: https://github.com/adamlui/ai-web-extensions/discussions/new?category=ideas
+
+<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
 
 <!-- CHATGPT WIDESCREEN -->
 
@@ -522,15 +524,15 @@
         Discuss</a>
 </blockquote>
 
+<!-- SPONSOR BANNER -->
+
+<br>
+
+<a href="https://github.com/sponsors/adamlui"><img height=133 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/banners/sponsor/$10/banner1660x260.png"></a>
+
 <!-- FOOTER -->
 
-<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
-
-<h3>Have an extension idea or request?</h3>
-
-Create a new discsussion: https://github.com/adamlui/ai-web-extensions/discussions/new?category=ideas
-
-<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
+<img height=7px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
 
 [Discuss](https://github.com/adamlui/ai-web-extensions/discussions) /
 <a href="#top">Back to top ↑</a>
