@@ -13,8 +13,6 @@
     </h6>
 </div>
 
-<div align="center">
-
 <!-- TITLE LINE -->
 
 <div align="center">
@@ -36,9 +34,17 @@
 
 ### AI 浏览器扩展和用户脚本可增强您的网络体验
 
-<img height=10px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
+<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
 
 </div>
+
+<!-- DETAILS TIP -->
+
+<br>
+
+💡 **Tip:** _要显示屏幕截图，请点击扩展名称下方的 ▸_
+
+<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
 
 <!-- AMAZONGPT -->
 

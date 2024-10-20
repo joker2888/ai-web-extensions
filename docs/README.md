@@ -34,9 +34,17 @@
 
 ### AI browser extensions & userscripts to enhance your web experience
 
-<img height=10px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
+<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
 
 </div>
+
+<!-- DETAILS TIP -->
+
+<br>
+
+💡 **Tip:** _To show screenshots, click the ▸ below extension names._
+
+<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
 
 <!-- AMAZONGPT -->
 
