@@ -15,6 +15,8 @@
 
 <!-- TITLE LINE -->
 
+<div align="center">
+
 <h1>
     <a href="https://github.com/adamlui"><img width=31 src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/10906554?first-contrib=2023.04.28&h=47&w=47&mask=circle&maxage=7d"></a> adamlui / ai-web-extensions
 </h1>
@@ -28,13 +30,13 @@
 <a href="https://sonarcloud.io/component_measures?metric=new_vulnerabilities&id=adamlui_ai-web-extensions"><img alt="[SonarCloud vulnerabilities]" height=31 src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3Dadamlui_ai-web-extensions%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonarcloud&logoColor=white&labelColor=464646&label=Vulnerabilities&color=gold"></img></a>
 <img height=31 src="https://img.shields.io/badge/jsDelivr_Requests-1,400,000+/month-7bb7fc.svg?logo=jsdelivr&logoColor=white&labelColor=464646&style=for-the-badge"></img>
 
-</div>
-
 <!-- DESCRIPTION -->
 
 ### AI browser extensions & userscripts to enhance your web experience
 
 <img height=10px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
+
+</div>
 
 <!-- AMAZONGPT -->
 
