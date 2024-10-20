@@ -15,7 +15,9 @@
 
 <!-- TITLE LINE -->
 
-# 🤖 adamlui / ai-web-extensions
+<h1>
+    <a href="https://github.com/adamlui"><img width=25 src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/10906554?first-contrib=2023.04.28&h=47&w=47&mask=circle&maxage=7d"></a> adamlui / ai-web-extensions
+</h1>
 
 <!-- SHIELDS -->
 
