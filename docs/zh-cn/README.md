@@ -185,7 +185,7 @@
     <summary>当 ChatGPT 响应被切断时自动继续生成答案。</summary>
     <br><blockquote>
         <a href="../../chatgpt-auto-continue">
-            <img width=600 src="https://media.chatgptautocontinue.com/images/tiles/marquee/tile625x250.gif"></a>
+            <img width=600 src="https://media.chatgptautocontinue.com/images/tiles/marquee/tile625x250.png"></a>
     </blockquote>
 </details>
 
