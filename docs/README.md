@@ -304,9 +304,9 @@
         <img height=12 src="https://media.chatgptinfinity.com/images/icons/platforms/edge/icon16.png"></a>
     <a href="https://edge.chatgptinfinity.com">
         Edge</a> /
-    <a href="https://greasyfork.chatgptinfinity.com">
+    <a href="https://gf.chatgptinfinity.com">
         <img height=13 src="https://media.chatgptinfinity.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://media.chatgptinfinity.com/images/icons/platforms/violentmonkey/icon25.png"></a>
-    <a href="https://greasyfork.chatgptinfinity.com">
+    <a href="https://gf.chatgptinfinity.com">
         Greasemonkey</a> /
     <a href="../chatgpt-infinity/#readme">
         <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/paper-sheet/white.svg"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/paper-sheet/black.svg"></picture></a>
@@ -351,9 +351,9 @@
         <img height=12 src="https://media.chatgptwidescreen.com/images/icons/platforms/edge/icon16.png"></a>
     <a href="https://edge.chatgptwidescreen.com">
         Edge</a> /
-    <a href="https://greasyfork.chatgptwidescreen.com">
+    <a href="https://gf.chatgptwidescreen.com">
         <img height=13 src="https://media.chatgptwidescreen.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://media.chatgptwidescreen.com/images/icons/platforms/violentmonkey/icon25.png"></a>
-    <a href="https://greasyfork.chatgptwidescreen.com">
+    <a href="https://gf.chatgptwidescreen.com">
         Greasemonkey</a> /
     <a href="../chatgpt-widescreen/#readme">
         <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/paper-sheet/white.svg"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/paper-sheet/black.svg"></picture></a>
