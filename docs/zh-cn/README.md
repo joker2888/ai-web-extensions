@@ -532,7 +532,7 @@
 
 <br>
 
-<a href="https://github.com/sponsors/adamlui"><img height=133 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/banners/sponsor/$10/banner1660x260.png"></a>
+<a href="https://github.com/sponsors/adamlui"><img width=830 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/banners/sponsor/$10/banner1660x260.png"></a>
 
 <!-- FOOTER -->
 
