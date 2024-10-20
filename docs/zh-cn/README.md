@@ -17,9 +17,11 @@
 
 <!-- TITLE LINE -->
 
-<h1>
-    <a href="https://github.com/adamlui"><img width=31 src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/10906554?first-contrib=2023.04.28&h=47&w=47&mask=circle&maxage=7d"></a> adamlui / ai-web-extensions
-</h1>
+<div align="center">
+
+<a href="https://github.com/adamlui"><img src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/10906554?h=100&w=100&mask=circle&maxage=7d"></a>
+
+<h1>adamlui / ai-web-extensions</h1>
 
 <!-- SHIELDS -->
 
