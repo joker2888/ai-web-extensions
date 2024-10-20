@@ -539,4 +539,5 @@ Create a new discsussion: https://github.com/adamlui/ai-web-extensions/discussio
 <img height=7px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
 
 [Discuss](https://github.com/adamlui/ai-web-extensions/discussions) /
+[Contact author](https://github.com/adamlui) /
 <a href="#top">Back to top ↑</a>

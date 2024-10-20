@@ -539,4 +539,5 @@
 <img height=7px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
 
 [讨论](https://github.com/adamlui/ai-web-extensions/discussions) /
+[联系作者](https://github.com/adamlui) /
 <a href="#top">回到顶部 ↑</a>
