@@ -42,7 +42,7 @@
 
 <br>
 
-💡 **Tip:** _To show screenshots, click the ▸ below extension names._
+💡 **Tip:** _To show screenshots, click the ▸ or descriptions below extension names._
 
 <img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
 

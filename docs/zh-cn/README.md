@@ -42,7 +42,7 @@
 
 <br>
 
-💡 **Tip:** _要显示屏幕截图，请点击扩展名称下方的 ▸_
+💡 **Tip:** _要显示屏幕截图，请点击扩展名称下方的 ▸ 或描述。_
 
 <img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
 
