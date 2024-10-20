@@ -13,15 +13,9 @@
     </h6>
 </div>
 
-<!-- HEADER LOGO -->
+<!-- TITLE LINE -->
 
-<div align="center">
-
-<picture>
-    <source type="image/png" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/logos/ai-web-extensions/darkmode.png">
-    <img width=688 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions@4658706/images/logos/ai-web-extensions/lightmode.png">
-</picture>
-<br><br>
+# 🤖 adamlui / ai-web-extensions
 
 <!-- SHIELDS -->
 
