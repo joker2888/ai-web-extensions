@@ -515,7 +515,7 @@ Type @phind in browser address bar to get results from Phind AI.
     <a href="../you.com-omnibox">You.com Omnibox</a>
 </h3>
 
-<summary>Type @you in browser address bar to get results from You.com AI.
+Type @you in browser address bar to get results from You.com AI.
 
 <blockquote>
     <a href="https://ff.youomnibox.com?source=github&medium=readme&content=platform-link">
