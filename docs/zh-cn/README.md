@@ -120,7 +120,8 @@
     <a href="../../brave-omnibox">Brave Omnibox</a>
 </h3>
 
-<details><summary>在浏览器地址栏中输入 @brave 以获取 Brave AI 的结果。</summary>
+<details>
+    <summary>在浏览器地址栏中输入 @brave 以获取 Brave AI 的结果。</summary>
     <br><blockquote>
         <a href="../../brave-omnibox">
             <img width=600 src="https://assets.braveomnibox.com/images/tiles/marquee/edge/tile625x250.png"></a>
@@ -236,9 +237,7 @@
         <img src="https://media.chatgptautorefresh.com/images/badges/awesome/badge.svg"></a>
 </h3>
 
-<details>
-    <summary>保持 ChatGPT 会话新鲜，消除聊天时间限制 + 网络错误 + Cloudflare 检查。</summary>
-</details>
+保持 ChatGPT 会话新鲜，消除聊天时间限制 + 网络错误 + Cloudflare 检查。
 
 <blockquote>
     <a href="../../chatgpt-auto-refresh/docs/zh-cn/#-如何安装">
@@ -265,9 +264,7 @@
         <img src="https://assets.chatgptautotalk.com/images/badges/awesome/badge.svg"></a>
 </h3>
 
-<details>
-    <summary>自动播放 ChatGPT 的回复。</summary>
-</details>
+<summary>自动播放 ChatGPT 的回复。</summary>
 
 <blockquote>
     <a href="../../chatgpt-auto-talk/docs/zh-cn/#-如何安装">
@@ -494,9 +491,7 @@
     <a href="../../phind-omnibox">Phind Omnibox</a>
 </h3>
 
-<details>
-    <summary>在浏览器地址栏中输入 @phind 以获取 Phind AI 的结果。</summary>
-</details>
+在浏览器地址栏中输入 @phind 以获取 Phind AI 的结果。
 
 <blockquote>
     <a href="https://ff.phindomnibox.com?source=github&medium=readme&content=platform-link">
@@ -521,9 +516,7 @@
     <a href="../../you.com-omnibox">You.com Omnibox</a>
 </h3>
 
-<details>
-    <summary>在浏览器地址栏中输入 @you 即可获取 You.com AI 的结果。</summary>
-</details>
+在浏览器地址栏中输入 @you 即可获取 You.com AI 的结果。
 
 <blockquote>
     <a href="https://ff.youomnibox.com?source=github&medium=readme&content=platform-link">

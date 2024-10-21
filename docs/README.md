@@ -235,9 +235,7 @@
         <img src="https://media.chatgptautorefresh.com/images/badges/awesome/badge.svg"></a>
 </h3>
 
-<details>
-    <summary>Keeps ChatGPT sessions fresh, eliminating chat time limits + network errors + Cloudflare checks.</summary>
-</details>
+Keeps ChatGPT sessions fresh, eliminating chat time limits + network errors + Cloudflare checks.
 
 <blockquote>
     <a href="../chatgpt-auto-refresh/#-installation">
@@ -264,9 +262,7 @@
         <img src="https://assets.chatgptautotalk.com/images/badges/awesome/badge.svg"></a>
 </h3>
 
-<details>
-    <summary>Auto-play ChatGPT responses.</summary>
-</details>
+Auto-play ChatGPT responses.
 
 <blockquote>
     <a href="../chatgpt-auto-talk/#-installation">
@@ -494,9 +490,7 @@ Create a new discsussion: https://github.com/adamlui/ai-web-extensions/discussio
     <a href="../phind-omnibox">Phind Omnibox</a>
 </h3>
 
-<details>
-    <summary>Type @phind in browser address bar to get results from Phind AI.</summary>
-</details>
+Type @phind in browser address bar to get results from Phind AI.
 
 <blockquote>
     <a href="https://ff.phindomnibox.com?source=github&medium=readme&content=platform-link">
@@ -521,9 +515,7 @@ Create a new discsussion: https://github.com/adamlui/ai-web-extensions/discussio
     <a href="../you.com-omnibox">You.com Omnibox</a>
 </h3>
 
-<details>
-    <summary>Type @you in browser address bar to get results from You.com AI.</summary>
-</details>
+<summary>Type @you in browser address bar to get results from You.com AI.
 
 <blockquote>
     <a href="https://ff.youomnibox.com?source=github&medium=readme&content=platform-link">
