@@ -52,7 +52,7 @@
     <a href="../../amazongpt">
         <picture><source type="image/png" media="(prefers-color-scheme: dark)" srcset="https://amazongpt.kudoai.com/assets/images/icons/amazongpt/white/icon48.png"><img width=18 src="https://amazongpt.kudoai.com/assets/images/icons/amazongpt/black-gold-teal/icon48.png" width=18></a>
     <a href="../../amazongpt">AmazonGPT</a>&nbsp;
-    <a href="../../amazongpt">
+    <a href="https://amazongpt.kudoai.com/assets/wolfram-award/letter.pdf">
         <img height=20 src="https://amazongpt.kudoai.com/assets/images/badges/wolfram-award/gold-badge.png"></a>
 </h3>
 
