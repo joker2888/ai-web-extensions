@@ -330,7 +330,7 @@ Auto-play ChatGPT responses.
 
 <h3>Have an extension idea or request?</h3>
 
-Create a new discsussion: https://github.com/adamlui/ai-web-extensions/discussions/new?category=ideas
+Create a new discussion: https://github.com/adamlui/ai-web-extensions/discussions/new?category=ideas
 
 <img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
 
