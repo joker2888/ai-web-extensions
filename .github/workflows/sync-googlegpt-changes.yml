@@ -104,7 +104,7 @@ jobs:
           cd ${{ github.workspace }}/adamlui/ai-web-extensions
           git pull # again to sync w/ concurrent workflow updates
           git add .
-          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from \`${{ env.SYNC_SRC }}\`]" || true
+          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from ${{ env.SYNC_SRC }}]" || true
           git push
 
       - name: Push changes to KudoAI/googlegpt
@@ -112,7 +112,7 @@ jobs:
           cd ${{ github.workspace }}/KudoAI/googlegpt
           git pull # again to sync w/ concurrent workflow updates
           git add .
-          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from \`adamlui/ai-web-extensions\`]" || true
+          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from adamlui/ai-web-extensions]" || true
           git push
 
       - name: Push changes to adamlui/userscripts
@@ -120,5 +120,5 @@ jobs:
           cd ${{ github.workspace }}/adamlui/userscripts
           git pull # again to sync w/ concurrent workflow updates
           git add .
-          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from \`adamlui/ai-web-extensions/googlegpt\`]" || true
+          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from adamlui/ai-web-extensions/googlegpt]" || true
           git push
