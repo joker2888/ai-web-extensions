@@ -98,7 +98,7 @@ jobs:
           cd ${{ github.workspace }}/adamlui/ai-web-extensions
           git pull # again to sync w/ concurrent workflow updates
           git add .
-          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from adamlui/ai-web-extensions]" || true
+          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from https://github.com/adamlui/ai-web-extensions]" || true
           git push
 
       - name: Push changes to adamlui/chatgpt-auto-continue
@@ -106,7 +106,7 @@ jobs:
           cd ${{ github.workspace }}/adamlui/chatgpt-auto-continue
           git pull # again to sync w/ concurrent workflow updates
           git add .
-          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from adamlui/ai-web-extensions]" || true
+          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from https://github.com/adamlui/ai-web-extensions]" || true
           git push
 
       - name: Push changes to adamlui/userscripts
@@ -114,5 +114,5 @@ jobs:
           cd ${{ github.workspace }}/adamlui/userscripts
           git pull # again to sync w/ concurrent workflow updates
           git add .
-          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from adamlui/ai-web-extensions/chatgpt-auto-continue]" || true
+          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from https://github.com/adamlui/ai-web-extensions]" || true
           git push
