@@ -552,7 +552,7 @@ Type @you in browser address bar to get results from You.com AI.
 
 <br>
 
-a href="https://github.com/adamlui/ai-web-extensions/stargazers">
+<a href="https://github.com/adamlui/ai-web-extensions/stargazers">
     <picture>
         <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=adamlui/ai-web-extensions&type=Timeline&theme=dark" />
         <img src="https://api.star-history.com/svg?repos=adamlui/ai-web-extensions&type=Timeline" />
