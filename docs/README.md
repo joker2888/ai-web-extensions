@@ -538,12 +538,6 @@ Type @you in browser address bar to get results from You.com AI.
 
 <a href="https://github.com/sponsors/adamlui"><img width=830 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/banners/sponsor/$10/banner1660x260.png"></a>
 
-<!-- LICENSE -->
-
-## 🏛️ License
-
-<a href="../LICENSE.md"><strong>The MIT License</strong></a>
-
 <!-- FOOTER -->
 
 <img height=7px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
@@ -551,3 +545,24 @@ Type @you in browser address bar to get results from You.com AI.
 [Discuss](https://github.com/adamlui/ai-web-extensions/discussions) /
 [Contact author](https://github.com/adamlui) /
 <a href="#top">Back to top ↑</a>
+
+<!-- STAR HISTORY -->
+
+<div align="center">
+
+<br>
+
+<a href="https://star-history.com/#adamlui/ai-web-extensions">
+    <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=adamlui/ai-web-extensions&type=Timeline&theme=dark" />
+        <img src="https://api.star-history.com/svg?repos=adamlui/ai-web-extensions&type=Timeline" />
+    </picture>
+</a>
+
+</div>
+
+<!-- LICENSE -->
+
+## 🏛️ License
+
+<a href="../LICENSE.md"><strong>The MIT License</strong></a>
