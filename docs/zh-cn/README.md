@@ -539,11 +539,13 @@
 
 <a href="https://github.com/sponsors/adamlui"><img width=830 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/banners/sponsor/$10/banner1660x260.png"></a>
 
-<!-- LICENSE -->
+<!-- FOOTER -->
 
-## 🏛️ 开源许可协议
+<img height=7px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
 
-<a href="./LICENSE.md"><strong>MIT许可证</strong></a>
+[讨论](https://github.com/adamlui/ai-web-extensions/discussions) /
+[联系作者](https://github.com/adamlui) /
+<a href="#top">回到顶部 ↑</a>
 
 <!-- STAR HISTORY -->
 
@@ -551,7 +553,7 @@
 
 <br>
 
-<a href="https://star-history.com/#adamlui/ai-web-extensions">
+a href="https://github.com/adamlui/ai-web-extensions/stargazers">
     <picture>
         <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=adamlui/ai-web-extensions&type=Timeline&theme=dark" />
         <img src="https://api.star-history.com/svg?repos=adamlui/ai-web-extensions&type=Timeline" />
@@ -560,12 +562,8 @@
 
 </div>
 
-<br>
+<!-- LICENSE -->
 
-<!-- FOOTER -->
+## 🏛️ 开源许可协议
 
-<img height=7px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
-
-[讨论](https://github.com/adamlui/ai-web-extensions/discussions) /
-[联系作者](https://github.com/adamlui) /
-<a href="#top">回到顶部 ↑</a>
+<a href="./LICENSE.md"><strong>MIT许可证</strong></a>
