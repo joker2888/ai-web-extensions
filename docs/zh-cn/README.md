@@ -539,6 +539,12 @@
 
 <a href="https://github.com/sponsors/adamlui"><img width=830 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/banners/sponsor/$10/banner1660x260.png"></a>
 
+<!-- LICENSE -->
+
+## 🏛️ 开源许可协议
+
+<a href="./LICENSE.md"><strong>MIT许可证</strong></a>
+
 <!-- FOOTER -->
 
 <img height=7px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">

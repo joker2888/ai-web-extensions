@@ -538,6 +538,12 @@ Type @you in browser address bar to get results from You.com AI.
 
 <a href="https://github.com/sponsors/adamlui"><img width=830 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/banners/sponsor/$10/banner1660x260.png"></a>
 
+<!-- LICENSE -->
+
+## 🏛️ License
+
+<a href="../LICENSE.md"><strong>The MIT License</strong></a>
+
 <!-- FOOTER -->
 
 <img height=7px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
