@@ -546,24 +546,3 @@
 [讨论](https://github.com/adamlui/ai-web-extensions/discussions) /
 [联系作者](https://github.com/adamlui) /
 <a href="#top">回到顶部 ↑</a>
-
-<!-- STAR HISTORY -->
-
-<div align="center">
-
-<br>
-
-<a href="https://github.com/adamlui/ai-web-extensions/stargazers">
-    <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=adamlui/ai-web-extensions&type=Timeline&theme=dark" />
-        <img src="https://api.star-history.com/svg?repos=adamlui/ai-web-extensions&type=Timeline" />
-    </picture>
-</a>
-
-</div>
-
-<!-- LICENSE -->
-
-## 🏛️ 开源许可协议
-
-<a href="./LICENSE.md"><strong>MIT许可证</strong></a>

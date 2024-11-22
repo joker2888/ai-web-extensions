@@ -545,24 +545,3 @@ Type @you in browser address bar to get results from You.com AI.
 [Discuss](https://github.com/adamlui/ai-web-extensions/discussions) /
 [Contact author](https://github.com/adamlui) /
 <a href="#top">Back to top ↑</a>
-
-<!-- STAR HISTORY -->
-
-<div align="center">
-
-<br>
-
-<a href="https://github.com/adamlui/ai-web-extensions/stargazers">
-    <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=adamlui/ai-web-extensions&type=Timeline&theme=dark" />
-        <img src="https://api.star-history.com/svg?repos=adamlui/ai-web-extensions&type=Timeline" />
-    </picture>
-</a>
-
-</div>
-
-<!-- LICENSE -->
-
-## 🏛️ License
-
-<a href="../LICENSE.md"><strong>The MIT License</strong></a>
