@@ -12,9 +12,9 @@ export default [
         languageOptions: {
             ecmaVersion: 'latest', sourceType: 'script',
             globals: {
-                ...globals.browser, ...globals.node, ...globals.greasemonkey,
-                chatgpt: 'readonly', chrome: 'readonly', CryptoJS: 'readonly', dom: 'readonly', GM_cookie: 'readonly',
-                hljs: 'readonly', ipv4: 'readonly', marked: 'readonly', renderMathInElement: 'readonly'
+                ...globals.browser, ...globals.node, ...globals.greasemonkey, chatgpt: 'readonly', chrome: 'readonly',
+                config: 'writable', CryptoJS: 'readonly', dom: 'readonly', GM_cookie: 'readonly', hljs: 'readonly',
+                ipv4: 'readonly', marked: 'readonly', renderMathInElement: 'readonly', settings: 'writable'
             }
         },
         plugins: { regexp, 'js-styles': stylisticJS },
