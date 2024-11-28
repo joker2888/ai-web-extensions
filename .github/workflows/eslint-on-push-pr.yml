@@ -3,7 +3,7 @@ name: Lint pushes/PRs
 on: [push, pull_request]
 
 jobs:
-  eslint:
+  js-json-md-yaml-lint:
     runs-on: ubuntu-latest
 
     steps:
