@@ -7,8 +7,7 @@ updates:
       interval: daily
 
   - package-ecosystem: pip
-    directories:
-      - /
+    directory: /
     schedule:
       interval: daily
     groups:
