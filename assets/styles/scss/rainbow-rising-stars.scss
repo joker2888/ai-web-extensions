@@ -1,19 +1,22 @@
 // black-rising-stars.scss
 // © 2024 sarazond © 2024 Adam Lui
 
+@use "sass:math";
+@use "sass:string";
+
 @function random-color() {
-  $red: random(255);
-  $green: random(255);
-  $blue: random(255);
+  $red: math.random(255);
+  $green: math.random(255);
+  $blue: math.random(255);
   @return rgba($red, $green, $blue, 1);
 }
 
 @function multiple-box-shadow($n) {
-  $value: "#{random(2000)}px #{random(2000)}px #{random-color()}";
+  $value: "#{math.random(2000)}px #{math.random(2000)}px #{random-color()}";
   @for $i from 2 through $n {
-    $value: "#{$value}, #{random(2000)}px #{random(2000)}px #{random-color()}";
+    $value: "#{$value}, #{math.random(2000)}px #{math.random(2000)}px #{random-color()}";
   }
-  @return unquote($value);
+  @return string.unquote($value);
 }
 
 $shadows-sm: multiple-box-shadow(700);

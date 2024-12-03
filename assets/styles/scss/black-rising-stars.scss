@@ -1,12 +1,15 @@
 // black-rising-stars.scss
 // © 2024 sarazond © 2024 Adam Lui
 
+@use "sass:math";
+@use "sass:string";
+
 @function multiple-box-shadow($n) {
-  $value: "#{random(2000)}px #{random(2000)}px #332f2f";
+  $value: "#{math.random(2000)}px #{math.random(2000)}px #332f2f";
   @for $i from 2 through $n {
-    $value: "#{$value}, #{random(2000)}px #{random(2000)}px #332f2f";
+    $value: "#{$value}, #{math.random(2000)}px #{math.random(2000)}px #332f2f";
   }
-  @return unquote($value);
+  @return string.unquote($value);
 }
 
 $shadows-sm: multiple-box-shadow(700);
