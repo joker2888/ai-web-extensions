@@ -14,7 +14,7 @@ export default [
             globals: {
                 ...globals.browser, ...globals.greasemonkey, ...globals.node, chatgpt: 'readonly', chrome: 'readonly',
                 config: 'writable', CryptoJS: 'readonly', dom: 'readonly', GM_cookie: 'readonly', hljs: 'readonly',
-                icons: 'writable', ipv4: 'readonly', marked: 'readonly', modals: 'readonly',
+                icons: 'writable', ipv4: 'readonly', marked: 'readonly', modals: 'writable',
                 renderMathInElement: 'readonly', settings: 'writable', sidebarToggle: 'writable'
             }
         },
