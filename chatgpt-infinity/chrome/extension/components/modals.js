@@ -31,11 +31,11 @@ window.modals = {
         this.observeRemoval(modal, modalType) // to maintain stack for proper nav
     },
 
-    observeRemoval(modal, type) { // to maintain stack for proper nav
+    observeRemoval(modal, modalType) { // to maintain stack for proper nav
         const modalBG = modal.parentNode
         new MutationObserver(([mutation], obs) => {
             mutation.removedNodes.forEach(removedNode => { if (removedNode == modalBG) {
-                if (modals.stack[0] == type) { // new modal not launched, implement nav back logic
+                if (modals.stack[0] == modalType) { // new modal not launched, implement nav back logic
                     modals.stack.shift() // remove this modal type from stack
                     const prevModalType = modals.stack[0]
                     if (prevModalType) { // open it
