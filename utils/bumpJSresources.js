@@ -12,7 +12,8 @@ const { execSync } = require('child_process'),
 // Init UI COLORS
 const nc = '\x1b[0m',    // no color
       by = '\x1b[1;33m', // bright yellow
-      bg = '\x1b[1;92m'  // bright green
+      bg = '\x1b[1;92m', // bright green
+      bw = '\x1b[1;97m'  // bright white
 
 // Define FUNCTIONS
 
@@ -70,7 +71,7 @@ function bumpVersion(userJSfilePath) {
         newVer = today
     userJScontent = userJScontent.replace(re_version, `$1${newVer}`)
     fs.writeFileSync(userJSfilePath, userJScontent, 'utf-8')
-    console.log(`Version bumped to ${newVer}\n`)
+    console.log(`Version bumped from ${ bw + currentVer + nc } to ${ bw + newVer + nc }\n`)
 }; // eslint-disable-line
 
 // Run MAIN routine
