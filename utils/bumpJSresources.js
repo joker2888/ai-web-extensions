@@ -6,16 +6,16 @@
     const devMode = false // true to use ./utils/userJSfiles.dev.json for faster init
 
     // Import LIBS
-    const { execSync } = require('child_process'),
-        fs = require('fs'),
-        path = require('path'),
-        ssri = require('ssri')
+    const { execSync } = require('child_process'), // to exec git cmd to fetch latest commit hashes
+          fs = require('fs'), // to read/write files
+          path = require('path'), // to handle/resolve file/dir paths
+          ssri = require('ssri') // to generate SHA-256 hashes
 
     // Init UI COLORS
     const nc = '\x1b[0m',    // no color
-        by = '\x1b[1;33m', // bright yellow
-        bg = '\x1b[1;92m', // bright green
-        bw = '\x1b[1;97m'  // bright white
+          by = '\x1b[1;33m', // bright yellow
+          bg = '\x1b[1;92m', // bright green
+          bw = '\x1b[1;97m'  // bright white
 
     // Define FUNCTIONS
 
