@@ -91,7 +91,7 @@
               jsrURLs = [...userJScontent.matchAll(re_jsrURL)].map(match => match[1])
         if (jsrURLs.length > 0) { jsrURLmap[userJSfilePath] = jsrURLs ; jsrCnt += jsrURLs.length }
     })
-    log.success(`${jsrCnt} resource(s) found.`)
+    log.success(`${jsrCnt} bumpable resource(s) found.`)
 
     log.working('\nProcessing resource(s)...\n')
     let jsrUpdatedCnt = 0 ; let filesUpdatedCnt = 0
