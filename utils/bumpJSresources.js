@@ -6,8 +6,7 @@
     const devMode = false // true to use ./utils/userJSfiles.dev.json for faster init
 
     // Import LIBS
-    const { execSync } = require('child_process'), // to exec git cmd to fetch latest commit hashes
-          fs = require('fs'), // to read/write files
+    const fs = require('fs'), // to read/write files
           path = require('path'), // to handle/resolve file/dir paths
           ssri = require('ssri') // to generate SHA-256 hashes
 
@@ -104,7 +103,7 @@
 
         // Fetch latest commit hash
         console.log(`Fetching latest commit hash for ${repoName}...`)
-        const latestCommitHash = execSync(
+        const latestCommitHash = require('child_process').execSync(
             `git ls-remote https://github.com/adamlui/${repoName}.git HEAD`).toString().split('\t')[0]
         console.log(latestCommitHash + '\n')
 
