@@ -74,7 +74,7 @@
         userJScontent = userJScontent.replace(re_version, `$1${newVer}`)
         fs.writeFileSync(userJSfilePath, userJScontent, 'utf-8')
         console.log(`Version bumped from ${ bw + currentVer + nc } to ${ bw + newVer + nc }\n`)
-    }; // eslint-disable-line
+    }
 
     // Run MAIN routine
 
