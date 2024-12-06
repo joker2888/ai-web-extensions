@@ -28,7 +28,7 @@
         const userJSfiles = []
         fs.readdirSync(dir).forEach(async file => {
             const filePath = path.resolve(dir, file) // get absolute path
-            if (fs.statSync(filePath).isDirectory()) // recrusively search subdirs
+            if (fs.statSync(filePath).isDirectory()) // recusrively search subdirs
                 userJSfiles.push(...await findUserJS(filePath))
             else if (file.endsWith('.user.js')) {
                 console.log(filePath) ; userJSfiles.push(filePath) }
@@ -72,7 +72,7 @@
             newVer = today
         userJScontent = userJScontent.replace(re_version, `$1${newVer}`)
         fs.writeFileSync(userJSfilePath, userJScontent, 'utf-8')
-        console.log(`Version bumped from ${ bw + currentVer + nc } to ${ bw + newVer + nc }\n`)
+        console.log(`Version bumped from ${bw + currentVer + nc} to ${bw + newVer + nc}\n`)
     }
 
     // Run MAIN routine
