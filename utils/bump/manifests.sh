@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Bumps extension manifests if changes detected + git commit/push
+
 shopt -s nocasematch  # enable case-insensitive matching
 
 # Init UI colors
