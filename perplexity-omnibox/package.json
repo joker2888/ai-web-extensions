@@ -1,0 +1,35 @@
+{
+  "author": {
+    "name": "Adam Lui",
+    "email": "adam@kudoai.com",
+    "url": "https://github.com/adamlui"
+  },
+  "homepage": "https://www.perplexityomnibox.com",
+  "license": "MIT",
+  "funding": [
+    {
+      "type": "github",
+      "url": "http://github.com/sponsors/adamlui"
+    },
+    {
+      "type": "ko-fi",
+      "url": "https://ko-fi.com/adamlui"
+    }
+  ],
+  "scripts": {
+    "prepare": "husky",
+    "lint": "eslint . --cache",
+    "lint:all": "eslint .",
+    "lint:fix": "eslint . --fix --cache",
+    "lint:fix-all": "eslint . --fix",
+    "bump": "bash utils/bump.sh"
+  },
+  "devDependencies": {
+    "@eslint/json": "^0.8.0",
+    "@eslint/markdown": "^6.2.1",
+    "@stylistic/eslint-plugin-js": "^2.11.0",
+    "eslint": "^9.16.0",
+    "eslint-plugin-yml": "^1.16.0",
+    "husky": "^9.1.7"
+  }
+}
