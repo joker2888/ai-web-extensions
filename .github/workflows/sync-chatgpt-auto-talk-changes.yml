@@ -74,7 +74,7 @@ jobs:
 
       - name: Sync chatgpt-auto-talk/ to adamlui/chatgpt-auto-talk/
         run: |
-          rsync -avhr --delete --filter={'P /.*','P /eslint*','P /package*.json'} \
+          rsync -avhr --delete --filter='P /.*' \
             ${{ github.workspace }}/adamlui/ai-web-extensions/chatgpt-auto-talk/ \
             ${{ github.workspace }}/adamlui/chatgpt-auto-talk/
 

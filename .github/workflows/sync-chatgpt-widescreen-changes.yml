@@ -66,7 +66,7 @@ jobs:
 
       - name: Sync chatgpt-widescreen/ to adamlui/chatgpt-widescreen/
         run: |
-          rsync -avhr --delete --filter={'P /.*','P /eslint*','P /package*.json'} \
+          rsync -avhr --delete --filter='P /.*' \
             ${{ github.workspace }}/adamlui/ai-web-extensions/chatgpt-widescreen/ \
             ${{ github.workspace }}/adamlui/chatgpt-widescreen/
 
