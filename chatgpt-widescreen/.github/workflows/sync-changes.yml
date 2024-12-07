@@ -1,0 +1,115 @@
+name: Sync _locales/ between <chrome|firefox>/extension/, then ** to adamlui/ai-apps/chatgpt-widescreen/, then greasemonkey/ to adamlui/userscripts/chatgpt/chatgpt-widescreen/
+
+on:
+  push:
+    branches: [main]
+    paths: ["**", "!.*", "!package*.json", "!eslint.config*"]
+
+jobs:
+  build:
+    if: (github.repository == 'adamlui/chatgpt-widescreen') && (github.event.commits[0].committer.username != 'kudo-sync-bot')
+    runs-on: ubuntu-latest
+    env:
+      TZ: PST8PDT
+
+    steps:
+
+      - name: Checkout adamlui/chatgpt-widescreen
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.REPO_SYNC_PAT }}
+          repository: adamlui/chatgpt-widescreen
+          path: adamlui/chatgpt-widescreen
+          fetch-depth: 2
+
+      - name: Checkout adamlui/ai-apps
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.REPO_SYNC_PAT }}
+          repository: adamlui/ai-apps
+          path: adamlui/ai-apps
+
+      - name: Checkout adamlui/userscripts
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.REPO_SYNC_PAT }}
+          repository: adamlui/userscripts
+          path: adamlui/userscripts
+
+      - name: Sync _locales/ between <chrome|firefox>/extension/
+        run: |
+          cd ${{ github.workspace }}/adamlui/chatgpt-widescreen
+          ff_dir="firefox/extension/_locales"
+          chrome_dir="chrome/extension/_locales"
+          
+          # Loop thru all lang dirs in firefox
+          for locale in $(find "$ff_dir" -mindepth 1 -maxdepth 1 -type d -exec basename {} \;) ; do
+            ff_file="$ff_dir/$locale/messages.json"
+            chrome_file="$chrome_dir/$locale/messages.json"
+            if [[ -f "$ff_file" && -f "$chrome_file" ]] ; then
+
+              # Get the latest commit timestamps for both files
+              ff_timestamp=$(git log -1 --format="%ct" -- "$ff_file" 2>/dev/null || echo 0)
+              chrome_timestamp=$(git log -1 --format="%ct" -- "$chrome_file" 2>/dev/null || echo 0)
+      
+              # Sync the most recently updated messages.json to the other dir
+              if [[ $ff_timestamp -ne $chrome_timestamp ]] ; then
+                [[ "$locales_updated" != true ]] && locales_updated=true
+                if [[ $ff_timestamp -gt $chrome_timestamp ]] ; then
+                     cp -f "$ff_file" "$chrome_file"
+                else cp -f "$chrome_file" "$ff_file" ; fi
+              fi
+
+            fi
+          done
+          if [[ "$locales_updated" == true ]] ; then echo "LOCALES_UPDATED=true" >> $GITHUB_ENV ; fi
+
+      - name: Sync ** to adamlui/ai-apps/chatgpt-widescreen/
+        run: |
+          rsync -avhr --delete --exclude={'.*'} \
+            ${{ github.workspace }}/adamlui/chatgpt-widescreen/ \
+            ${{ github.workspace }}/adamlui/ai-apps/chatgpt-widescreen/
+
+      - name: Sync greasemonkey/ to adamlui/userscripts/chatgpt/chatgpt-widescreen/
+        run: |
+          rsync -avhr --delete \
+            ${{ github.workspace }}/adamlui/chatgpt-widescreen/greasemonkey/ \
+            ${{ github.workspace }}/adamlui/userscripts/chatgpt/chatgpt-widescreen/
+
+      - name: Escape backticks in commit msg
+        env:
+          COMMIT_MSG: ${{ github.event.head_commit.message }}
+        run: |
+          echo "ESCAPED_MSG<<EOF" >> $GITHUB_ENV
+          echo "$COMMIT_MSG" | sed 's/`/\`/g' >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
+      
+      - name: Config committer
+        run: |
+          gpg --batch --import <(echo "${{ secrets.GPG_PRIVATE_KEY }}")
+          git config --global commit.gpgsign true
+          git config --global user.name "kudo-sync-bot"
+          git config --global user.email "auto-sync@kudoai.com"
+          git config --global user.signingkey "${{ secrets.GPG_PRIVATE_ID }}"
+
+      - name: Push changes to adamlui/chatgpt-widescreen
+        if: env.LOCALES_UPDATED == 'true'
+        run: |
+          cd ${{ github.workspace }}/adamlui/chatgpt-widescreen
+          git add .
+          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from https://github.com/adamlui/chatgpt-widescreen]" || true
+          git push
+
+      - name: Push changes to adamlui/ai-apps
+        run: |
+          cd ${{ github.workspace }}/adamlui/ai-apps
+          git add .
+          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from https://github.com/adamlui/chatgpt-widescreen]" || true
+          git push
+
+      - name: Push changes to adamlui/userscripts
+        run: |
+          cd ${{ github.workspace }}/adamlui/userscripts
+          git add .
+          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from https://github.com/adamlui/chatgpt-widescreen]" || true
+          git push
