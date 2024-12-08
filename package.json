@@ -25,7 +25,7 @@
     "lint:fix-all": "eslint . --fix",
     "bump:js": "node utils/bump/jsResources",
     "bump:js-dev": "node utils/bump/jsResources --dev",
-    "bump:manifests": "bash/utils/bump/manifests.sh"
+    "bump:manifests": "bash utils/bump/manifests.sh"
   },
   "devDependencies": {
     "@adamlui/scss-to-css": "^1.10.20",
