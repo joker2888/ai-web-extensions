@@ -115,19 +115,19 @@
 
         // Process each resource
         const re_commitHash = /@([^/]+)/ ; let fileUpdated = false
-        for (const url of jsrURLmap[userJSfilePath]) {
-            const resourceName = url.match(/\w+\/\w+\.js(?=#|$)/)[0] // dir/filename.js for logs
+        for (const jsrURL of jsrURLmap[userJSfilePath]) {
+            const resourceName = jsrURL.match(/\w+\/\w+\.js(?=#|$)/)[0] // dir/filename.js for logs
 
             // Compare commit hashes
-            if ((url.match(re_commitHash) || [])[1] == latestCommitHash) { // commit hash didn't change...
+            if ((jsrURL.match(re_commitHash) || [])[1] == latestCommitHash) { // commit hash didn't change...
                 console.log(`${resourceName} already up-to-date!\n`) ; continue } // ...so skip resource
-            let updatedURL = url.replace(re_commitHash, `@${latestCommitHash}`) // othrwise update commit hash
+            let updatedURL = jsrURL.replace(re_commitHash, `@${latestCommitHash}`) // othrwise update commit hash
 
             // Generate/compare SRI hash
             console.log(`Generating SHA-256 hash for ${resourceName}...`)
             const newSRIhash = await getSRIhash(updatedURL)
             console.log(`${newSRIhash}\n`)
-            const oldSRIhash = (/[^#]+$/.exec(url) || [])[0]
+            const oldSRIhash = (/[^#]+$/.exec(jsrURL) || [])[0]
             if (oldSRIhash == newSRIhash) { // SRI hash didn't change
                 console.log(`${resourceName} already up-to-date!\n`) ; continue } // ...so skip resource
             updatedURL = updatedURL.replace(/#sha.+/, newSRIhash) // otherwise update SRI hash
@@ -135,7 +135,7 @@
             // Write updated URL to userscript
             console.log(`Writing updated URL for ${resourceName}...`)
             let userJScontent = fs.readFileSync(userJSfilePath, 'utf-8')
-            userJScontent = userJScontent.replace(url, updatedURL)
+            userJScontent = userJScontent.replace(jsrURL, updatedURL)
             fs.writeFileSync(userJSfilePath, userJScontent, 'utf-8')
             log.success(`${resourceName} bumped!\n`)
             jsrUpdatedCnt++ ; fileUpdated = true
