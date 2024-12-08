@@ -24,7 +24,7 @@
 <!-- SHIELDS -->
 
 <a href="#">
-    <img height=31 src="https://img.shields.io/badge/Users-200,000+-af68ff?logo=weightsandbiases&logoColor=white&labelColor=464646&style=for-the-badge"></img></a>
+    <img height=31 src="https://img.shields.io/badge/Users-200,000+-blue?logo=weightsandbiases&logoColor=white&labelColor=464646&style=for-the-badge"></img></a>
 <a href="https://www.codefactor.io/repository/github/adamlui/ai-web-extensions">
     <img alt="[CodeFactor grade]" height=31 src="https://img.shields.io/codefactor/grade/github/adamlui/ai-web-extensions?label=Code+Quality&logo=codefactor&logoColor=white&labelColor=464646&color=b3ff68&style=for-the-badge"></img></a>
 <a href="../LICENSE.md">
