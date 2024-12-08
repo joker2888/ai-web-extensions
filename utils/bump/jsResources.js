@@ -83,7 +83,7 @@
 
     log.working('\nSearching for userscripts...\n')
     const userJSfiles = await (async () =>
-        devMode ? JSON.parse(await fs.promises.readFile('./utils/userJSfiles.dev.json', 'utf-8')) : findUserJS()
+        devMode ? JSON.parse(await fs.promises.readFile('./utils/bump/userJSfiles.dev.json', 'utf-8')) : findUserJS()
     )()
     log.dev(userJSfiles)
 
