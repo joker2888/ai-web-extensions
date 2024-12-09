@@ -44,9 +44,9 @@ for project_name in $SORTED_PROJECTS ; do
 
     # Iterate thru extension paths
     for manifest_path in $(echo "$MANIFEST_PATHS" | grep "/$project_name/") ; do
-        platform_manifest_path=$(dirname "$manifest_path" | sed 's|^\./||')
 
         # Check latest commit for extension changes if forcible platform flag not set
+        platform_manifest_path=$(dirname "$manifest_path" | sed 's|^\./||')
         if [ "$chromium_only" != true ] && [ "$ff_only" != true ] ; then
             echo "Checking last commit details for $platform_manifest_path..."
             latest_platform_commit_msg=$(git log -1 --format=%s -- "$platform_manifest_path")
