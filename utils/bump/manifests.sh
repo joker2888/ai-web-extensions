@@ -2,7 +2,7 @@
 
 # Bumps extension manifests if changes detected + git commit/push
 
-shopt -s nocasematch  # enable case-insensitive matching (to check commit msg for bumps)
+shopt -s nocasematch  # enable case-insensitive matching (to flexibly check commit msg for bumps)
 
 # Init UI colors
 NC="\033[0m"    # no color
