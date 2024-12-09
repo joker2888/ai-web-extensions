@@ -20,6 +20,7 @@ elif [[ -n "$1" ]] ; then
     echo -e "${BR}Invalid argument. Use '--chrome', '--chromium', '--firefox', '--ff', or omit arg.${NC}" ; exit 1 ; fi
 
 # Init manifest PATHS
+echo -e "${BY}\nSearching for extension manifests...${NC}\n"
 mapfile -t MANIFEST_PATHS < <(find . -type f -name 'manifest.json')
 if [ "$chromium_only" = true ] ; then
     MANIFEST_PATHS=($(printf "%s\n" "${MANIFEST_PATHS[@]}" | grep -i 'chrom'))
