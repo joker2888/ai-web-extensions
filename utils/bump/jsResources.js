@@ -2,7 +2,7 @@
 
 // Bumps @require'd JS in userscripts
 // NOTE: Doesn't git commit to allow potentially required script editing
-// NOTE: Pass --dev to use ./utils/userJSfiles.dev.json for faster init
+// NOTE: Pass --dev to use ./utils/bump/userJSfiles.dev.json for faster init
 
 (async () => {
 
