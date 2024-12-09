@@ -81,7 +81,7 @@ done
 # COMMIT/PUSH bump(s)
 if [[ $bumped_cnt -eq 0 ]] ; then echo -e "${BW}Completed. No manifests bumped.${NC}"
 else
-    echo -e "${BY}Committing $( (( bumped_cnt > 1 )) && echo bumps || echo bump) to Git...\n${NC}"
+    echo -e "${BY}Committing $( (( bumped_cnt > 1 )) && echo bumps || echo bump) to Git...${NC}"
 
     # Define commit msg
     COMMIT_MSG="Bumped \`version\`"
