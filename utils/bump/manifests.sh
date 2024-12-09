@@ -1,22 +1,32 @@
 #!/bin/bash
 
 # Bumps extension manifests if changes detected + git commit/push
+# NOTE: Pass --chrome or --chromium to forcibly bump Chromium manifests only
+# NOTE: Pass --firefox or --ff to forcibly bump Firefox manifests only
 
-shopt -s nocasematch  # enable case-insensitive matching (to flexibly check commit msg for bumps)
+shopt -s nocasematch # enable case-insensitive matching (to flexibly check commit msg for bumps)
 
-# Init UI colors
+# Init UI COLORS
 NC="\033[0m"    # no color
 BR="\033[1;91m" # bright red
 BY="\033[1;33m" # bright yellow
 BG="\033[1;92m" # bright green
 BW="\033[1;97m" # bright white
 
-# Init manifest paths
+# Parse ARGS
+if [[ "$1" == *chrom* ]] ; then chromium_only=true
+elif [[ "$1" == *f*f* ]] ; then ff_only=true
+elif [[ -n "$1" ]] ; then
+    echo -e "${BR}Invalid argument. Use '--chrome', '--chromium', '--firefox', '--ff', or omit arg.${NC}" ; exit 1 ; fi
+
+# Init manifest PATHS
 echo -e "${BY}\nSearching for extension manifests...${NC}\n"
 manifest_paths=$(find . -type f -name 'manifest.json')
+if [ "$chromium_only" = true ] ; then manifest_paths=$(echo "$manifest_paths" | grep -i 'chrom')
+elif [ "$ff_only" = true ] ; then manifest_paths=$(echo "$manifest_paths" | grep -i 'firefox') ; fi
 for manifest_path in $manifest_paths ; do echo "$manifest_path" ; done
 
-# Extract extension project names
+# Extract extension project NAMES
 echo -e "${BY}\nExtracting extension project names...${NC}\n"
 declare -A project_names
 for manifest_path in $manifest_paths ; do # extract project names
@@ -25,7 +35,7 @@ SORTED_PROJECTS=$(echo "${!project_names[@]}" | tr ' ' '\n' | sort)
 for project_name in $SORTED_PROJECTS ; do echo "$project_name" ; done
 echo # line break
 
-# Iterate thru projects
+# Iterate thru PROJECTS
 bumped_cnt=0
 TODAY=$(date +'%Y.%-m.%-d')  # YYYY.M.D format
 new_versions=() # for dynamic commit msg
@@ -36,15 +46,19 @@ for project_name in $SORTED_PROJECTS ; do
     for manifest_path in $(echo "$manifest_paths" | grep "/$project_name/") ; do
         platform_manifest_path=$(dirname "$manifest_path" | sed 's|^\./||')
 
-        # Check latest commit for extension
-        echo "Checking last commit details for $platform_manifest_path..."
-        latest_platform_commit_msg=$(git log -1 --format=%s -- "$platform_manifest_path")
-        if [[ $latest_platform_commit_msg == bump*(version|manifest)* ]] ; then
-            echo -e "No changes found. Skipping...\n"
-            continue
+        # Check latest commit for extension changes if forcible platform flag not set
+        if [ "$chromium_only" != true ] && [ "$ff_only" != true ] ; then
+            echo "Checking last commit details for $platform_manifest_path..."
+            latest_platform_commit_msg=$(git log -1 --format=%s -- "$platform_manifest_path")
+            if [[ $latest_platform_commit_msg == bump*(version|manifest)* ]] ; then
+                echo -e "No changes found. Skipping...\n" ; continue ; fi
         fi
 
-        echo "Bumping version in manifest..."
+        # Echo begin bump
+        manifest_prefix=""
+        if [ "$chromium_only" = true ] ; then manifest_prefix="Chromium "
+        elif [ "$ff_only" = true ] ; then manifest_prefix="Firefox " ; fi
+        echo -e "Bumping version in ${manifest_prefix}manifest..."
 
         # Determine old/new versions
         old_ver=$(sed -n 's/.*"version": *"\([0-9.]*\)".*/\1/p' "$manifest_path")
@@ -66,7 +80,7 @@ for project_name in $SORTED_PROJECTS ; do
     done
 done
 
-# Commit/push bump(s)
+# COMMIT/PUSH bump(s)
 if [[ $bumped_cnt -eq 0 ]] ; then echo -e "${BW}Completed. No manifests bumped.${NC}"
 else
     echo -e "${BY}Committing $( (( bumped_cnt > 1 )) && echo bumps || echo bump) to Git...\n${NC}"
