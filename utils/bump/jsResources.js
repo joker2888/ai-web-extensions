@@ -18,6 +18,12 @@
           bg = '\x1b[1;92m', // bright green
           bw = '\x1b[1;97m'  // bright white
 
+    // Init REGEX
+    const rePatterns = {
+        jsrURL: /^\/\/ @require\s+(https:\/\/cdn\.jsdelivr\.net\/gh\/.+$)/gm,
+        commitHash: /@([^/]+)/, sriHash: /[^#]+$/
+    }
+
     // Define FUNCTIONS
 
     const log = {
@@ -93,8 +99,7 @@
     const jsrURLmap = {} ; let jsrCnt = 0
     userJSfiles.forEach(userJSfilePath => {
         const userJScontent = fs.readFileSync(userJSfilePath, 'utf-8'),
-              re_jsrURL = /^\/\/ @require\s+(https:\/\/cdn\.jsdelivr\.net\/gh\/.+$)/gm,
-              jsrURLs = [...userJScontent.matchAll(re_jsrURL)].map(match => match[1])
+              jsrURLs = [...userJScontent.matchAll(rePatterns.jsURL)].map(match => match[1])
         if (jsrURLs.length > 0) { jsrURLmap[userJSfilePath] = jsrURLs ; jsrCnt += jsrURLs.length }
     })
     log.success(`${jsrCnt} potentially bumpable resource(s) found.\n`)
@@ -116,21 +121,21 @@
         console.log(`${latestCommitHash}\n`)
 
         // Process each resource
-        const re_commitHash = /@([^/]+)/, re_sriHash = /[^#]+$/ ; let fileUpdated = false
+        let fileUpdated = false
         for (const jsrURL of jsrURLmap[userJSfilePath]) {
             const resourceName = jsrURL.match(/\w+\/\w+\.js(?=#|$)/)[0] // dir/filename.js for logs
 
             // Compare commit hashes
-            if ((re_commitHash.exec(jsrURL) || [])[1] == latestCommitHash) { // commit hash didn't change...
+            if ((rePatterns.commitHash.exec(jsrURL) || [])[1] == latestCommitHash) { // commit hash didn't change...
                 console.log(`${resourceName} already up-to-date!\n`) ; continue } // ...so skip resource
-            let updatedURL = jsrURL.replace(re_commitHash, `@${latestCommitHash}`) // othrwise update commit hash
+            let updatedURL = jsrURL.replace(rePatterns.commitHash, `@${latestCommitHash}`) // othrwise update commit hash
 
             // Generate/compare SRI hash
             console.log(`Generating SHA-256 hash for ${resourceName}...`)
             const newSRIhash = await getSRIhash(updatedURL)
-            if ((re_sriHash.exec(jsrURL) || [])[0] == newSRIhash) { // SRI hash didn't change
+            if ((rePatterns.sriHash.exec(jsrURL) || [])[0] == newSRIhash) { // SRI hash didn't change
                 console.log(`${resourceName} already up-to-date!\n`) ; continue } // ...so skip resource
-            updatedURL = updatedURL.replace(re_sriHash, newSRIhash) // otherwise update SRI hash
+            updatedURL = updatedURL.replace(rePatterns.sriHash, newSRIhash) // otherwise update SRI hash
 
             // Write updated URL to userscript
             console.log(`Writing updated URL for ${resourceName}...`)
