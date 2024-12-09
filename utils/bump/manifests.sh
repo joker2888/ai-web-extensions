@@ -82,20 +82,20 @@ for project_name in "${SORTED_PROJECTS[@]}" ; do
 done
 
 # COMMIT/PUSH bump(s)
-if [[ $bumped_cnt -eq 0 ]] ; then echo -e "${BW}Completed. No manifests bumped.${NC}"
+if (( $bumped_cnt == 0 )) ; then echo -e "${BW}Completed. No manifests bumped.${NC}"
 else
-    echo -e "${BY}Committing $( (( bumped_cnt > 1 )) && echo bumps || echo bump) to Git...${NC}"
+    echo -e "${BY}Committing $((( bumped_cnt > 1 )) && echo bumps || echo bump) to Git...${NC}"
 
     # Define commit msg
     COMMIT_MSG="Bumped \`version\`"
     unique_versions=($(printf "%s\n" "${new_versions[@]}" | sort -u))
-    if [[ ${#unique_versions[@]} -eq 1 ]] ; then COMMIT_MSG+=" to \`${unique_versions[0]}\`" ; fi
+    if (( ${#unique_versions[@]} == 1 )) ; then COMMIT_MSG+=" to \`${unique_versions[0]}\`" ; fi
 
     # Commit/push bump(s)
     git add ./**/manifest.json && git commit -n -m "$COMMIT_MSG"
     git push
 
     # Print final summary
-    manifest_label=$( [[ $bumped_cnt -gt 1 ]] && echo "manifests" || echo "manifest")
+    manifest_label=$((( $bumped_cnt > 1 )) && echo "manifests" || echo "manifest")
     echo -e "\n${BG}Success! ${bumped_cnt} ${manifest_label} updated/committed/pushed to GitHub${NC}"
 fi
