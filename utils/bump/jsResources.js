@@ -99,7 +99,7 @@
     const jsrURLmap = {} ; let jsrCnt = 0
     userJSfiles.forEach(userJSfilePath => {
         const userJScontent = fs.readFileSync(userJSfilePath, 'utf-8'),
-              jsrURLs = [...userJScontent.matchAll(rePatterns.jsURL)].map(match => match[1])
+              jsrURLs = [...userJScontent.matchAll(rePatterns.jsrURL)].map(match => match[1])
         if (jsrURLs.length > 0) { jsrURLmap[userJSfilePath] = jsrURLs ; jsrCnt += jsrURLs.length }
     })
     log.success(`${jsrCnt} potentially bumpable resource(s) found.\n`)
