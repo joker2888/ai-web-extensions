@@ -21,15 +21,15 @@ elif [[ -n "$1" ]] ; then
 
 # Init manifest PATHS
 echo -e "${BY}\nSearching for extension manifests...${NC}\n"
-manifest_paths=$(find . -type f -name 'manifest.json')
-if [ "$chromium_only" = true ] ; then manifest_paths=$(echo "$manifest_paths" | grep -i 'chrom')
-elif [ "$ff_only" = true ] ; then manifest_paths=$(echo "$manifest_paths" | grep -i 'firefox') ; fi
-for manifest_path in $manifest_paths ; do echo "$manifest_path" ; done
+MANIFEST_PATHS=$(find . -type f -name 'manifest.json')
+if [ "$chromium_only" = true ] ; then MANIFEST_PATHS=$(echo "$MANIFEST_PATHS" | grep -i 'chrom')
+elif [ "$ff_only" = true ] ; then MANIFEST_PATHS=$(echo "$MANIFEST_PATHS" | grep -i 'firefox') ; fi
+for manifest_path in $MANIFEST_PATHS ; do echo "$manifest_path" ; done
 
 # Extract extension project NAMES
 echo -e "${BY}\nExtracting extension project names...${NC}\n"
 declare -A project_names
-for manifest_path in $manifest_paths ; do # extract project names
+for manifest_path in $MANIFEST_PATHS ; do # extract project names
     project_names[$(echo "$manifest_path" | awk -F '/' '{print $2}')]=true ; done
 SORTED_PROJECTS=$(echo "${!project_names[@]}" | tr ' ' '\n' | sort)
 for project_name in $SORTED_PROJECTS ; do echo "$project_name" ; done
@@ -43,7 +43,7 @@ for project_name in $SORTED_PROJECTS ; do
     echo -e "${BY}Processing $project_name...${NC}\n"
 
     # Iterate thru extension paths
-    for manifest_path in $(echo "$manifest_paths" | grep "/$project_name/") ; do
+    for manifest_path in $(echo "$MANIFEST_PATHS" | grep "/$project_name/") ; do
         platform_manifest_path=$(dirname "$manifest_path" | sed 's|^\./||')
 
         # Check latest commit for extension changes if forcible platform flag not set
