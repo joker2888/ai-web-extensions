@@ -20,30 +20,32 @@ elif [[ -n "$1" ]] ; then
     echo -e "${BR}Invalid argument. Use '--chrome', '--chromium', '--firefox', '--ff', or omit arg.${NC}" ; exit 1 ; fi
 
 # Init manifest PATHS
-echo -e "${BY}\nSearching for extension manifests...${NC}\n"
-MANIFEST_PATHS=$(find . -type f -name 'manifest.json')
-if [ "$chromium_only" = true ] ; then MANIFEST_PATHS=$(echo "$MANIFEST_PATHS" | grep -i 'chrom')
-elif [ "$ff_only" = true ] ; then MANIFEST_PATHS=$(echo "$MANIFEST_PATHS" | grep -i 'firefox') ; fi
-for manifest_path in $MANIFEST_PATHS ; do echo "$manifest_path" ; done
+mapfile -t MANIFEST_PATHS < <(find . -type f -name 'manifest.json')
+if [ "$chromium_only" = true ] ; then
+    MANIFEST_PATHS=($(printf "%s\n" "${MANIFEST_PATHS[@]}" | grep -i 'chrom'))
+elif [ "$ff_only" = true ] ; then
+    MANIFEST_PATHS=($(printf "%s\n" "${MANIFEST_PATHS[@]}" | grep -i 'firefox')) ; fi
+for manifest_path in "${MANIFEST_PATHS[@]}" ; do echo "$manifest_path" ; done
 
 # Extract extension project NAMES
 echo -e "${BY}\nExtracting extension project names...${NC}\n"
 declare -A project_names
-for manifest_path in $MANIFEST_PATHS ; do # extract project names
+for manifest_path in "${MANIFEST_PATHS[@]}" ; do # extract project names
     project_names[$(echo "$manifest_path" | awk -F '/' '{print $2}')]=true ; done
-SORTED_PROJECTS=$(echo "${!project_names[@]}" | tr ' ' '\n' | sort)
-for project_name in $SORTED_PROJECTS ; do echo "$project_name" ; done
+SORTED_PROJECTS=($(printf "%s\n" "${!project_names[@]}" | sort))
+for project_name in "${SORTED_PROJECTS[@]}" ; do echo "$project_name" ; done
 echo # line break
 
 # Iterate thru PROJECTS
 bumped_cnt=0
 TODAY=$(date +'%Y.%-m.%-d')  # YYYY.M.D format
 new_versions=() # for dynamic commit msg
-for project_name in $SORTED_PROJECTS ; do
+for project_name in "${SORTED_PROJECTS[@]}" ; do
     echo -e "${BY}Processing $project_name...${NC}\n"
 
     # Iterate thru extension paths
-    for manifest_path in $(echo "$MANIFEST_PATHS" | grep "/$project_name/") ; do
+    for manifest_path in "${MANIFEST_PATHS[@]}" ; do
+        [[ "$manifest_path" == *"/$project_name/"* ]] || continue # if path belongs to project
 
         # Check latest commit for extension changes if forcible platform flag not set
         platform_manifest_path=$(dirname "$manifest_path" | sed 's|^\./||')
