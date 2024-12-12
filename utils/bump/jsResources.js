@@ -20,8 +20,8 @@
 
     // Init REGEX
     const rePatterns = {
-        jsrURL: /^\/\/ @require\s+(https:\/\/cdn\.jsdelivr\.net\/gh\/.+$)/gm,
-        commitHash: /@([^/]+)/, sriHash: /[^#]+$/
+        commitHash: /@([^/]+)/, jsrURL: /^\/\/ @require\s+(https:\/\/cdn\.jsdelivr\.net\/gh\/.+$)/gm,
+        resourceName: /\w+\/\w+\.js(?=#|$)/, sriHash: /[^#]+$/
     }
 
     // Define FUNCTIONS
@@ -123,7 +123,7 @@
         // Process each resource
         let fileUpdated = false
         for (const jsrURL of jsrURLmap[userJSfilePath]) {
-            const resourceName = jsrURL.match(/\w+\/\w+\.js(?=#|$)/)[0] // dir/filename.js for logs
+            const resourceName = (rePatterns.resourceName.exec(jsrURL) || [])[0] // dir/filename.js for logs
 
             // Compare commit hashes
             if ((rePatterns.commitHash.exec(jsrURL) || [])[1] == latestCommitHash) { // commit hash didn't change...
