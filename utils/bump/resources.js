@@ -2,7 +2,7 @@
 
 // Bumps @require'd JS + rising-stars CSS @resource's in userscripts
 // NOTE: Doesn't git commit to allow potentially required script editing from breaking changes
-// NOTE: Pass --dev to use dev/userJSfiles.dev.json for faster init
+// NOTE: Pass --dev to use dev/userJSfiles.json for faster init
 
 (async () => {
 
@@ -108,7 +108,7 @@
     log.working(`\n${ devMode ? 'Collecting' : 'Searching for' } userscripts...\n`)
     const userJSfiles = await (async () =>
         devMode ? JSON.parse(
-            await fs.promises.readFile(require('path').join(__dirname, 'dev/userJSfiles.dev.json'), 'utf-8'))
+            await fs.promises.readFile(require('path').join(__dirname, 'dev/userJSfiles.json'), 'utf-8'))
                 : findUserJS()
     )()
     log.dev(userJSfiles)
