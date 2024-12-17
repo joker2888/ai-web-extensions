@@ -107,7 +107,9 @@
     // Collect userscripts
     log.working(`\n${ devMode ? 'Collecting' : 'Searching for' } userscripts...\n`)
     const userJSfiles = await (async () =>
-        devMode ? JSON.parse(await fs.promises.readFile('./utils/bump/userJSfiles.dev.json', 'utf-8')) : findUserJS()
+        devMode ? JSON.parse(
+            await fs.promises.readFile(require('path').join(__dirname, 'userJSfiles.dev.json'), 'utf-8'))
+                : findUserJS()
     )()
     log.dev(userJSfiles)
 
