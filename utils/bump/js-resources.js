@@ -106,7 +106,7 @@
     log.success(`${jsrCnt} potentially bumpable resource(s) found.\n`)
 
     // Process each userscript
-    let jsrUpdatedCnt = 0 ; let filesUpdatedCnt = 0
+    let urlsUpdatedCnt = 0 ; let filesUpdatedCnt = 0
     for (const userJSfilePath of Object.keys(jsURLmap)) {
 
         // Init repo name
@@ -143,7 +143,7 @@
             const userJScontent = fs.readFileSync(userJSfilePath, 'utf-8')
             fs.writeFileSync(userJSfilePath, userJScontent.replace(jsURL, updatedURL), 'utf-8')
             log.success(`${resourceName} bumped!\n`)
-            jsrUpdatedCnt++ ; fileUpdated = true
+            urlsUpdatedCnt++ ; fileUpdated = true
         }
         if (fileUpdated) {
             console.log('Bumping userscript version...')
@@ -152,9 +152,9 @@
     }
 
     // Log final summary
-    log[jsrUpdatedCnt > 0 ? 'success' : 'info'](
-        `${ jsrUpdatedCnt > 0 ? 'Success! ' : '' }${
-            jsrUpdatedCnt} resource(s) bumped across ${filesUpdatedCnt} file(s).`
+    log[urlsUpdatedCnt > 0 ? 'success' : 'info'](
+        `${ urlsUpdatedCnt > 0 ? 'Success! ' : '' }${
+            urlsUpdatedCnt} resource(s) bumped across ${filesUpdatedCnt} file(s).`
     )
 
 })()
