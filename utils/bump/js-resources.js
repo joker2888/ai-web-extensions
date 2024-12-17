@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 // Bumps @require'd JS in userscripts
-// NOTE: Doesn't git commit to allow potentially required script editing
+// NOTE: Doesn't git commit to allow potentially required script editing from breaking changes
 // NOTE: Pass --dev to use ./utils/bump/userJSfiles.dev.json for faster init
 
 (async () => {
