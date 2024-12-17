@@ -28,11 +28,9 @@
     // Define FUNCTIONS
 
     const log = {};
-    ['dev', 'info', 'working', 'success'].forEach(lvl => {
-        log[lvl] = function(msg) {
-            const logColor = lvl == 'info' ? bw : lvl == 'working' ? by : lvl == 'success' ? bg : ''
-            console.log(logColor + msg + nc) ; log.hadLineBreak = msg.toString().endsWith('\n')
-        }
+    ['dev', 'info', 'working', 'success'].forEach(lvl => log[lvl] = function(msg) {
+        const logColor = lvl == 'info' ? bw : lvl == 'working' ? by : lvl == 'success' ? bg : ''
+        console.log(logColor + msg + nc) ; log.hadLineBreak = msg.toString().endsWith('\n')
     })
 
     async function findUserJS(dir = './') {
