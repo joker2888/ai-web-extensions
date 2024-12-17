@@ -27,12 +27,13 @@
 
     // Define FUNCTIONS
 
-    const log = {
-        dev(msg) { if (devMode) console.log(msg) },
-        info(msg) { console.log(bw + msg + nc) },
-        working(msg) { console.log(by + msg + nc) },
-        success(msg) { console.log(bg + msg + nc) }
-    }
+    const log = {};
+    ['dev', 'info', 'working', 'success'].forEach(lvl => {
+        log[lvl] = function(msg) {
+            const logColor = lvl == 'info' ? bw : lvl == 'working' ? by : lvl == 'success' ? bg : ''
+            console.log(logColor + msg + nc) ; log.hadLineBreak = msg.toString().endsWith('\n')
+        }
+    })
 
     async function findUserJS(dir = './') {
         const userJSfiles = []
