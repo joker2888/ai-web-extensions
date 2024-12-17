@@ -32,7 +32,7 @@
     const log = {};
     ['dev', 'info', 'working', 'success'].forEach(lvl => log[lvl] = function(msg) {
         const logColor = lvl == 'info' ? bw : lvl == 'working' ? by : lvl == 'success' ? bg : '',
-              formattedMsg = lvl == 'dev' ? msg : logColor + msg + nc
+              formattedMsg = lvl == 'dev' ? msg : logColor + ( log.endedWithLineBreak ? msg.trimStart() : msg ) + nc
         console.log(formattedMsg) ; log.endedWithLineBreak = msg.toString().endsWith('\n')
     })
 
