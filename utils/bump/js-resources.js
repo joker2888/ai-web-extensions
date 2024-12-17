@@ -97,17 +97,17 @@
     log.dev(userJSfiles)
 
     log.working('\nCollecting JS resources...\n')
-    const jsURLmap = {} ; let jsrCnt = 0
+    const resourceURLmap = {} ; let jsrCnt = 0
     userJSfiles.forEach(userJSfilePath => {
         const userJScontent = fs.readFileSync(userJSfilePath, 'utf-8'),
-              jsURLs = [...userJScontent.matchAll(rePatterns.jsURL)].map(match => match[1])
-        if (jsURLs.length > 0) { jsURLmap[userJSfilePath] = jsURLs ; jsrCnt += jsURLs.length }
+              resourceURLs = [...userJScontent.matchAll(rePatterns.jsURL)].map(match => match[1])
+        if (resourceURLs.length > 0) { resourceURLmap[userJSfilePath] = resourceURLs ; jsrCnt += resourceURLs.length }
     })
     log.success(`${jsrCnt} potentially bumpable resource(s) found.\n`)
 
     // Process each userscript
     let urlsUpdatedCnt = 0 ; let filesUpdatedCnt = 0
-    for (const userJSfilePath of Object.keys(jsURLmap)) {
+    for (const userJSfilePath of Object.keys(resourceURLmap)) {
 
         // Init repo name
         const repo = { name: userJSfilePath.split(devMode ? '\\' : '/').pop().replace('.user.js', '') }
@@ -123,25 +123,25 @@
 
         // Process each resource
         let fileUpdated = false
-        for (const jsURL of jsURLmap[userJSfilePath]) {
-            const resourceName = rePatterns.resourceName.exec(jsURL)?.[0] || 'resource' // dir/filename.js for logs
+        for (const resourceURL of resourceURLmap[userJSfilePath]) {
+            const resourceName = rePatterns.resourceName.exec(resourceURL)?.[0] || 'resource' // dir/filename.js for logs
 
             // Compare commit hashes
-            if (repo.latestCommitHash.startsWith(rePatterns.commitHash.exec(jsURL)?.[1] || '')) { // commit hash didn't change...
+            if (repo.latestCommitHash.startsWith(rePatterns.commitHash.exec(resourceURL)?.[1] || '')) { // commit hash didn't change...
                 console.log(`${resourceName} already up-to-date!\n`) ; continue } // ...so skip resource
-            let updatedURL = jsURL.replace(rePatterns.commitHash, `@${repo.latestCommitHash}`) // othrwise update commit hash
+            let updatedURL = resourceURL.replace(rePatterns.commitHash, `@${repo.latestCommitHash}`) // othrwise update commit hash
 
             // Generate/compare SRI hash
             console.log(`Generating SHA-256 hash for ${resourceName}...`)
             const newSRIhash = await getSRIhash(updatedURL)
-            if (rePatterns.sriHash.exec(jsURL)?.[0] == newSRIhash) { // SRI hash didn't change
+            if (rePatterns.sriHash.exec(resourceURL)?.[0] == newSRIhash) { // SRI hash didn't change
                 console.log(`${resourceName} already up-to-date!\n`) ; continue } // ...so skip resource
             updatedURL = updatedURL.replace(rePatterns.sriHash, newSRIhash) // otherwise update SRI hash
 
             // Write updated URL to userscript
             console.log(`Writing updated URL for ${resourceName}...`)
             const userJScontent = fs.readFileSync(userJSfilePath, 'utf-8')
-            fs.writeFileSync(userJSfilePath, userJScontent.replace(jsURL, updatedURL), 'utf-8')
+            fs.writeFileSync(userJSfilePath, userJScontent.replace(resourceURL, updatedURL), 'utf-8')
             log.success(`${resourceName} bumped!\n`)
             urlsUpdatedCnt++ ; fileUpdated = true
         }
