@@ -15,9 +15,10 @@
     // Init UI COLORS
     const nc = '\x1b[0m',        // no color
           dg = '\x1b[38;5;243m', // dim gray
+          bw = '\x1b[1;97m',     // bright white
           by = '\x1b[1;33m',     // bright yellow
           bg = '\x1b[1;92m',     // bright green
-          bw = '\x1b[1;97m'      // bright white
+          br = '\x1b[1;91m'      // bright red
 
     // Init REGEX
     const rePatterns = {
@@ -30,8 +31,8 @@
     // Define FUNCTIONS
 
     const log = {};
-    ['dev', 'hash', 'info', 'working', 'success'].forEach(lvl => log[lvl] = function(msg) {
-        const logColor = lvl == 'hash' ? dg : lvl == 'info' ? bw : lvl == 'working' ? by : bg,
+    ['dev', 'hash', 'info', 'working', 'success', 'error'].forEach(lvl => log[lvl] = function(msg) {
+        const logColor = lvl == 'hash' ? dg : lvl == 'info' ? bw : lvl == 'working' ? by : lvl == 'success' ? bg : br,
               formattedMsg = lvl == 'dev' ? msg : logColor + ( log.endedWithLineBreak ? msg.trimStart() : msg ) + nc
         console.log(formattedMsg) ; log.endedWithLineBreak = msg.toString().endsWith('\n')
     })
@@ -64,6 +65,17 @@
             }})
         else // use fetch() from Node.js v21+
             return fetch(url)
+    }
+
+    async function isValidURL(url) {
+        try {
+            const urlIsValid = !(await (await fetch(url)).text()).startsWith('Package size exceeded')
+            if (!urlIsValid) log.error(`\nInvalid URL: ${url}\n`)
+            return urlIsValid
+        } catch (err) {
+            log.error(`\nCannot validate URL: ${url}\n`)
+            return false
+        }
     }
 
     async function getSRIhash(url, algorithm = 'sha256') {
@@ -140,6 +152,7 @@
         // Process each resource
         let fileUpdated = false
         for (const resourceURL of urlMap[userJSfilePath]) {
+            if (!await isValidURL(resourceURL)) continue
             const resourceName = rePatterns.resourceName.exec(resourceURL)?.[0] || 'resource' // dir/filename for logs
 
             // Compare commit hashes
@@ -151,6 +164,7 @@
                     continue // ...so skip resource
                 }
             let updatedURL = resourceURL.replace(rePatterns.commitHash, `$1${resourceLatestCommitHash}`) // otherwise update commit hash
+            if (!await isValidURL(updatedURL)) continue
 
             // Generate/compare SRI hash
             console.log(`${ !log.endedWithLineBreak ? '\n' : '' }Generating SHA-256 hash for ${resourceName}...`)
@@ -160,6 +174,7 @@
                 continue // ...so skip resource
             }
             updatedURL = updatedURL.replace(rePatterns.sriHash, newSRIhash) // otherwise update SRI hash
+            if (!await isValidURL(updatedURL)) continue
 
             // Write updated URL to userscript
             console.log(`Writing updated URL for ${resourceName}...`)
