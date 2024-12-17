@@ -33,7 +33,7 @@
     ['dev', 'info', 'working', 'success'].forEach(lvl => log[lvl] = function(msg) {
         const logColor = lvl == 'info' ? bw : lvl == 'working' ? by : lvl == 'success' ? bg : '',
               formattedMsg = lvl == 'dev' ? msg : logColor + msg + nc
-        console.log(formattedMsg) ; log.hadLineBreak = msg.toString().endsWith('\n')
+        console.log(formattedMsg) ; log.endedWithLineBreak = msg.toString().endsWith('\n')
     })
 
     async function findUserJS(dir = './') {
@@ -147,16 +147,16 @@
                 resourceURL.includes(repoName) ? 'repoResources' : 'risingStars']
             if (resourceLatestCommitHash.startsWith(
                 rePatterns.commitHash.exec(resourceURL)?.[2] || '')) { // commit hash didn't change...
-                    console.log(`${resourceName} already up-to-date!`) ; log.hadLineBreak = false
+                    console.log(`${resourceName} already up-to-date!`) ; log.endedWithLineBreak = false
                     continue // ...so skip resource
                 }
             let updatedURL = resourceURL.replace(rePatterns.commitHash, `$1${resourceLatestCommitHash}`) // otherwise update commit hash
 
             // Generate/compare SRI hash
-            console.log(`${ !log.hadLineBreak ? '\n' : '' }Generating SHA-256 hash for ${resourceName}...`)
+            console.log(`${ !log.endedWithLineBreak ? '\n' : '' }Generating SHA-256 hash for ${resourceName}...`)
             const newSRIhash = await getSRIhash(updatedURL)
             if (rePatterns.sriHash.exec(resourceURL)?.[0] == newSRIhash) { // SRI hash didn't change
-                console.log(`${resourceName} already up-to-date!`) ; log.hadLineBreak = false
+                console.log(`${resourceName} already up-to-date!`) ; log.endedWithLineBreak = false
                 continue // ...so skip resource
             }
             updatedURL = updatedURL.replace(rePatterns.sriHash, newSRIhash) // otherwise update SRI hash
@@ -169,7 +169,7 @@
             urlsUpdatedCnt++ ; fileUpdated = true
         }
         if (fileUpdated) {
-            console.log(`${ !log.hadLineBreak ? '\n' : '' }Bumping userscript version...`)
+            console.log(`${ !log.endedWithLineBreak ? '\n' : '' }Bumping userscript version...`)
             bumpUserJSver(userJSfilePath) ; filesUpdatedCnt++
         }
     }
