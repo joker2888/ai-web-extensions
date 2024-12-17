@@ -110,16 +110,16 @@
     for (const userJSfilePath of Object.keys(jsURLmap)) {
 
         // Init repo name
-        let repoName = userJSfilePath.split(devMode ? '\\' : '/').pop().replace('.user.js', '')
-        if (repoName.endsWith('-mode')) repoName = repoName.slice(0, -5) // for chatgpt-widescreen
+        const repo = { name: userJSfilePath.split(devMode ? '\\' : '/').pop().replace('.user.js', '') }
+        if (repo.name.endsWith('-mode')) repo.name = repo.name.slice(0, -5) // for chatgpt-widescreen
 
-        log.working(`Processing ${repoName}...\n`)
+        log.working(`Processing ${repo.name}...\n`)
 
         // Fetch latest commit hash
         console.log('Fetching latest commit hash for repo...')
-        const latestCommitHash = require('child_process').execFileSync(
-            'git', ['ls-remote', `https://github.com/adamlui/${repoName}.git`, 'HEAD']).toString().split('\t')[0]
-        console.log(`${latestCommitHash}\n`)
+        repo.latestCommitHash = require('child_process').execFileSync(
+            'git', ['ls-remote', `https://github.com/adamlui/${repo.name}.git`, 'HEAD']).toString().split('\t')[0]
+        console.log(`${repo.latestCommitHash}\n`)
 
         // Process each resource
         let fileUpdated = false
@@ -127,9 +127,9 @@
             const resourceName = rePatterns.resourceName.exec(jsURL)?.[0] || 'resource' // dir/filename.js for logs
 
             // Compare commit hashes
-            if (latestCommitHash.startsWith(rePatterns.commitHash.exec(jsURL)?.[1] || '')) { // commit hash didn't change...
+            if (repo.latestCommitHash.startsWith(rePatterns.commitHash.exec(jsURL)?.[1] || '')) { // commit hash didn't change...
                 console.log(`${resourceName} already up-to-date!\n`) ; continue } // ...so skip resource
-            let updatedURL = jsURL.replace(rePatterns.commitHash, `@${latestCommitHash}`) // othrwise update commit hash
+            let updatedURL = jsURL.replace(rePatterns.commitHash, `@${repo.latestCommitHash}`) // othrwise update commit hash
 
             // Generate/compare SRI hash
             console.log(`Generating SHA-256 hash for ${resourceName}...`)
