@@ -7,7 +7,21 @@ updates:
       interval: daily
 
   - package-ecosystem: npm
-    directory: /
+    directories:
+      - /
+      - amazongpt/
+      - autoclear-chatgpt-history/
+      - brave-omnibox/
+      - bravegpt/
+      - chatgpt-auto-continue/
+      - chatgpt-auto-talk/
+      - chatgpt-infinity/
+      - chatgpt-widescreen/
+      - duckduckgpt/
+      - googlegpt/
+      - perplexity-omnibox/
+      - phind-omnibox/
+      - you.com-omnibox/
     schedule:
       interval: daily
     groups:
