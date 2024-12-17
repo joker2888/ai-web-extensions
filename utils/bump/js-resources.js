@@ -101,7 +101,8 @@
     // Collect resources
     log.working('\nCollecting resources...\n')
     const urlMap = {} ; let resourceCnt = 0
-    const reResourceURL = new RegExp(`(?:${rePatterns.cssURL.source})|(?:${rePatterns.jsURL.source})`, 'gm')
+    const reResourceURL = new RegExp( // eslint-disable-next-line
+        `(?:${rePatterns.cssURL.source})|(?:${rePatterns.jsURL.source})`, 'gm')
     userJSfiles.forEach(userJSfilePath => {
         const userJScontent = fs.readFileSync(userJSfilePath, 'utf-8'),
               resourceURLs = [...userJScontent.matchAll(reResourceURL)].map(match => match[1] || match[2])
