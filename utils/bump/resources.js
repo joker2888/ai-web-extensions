@@ -30,8 +30,8 @@
     // Define FUNCTIONS
 
     const log = {};
-    ['dev', 'info', 'working', 'success'].forEach(lvl => log[lvl] = function(msg) {
-        const logColor = lvl == 'info' ? bw : lvl == 'working' ? by : lvl == 'success' ? bg : '',
+    ['dev', 'hash', 'info', 'working', 'success'].forEach(lvl => log[lvl] = function(msg) {
+        const logColor = lvl == 'hash' ? dg : lvl == 'info' ? bw : lvl == 'working' ? by : bg,
               formattedMsg = lvl == 'dev' ? msg : logColor + ( log.endedWithLineBreak ? msg.trimStart() : msg ) + nc
         console.log(formattedMsg) ; log.endedWithLineBreak = msg.toString().endsWith('\n')
     })
@@ -69,7 +69,7 @@
     async function getSRIhash(url, algorithm = 'sha256') {
         const sriHash = ssri.fromData(
             Buffer.from(await (await fetchData(url)).arrayBuffer()), { algorithms: [algorithm] }).toString()
-        console.log(`${dg + sriHash + nc}\n`)
+        log.hash(`${sriHash}\n`)
         return sriHash
     }
 
@@ -117,7 +117,7 @@
     log.working(`\nFetching latest commit hash for ${risingStarsPath}...\n`)
     const latestCommitHashes = {
         risingStars: (await (await fetch(`${ghEndpoint}?path=${risingStarsPath}`)).json())[0]?.sha }
-    console.log(`${dg + latestCommitHashes.risingStars + nc}`)
+    log.hash(latestCommitHashes.risingStars)
 
     // Process each userscript
     let urlsUpdatedCnt = 0 ; let filesUpdatedCnt = 0
