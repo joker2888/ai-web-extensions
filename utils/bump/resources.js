@@ -31,10 +31,10 @@
 
     // Define FUNCTIONS
 
-    const log = {};
-    ['dev', 'hash', 'info', 'working', 'success', 'error'].forEach(lvl => log[lvl] = function(msg) {
+    const log = { dev(msg) { if (devMode) console.log(msg) }};
+    ['hash', 'info', 'working', 'success', 'error'].forEach(lvl => log[lvl] = function(msg) {
         const logColor = lvl == 'hash' ? dg : lvl == 'info' ? bw : lvl == 'working' ? by : lvl == 'success' ? bg : br,
-              formattedMsg = lvl == 'dev' ? msg : logColor + ( log.endedWithLineBreak ? msg.trimStart() : msg ) + nc
+              formattedMsg = logColor + ( log.endedWithLineBreak ? msg.trimStart() : msg ) + nc
         console.log(formattedMsg) ; log.endedWithLineBreak = msg.toString().endsWith('\n')
     })
 
