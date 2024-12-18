@@ -38,21 +38,22 @@
         console.log(formattedMsg) ; log.endedWithLineBreak = msg.toString().endsWith('\n')
     })
 
-    function getRepoRoot() {
-        let dir = __dirname
-        while (!fs.existsSync(path.join(dir, 'package.json'))) dir = path.dirname(dir)
-        return dir
-    }
-
-    async function findUserJS(dir = './') {
+    async function findUserJS(dir = findUserJS.monorepoRoot) {
         const userJSfiles = []
-        if (!dir.endsWith('/')) dir += '/' // for prettier log
-        fs.readdirSync(dir).forEach(async file => {
-            const filePath = dir + file // relative path
-            if (fs.statSync(filePath).isDirectory()) // recursively search subdirs
-                userJSfiles.push(...await findUserJS(filePath))
-            else if (file.endsWith('.user.js')) {
-                console.log(filePath) ; userJSfiles.push(filePath) }
+        if (!dir && !findUserJS.monorepoRoot) { // no arg passed, init monorepo root
+            dir = __dirname
+            while (!fs.existsSync(path.join(dir, 'package.json')))
+                dir = path.dirname(dir) // traverse up to closest manifest dir
+            findUserJS.monorepoRoot = dir
+        }
+        dir = path.resolve(dir)
+        fs.readdirSync(dir).forEach(async entry => {
+            if (/^(?:\.|node_modules$)/.test(entry)) return
+            const entryPath = path.join(dir, entry)
+            if (fs.statSync(entryPath).isDirectory()) // recursively search subdirs
+                userJSfiles.push(...await findUserJS(entryPath))
+            else if (entry.endsWith('.user.js')) {
+                console.log(entryPath) ; userJSfiles.push(entryPath) }
         })
         return userJSfiles
     }
@@ -116,7 +117,7 @@
     const userJSfiles = await (async () =>
         devMode ? JSON.parse(
             await fs.promises.readFile(path.join(__dirname, 'dev/userJSfiles.json'), 'utf-8'))
-                : findUserJS(getRepoRoot())
+                : findUserJS()
     )()
     log.dev(userJSfiles)
 
