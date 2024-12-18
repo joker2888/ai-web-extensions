@@ -121,7 +121,7 @@
             await fs.promises.readFile(path.join(__dirname, 'dev/userJSfiles.json'), 'utf-8'))
                 : findUserJS()
     )()
-    log.dev(userJSfiles)
+    log.dev(userJSfiles) ; console.log('')
 
     // Collect resources
     log.working('\nCollecting resources...\n')
