@@ -10,6 +10,7 @@
 
     // Import LIBS
     const fs = require('fs'), // to read/write files
+          path = require('path'), // to manipulate paths
           ssri = require('ssri') // to generate SHA-256 hashes
 
     // Init UI COLORS
@@ -36,6 +37,12 @@
               formattedMsg = lvl == 'dev' ? msg : logColor + ( log.endedWithLineBreak ? msg.trimStart() : msg ) + nc
         console.log(formattedMsg) ; log.endedWithLineBreak = msg.toString().endsWith('\n')
     })
+
+    function getRepoRoot() {
+        let dir = __dirname
+        while (!fs.existsSync(path.join(dir, 'package.json'))) dir = path.dirname(dir)
+        return dir
+    }
 
     async function findUserJS(dir = './') {
         const userJSfiles = []
@@ -108,8 +115,8 @@
     log.working(`\n${ devMode ? 'Collecting' : 'Searching for' } userscripts...\n`)
     const userJSfiles = await (async () =>
         devMode ? JSON.parse(
-            await fs.promises.readFile(require('path').join(__dirname, 'dev/userJSfiles.json'), 'utf-8'))
-                : findUserJS()
+            await fs.promises.readFile(path.join(__dirname, 'dev/userJSfiles.json'), 'utf-8'))
+                : findUserJS(getRepoRoot())
     )()
     log.dev(userJSfiles)
 
