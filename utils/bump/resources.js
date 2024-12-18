@@ -148,7 +148,7 @@
     for (const userJSfilePath of Object.keys(urlMap)) {
 
         // Init repo props
-        let repoName = userJSfilePath.split(devMode ? '\\' : '/').pop().replace('.user.js', '')
+        let repoName = userJSfilePath.split('\\').pop().replace('.user.js', '')
         if (repoName.endsWith('-mode')) repoName = repoName.slice(0, -5) // for chatgpt-widescreen
 
         log.working(`\nProcessing ${repoName}...\n`)
