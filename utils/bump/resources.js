@@ -53,7 +53,9 @@
             if (fs.statSync(entryPath).isDirectory()) // recursively search subdirs
                 userJSfiles.push(...await findUserJS(entryPath))
             else if (entry.endsWith('.user.js')) {
-                console.log(entryPath) ; userJSfiles.push(entryPath) }
+                console.log(entryPath) ; log.endedWithLineBreak = false
+                userJSfiles.push(entryPath)
+            }
         })
         return userJSfiles
     }
@@ -167,7 +169,7 @@
 
             // Compare commit hashes
             const resourceLatestCommitHash = latestCommitHashes[
-                resourceURL.includes(repoName) ? 'repoResources' : 'risingStars']
+                  resourceURL.includes(repoName) ? 'repoResources' : 'risingStars']
             if (resourceLatestCommitHash.startsWith(
                 rePatterns.commitHash.exec(resourceURL)?.[2] || '')) { // commit hash didn't change...
                     console.log(`${resourceName} already up-to-date!`) ; log.endedWithLineBreak = false
