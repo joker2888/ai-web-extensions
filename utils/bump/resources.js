@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 // Bumps @require'd JS + rising-stars CSS @resource's in userscripts
-// NOTE: Doesn't git commit to allow potentially required script editing from breaking changes
+// NOTE: Doesn't git commit to allow script editing from breaking changes
 // NOTE: Pass --dev to use dev/userJSfiles.json for faster init
 
 (async () => {
