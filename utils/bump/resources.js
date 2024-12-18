@@ -88,6 +88,13 @@
         }
     }
 
+    async function getLatestCommitHash(repo, path) {
+        const endpoint = `https://api.github.com/repos/${repo}/commits`,
+              latestCommitHash = (await (await fetch(`${endpoint}?path=${ path || '' }`)).json())[0]?.sha
+        if (latestCommitHash) log.hash(`${latestCommitHash}\n`)
+        return latestCommitHash
+    }
+
     async function getSRIhash(url, algorithm = 'sha256') {
         const sriHash = ssri.fromData(
             Buffer.from(await (await fetchData(url)).arrayBuffer()), { algorithms: [algorithm] }).toString()
@@ -136,12 +143,9 @@
     log.success(`${resourceCnt} potentially bumpable resource(s) found.`)
 
     // Fetch latest commit hash for adamlui/ai-web-extensions/assets/styles/rising-stars
-    const ghEndpoint = 'https://api.github.com/repos/adamlui/ai-web-extensions/commits',
-          risingStarsPath = 'assets/styles/rising-stars'
+    const risingStarsPath = 'assets/styles/rising-stars'
     log.working(`\nFetching latest commit hash for ${risingStarsPath}...\n`)
-    const latestCommitHashes = {
-        risingStars: (await (await fetch(`${ghEndpoint}?path=${risingStarsPath}`)).json())[0]?.sha }
-    log.hash(latestCommitHashes.risingStars)
+    const latestCommitHashes = { risingStars: await getLatestCommitHash('adamlui/ai-web-extensions', risingStarsPath) }
 
     // Process each userscript
     let urlsUpdatedCnt = 0 ; let filesUpdatedCnt = 0
@@ -153,12 +157,15 @@
 
         log.working(`\nProcessing ${repoName}...\n`)
 
-        // Fetch latest commit hash
+        // Fetch latest commit hash for repo/chrom<e|ium>/extension
         if (urlMap[userJSfilePath].some(url => url.includes(repoName))) {
-            console.log('Fetching latest commit hash for repo...')
-            latestCommitHashes.repoResources = require('child_process').execFileSync(
-                'git', ['ls-remote', `https://github.com/adamlui/${repoName}.git`, 'HEAD']).toString().split('\t')[0]
-            console.log(`${dg + latestCommitHashes.repoResources + nc}\n`)
+            console.log('Fetching latest commit hash for Chromium extension...')
+            latestCommitHashes.repoResources = null // in case set from prev repo
+            for (const chrDirName of ['chromium', 'chrome']) {
+                latestCommitHashes.repoResources = await getLatestCommitHash(
+                    `adamlui/${repoName}`, `${chrDirName}/extension`)
+                if (latestCommitHashes.repoResources) break
+            }
         }
 
         // Process each resource
