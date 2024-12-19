@@ -158,11 +158,11 @@
         // Fetch latest commit hash for repo/chrom<e|ium>/extension
         if (urlMap[userJSfilePath].some(url => url.includes(repoName))) {
             console.log('Fetching latest commit hash for Chromium extension...')
-            latestCommitHashes.repoRes = null // in case set from prev repo
+            latestCommitHashes.chromium = null // in case set from prev repo
             for (const chrDirName of ['chromium', 'chrome']) {
-                latestCommitHashes.repoRes = await getLatestCommitHash(
+                latestCommitHashes.chromium = await getLatestCommitHash(
                     `adamlui/${repoName}`, `${chrDirName}/extension`)
-                if (latestCommitHashes.repoRes) break
+                if (latestCommitHashes.chromium) break
             }
         }
 
@@ -173,7 +173,7 @@
             const resName = rePatterns.resName.exec(resURL)?.[0] || 'resource' // dir/filename for logs
 
             // Compare/update commit hash
-            let resLatestCommitHash = latestCommitHashes[resURL.includes(repoName) ? 'repoRes' : 'risingStars']
+            let resLatestCommitHash = latestCommitHashes[resURL.includes(repoName) ? 'chromium' : 'risingStars']
             if (resLatestCommitHash.startsWith( // compare hashes
                 rePatterns.commitHash.exec(resURL)?.[2] || '')) { // commit hash didn't change...
                     console.log(`${resName} already up-to-date!`) ; log.endedWithLineBreak = false
