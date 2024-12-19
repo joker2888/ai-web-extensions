@@ -126,10 +126,10 @@
         const devFilePath = path.join(__dirname, 'dev/userJSfiles.json')
         if (!fs.existsSync(devFilePath)) { // dev file missing, build w/ findUserJS()
             log.error(`Dev file missing. Generating ${devFilePath}...\n`)
-            userJSfiles = await findUserJS()
+            userJSfiles = await findUserJS() ; console.log('')
             fs.mkdirSync(path.dirname(devFilePath), { recursive: true })
             fs.writeFileSync(devFilePath, JSON.stringify(userJSfiles, null, 2), 'utf-8')
-            console.log('') ; log.success(`\nDev file created @ ${devFilePath}`)
+            log.success(`\nDev file created @ ${devFilePath}`)
         } else { // use existing dev file
             userJSfiles = JSON.parse(fs.readFileSync(devFilePath, 'utf-8'))
             log.dev(userJSfiles) ; console.log('')
