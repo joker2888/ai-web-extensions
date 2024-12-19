@@ -51,7 +51,7 @@ for project_name in "${SORTED_PROJECTS[@]}" ; do
 
         # Check latest commit for extension changes if forcible platform flag not set
         platform_manifest_path=$(dirname "$manifest_path" | sed 's|^\./||')
-        if [[ ! "${chromium_only} ${ff_only}" =~ "true" ]] ; then
+        if [[ ! "$chromium_only $ff_only" =~ true ]] ; then
             echo "Checking last commit details for $platform_manifest_path..."
             latest_platform_commit_msg=$(git log -1 --format=%s -- "$platform_manifest_path")
             echo -e "${DG}${latest_platform_commit_msg}${NC}\n"
