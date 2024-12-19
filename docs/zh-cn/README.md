@@ -5,8 +5,8 @@
 <div align="right">
     <h6>
         <picture>
-            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/earth/white/icon32.svg">
-            <img height=14 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/earth/black/icon32.svg">
+            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/earth/white/icon32.svg">
+            <img height=14 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/earth/black/icon32.svg">
         </picture>
         &nbsp;简体中文 |
         <a href="../../#readme">English</a>
@@ -40,7 +40,7 @@
 
 ### AI 浏览器扩展和用户脚本可增强您的网络体验
 
-<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
+<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/separators/aqua-gradient.png">
 
 </div>
 
@@ -50,7 +50,7 @@
 
 💡 **Tip:** _要显示屏幕截图，请点击扩展名称下方的 ▸ 或描述。_
 
-<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
+<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/separators/aqua-gradient.png">
 
 <!-- AMAZONGPT -->
 
@@ -72,15 +72,15 @@
 
 <blockquote>
     <a href="../../amazongpt/#-installation">
-        <img height=13 src="https://amazongpt.kudoai.com/assets/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://amazongpt.kudoai.com/assets/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/platforms/scriptcat/icon16.png"></a>
+        <img height=13 src="https://amazongpt.kudoai.com/assets/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://amazongpt.kudoai.com/assets/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/platforms/scriptcat/icon16.png"></a>
     <a href="../../amazongpt/#-installation">
         Greasemonkey</a> /
     <a href="../../amazongpt/#readme">
-        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/paper-sheet/white.svg"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/paper-sheet/black.svg"></picture></a>
+        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/paper-sheet/white.svg"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/paper-sheet/black.svg"></picture></a>
     <a href="../../amazongpt/#readme">
         自述文件</a> /
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
-        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/speech-bubble-square/white.svg"><img height=12 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/speech-bubble-square/black.svg"></picture></a>
+        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/speech-bubble-square/white.svg"><img height=12 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/speech-bubble-square/black.svg"></picture></a>
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
         讨论</a>
 </blockquote>
@@ -105,15 +105,15 @@
 
 <blockquote>
     <a href="../autoclear-chatgpt-history/#-installation">
-        <img height=13 src="https://media.autoclearchatgpt.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://media.autoclearchatgpt.com/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/platforms/scriptcat/icon16.png"></a>
+        <img height=13 src="https://media.autoclearchatgpt.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://media.autoclearchatgpt.com/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/platforms/scriptcat/icon16.png"></a>
     <a href="../autoclear-chatgpt-history/#-installation">
         Greasemonkey</a> /
     <a href="../autoclear-chatgpt-history/#readme">
-        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/paper-sheet/white.svg"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/paper-sheet/black.svg"></picture></a>
+        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/paper-sheet/white.svg"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/paper-sheet/black.svg"></picture></a>
     <a href="../autoclear-chatgpt-history/#readme">
         自述文件</a> /
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
-        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/speech-bubble-square/white.svg"><img height=12 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/speech-bubble-square/black.svg"></picture></a>
+        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/speech-bubble-square/white.svg"><img height=12 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/speech-bubble-square/black.svg"></picture></a>
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
         讨论</a>
 </blockquote>
@@ -148,11 +148,11 @@
     <a href="https://edge.braveomnibox.com/?source=github&medium=readme&content=platform-link">
         Edge</a> /
     <a href="../../brave-omnibox/#readme">
-        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/paper-sheet/white.svg"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/paper-sheet/black.svg"></picture></a>
+        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/paper-sheet/white.svg"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/paper-sheet/black.svg"></picture></a>
     <a href="../../brave-omnibox/#readme">
         自述文件</a> /
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
-        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/speech-bubble-square/white.svg"><img height=12 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/speech-bubble-square/black.svg"></picture></a>
+        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/speech-bubble-square/white.svg"><img height=12 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/speech-bubble-square/black.svg"></picture></a>
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
         讨论</a>
 </blockquote>
@@ -177,13 +177,13 @@
 
 <blockquote>
     <a href="../../bravegpt/#-installation">
-        <img height=13 src="https://media.bravegpt.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://media.bravegpt.com/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/platforms/scriptcat/icon16.png"></a>
+        <img height=13 src="https://media.bravegpt.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://media.bravegpt.com/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/platforms/scriptcat/icon16.png"></a>
     <a href="../../bravegpt/#-installation">
         Greasemonkey</a> /
     <a href="../../bravegpt/#readme">
         自述文件</a> /
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
-        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/speech-bubble-square/white.svg"><img height=12 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/speech-bubble-square/black.svg"></picture></a>
+        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/speech-bubble-square/white.svg"><img height=12 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/speech-bubble-square/black.svg"></picture></a>
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
         讨论</a>
 </blockquote>
@@ -220,15 +220,15 @@
     <a href="https://edge.chatgptautocontinue.com/?source=github&medium=readme&content=platform-link">
         Edge</a> /
     <a href="https://gm.chatgptautocontinue.com/?source=github&medium=readme&content=platform-link">
-        <img height=13 src="https://media.chatgptautocontinue.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://media.chatgptautocontinue.com/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/platforms/scriptcat/icon16.png"></a>
+        <img height=13 src="https://media.chatgptautocontinue.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://media.chatgptautocontinue.com/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/platforms/scriptcat/icon16.png"></a>
     <a href="https://gm.chatgptautocontinue.com/?source=github&medium=readme&content=platform-link">
         Greasemonkey</a> /
     <a href="../chatgpt-auto-continue/docs/zh-cn/#readme">
-        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/paper-sheet/white.svg"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/paper-sheet/black.svg"></picture></a>
+        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/paper-sheet/white.svg"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/paper-sheet/black.svg"></picture></a>
     <a href="../../chatgpt-auto-continue/docs/zh-cn/#readme">
         自述文件</a> /
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
-        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/speech-bubble-square/white.svg"><img height=12 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/speech-bubble-square/black.svg"></picture></a>
+        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/speech-bubble-square/white.svg"><img height=12 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/speech-bubble-square/black.svg"></picture></a>
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
         讨论</a>
 </blockquote>
@@ -247,15 +247,15 @@
 
 <blockquote>
     <a href="../../chatgpt-auto-refresh/docs/zh-cn/#-如何安装">
-        <img height=13 src="https://media.chatgptautorefresh.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://media.chatgptautorefresh.com/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/platforms/scriptcat/icon16.png"></a>
+        <img height=13 src="https://media.chatgptautorefresh.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://media.chatgptautorefresh.com/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/platforms/scriptcat/icon16.png"></a>
     <a href="../../chatgpt-auto-refresh/docs/zh-cn/#-如何安装">
         Greasemonkey</a> /
     <a href="../../chatgpt-auto-refresh/docs/zh-cn/#readme">
-        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/paper-sheet/white.svg"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/paper-sheet/black.svg"></picture></a>
+        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/paper-sheet/white.svg"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/paper-sheet/black.svg"></picture></a>
     <a href="../../chatgpt-auto-refresh/docs/zh-cn/#readme">
         自述文件</a> /
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
-        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/speech-bubble-square/white.svg"><img height=12 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/speech-bubble-square/black.svg"></picture></a>
+        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/speech-bubble-square/white.svg"><img height=12 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/speech-bubble-square/black.svg"></picture></a>
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
         讨论</a>
 </blockquote>
@@ -274,15 +274,15 @@
 
 <blockquote>
     <a href="../../chatgpt-auto-talk/docs/zh-cn/#-如何安装">
-        <img height=13 src="https://assets.chatgptautotalk.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://assets.chatgptautotalk.com/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/platforms/scriptcat/icon16.png"></a>
+        <img height=13 src="https://assets.chatgptautotalk.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://assets.chatgptautotalk.com/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/platforms/scriptcat/icon16.png"></a>
     <a href="../../chatgpt-auto-talk/docs/zh-cn/#-如何安装">
         Greasemonkey</a> /
     <a href="../../chatgpt-auto-talk/docs/zh-cn/#readme">
-        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/paper-sheet/white.svg"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/paper-sheet/black.svg"></picture></a>
+        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/paper-sheet/white.svg"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/paper-sheet/black.svg"></picture></a>
     <a href="../../chatgpt-auto-talk/docs/zh-cn/#readme">
         自述文件</a> /
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
-        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/speech-bubble-square/white.svg"><img height=12 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/speech-bubble-square/black.svg"></picture></a>
+        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/speech-bubble-square/white.svg"><img height=12 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/speech-bubble-square/black.svg"></picture></a>
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
         讨论</a>
 </blockquote>
@@ -319,28 +319,28 @@
     <a href="https://edge.chatgptinfinity.com">
         Edge</a> /
     <a href="https://gm.chatgptinfinity.com">
-        <img height=13 src="https://media.chatgptinfinity.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://media.chatgptinfinity.com/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/platforms/scriptcat/icon16.png"></a>
+        <img height=13 src="https://media.chatgptinfinity.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://media.chatgptinfinity.com/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/platforms/scriptcat/icon16.png"></a>
     <a href="https://gm.chatgptinfinity.com">
         Greasemonkey</a> /
     <a href="../../chatgpt-infinity/docs/zh-cn/#readme">
-        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/paper-sheet/white.svg"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/paper-sheet/black.svg"></picture></a>
+        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/paper-sheet/white.svg"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/paper-sheet/black.svg"></picture></a>
     <a href="../../chatgpt-infinity/docs/zh-cn/#readme">
         自述文件</a> /
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
-        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/speech-bubble-square/white.svg"><img height=12 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/speech-bubble-square/black.svg"></picture></a>
+        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/speech-bubble-square/white.svg"><img height=12 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/speech-bubble-square/black.svg"></picture></a>
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
         讨论</a>
 </blockquote>
 
 <!-- IDEA CTA -->
 
-<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
+<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/separators/aqua-gradient.png">
 
 <h3>有扩展的想法或要求吗？</h3>
 
 创建新讨论：https://github.com/adamlui/ai-web-extensions/discussions/new?category=ideas
 
-<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
+<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/separators/aqua-gradient.png">
 
 <!-- CHATGPT WIDESCREEN -->
 
@@ -375,15 +375,15 @@
     <a href="https://edge.chatgptwidescreen.com">
         Edge</a> /
     <a href="https://gm.chatgptwidescreen.com">
-        <img height=13 src="https://media.chatgptwidescreen.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://media.chatgptwidescreen.com/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/platforms/scriptcat/icon16.png"></a>
+        <img height=13 src="https://media.chatgptwidescreen.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://media.chatgptwidescreen.com/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/platforms/scriptcat/icon16.png"></a>
     <a href="https://gm.chatgptwidescreen.com">
         Greasemonkey</a> /
     <a href="../../chatgpt-widescreen/docs/zh-cn/#readme">
-        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/paper-sheet/white.svg"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/paper-sheet/black.svg"></picture></a>
+        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/paper-sheet/white.svg"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/paper-sheet/black.svg"></picture></a>
     <a href="../../chatgpt-widescreen/docs/zh-cn/#readme">
         自述文件</a> /
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
-        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/speech-bubble-square/white.svg"><img height=12 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/speech-bubble-square/black.svg"></picture></a>
+        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/speech-bubble-square/white.svg"><img height=12 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/speech-bubble-square/black.svg"></picture></a>
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
         讨论</a>
 </blockquote>
@@ -408,15 +408,15 @@
 
 <blockquote>
     <a href="../../duckduckgpt/#-installation">
-        <img height=13 src="https://media.ddgpt.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://media.ddgpt.com/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/platforms/scriptcat/icon16.png"></a>
+        <img height=13 src="https://media.ddgpt.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://media.ddgpt.com/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/platforms/scriptcat/icon16.png"></a>
     <a href="../../duckduckgpt/#-installation">
         Greasemonkey</a> /
     <a href="../../duckduckgpt/#readme">
-        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/paper-sheet/white.svg"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/paper-sheet/black.svg"></picture></a>
+        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/paper-sheet/white.svg"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/paper-sheet/black.svg"></picture></a>
     <a href="../../duckduckgpt/#readme">
         自述文件</a> /
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
-        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/speech-bubble-square/white.svg"><img height=12 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/speech-bubble-square/black.svg"></picture></a>
+        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/speech-bubble-square/white.svg"><img height=12 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/speech-bubble-square/black.svg"></picture></a>
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
         讨论</a>
 </blockquote>
@@ -441,15 +441,15 @@
 
 <blockquote>
     <a href="https://greasyfork.org/scripts/478597-googlegpt">
-        <img height=13 src="https://media.googlegpt.io/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://media.googlegpt.io/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/platforms/scriptcat/icon16.png"></a>
+        <img height=13 src="https://media.googlegpt.io/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://media.googlegpt.io/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/platforms/scriptcat/icon16.png"></a>
     <a href="https://greasyfork.org/scripts/478597-googlegpt">
         Greasemonkey</a> /
     <a href="../../googlegpt/#readme">
-        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/paper-sheet/white.svg"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/paper-sheet/black.svg"></picture></a>
+        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/paper-sheet/white.svg"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/paper-sheet/black.svg"></picture></a>
     <a href="../../googlegpt/#readme">
         自述文件</a> /
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
-        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/speech-bubble-square/white.svg"><img height=12 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/speech-bubble-square/black.svg"></picture></a>
+        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/speech-bubble-square/white.svg"><img height=12 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/speech-bubble-square/black.svg"></picture></a>
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
         讨论</a>
 </blockquote>
@@ -480,11 +480,11 @@
     <a href="https://edge.perplexityomnibox.com/?source=github&medium=readme&content=platform-link">
         Edge</a> /
     <a href="../../perplexity-omnibox/#readme">
-        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/paper-sheet/white.svg"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/paper-sheet/black.svg"></picture></a>
+        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/paper-sheet/white.svg"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/paper-sheet/black.svg"></picture></a>
     <a href="../../perplexity-omnibox/#readme">
         自述文件</a> /
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
-        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/speech-bubble-square/white.svg"><img height=12 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/speech-bubble-square/black.svg"></picture></a>
+        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/speech-bubble-square/white.svg"><img height=12 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/speech-bubble-square/black.svg"></picture></a>
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
         讨论</a>
 </blockquote>
@@ -505,11 +505,11 @@
     <a href="https://ff.phindomnibox.com?source=github&medium=readme&content=platform-link">
         Firefox</a> /
     <a href="../../phind-omnibox/#readme">
-        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/paper-sheet/white.svg"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/paper-sheet/black.svg"></picture></a>
+        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/paper-sheet/white.svg"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/paper-sheet/black.svg"></picture></a>
     <a href="../../phind-omnibox/#readme">
         自述文件</a> /
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
-        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/speech-bubble-square/white.svg"><img height=12 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/speech-bubble-square/black.svg"></picture></a>
+        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/speech-bubble-square/white.svg"><img height=12 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/speech-bubble-square/black.svg"></picture></a>
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
         讨论</a>
 </blockquote>
@@ -530,11 +530,11 @@
     <a href="https://ff.youomnibox.com?source=github&medium=readme&content=platform-link">
         Firefox</a> /
     <a href="../../you.com-omnibox/#readme">
-        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/paper-sheet/white.svg"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/paper-sheet/black.svg"></picture></a>
+        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/paper-sheet/white.svg"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/paper-sheet/black.svg"></picture></a>
     <a href="../../you.com-omnibox/#readme">
         自述文件</a> /
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
-        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/speech-bubble-square/white.svg"><img height=12 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/icons/speech-bubble-square/black.svg"></picture></a>
+        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/speech-bubble-square/white.svg"><img height=12 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/icons/speech-bubble-square/black.svg"></picture></a>
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
         讨论</a>
 </blockquote>
@@ -543,11 +543,11 @@
 
 <br>
 
-<a href="https://github.com/sponsors/adamlui"><img width=830 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/banners/sponsor/$10/banner1660x260.png"></a>
+<a href="https://github.com/sponsors/adamlui"><img width=830 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/banners/sponsor/$10/banner1660x260.png"></a>
 
 <!-- FOOTER -->
 
-<img height=7px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/images/separators/aqua-gradient.png">
+<img height=7px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions/assets/images/separators/aqua-gradient.png">
 
 [讨论](https://github.com/adamlui/ai-web-extensions/discussions) /
 [联系作者](https://github.com/adamlui) /
