@@ -121,12 +121,21 @@
 
     // Collect userscripts
     log.working(`\n${ devMode ? 'Collecting' : 'Searching for' } userscripts...\n`)
-    const userJSfiles = await (async () =>
-        devMode ? JSON.parse(
-            await fs.promises.readFile(path.join(__dirname, 'dev/userJSfiles.json'), 'utf-8'))
-                : findUserJS()
-    )()
-    log.dev(userJSfiles) ; console.log('')
+    let userJSfiles = []
+    if (devMode) { // make/use dev/userJSfiles.json
+        const devFilePath = path.join(__dirname, 'dev/userJSfiles.json')
+        if (!fs.existsSync(devFilePath)) { // dev file missing, build w/ findUserJS()
+            log.error(`Dev file missing. Generating ${devFilePath}...\n`)
+            userJSfiles = await findUserJS()
+            await fs.promises.mkdir(path.dirname(devFilePath), { recursive: true })
+            await fs.promises.writeFile(devFilePath, JSON.stringify(userJSfiles, null, 2), 'utf-8')
+            console.log('') ; log.success(`\nDev file created @ ${devFilePath}`)
+        } else { // use existing dev file
+            userJSfiles = JSON.parse(await fs.promises.readFile(devFilePath, 'utf-8'))
+            log.dev(userJSfiles) ; console.log('')
+        }
+    } else { // use findUserJS()
+        userJSfiles = await findUserJS() ; console.log('') }
 
     // Collect resources
     log.working('\nCollecting resources...\n')
