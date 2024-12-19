@@ -127,11 +127,11 @@
         if (!fs.existsSync(devFilePath)) { // dev file missing, build w/ findUserJS()
             log.error(`Dev file missing. Generating ${devFilePath}...\n`)
             userJSfiles = await findUserJS()
-            await fs.promises.mkdir(path.dirname(devFilePath), { recursive: true })
-            await fs.promises.writeFile(devFilePath, JSON.stringify(userJSfiles, null, 2), 'utf-8')
+            fs.mkdirSync(path.dirname(devFilePath), { recursive: true })
+            fs.writeFileSync(devFilePath, JSON.stringify(userJSfiles, null, 2), 'utf-8')
             console.log('') ; log.success(`\nDev file created @ ${devFilePath}`)
         } else { // use existing dev file
-            userJSfiles = JSON.parse(await fs.promises.readFile(devFilePath, 'utf-8'))
+            userJSfiles = JSON.parse(fs.readFileSync(devFilePath, 'utf-8'))
             log.dev(userJSfiles) ; console.log('')
         }
     } else { // use findUserJS()
