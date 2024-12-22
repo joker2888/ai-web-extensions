@@ -1,3 +1,6 @@
 # Brave Omnibox for Chrome
 
-Install link: https://chrome.braveomnibox.com
+Install links:
+
+- https://chrome.braveomnibox.com
+- https://edge.braveomnibox.com
