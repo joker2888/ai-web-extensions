@@ -22,6 +22,7 @@ elif [[ -n "$1" ]] ; then
 
 # Init manifest PATHS
 echo -e "${BY}\nSearching for extension manifests...${NC}\n"
+# mapfile -t MANIFEST_PATHS < <(find . -type f -name 'manifest.json')
 mapfile -t MANIFEST_PATHS < <(find . -type f -name 'manifest.json' -not -regex '.*/\(\.|node_modules/\).*')
 if [ "$chromium_only" = true ] ; then
     MANIFEST_PATHS=($(printf "%s\n" "${MANIFEST_PATHS[@]}" | grep -i 'chrom'))
@@ -84,6 +85,7 @@ done
 
 # COMMIT/PUSH bump(s)
 if (( $bumped_cnt == 0 )) ; then echo -e "${BW}Completed. No manifests bumped.${NC}" ; exit 0 ; fi
+git pull || (echo -e "${BR}Merge failed, please resolve conflicts!${NC}" && exit 1)
 plural_suffix=$((( $bumped_cnt > 1 )) && echo "s")
 echo -e "${BG}${bumped_cnt} manifest${plural_suffix} bumped!\n${NC}"
 echo -e "${BY}Committing bump${plural_suffix} to Git...\n${NC}"

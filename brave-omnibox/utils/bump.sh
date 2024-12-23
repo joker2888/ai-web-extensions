@@ -71,6 +71,7 @@ done
 # COMMIT/PUSH bump(s)
 if (( $bumped_cnt == 0 )) ; then echo -e "${BW}Completed. No manifests bumped.${NC}" ; exit 0 ; fi
 plural_suffix=$((( $bumped_cnt > 1 )) && echo "s")
+git pull || (echo -e "${BR}Merge failed, please resolve conflicts!${NC}" && exit 1)
 echo -e "${BG}${bumped_cnt} manifest${plural_suffix} bumped!\n${NC}"
 echo -e "${BY}Committing bump${plural_suffix} to Git...\n${NC}"
 COMMIT_MSG="Bumped \`version\`"
