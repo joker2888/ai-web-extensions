@@ -61,7 +61,7 @@ for project_name in "${SORTED_PROJECTS[@]}" ; do
         fi
 
         # Echo begin bump
-            if [ "$chromium_only" = true ] ; then manifest_prefix="Chromium"
+        if [ "$chromium_only" = true ] ; then manifest_prefix="Chromium"
         elif [ "$ff_only" = true ] ; then manifest_prefix="Firefox" ; fi
         echo "Bumping version in ${manifest_prefix} manifest..."
 
