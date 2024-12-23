@@ -75,7 +75,7 @@ for project_name in "${SORTED_PROJECTS[@]}" ; do
         new_versions+=("$new_ver")
 
         # Bump old version
-        sed -i "s/\"version\": \"$old_ver\"/\"version\": \"$new_ver\"/" "$manifest_path"
+        sed -i "s/\"$old_ver\"/\"$new_ver\"/" "$manifest_path"
         echo -e "Updated: ${BW}v${old_ver}${NC} → ${BG}v${new_ver}${NC}\n"
         ((bumped_cnt++))
 
