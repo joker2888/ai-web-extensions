@@ -20,6 +20,7 @@ jobs:
           token: ${{ secrets.REPO_SYNC_PAT }}
           repository: adamlui/ai-web-extensions
           path: adamlui/ai-web-extensions
+          fetch-depth: 2
 
       - name: Checkout KudoAI/googlegpt
         uses: actions/checkout@v4
