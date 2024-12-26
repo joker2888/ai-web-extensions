@@ -2,11 +2,11 @@
 
 // Bumps @require'd JS + rising-stars CSS @resource's in userscripts
 // NOTE: Doesn't git commit to allow script editing from breaking changes
-// NOTE: Pass --dev to use dev/userJSfiles.json for faster init
+// NOTE: Pass --cache to use .cache/userscriptPaths.json for faster init
 
 (async () => {
 
-    const devMode = process.argv.includes('--dev')
+    const cacheMode = process.argv.includes('--cache')
 
     // Import LIBS
     const fs = require('fs'), // to read/write files
@@ -31,7 +31,7 @@
 
     // Define FUNCTIONS
 
-    const log = { dev(msg) { if (devMode) console.log(msg) }};
+    const log = { dev(msg) { if (cacheMode) console.log(msg) }};
     ['hash', 'info', 'working', 'success', 'error'].forEach(lvl => log[lvl] = function(msg) {
         const logColor = lvl == 'hash' ? dg : lvl == 'info' ? bw : lvl == 'working' ? by : lvl == 'success' ? bg : br,
               formattedMsg = logColor + ( log.endedWithLineBreak ? msg.trimStart() : msg ) + nc
@@ -120,18 +120,18 @@
     // Run MAIN routine
 
     // Collect userscripts
-    log.working(`\n${ devMode ? 'Collecting' : 'Searching for' } userscripts...\n`)
+    log.working(`\n${ cacheMode ? 'Collecting' : 'Searching for' } userscripts...\n`)
     let userJSfiles = []
-    if (devMode) { // make/use dev/userJSfiles.json
-        const devFilePath = path.join(__dirname, 'dev/userJSfiles.json')
-        if (!fs.existsSync(devFilePath)) { // dev file missing, build w/ findUserJS()
-            log.error(`Dev file missing. Generating ${devFilePath}...\n`)
+    if (cacheMode) { // make/use .cache/userscriptPaths.json
+        const cacheFilePath = path.join(__dirname, '.cache/userscriptPaths.json')
+        if (!fs.existsSync(cacheFilePath)) { // cache file missing, build w/ findUserJS()
+            log.error(`Cache file missing. Generating ${cacheFilePath}...\n`)
             userJSfiles = await findUserJS() ; console.log('')
-            fs.mkdirSync(path.dirname(devFilePath), { recursive: true })
-            fs.writeFileSync(devFilePath, JSON.stringify(userJSfiles, null, 2), 'utf-8')
-            log.success(`\nDev file created @ ${devFilePath}`)
-        } else { // use existing dev file
-            userJSfiles = JSON.parse(fs.readFileSync(devFilePath, 'utf-8'))
+            fs.mkdirSync(path.dirname(cacheFilePath), { recursive: true })
+            fs.writeFileSync(cacheFilePath, JSON.stringify(userJSfiles, null, 2), 'utf-8')
+            log.success(`\Cache file created @ ${cacheFilePath}`)
+        } else { // use existing cache file
+            userJSfiles = JSON.parse(fs.readFileSync(cacheFilePath, 'utf-8'))
             log.dev(userJSfiles) ; console.log('')
         }
     } else { // use findUserJS()
