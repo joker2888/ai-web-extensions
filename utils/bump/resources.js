@@ -129,7 +129,7 @@
             userJSfiles = await findUserJS() ; console.log('')
             fs.mkdirSync(path.dirname(cacheFilePath), { recursive: true })
             fs.writeFileSync(cacheFilePath, JSON.stringify(userJSfiles, null, 2), 'utf-8')
-            log.success(`\Cache file created @ ${cacheFilePath}`)
+            log.success(`\nCache file created @ ${cacheFilePath}`)
         } else { // use existing cache file
             userJSfiles = JSON.parse(fs.readFileSync(cacheFilePath, 'utf-8'))
             log.dev(userJSfiles) ; console.log('')
