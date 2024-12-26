@@ -2,7 +2,7 @@
 
 // Bumps @require'd JS + rising-stars CSS @resource's in userscripts
 // NOTE: Doesn't git commit to allow script editing from breaking changes
-// NOTE: Pass --cache to use .cache/userscriptPaths.json for faster init
+// NOTE: Pass --cache to use .cache/userJSpaths.json for faster init
 
 (async () => {
 
@@ -122,8 +122,8 @@
     // Collect userscripts
     log.working(`\n${ cacheMode ? 'Collecting' : 'Searching for' } userscripts...\n`)
     let userJSfiles = []
-    if (cacheMode) { // make/use .cache/userscriptPaths.json
-        const cacheFilePath = path.join(__dirname, '.cache/userscriptPaths.json')
+    if (cacheMode) { // make/use .cache/userJSpaths.json
+        const cacheFilePath = path.join(__dirname, '.cache/userJSpaths.json')
         if (!fs.existsSync(cacheFilePath)) { // cache file missing, build w/ findUserJS()
             log.error(`Cache file missing. Generating ${cacheFilePath}...\n`)
             userJSfiles = await findUserJS() ; console.log('')
