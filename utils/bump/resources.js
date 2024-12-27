@@ -31,7 +31,7 @@
 
     // Define FUNCTIONS
 
-    const log = { dev(msg) { if (cacheMode) console.log(msg) }};
+    const log = {};
     ['hash', 'info', 'working', 'success', 'error'].forEach(lvl => log[lvl] = function(msg) {
         const logColor = lvl == 'hash' ? dg : lvl == 'info' ? bw : lvl == 'working' ? by : lvl == 'success' ? bg : br,
               formattedMsg = logColor + ( log.endedWithLineBreak ? msg.trimStart() : msg ) + nc
@@ -132,7 +132,7 @@
             log.success(`\nCache file created @ ${cacheFilePath}`)
         } else { // use existing cache file
             userJSfiles = JSON.parse(fs.readFileSync(cacheFilePath, 'utf-8'))
-            log.dev(userJSfiles) ; console.log('')
+            console.log(userJSfiles) ; console.log('')
         }
     } else { // use findUserJS()
         userJSfiles = await findUserJS() ; console.log('') }
