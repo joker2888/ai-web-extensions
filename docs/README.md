@@ -352,7 +352,7 @@ Create a new discussion: https://github.com/adamlui/ai-web-extensions/discussion
 
 <details>
     <summary>
-        Adds Widescreen + Fullscreen modes to chatgpt.com + perplexity.ai + poe.com for enhanced viewing + reduced scrolling.
+        Enhances ChatGPT with wide/full/tall-screen + spamblock modes. Also works on perplexity.ai + poe.com!
     </summary>
     <br><blockquote>
         <a href="../chatgpt-widescreen">

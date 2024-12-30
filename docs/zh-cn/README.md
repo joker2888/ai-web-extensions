@@ -354,7 +354,7 @@
 
 <details>
     <summary>
-        为 chatgpt.com + perplexity.ai + poe.com 添加宽屏 + 全屏模式，以增强观看体验 + 减少滚动。</summary>
+        通过宽屏/全屏/高屏+垃圾邮件块模式增强 ChatGPT。也可以在 perplexity.ai + poe.com 上使用！</summary>
     <br><blockquote>
         <a href="../../chatgpt-widescreen">
             <img width=600 src="https://cdn.jsdelivr.net/gh/adamlui/chatgpt-widescreen/chrome/media/images/tiles/marquee-promo-tile-625x250.png"></a>
