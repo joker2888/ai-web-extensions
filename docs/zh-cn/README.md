@@ -192,35 +192,35 @@
 
 <h3>
     <a href="../../chatgpt-auto-continue">
-        <img width=20 src="https://media.chatgptautocontinue.com/images/icons/continue-symbol/circled/icon32.png?0909ea8"></a>
+        <img width=20 src="https://assets.chatgptautocontinue.com/images/icons/continue-symbol/circled/icon32.png?0909ea8"></a>
     <a href="../../chatgpt-auto-continue">ChatGPT 自动继续</a>&nbsp;
     <a href="https://github.com/awesome-scripts/awesome-userscripts#chatgpt">
-        <img src="https://media.chatgptautocontinue.com/images/badges/awesome/badge.svg"></a>
+        <img src="https://assets.chatgptautocontinue.com/images/badges/awesome/badge.svg"></a>
 </h3>
 
 <details>
     <summary>当 ChatGPT 响应被切断时自动继续生成答案。</summary>
     <br><blockquote>
         <a href="../../chatgpt-auto-continue">
-            <img width=600 src="https://media.chatgptautocontinue.com/images/tiles/marquee/tile625x250.png"></a>
+            <img width=600 src="https://assets.chatgptautocontinue.com/images/tiles/marquee/tile625x250.png"></a>
     </blockquote>
 </details>
 
 <blockquote>
     <a href="https://chrome.chatgptautocontinue.com/?source=github&medium=readme&content=platform-link">
-        <img height=13 src="https://media.chatgptautocontinue.com/images/icons/platforms/chrome/icon16.png"></a>
+        <img height=13 src="https://assets.chatgptautocontinue.com/images/icons/platforms/chrome/icon16.png"></a>
     <a href="https://chrome.chatgptautocontinue.com/?source=github&medium=readme&content=platform-link">
         Chrome</a> /
     <a href="https://ff.chatgptautocontinue.com/?source=github&medium=readme&content=platform-link">
-        <img height=14 src="https://media.chatgptautocontinue.com/images/icons/platforms/firefox/icon16.png"></a>
+        <img height=14 src="https://assets.chatgptautocontinue.com/images/icons/platforms/firefox/icon16.png"></a>
     <a href="https://ff.chatgptautocontinue.com/?source=github&medium=readme&content=platform-link">
         Firefox</a> /
     <a href="https://edge.chatgptautocontinue.com/?source=github&medium=readme&content=platform-link">
-        <img height=12 src="https://media.chatgptautocontinue.com/images/icons/platforms/edge/icon16.png"></a>
+        <img height=12 src="https://assets.chatgptautocontinue.com/images/icons/platforms/edge/icon16.png"></a>
     <a href="https://edge.chatgptautocontinue.com/?source=github&medium=readme&content=platform-link">
         Edge</a> /
     <a href="https://gm.chatgptautocontinue.com/?source=github&medium=readme&content=platform-link">
-        <img height=13 src="https://media.chatgptautocontinue.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://media.chatgptautocontinue.com/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://assets.aiwebextensions.com/images/icons/platforms/scriptcat/icon16.png"></a>
+        <img height=13 src="https://assets.chatgptautocontinue.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://assets.chatgptautocontinue.com/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://assets.aiwebextensions.com/images/icons/platforms/scriptcat/icon16.png"></a>
     <a href="https://gm.chatgptautocontinue.com/?source=github&medium=readme&content=platform-link">
         Greasemonkey</a> /
     <a href="../chatgpt-auto-continue/docs/zh-cn/#readme">
