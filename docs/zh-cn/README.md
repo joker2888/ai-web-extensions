@@ -392,7 +392,7 @@
 
 <h3>
     <a href="../../duckduckgpt">
-        <img width=20 src="https://media.ddgpt.com/images/icons/duckduckgpt/icon48.png"></a>
+        <img width=20 src="https://assets.ddgpt.com/images/icons/duckduckgpt/icon48.png"></a>
     <a href="../../duckduckgpt">DuckDuckGPT</a>&nbsp;
     <a href="https://www.producthunt.com/posts/duckduckgpt?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-duckduckgpt">
         <img width="112" height="24" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=379261&theme=light"></a>
@@ -402,13 +402,13 @@
     <summary>将 AI 的魔力带到 DuckDuckGo（由 GPT-4o 提供支持!）</summary>
     <br><blockquote>
         <a href="../../duckduckgpt">
-            <img width=511 src="https://media.ddgpt.com/images/screenshots/desktop/how-to-becum-rich-query/lightmode.png"></a>
+            <img width=511 src="https://assets.ddgpt.com/images/screenshots/desktop/how-to-becum-rich-query/lightmode.png"></a>
     </blockquote>
 </details>
 
 <blockquote>
     <a href="../../duckduckgpt/#-installation">
-        <img height=13 src="https://media.ddgpt.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://media.ddgpt.com/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://assets.aiwebextensions.com/images/icons/platforms/scriptcat/icon16.png"></a>
+        <img height=13 src="https://assets.ddgpt.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://assets.ddgpt.com/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://assets.aiwebextensions.com/images/icons/platforms/scriptcat/icon16.png"></a>
     <a href="../../duckduckgpt/#-installation">
         Greasemonkey</a> /
     <a href="../../duckduckgpt/#readme">
