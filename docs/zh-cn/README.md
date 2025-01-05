@@ -161,7 +161,7 @@
 
 <h3>
     <a href="../../bravegpt">
-        <img width=21 src="https://media.bravegpt.com/images/icons/bravegpt/icon48.png"></a>
+        <img width=21 src="https://assets.bravegpt.com/images/icons/bravegpt/icon48.png"></a>
     <a href="../../bravegpt">BraveGPT</a>&nbsp;
     <a href="https://www.producthunt.com/posts/bravegpt?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-bravegpt">
         <img width="112" height="24" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=385630&theme=light"></a>
@@ -171,13 +171,13 @@
     <summary>将 AI 的魔力带入 Brave Search（由 GPT-4o 提供支持!）</summary>
     <br><blockquote>
         <a href="../../bravegpt">
-            <img width=511 src="https://media.bravegpt.com/images/screenshots/desktop/bitcoin-query/darkmode.png"></a>
+            <img width=511 src="https://assets.bravegpt.com/images/screenshots/desktop/bitcoin-query/darkmode.png"></a>
     </blockquote>
 </details>
 
 <blockquote>
     <a href="../../bravegpt/#-installation">
-        <img height=13 src="https://media.bravegpt.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://media.bravegpt.com/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://assets.aiwebextensions.com/images/icons/platforms/scriptcat/icon16.png"></a>
+        <img height=13 src="https://assets.bravegpt.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://assets.bravegpt.com/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://assets.aiwebextensions.com/images/icons/platforms/scriptcat/icon16.png"></a>
     <a href="../../bravegpt/#-installation">
         Greasemonkey</a> /
     <a href="../../bravegpt/#readme">
