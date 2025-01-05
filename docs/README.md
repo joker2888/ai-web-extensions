@@ -88,23 +88,23 @@
 
 <h3>
     <a href="../autoclear-chatgpt-history">
-        <picture><source type="image/png" media="(prefers-color-scheme: dark)" srcset="https://media.autoclearchatgpt.com/images/icons/openai/white/icon32.png"><img width=19 src="https://media.autoclearchatgpt.com/images/icons/openai/black/icon32.png"></picture></a>
+        <picture><source type="image/png" media="(prefers-color-scheme: dark)" srcset="https://assets.autoclearchatgpt.com/images/icons/openai/white/icon32.png"><img width=19 src="https://assets.autoclearchatgpt.com/images/icons/openai/black/icon32.png"></picture></a>
     <a href="../autoclear-chatgpt-history">Autoclear ChatGPT History</a>&nbsp;
     <a href="https://github.com/awesome-scripts/awesome-userscripts#privacy">
-        <img src="https://media.autoclearchatgpt.com/images/badges/awesome/badge.svg"></a>
+        <img src="https://assets.autoclearchatgpt.com/images/badges/awesome/badge.svg"></a>
 </h3>
 
 <details>
     <summary>Auto-clear your ChatGPT query history for maximum privacy.</summary>
     <br><blockquote>
         <a href="../autoclear-chatgpt-history">
-            <img width=511 src="https://media.autoclearchatgpt.com/images/screenshots/demo.png"></a>
+            <img width=511 src="https://assets.autoclearchatgpt.com/images/screenshots/demo.png"></a>
     </blockquote>
 </details>
 
 <blockquote>
     <a href="../autoclear-chatgpt-history/#-installation">
-        <img height=13 src="https://media.autoclearchatgpt.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://media.autoclearchatgpt.com/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://assets.aiwebextensions.com/images/icons/platforms/scriptcat/icon16.png"></a>
+        <img height=13 src="https://assets.autoclearchatgpt.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://assets.autoclearchatgpt.com/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://assets.aiwebextensions.com/images/icons/platforms/scriptcat/icon16.png"></a>
     <a href="../autoclear-chatgpt-history/#-installation">
         Greasemonkey</a> /
     <a href="../autoclear-chatgpt-history/#readme">
