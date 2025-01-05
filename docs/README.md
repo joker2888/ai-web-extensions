@@ -289,10 +289,10 @@ Auto-play ChatGPT responses.
 
 <h3>
     <a href="../chatgpt-infinity">
-        <img width=20 src="https://media.chatgptinfinity.com/images/icons/infinity-symbol/circled/icon32.png?65fcf31"></a>
+        <img width=20 src="https://assets.chatgptinfinity.com/images/icons/infinity-symbol/circled/icon32.png?65fcf31"></a>
     <a href="../chatgpt-infinity">ChatGPT Infinity</a>&nbsp;
     <a href="https://chrome.chatgptinfinity.com/?source=github&medium=readme&content=featured-by-google-badge">
-        <img height=20 src="https://media.chatgptinfinity.com/images/badges/chrome-web-store/featured-by-google/badge500x91.png"></a>
+        <img height=20 src="https://assets.chatgptinfinity.com/images/badges/chrome-web-store/featured-by-google/badge500x91.png"></a>
 </h3>
 
 <details>
@@ -305,19 +305,19 @@ Auto-play ChatGPT responses.
 
 <blockquote>
     <a href="https://chrome.chatgptinfinity.com/?source=github&medium=readme&content=platform-link">
-        <img height=13 src="https://media.chatgptinfinity.com/images/icons/platforms/chrome/icon16.png"></a>
+        <img height=13 src="https://assets.chatgptinfinity.com/images/icons/platforms/chrome/icon16.png"></a>
     <a href="https://chrome.chatgptinfinity.com/?source=github&medium=readme&content=platform-link">
         Chrome</a> /
     <a href="https://ff.chatgptinfinity.com/?source=github&medium=readme&content=platform-link">
-        <img height=14 src="https://media.chatgptinfinity.com/images/icons/platforms/firefox/icon16.png"></a>
+        <img height=14 src="https://assets.chatgptinfinity.com/images/icons/platforms/firefox/icon16.png"></a>
     <a href="https://ff.chatgptinfinity.com/?source=github&medium=readme&content=platform-link">
         Firefox</a> /
     <a href="https://edge.chatgptinfinity.com">
-        <img height=12 src="https://media.chatgptinfinity.com/images/icons/platforms/edge/icon16.png"></a>
+        <img height=12 src="https://assets.chatgptinfinity.com/images/icons/platforms/edge/icon16.png"></a>
     <a href="https://edge.chatgptinfinity.com">
         Edge</a> /
     <a href="https://gm.chatgptinfinity.com">
-        <img height=13 src="https://media.chatgptinfinity.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://media.chatgptinfinity.com/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://assets.aiwebextensions.com/images/icons/platforms/scriptcat/icon16.png"></a>
+        <img height=13 src="https://assets.chatgptinfinity.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://assets.chatgptinfinity.com/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://assets.aiwebextensions.com/images/icons/platforms/scriptcat/icon16.png"></a>
     <a href="https://gm.chatgptinfinity.com">
         Greasemonkey</a> /
     <a href="../chatgpt-infinity/#readme">
