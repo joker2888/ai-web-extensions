@@ -235,17 +235,17 @@
 
 <h3>
     <a href="../chatgpt-auto-refresh">
-        <picture><source type="image/png" media="(prefers-color-scheme: dark)" srcset="https://media.chatgptautorefresh.com/images/icons/openai/white/icon32.png"><img width=19 src="https://media.chatgptautorefresh.com/images/icons/openai/black/icon32.png"></picture></a>
+        <picture><source type="image/png" media="(prefers-color-scheme: dark)" srcset="https://assets.chatgptautorefresh.com/images/icons/openai/white/icon32.png"><img width=19 src="https://assets.chatgptautorefresh.com/images/icons/openai/black/icon32.png"></picture></a>
     <a href="../chatgpt-auto-refresh">ChatGPT Auto Refresh ↻</a>&nbsp;
     <a href="https://github.com/awesome-scripts/awesome-userscripts#chatgpt">
-        <img src="https://media.chatgptautorefresh.com/images/badges/awesome/badge.svg"></a>
+        <img src="https://assets.chatgptautorefresh.com/images/badges/awesome/badge.svg"></a>
 </h3>
 
 Keeps ChatGPT sessions fresh, eliminating chat time limits + network errors + Cloudflare checks.
 
 <blockquote>
     <a href="../chatgpt-auto-refresh/#-installation">
-        <img height=13 src="https://media.chatgptautorefresh.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://media.chatgptautorefresh.com/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://assets.aiwebextensions.com/images/icons/platforms/scriptcat/icon16.png"></a>
+        <img height=13 src="https://assets.chatgptautorefresh.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://assets.chatgptautorefresh.com/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://assets.aiwebextensions.com/images/icons/platforms/scriptcat/icon16.png"></a>
     <a href="../chatgpt-auto-refresh/#-installation">
         Greasemonkey</a> /
     <a href="../chatgpt-auto-refresh/#readme">
