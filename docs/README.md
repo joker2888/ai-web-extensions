@@ -344,10 +344,10 @@ Create a new discussion: https://github.com/adamlui/ai-web-extensions/discussion
 
 <h3>
     <a href="../chatgpt-widescreen">
-        <img width=19 src="https://media.chatgptwidescreen.com/images/icons/widescreen-robot-emoji/icon32.png"></a>
+        <img width=19 src="https://assets.chatgptwidescreen.com/images/icons/widescreen-robot-emoji/icon32.png"></a>
     <a href="../chatgpt-widescreen">ChatGPT Widescreen</a>&nbsp;
     <a href="https://chrome.chatgptwidescreen.com/?source=github&medium=readme&content=featured-by-google-badge">
-        <img height=20 src="https://media.chatgptwidescreen.com/images/badges/chrome-web-store/featured-by-google/badge500x91.png"></a>
+        <img height=20 src="https://assets.chatgptwidescreen.com/images/badges/chrome-web-store/featured-by-google/badge500x91.png"></a>
 </h3>
 
 <details>
@@ -362,19 +362,19 @@ Create a new discussion: https://github.com/adamlui/ai-web-extensions/discussion
 
 <blockquote>
     <a href="https://chrome.chatgptwidescreen.com/?source=github&medium=readme&content=platform-link">
-        <img height=13 src="https://media.chatgptwidescreen.com/images/icons/platforms/chrome/icon16.png"></a>
+        <img height=13 src="https://assets.chatgptwidescreen.com/images/icons/platforms/chrome/icon16.png"></a>
     <a href="https://chrome.chatgptwidescreen.com/?source=github&medium=readme&content=platform-link">
         Chrome</a> /
     <a href="https://ff.chatgptwidescreen.com/?source=github&medium=readme&content=platform-link">
-        <img height=14 src="https://media.chatgptwidescreen.com/images/icons/platforms/firefox/icon16.png"></a>
+        <img height=14 src="https://assets.chatgptwidescreen.com/images/icons/platforms/firefox/icon16.png"></a>
     <a href="https://ff.chatgptwidescreen.com/?source=github&medium=readme&content=platform-link">
         Firefox</a> /
     <a href="https://edge.chatgptwidescreen.com">
-        <img height=12 src="https://media.chatgptwidescreen.com/images/icons/platforms/edge/icon16.png"></a>
+        <img height=12 src="https://assets.chatgptwidescreen.com/images/icons/platforms/edge/icon16.png"></a>
     <a href="https://edge.chatgptwidescreen.com">
         Edge</a> /
     <a href="https://gm.chatgptwidescreen.com">
-        <img height=13 src="https://media.chatgptwidescreen.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://media.chatgptwidescreen.com/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://assets.aiwebextensions.com/images/icons/platforms/scriptcat/icon16.png"></a>
+        <img height=13 src="https://assets.chatgptwidescreen.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://assets.chatgptwidescreen.com/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://assets.aiwebextensions.com/images/icons/platforms/scriptcat/icon16.png"></a>
     <a href="https://gm.chatgptwidescreen.com">
         Greasemonkey</a> /
     <a href="../chatgpt-widescreen/#readme">
