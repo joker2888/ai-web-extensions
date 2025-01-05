@@ -424,23 +424,23 @@ Create a new discussion: https://github.com/adamlui/ai-web-extensions/discussion
 
 <h3>
     <a href="../googlegpt">
-        <picture><source type="image/png" media="(prefers-color-scheme: dark)" srcset="https://media.googlegpt.io/images/icons/googlegpt/white/icon32.png"><img width=19 src="https://media.googlegpt.io/images/icons/googlegpt/black/icon32.png"></picture></a>
+        <picture><source type="image/png" media="(prefers-color-scheme: dark)" srcset="https://assets.googlegpt.io/images/icons/googlegpt/white/icon32.png"><img width=19 src="https://assets.googlegpt.io/images/icons/googlegpt/black/icon32.png"></picture></a>
     <a href="../googlegpt">GoogleGPT</a>&nbsp;
     <a href="https://github.com/awesome-scripts/awesome-userscripts#chatgpt">
-        <img src="https://media.googlegpt.io/images/badges/awesome/badge.svg"></a>
+        <img src="https://assets.googlegpt.io/images/badges/awesome/badge.svg"></a>
 </h3>
 
 <details>
     <summary>Bring the magic of AI to Google Search (powered by Google Gemma + GPT-4o!)</summary>
     <br><blockquote>
         <a href="../googlegpt">
-            <img width=511 src="https://media.googlegpt.io/images/screenshots/desktop/javascript-arrays-query/darkmode.png"></a>
+            <img width=511 src="https://assets.googlegpt.io/images/screenshots/desktop/javascript-arrays-query/darkmode.png"></a>
     </blockquote>
 </details>
 
 <blockquote>
     <a href="https://greasyfork.org/scripts/478597-googlegpt">
-        <img height=13 src="https://media.googlegpt.io/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://media.googlegpt.io/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://assets.aiwebextensions.com/images/icons/platforms/scriptcat/icon16.png"></a>
+        <img height=13 src="https://assets.googlegpt.io/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://assets.googlegpt.io/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://assets.aiwebextensions.com/images/icons/platforms/scriptcat/icon16.png"></a>
     <a href="https://greasyfork.org/scripts/478597-googlegpt">
         Greasemonkey</a> /
     <a href="../googlegpt/#readme">
