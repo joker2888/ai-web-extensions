@@ -18,7 +18,7 @@
 
 - **Easy to use —** Just type `@brave` in address bar + query
 - **Super lightweight —** Only 82 KB
-- **Multi-browser support —** All Chromium browsers supported (e.g. Chrome + Edge + Opera)
+- **Multi-browser support —** Firefox + all Chromium browsers supported (e.g. Chrome + Edge + Opera)
 - **Privacy first —** No personal data collected
 
 <img height=6px width="100%" src="https://assets.braveomnibox.com/images/separators/aqua-gradient.png">
