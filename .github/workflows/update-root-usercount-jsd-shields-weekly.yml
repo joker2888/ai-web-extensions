@@ -45,15 +45,18 @@ jobs:
             ["brave-omnibox"]="Brave Omnibox"
             ["chatgpt-auto-continue"]="ChatGPT Auto-Continue"
             ["chatgpt-infinity"]="ChatGPT Infinity"
+            ["chatgpt-omnibox"]="ChatGPT Omnibox"
             ["chatgpt-widescreen"]="ChatGPT Widescreen"
             ["phind-omnibox"]="Phind Omnibox"
             ["you-com-omnibox"]="You.com Omnibox"
           )
 
           declare -A EDGE_ADDONS=( # for Edge addon user counts
+            ["meolmkblenpohjlndodfbgpcfioampim"]="Brave Omnibox"
             ["kaicnimcjamamnlbaeaneofmdjibgepl"]="ChatGPT Auto-Continue"
             ["jgonecnbmehicpdpjkdekamhmlebfagb"]="ChatGPT Infinity"
             ["obnaaalnokmchdoagnhmllakaclaaooa"]="ChatGPT Widescreen Mode"
+            ["ffpccpmmcnampmlpdeioklmdjccfmpih"]="Perplexity Omnibox"
           )
 
           JSD_GH_REPOS=( # for jsDelivr request counts
@@ -65,6 +68,7 @@ jobs:
             "adamlui/chatgpt-auto-refresh"
             "adamlui/chatgpt-auto-talk"
             "adamlui/chatgpt-infinity"
+            "adamlui/chatgpt-omnibox"
             "adamlui/chatgpt-widescreen"
             "KudoAI/duckduckgpt"
             "KudoAI/googlegpt"
