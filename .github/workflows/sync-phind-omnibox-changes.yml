@@ -49,15 +49,16 @@ jobs:
   
               # Sync the most recently updated messages.json to the other dir
               if [[ $ff_timestamp -ne $chromium_timestamp ]] ; then
-                [[ "$locales_updated" != true ]] && locales_updated=true
                 if (( $ff_timestamp > $chromium_timestamp )) ; then
-                     cp -f "$ff_file" "$chromium_file"
-                else cp -f "$chromium_file" "$ff_file" ; fi
+                     cp -f "$ff_file" "$chromium_file" ; sync_src="${ff_dir%%/*}"
+                else cp -f "$chromium_file" "$ff_file" ; sync_src="${chromium_dir%%/*}" ; fi
               fi
 
             fi
           done
-          if [[ "$locales_updated" == true ]] ; then echo "LOCALES_UPDATED=true" >> $GITHUB_ENV ; fi
+
+          # Expose sync src for commit msg in self-push step
+          echo "SYNC_SRC=$sync_src" >> $GITHUB_ENV
 
       - name: Sync phind-omnibox/ to adamlui/phind-omnibox/
         run: |
@@ -82,11 +83,11 @@ jobs:
           git config --global user.signingkey "${{ secrets.GPG_PRIVATE_ID }}"
 
       - name: Push changes to adamlui/ai-web-extensions
-        if: env.LOCALES_UPDATED == 'true'
+        if: env.SYNC_SRC
         run: |
           cd ${{ github.workspace }}/adamlui/ai-web-extensions
           git pull # again to sync w/ concurrent workflow updates
-          git add . && git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from https://github.com/adamlui/ai-web-extensions/tree/main/phind-omnibox]" || true
+          git add . && git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from phind-omnibox/${{ env.SYNC_SRC }}]" || true
           git push
 
       - name: Push changes to adamlui/phind-omnibox
