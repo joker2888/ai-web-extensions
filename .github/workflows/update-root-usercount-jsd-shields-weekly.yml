@@ -5,7 +5,7 @@ on:
     - cron: "25 2 * * 2" # every Tue @ 2:25 AM
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   update-root-usercount-jsd-shields:
