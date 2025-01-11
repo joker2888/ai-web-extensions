@@ -457,7 +457,7 @@ Create a new discussion: https://github.com/adamlui/ai-web-extensions/discussion
 
 <h3>
     <a href="../perplexity-omnibox">
-        <picture><source type="image/png" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/perplexity-omnibox/assets/images/icons/perplexity/white/icon32.png"><img width=19 src="https://cdn.jsdelivr.net/gh/adamlui/perplexity-omnibox/assets/images/icons/perplexity/turquoise/icon32.png"></picture></a>
+        <picture><source type="image/png" media="(prefers-color-scheme: dark)" srcset="https://assets.perplexityomnibox.com/images/icons/perplexity/white/icon32.png"><img width=19 src="https://assets.perplexityomnibox.com/images/icons/perplexity/turquoise/icon32.png"></picture></a>
     <a href="../perplexity-omnibox">Perplexity Omnibox</a>
 </h3>
 
@@ -492,7 +492,7 @@ Create a new discussion: https://github.com/adamlui/ai-web-extensions/discussion
 
 <h3>
     <a href="../phind-omnibox">
-        <img width=17 src="https://cdn.jsdelivr.net/gh/adamlui/phind-omnibox/assets/images/icons/phind/purple-gradient/icon32.png"></a>
+        <img width=17 src="https://assets.phindomnibox.com/images/icons/phind/purple-gradient/icon32.png"></a>
     <a href="../phind-omnibox">Phind Omnibox</a>
 </h3>
 
@@ -517,7 +517,7 @@ Type @phind in browser address bar to get results from Phind AI.
 
 <h3>
     <a href="../you.com-omnibox">
-        <img width=17 src="https://cdn.jsdelivr.net/gh/adamlui/you.com-omnibox/assets/images/icons/you.com/purple-gradient/icon32.png"></a>
+        <img width=17 src="https://assets.youomnibox.com/images/icons/you.com/purple-gradient/icon32.png"></a>
     <a href="../you.com-omnibox">You.com Omnibox</a>
 </h3>
 
