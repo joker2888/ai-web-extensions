@@ -122,15 +122,16 @@
     // Collect userscripts
     log.working(`\n${ cacheMode ? 'Collecting' : 'Searching for' } userscripts...\n`)
     let userJSfiles = []
-    if (cacheMode) { // make/use .cache/userJSpaths.json
-        const cacheFilePath = path.join(__dirname, '.cache/userJSpaths.json')
-        if (!fs.existsSync(cacheFilePath)) { // cache file missing, build w/ findUserJS()
+    if (cacheMode) {
+        const cacheFilePath = path.join(__dirname, '.cache/userJSpaths.json');
+        try { // create missing .cache/userJSpaths.json
+            fs.mkdirSync(path.dirname(cacheFilePath), { recursive: true })
+            const fd = fs.openSync(cacheFilePath, fs.constants.O_CREAT | fs.constants.O_EXCL | fs.constants.O_RDWR)
             log.error(`Cache file missing. Generating ${cacheFilePath}...\n`)
             userJSfiles = await findUserJS() ; console.log('')
-            fs.mkdirSync(path.dirname(cacheFilePath), { recursive: true })
-            fs.writeFileSync(cacheFilePath, JSON.stringify(userJSfiles, null, 2), 'utf-8')
+            fs.writeFileSync(fd, JSON.stringify(userJSfiles, null, 2), 'utf-8')
             log.success(`\nCache file created @ ${cacheFilePath}`)
-        } else { // use existing cache file
+        } catch (err) { // use existing cache file
             userJSfiles = JSON.parse(fs.readFileSync(cacheFilePath, 'utf-8'))
             console.log(userJSfiles) ; console.log('')
         }
