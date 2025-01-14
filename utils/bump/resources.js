@@ -2,16 +2,18 @@
 
 // Bumps @require'd JS + rising-stars CSS @resource's in userscripts
 // NOTE: Doesn't git commit to allow script editing from breaking changes
-// NOTE: Pass --cache to use .cache/userJSpaths.json for faster init
+// NOTE: Pass --cache to use cacheFilePath for faster init
 
 (async () => {
-
-    const cacheMode = process.argv.includes('--cache')
 
     // Import LIBS
     const fs = require('fs'), // to read/write files
           path = require('path'), // to manipulate paths
           ssri = require('ssri') // to generate SHA-256 hashes
+
+    // Init CACHE vars
+    const cacheMode = process.argv.includes('--cache'),
+          cacheFilePath = path.join(__dirname, '.cache/userJSpaths.json')
 
     // Init UI COLORS
     const nc = '\x1b[0m',        // no color
@@ -123,8 +125,7 @@
     log.working(`\n${ cacheMode ? 'Collecting' : 'Searching for' } userscripts...\n`)
     let userJSfiles = []
     if (cacheMode) {
-        const cacheFilePath = path.join(__dirname, '.cache/userJSpaths.json');
-        try { // create missing .cache/userJSpaths.json
+        try { // create missing cache file
             fs.mkdirSync(path.dirname(cacheFilePath), { recursive: true })
             const fd = fs.openSync(cacheFilePath, fs.constants.O_CREAT | fs.constants.O_EXCL | fs.constants.O_RDWR)
             log.error(`Cache file missing. Generating ${cacheFilePath}...\n`)
