@@ -13,7 +13,7 @@
       "url": "https://am.aifree.site",
       "headers": { "Alt-Used": "am.aifree.site", "Content-Type": "text/plain;charset=UTF-8", "Priority": "u=4" }
     },
-    "method": "POST", "streamable": true, "failFlags": [ "upstream_error" ]
+    "method": "POST", "streamable": true, "accumulatesText": false, "failFlags": [ "upstream_error" ]
   },
   "GPTforLove": {
     "endpoint": "https://api11.gptforlove.com/chat-process",
@@ -41,12 +41,12 @@
       "session": "https://chatgpt.com/api/auth/session"
     },
     "expectedOrigin": { "url": "https://chatgpt.com", "headers": { "Priority": "u=4" }},
-    "method": "POST", "streamable": true
+    "method": "POST", "streamable": true, "accumulatesText": false
   },
   "ToYaml.com": {
     "endpoint": "https://toyaml.com/streams",
     "expectedOrigin": { "url": "https://toyaml.com/chat.html", "headers": { "x-requested-with": "XMLHttpRequest" }},
-    "method": "GET", "streamable": true, "watermark": "【本答案来自 toyaml.com】",
+    "method": "GET", "streamable": true, "accumulatesText": false, "watermark": "【本答案来自 toyaml.com】",
     "failFlags": [ "请等待网友当前提问回答完毕再试" ]
   }
 }
