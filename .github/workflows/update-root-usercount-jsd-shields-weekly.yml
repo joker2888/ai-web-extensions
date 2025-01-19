@@ -133,16 +133,9 @@ jobs:
             eval sorted_${array_type}=\(\"\${sorted_array[@]}\"\)
           done
 
-          # Fetch/sum Greasy Fork user counts
-          for tuple in "${sorted_GF_SCRIPTS[@]}" ; do
-            script_id="${tuple##*:}" script_name="${tuple%%:*}"
-            base_url="https://img.shields.io/greasyfork/dt/"
-            gf_users=$(curl -s "$base_url$script_id" |
-              sed -n 's/.*<title>installs: \([0-9.k]\+\)*<\/title>.*/\1/Ip')
-            gf_users=$(expand_num "$gf_users")
-            echo "$script_name GF users: $gf_users"
-            total_gf_users=$((total_gf_users + gf_users))
-          done ; echo -e "\n-----\nTotal Greasy Fork users: $total_gf_users\n-----\n"
+          # Init Greasy Fork user counts
+          total_gf_users=200000
+          echo -e "\n-----\nTotal Greasy Fork users: $total_gf_users\n-----\n"
 
           # Fetch/sum Chrome weekly user counts
           for tuple in "${sorted_CHROME_EXTENSIONS[@]}" ; do
