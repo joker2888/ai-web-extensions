@@ -1,4 +1,4 @@
-name: Sync _locales/* between chatgpt-infinity/<chrome|firefox>/extension/, then chatgpt-infinity/* to adamlui/chatgpt-infinity/*, then chatgpt-infinity/greasemonkey/* to adamlui/userscripts/chatgpt/chatgpt-infinity/*
+name: Sync _locales/* between chatgpt-infinity/<chromium|firefox>/extension/, then chatgpt-infinity/* to adamlui/chatgpt-infinity/*, then chatgpt-infinity/greasemonkey/* to adamlui/userscripts/chatgpt/chatgpt-infinity/*
 
 on:
   push:
@@ -39,11 +39,11 @@ jobs:
           repository: adamlui/userscripts
           path: adamlui/userscripts
 
-      - name: Sync _locales/ between chatgpt-infinity/<chrome|firefox>/extension/
+      - name: Sync _locales/ between chatgpt-infinity/<chromium|firefox>/extension/
         run: |
           cd ${{ github.workspace }}/adamlui/ai-web-extensions/chatgpt-infinity
           ff_dir="firefox/extension/_locales"
-          chromium_dir="chrome/extension/_locales"
+          chromium_dir="chromium/extension/_locales"
           
           # Loop thru all lang dirs in firefox
           for locale in $(find "$ff_dir" -mindepth 1 -maxdepth 1 -type d -exec basename {} \;) ; do
