@@ -340,6 +340,31 @@ Create a new discussion: https://github.com/adamlui/ai-web-extensions/discussion
 
 <img height=6px width="100%" src="https://assets.aiwebextensions.com/images/separators/aqua-gradient.png">
 
+<!-- CHATGPT OMNIBOX -->
+
+<h3>
+    <a href="../chatgpt-omnibox">
+        <img width=19 src="https://assets.chatgptomnibox.com/images/icons/chatgpt/with-magnifying-glass/icon32.png?v=de19d04"></a>
+    <a href="../chatgpt-omnibox">ChatGPT Omnibox</a>
+</h3>
+
+Type @chatgpt in browser address bar to get answers from ChatGPT.
+
+<blockquote>
+    <a href="https://ff.chatgptomnibox.com?source=github&medium=readme&content=platform-link">
+        <img height=14 src="https://assets.chatgptomnibox.com/images/icons/platforms/firefox/icon16.png"></a>
+    <a href="https://ff.chatgptomnibox.com?source=github&medium=readme&content=platform-link">
+        Firefox</a> /
+    <a href="../chatgpt-omnibox/#readme">
+        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.aiwebextensions.com/images/icons/paper-sheet/white.svg"><img height=13 src="https://assets.aiwebextensions.com/images/icons/paper-sheet/black.svg"></picture></a>
+    <a href="../chatgpt-omnibox/#readme">
+        Readme</a> /
+    <a href="https://github.com/adamlui/ai-web-extensions/discussions">
+        <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.aiwebextensions.com/images/icons/speech-bubble-square/white.svg"><img height=12 src="https://assets.aiwebextensions.com/images/icons/speech-bubble-square/black.svg"></picture></a>
+    <a href="https://github.com/adamlui/ai-web-extensions/discussions">
+        Discuss</a>
+</blockquote>
+
 <!-- CHATGPT WIDESCREEN -->
 
 <h3>
