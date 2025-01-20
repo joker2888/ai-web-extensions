@@ -439,9 +439,9 @@ Create a new discussion: https://github.com/adamlui/ai-web-extensions/discussion
 </details>
 
 <blockquote>
-    <a href="https://greasyfork.org/scripts/478597-googlegpt">
+    <a href="../googlegpt/#-installation">
         <img height=13 src="https://assets.googlegpt.io/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://assets.googlegpt.io/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://assets.aiwebextensions.com/images/icons/platforms/scriptcat/icon16.png"></a>
-    <a href="https://greasyfork.org/scripts/478597-googlegpt">
+    <a href="../googlegpt/#-installation">
         Greasemonkey</a> /
     <a href="../googlegpt/#readme">
         <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.aiwebextensions.com/images/icons/paper-sheet/white.svg"><img height=13 src="https://assets.aiwebextensions.com/images/icons/paper-sheet/black.svg"></picture></a>
