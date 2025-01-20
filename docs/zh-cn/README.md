@@ -301,7 +301,7 @@
     <summary>从无所不知的 ChatGPT 生成无尽的答案（任何语言!）</summary>
     <br><blockquote>
         <a href="../../chatgpt-infinity">
-            <img width=600 src="https://cdn.jsdelivr.net/gh/adamlui/chatgpt-infinity/chrome/media/images/tiles/marquee-promo-tile-625x250.png"></a>
+            <img width=600 src="https://cdn.jsdelivr.net/gh/adamlui/chatgpt-infinity/chromium/media/images/tiles/marquee-promo-tile-625x250.png"></a>
     </blockquote>
 </details>
 
@@ -382,7 +382,7 @@
         通过宽屏/全屏/高屏+垃圾邮件块模式增强 ChatGPT。也可以在 perplexity.ai + poe.com 上使用！</summary>
     <br><blockquote>
         <a href="../../chatgpt-widescreen">
-            <img width=600 src="https://cdn.jsdelivr.net/gh/adamlui/chatgpt-widescreen/chrome/media/images/tiles/marquee-promo-tile-625x250.png"></a>
+            <img width=600 src="https://cdn.jsdelivr.net/gh/adamlui/chatgpt-widescreen/chromium/media/images/tiles/marquee-promo-tile-625x250.png"></a>
     </blockquote>
 </details>
 
