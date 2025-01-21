@@ -135,17 +135,17 @@
 </details>
 
 <blockquote>
-    <a href="https://chrome.braveomnibox.com?source=github&medium=readme&content=platform-link">
+    <a href="https://chrome.braveomnibox.com?utm_source=github&utm_medium=readme&utm_content=platform-link">
         <img height=13 src="https://assets.braveomnibox.com/images/icons/platforms/chrome/icon16.png"></a>
-    <a href="https://chrome.braveomnibox.com?source=github&medium=readme&content=platform-link">
+    <a href="https://chrome.braveomnibox.com?utm_source=github&utm_medium=readme&utm_content=platform-link">
         Chrome</a> /
-    <a href="https://ff.braveomnibox.com?source=github&medium=readme&content=platform-link">
+    <a href="https://ff.braveomnibox.com?utm_source=github&utm_medium=readme&utm_content=platform-link">
         <img height=14 src="https://assets.braveomnibox.com/images/icons/platforms/firefox/icon16.png"></a>
-    <a href="https://ff.braveomnibox.com?source=github&medium=readme&content=platform-link">
+    <a href="https://ff.braveomnibox.com?utm_source=github&utm_medium=readme&utm_content=platform-link">
         Firefox</a> /
-    <a href="https://edge.braveomnibox.com/?source=github&medium=readme&content=platform-link">
+    <a href="https://edge.braveomnibox.com/?utm_source=github&utm_medium=readme&utm_content=platform-link">
         <img height=12 src="https://assets.braveomnibox.com/images/icons/platforms/edge/icon16.png"></a>
-    <a href="https://edge.braveomnibox.com/?source=github&medium=readme&content=platform-link">
+    <a href="https://edge.braveomnibox.com/?utm_source=github&utm_medium=readme&utm_content=platform-link">
         Edge</a> /
     <a href="../../brave-omnibox/#readme">
         <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.aiwebextensions.com/images/icons/paper-sheet/white.svg"><img height=13 src="https://assets.aiwebextensions.com/images/icons/paper-sheet/black.svg"></picture></a>
@@ -207,21 +207,21 @@
 </details>
 
 <blockquote>
-    <a href="https://chrome.chatgptautocontinue.com/?source=github&medium=readme&content=platform-link">
+    <a href="https://chrome.chatgptautocontinue.com/?utm_source=github&utm_medium=readme&utm_content=platform-link">
         <img height=13 src="https://assets.chatgptautocontinue.com/images/icons/platforms/chrome/icon16.png"></a>
-    <a href="https://chrome.chatgptautocontinue.com/?source=github&medium=readme&content=platform-link">
+    <a href="https://chrome.chatgptautocontinue.com/?utm_source=github&utm_medium=readme&utm_content=platform-link">
         Chrome</a> /
-    <a href="https://ff.chatgptautocontinue.com/?source=github&medium=readme&content=platform-link">
+    <a href="https://ff.chatgptautocontinue.com/?utm_source=github&utm_medium=readme&utm_content=platform-link">
         <img height=14 src="https://assets.chatgptautocontinue.com/images/icons/platforms/firefox/icon16.png"></a>
-    <a href="https://ff.chatgptautocontinue.com/?source=github&medium=readme&content=platform-link">
+    <a href="https://ff.chatgptautocontinue.com/?utm_source=github&utm_medium=readme&utm_content=platform-link">
         Firefox</a> /
-    <a href="https://edge.chatgptautocontinue.com/?source=github&medium=readme&content=platform-link">
+    <a href="https://edge.chatgptautocontinue.com/?utm_source=github&utm_medium=readme&utm_content=platform-link">
         <img height=12 src="https://assets.chatgptautocontinue.com/images/icons/platforms/edge/icon16.png"></a>
-    <a href="https://edge.chatgptautocontinue.com/?source=github&medium=readme&content=platform-link">
+    <a href="https://edge.chatgptautocontinue.com/?utm_source=github&utm_medium=readme&utm_content=platform-link">
         Edge</a> /
-    <a href="https://gm.chatgptautocontinue.com/?source=github&medium=readme&content=platform-link">
+    <a href="https://gm.chatgptautocontinue.com/?utm_source=github&utm_medium=readme&utm_content=platform-link">
         <img height=13 src="https://assets.chatgptautocontinue.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://assets.chatgptautocontinue.com/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://assets.aiwebextensions.com/images/icons/platforms/scriptcat/icon16.png"></a>
-    <a href="https://gm.chatgptautocontinue.com/?source=github&medium=readme&content=platform-link">
+    <a href="https://gm.chatgptautocontinue.com/?utm_source=github&utm_medium=readme&utm_content=platform-link">
         Greasemonkey</a> /
     <a href="../chatgpt-auto-continue/docs/zh-cn/#readme">
         <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.aiwebextensions.com/images/icons/paper-sheet/white.svg"><img height=13 src="https://assets.aiwebextensions.com/images/icons/paper-sheet/black.svg"></picture></a>
@@ -293,7 +293,7 @@
     <a href="../../chatgpt-infinity">
         <img width=20 src="https://assets.chatgptinfinity.com/images/icons/infinity-symbol/circled/icon32.png?65fcf31"></a>
     <a href="../../chatgpt-infinity">ChatGPT 无限</a>&nbsp;
-    <a href="https://chrome.chatgptinfinity.com/?source=github&medium=readme&content=featured-by-google-badge">
+    <a href="https://chrome.chatgptinfinity.com/?utm_source=github&utm_medium=readme&utm_content=featured-by-google-badge">
         <img height=20 src="https://assets.chatgptinfinity.com/images/badges/chrome-web-store/featured-by-google/badge500x91.png"></a>
 </h3>
 
@@ -306,13 +306,13 @@
 </details>
 
 <blockquote>
-    <a href="https://chrome.chatgptinfinity.com/?source=github&medium=readme&content=platform-link">
+    <a href="https://chrome.chatgptinfinity.com/?utm_source=github&utm_medium=readme&utm_content=platform-link">
         <img height=13 src="https://assets.chatgptinfinity.com/images/icons/platforms/chrome/icon16.png"></a>
-    <a href="https://chrome.chatgptinfinity.com/?source=github&medium=readme&content=platform-link">
+    <a href="https://chrome.chatgptinfinity.com/?utm_source=github&utm_medium=readme&utm_content=platform-link">
         Chrome</a> /
-    <a href="https://ff.chatgptinfinity.com/?source=github&medium=readme&content=platform-link">
+    <a href="https://ff.chatgptinfinity.com/?utm_source=github&utm_medium=readme&utm_content=platform-link">
         <img height=14 src="https://assets.chatgptinfinity.com/images/icons/platforms/firefox/icon16.png"></a>
-    <a href="https://ff.chatgptinfinity.com/?source=github&medium=readme&content=platform-link">
+    <a href="https://ff.chatgptinfinity.com/?utm_source=github&utm_medium=readme&utm_content=platform-link">
         Firefox</a> /
     <a href="https://edge.chatgptinfinity.com">
         <img height=12 src="https://assets.chatgptinfinity.com/images/icons/platforms/edge/icon16.png"></a>
@@ -353,9 +353,9 @@
 在地址栏中输入 @chatgpt 以从 ChatGPT 获得答案。
 
 <blockquote>
-    <a href="https://ff.chatgptomnibox.com?source=github&medium=readme&content=platform-link">
+    <a href="https://ff.chatgptomnibox.com?utm_source=github&utm_medium=readme&utm_content=platform-link">
         <img height=14 src="https://assets.chatgptomnibox.com/images/icons/platforms/firefox/icon16.png"></a>
-    <a href="https://ff.chatgptomnibox.com?source=github&medium=readme&content=platform-link">
+    <a href="https://ff.chatgptomnibox.com?utm_source=github&utm_medium=readme&utm_content=platform-link">
         Firefox</a> /
     <a href="../../chatgpt-omnibox/#readme">
         <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.aiwebextensions.com/images/icons/paper-sheet/white.svg"><img height=13 src="https://assets.aiwebextensions.com/images/icons/paper-sheet/black.svg"></picture></a>
@@ -373,7 +373,7 @@
     <a href="../../chatgpt-widescreen">
         <img width=19 src="https://assets.chatgptwidescreen.com/images/icons/widescreen-robot-emoji/icon32.png"></a>
     <a href="../../chatgpt-widescreen">ChatGPT 宽屏模式</a>&nbsp;
-    <a href="https://chrome.chatgptwidescreen.com/?source=github&medium=readme&content=featured-by-google-badge">
+    <a href="https://chrome.chatgptwidescreen.com/?utm_source=github&utm_medium=readme&utm_content=featured-by-google-badge">
         <img height=20 src="https://assets.chatgptwidescreen.com/images/badges/chrome-web-store/featured-by-google/badge500x91.png"></a>
 </h3>
 
@@ -387,13 +387,13 @@
 </details>
 
 <blockquote>
-    <a href="https://chrome.chatgptwidescreen.com/?source=github&medium=readme&content=platform-link">
+    <a href="https://chrome.chatgptwidescreen.com/?utm_source=github&utm_medium=readme&utm_content=platform-link">
         <img height=13 src="https://assets.chatgptwidescreen.com/images/icons/platforms/chrome/icon16.png"></a>
-    <a href="https://chrome.chatgptwidescreen.com/?source=github&medium=readme&content=platform-link">
+    <a href="https://chrome.chatgptwidescreen.com/?utm_source=github&utm_medium=readme&utm_content=platform-link">
         Chrome</a> /
-    <a href="https://ff.chatgptwidescreen.com/?source=github&medium=readme&content=platform-link">
+    <a href="https://ff.chatgptwidescreen.com/?utm_source=github&utm_medium=readme&utm_content=platform-link">
         <img height=14 src="https://assets.chatgptwidescreen.com/images/icons/platforms/firefox/icon16.png"></a>
-    <a href="https://ff.chatgptwidescreen.com/?source=github&medium=readme&content=platform-link">
+    <a href="https://ff.chatgptwidescreen.com/?utm_source=github&utm_medium=readme&utm_content=platform-link">
         Firefox</a> /
     <a href="https://edge.chatgptwidescreen.com">
         <img height=12 src="https://assets.chatgptwidescreen.com/images/icons/platforms/edge/icon16.png"></a>
@@ -496,13 +496,13 @@
 </details>
 
 <blockquote>
-    <a href="https://chrome.perplexityomnibox.com?source=github&medium=readme&content=platform-link">
+    <a href="https://chrome.perplexityomnibox.com?utm_source=github&utm_medium=readme&utm_content=platform-link">
         <img height=13 src="https://assets.perplexityomnibox.com/images/icons/platforms/chrome/icon16.png"></a>
-    <a href="https://chrome.perplexityomnibox.com?source=github&medium=readme&content=platform-link">
+    <a href="https://chrome.perplexityomnibox.com?utm_source=github&utm_medium=readme&utm_content=platform-link">
         Chrome</a> /
-    <a href="https://edge.perplexityomnibox.com/?source=github&medium=readme&content=platform-link">
+    <a href="https://edge.perplexityomnibox.com/?utm_source=github&utm_medium=readme&utm_content=platform-link">
         <img height=12 src="https://assets.perplexityomnibox.com/images/icons/platforms/edge/icon16.png"></a>
-    <a href="https://edge.perplexityomnibox.com/?source=github&medium=readme&content=platform-link">
+    <a href="https://edge.perplexityomnibox.com/?utm_source=github&utm_medium=readme&utm_content=platform-link">
         Edge</a> /
     <a href="../../perplexity-omnibox/#readme">
         <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.aiwebextensions.com/images/icons/paper-sheet/white.svg"><img height=13 src="https://assets.aiwebextensions.com/images/icons/paper-sheet/black.svg"></picture></a>
@@ -525,9 +525,9 @@
 在浏览器地址栏中输入 @phind 以获取 Phind AI 的结果。
 
 <blockquote>
-    <a href="https://ff.phindomnibox.com?source=github&medium=readme&content=platform-link">
+    <a href="https://ff.phindomnibox.com?utm_source=github&utm_medium=readme&utm_content=platform-link">
         <img height=14 src="https://assets.phindomnibox.com/images/icons/platforms/firefox/icon16.png"></a>
-    <a href="https://ff.phindomnibox.com?source=github&medium=readme&content=platform-link">
+    <a href="https://ff.phindomnibox.com?utm_source=github&utm_medium=readme&utm_content=platform-link">
         Firefox</a> /
     <a href="../../phind-omnibox/#readme">
         <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.aiwebextensions.com/images/icons/paper-sheet/white.svg"><img height=13 src="https://assets.aiwebextensions.com/images/icons/paper-sheet/black.svg"></picture></a>
@@ -550,9 +550,9 @@
 在浏览器地址栏中输入 @you 即可获取 You.com AI 的结果。
 
 <blockquote>
-    <a href="https://ff.youomnibox.com?source=github&medium=readme&content=platform-link">
+    <a href="https://ff.youomnibox.com?utm_source=github&utm_medium=readme&utm_content=platform-link">
         <img height=14 src="https://assets.youomnibox.com/images/icons/platforms/firefox/icon16.png"></a>
-    <a href="https://ff.youomnibox.com?source=github&medium=readme&content=platform-link">
+    <a href="https://ff.youomnibox.com?utm_source=github&utm_medium=readme&utm_content=platform-link">
         Firefox</a> /
     <a href="../../you.com-omnibox/#readme">
         <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.aiwebextensions.com/images/icons/paper-sheet/white.svg"><img height=13 src="https://assets.aiwebextensions.com/images/icons/paper-sheet/black.svg"></picture></a>
