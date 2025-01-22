@@ -46,6 +46,6 @@
     "endpoint": "https://toyaml.com/streams",
     "expectedOrigin": { "url": "https://toyaml.com/chat.html", "headers": { "x-requested-with": "XMLHttpRequest" }},
     "method": "GET", "streamable": true, "watermark": "【本答案来自 toyaml.com】",
-    "failFlags": [ "{\"error\":{\"message\":\"" ]
+    "failFlags": [ "{\"error\":{\"message\":\"", "请等待网友当前提问回答完毕再试" ]
   }
 }
