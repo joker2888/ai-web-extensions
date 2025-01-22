@@ -5,7 +5,7 @@
       "url": "https://chat18.aichatos68.com",
       "headers": { "Accept": "application/json, text/plain, * /*", "Priority": "u=0", "Sec-Fetch-Site": "cross-site" }
     },
-    "method": "POST", "streamable": true, "accumulatesText": false, "failFlags": [ "很抱歉地", "系统公告" ]
+    "method": "POST", "streamable": true, "failFlags": [ "很抱歉地", "系统公告" ]
   },
   "FREEGPT": {
     "endpoint": "https://am.aifree.site/api/generate",
@@ -13,7 +13,7 @@
       "url": "https://am.aifree.site",
       "headers": { "Alt-Used": "am.aifree.site", "Content-Type": "text/plain;charset=UTF-8", "Priority": "u=4" }
     },
-    "method": "POST", "streamable": true, "accumulatesText": false, "failFlags": [ "upstream_error" ]
+    "method": "POST", "streamable": true, "failFlags": [ "upstream_error" ]
   },
   "GPTforLove": {
     "endpoint": "https://api11.gptforlove.com/chat-process",
@@ -24,15 +24,14 @@
         "Priority": "u=0", "Sec-Fetch-Site": "same-site", "TE": "trailers"
       }
     },
-    "method": "POST", "streamable": true, "accumulatesText": true,
-    "failFlags": ["['\"]?status['\"]?:\\s*['\"]Fail['\"]"]
+    "method": "POST", "streamable": true, "failFlags": ["['\"]?status['\"]?:\\s*['\"]Fail['\"]"]
   },
   "MixerBox AI": {
     "endpoint": "https://chatai.mixerbox.com/api/chat/stream",
     "expectedOrigin": {
       "url": "https://chatai.mixerbox.com", "headers": { "Alt-Used": "chatai.mixerbox.com", "TE": "trailers" }
     },
-    "method": "POST", "streamable": true, "accumulatesText": false
+    "method": "POST", "streamable": true
   },
   "OpenAI": {
     "endpoints": {
@@ -41,12 +40,12 @@
       "session": "https://chatgpt.com/api/auth/session"
     },
     "expectedOrigin": { "url": "https://chatgpt.com", "headers": { "Priority": "u=4" }},
-    "method": "POST", "streamable": true, "accumulatesText": false
+    "method": "POST", "streamable": true
   },
   "ToYaml.com": {
     "endpoint": "https://toyaml.com/streams",
     "expectedOrigin": { "url": "https://toyaml.com/chat.html", "headers": { "x-requested-with": "XMLHttpRequest" }},
-    "method": "GET", "streamable": true, "accumulatesText": false, "watermark": "【本答案来自 toyaml.com】",
+    "method": "GET", "streamable": true, "watermark": "【本答案来自 toyaml.com】",
     "failFlags": [ "{\"error\":{\"message\":\"" ]
   }
 }
