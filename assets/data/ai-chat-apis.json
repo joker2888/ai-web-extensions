@@ -24,7 +24,7 @@
         "Priority": "u=0", "Sec-Fetch-Site": "same-site", "TE": "trailers"
       }
     },
-    "method": "POST", "streamable": true, "failFlags": ["['\"]?status['\"]?:\\s*['\"]Fail['\"]"]
+    "method": "POST", "streamable": true, "failFlags": [ "\"data\":null,\"status\":\"Fail\"}" ]
   },
   "MixerBox AI": {
     "endpoint": "https://chatai.mixerbox.com/api/chat/stream",
