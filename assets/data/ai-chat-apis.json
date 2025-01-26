@@ -6,6 +6,7 @@
       "headers": { "Accept": "application/json, text/plain, * /*", "Priority": "u=0", "Sec-Fetch-Site": "cross-site" }
     },
     "method": "POST",
+    "parsingRequired": false,
     "respPatterns": { "fail": "很抱歉地|系统公告" },
     "streamable": true
   },
@@ -16,6 +17,7 @@
       "headers": { "Alt-Used": "am.aifree.site", "Content-Type": "text/plain;charset=UTF-8", "Priority": "u=4" }
     },
     "method": "POST",
+    "parsingRequired": false,
     "respPatterns": { "fail": "{\"error\":{\"message\":\"" },
     "streamable": true
   },
@@ -29,6 +31,7 @@
       }
     },
     "method": "POST",
+    "parsingRequired": true,
     "respPatterns": { "done": "\"finish_reason\":\"stop\"", "fail": "\"data\":null,\"status\":\"Fail\"}" },
     "streamable": true
   },
@@ -38,6 +41,7 @@
       "url": "https://chatai.mixerbox.com", "headers": { "Alt-Used": "chatai.mixerbox.com", "TE": "trailers" }
     },
     "method": "POST",
+    "parsingRequired": true,
     "respPatterns": { "start": "data:message_start", "done": "data:(?:message_end|done)" },
     "streamable": true
   },
@@ -56,6 +60,7 @@
     "expectedOrigin": { "url": "https://toyaml.com/chat.html",
     "headers": { "x-requested-with": "XMLHttpRequest" }},
     "method": "GET",
+    "parsingRequired": false,
     "respPatterns": { "fail": "请等待网友当前提问回答完毕再试", "watermark": "【本答案来自 toyaml.com】" },
     "streamable": true
   }
