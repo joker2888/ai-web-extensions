@@ -29,7 +29,7 @@
       }
     },
     "method": "POST",
-    "respPatterns": { "fail": "\"data\":null,\"status\":\"Fail\"}" },
+    "respPatterns": { "done": "\"finish_reason\":\"stop\"", "fail": "\"data\":null,\"status\":\"Fail\"}" },
     "streamable": true
   },
   "MixerBox AI": {
