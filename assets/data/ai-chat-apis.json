@@ -37,7 +37,9 @@
     "expectedOrigin": {
       "url": "https://chatai.mixerbox.com", "headers": { "Alt-Used": "chatai.mixerbox.com", "TE": "trailers" }
     },
-    "method": "POST", "streamable": true
+    "method": "POST",
+    "respPatterns": { "start": "data:message_start", "done": "data:(?:message_end|done)" },
+    "streamable": true
   },
   "OpenAI": {
     "endpoints": {
