@@ -5,7 +5,9 @@
       "url": "https://chat18.aichatos68.com",
       "headers": { "Accept": "application/json, text/plain, * /*", "Priority": "u=0", "Sec-Fetch-Site": "cross-site" }
     },
-    "method": "POST", "respPatterns": { "fail": "很抱歉地|系统公告" }, "streamable": true
+    "method": "POST",
+    "respPatterns": { "fail": "很抱歉地|系统公告" },
+    "streamable": true
   },
   "FREEGPT": {
     "endpoint": "https://am.aifree.site/api/generate",
@@ -13,7 +15,9 @@
       "url": "https://am.aifree.site",
       "headers": { "Alt-Used": "am.aifree.site", "Content-Type": "text/plain;charset=UTF-8", "Priority": "u=4" }
     },
-    "method": "POST", "respPatterns": { "fail": "{\"error\":{\"message\":\"" }, "streamable": true
+    "method": "POST",
+    "respPatterns": { "fail": "{\"error\":{\"message\":\"" },
+    "streamable": true
   },
   "GPTforLove": {
     "endpoint": "https://api11.gptforlove.com/chat-process",
@@ -33,7 +37,8 @@
     "expectedOrigin": {
       "url": "https://chatai.mixerbox.com", "headers": { "Alt-Used": "chatai.mixerbox.com", "TE": "trailers" }
     },
-    "method": "POST", "respPatterns": { "start": "data:message_start", "done": "data:(?:message_end|done)" },
+    "method": "POST",
+    "respPatterns": { "start": "data:message_start", "done": "data:(?:message_end|done)" },
     "streamable": true
   },
   "OpenAI": {
@@ -43,12 +48,15 @@
       "session": "https://chatgpt.com/api/auth/session"
     },
     "expectedOrigin": { "url": "https://chatgpt.com", "headers": { "Priority": "u=4" }},
-    "method": "POST", "streamable": true
+    "method": "POST",
+    "streamable": true
   },
   "ToYaml.com": {
     "endpoint": "https://toyaml.com/streams",
-    "expectedOrigin": { "url": "https://toyaml.com/chat.html", "headers": { "x-requested-with": "XMLHttpRequest" }},
-    "method": "GET", "respPatterns": { "fail": "请等待网友当前提问回答完毕再试", "watermark": "【本答案来自 toyaml.com】" },
+    "expectedOrigin": { "url": "https://toyaml.com/chat.html",
+    "headers": { "x-requested-with": "XMLHttpRequest" }},
+    "method": "GET",
+    "respPatterns": { "fail": "请等待网友当前提问回答完毕再试", "watermark": "【本答案来自 toyaml.com】" },
     "streamable": true
   }
 }
