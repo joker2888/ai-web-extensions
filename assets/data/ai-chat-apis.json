@@ -5,7 +5,9 @@
       "url": "https://chat18.aichatos68.com",
       "headers": { "Accept": "application/json, text/plain, * /*", "Priority": "u=0", "Sec-Fetch-Site": "cross-site" }
     },
-    "method": "POST", "streamable": true, "failFlags": [ "很抱歉地", "系统公告" ]
+    "method": "POST",
+    "respPatterns": { "fail": "很抱歉地|系统公告" },
+    "streamable": true
   },
   "FREEGPT": {
     "endpoint": "https://am.aifree.site/api/generate",
@@ -13,7 +15,9 @@
       "url": "https://am.aifree.site",
       "headers": { "Alt-Used": "am.aifree.site", "Content-Type": "text/plain;charset=UTF-8", "Priority": "u=4" }
     },
-    "method": "POST", "streamable": true, "failFlags": [ "{\"error\":{\"message\":\"" ]
+    "method": "POST",
+    "respPatterns": { "fail": "{\"error\":{\"message\":\"" },
+    "streamable": true
   },
   "GPTforLove": {
     "endpoint": "https://api11.gptforlove.com/chat-process",
@@ -24,7 +28,9 @@
         "Priority": "u=0", "Sec-Fetch-Site": "same-site", "TE": "trailers"
       }
     },
-    "method": "POST", "streamable": true, "failFlags": [ "\"data\":null,\"status\":\"Fail\"}" ]
+    "method": "POST",
+    "respPatterns": { "fail": "\"data\":null,\"status\":\"Fail\"}" },
+    "streamable": true
   },
   "MixerBox AI": {
     "endpoint": "https://chatai.mixerbox.com/api/chat/stream",
@@ -45,7 +51,8 @@
   "ToYaml.com": {
     "endpoint": "https://toyaml.com/streams",
     "expectedOrigin": { "url": "https://toyaml.com/chat.html", "headers": { "x-requested-with": "XMLHttpRequest" }},
-    "method": "GET", "streamable": true, "watermark": "【本答案来自 toyaml.com】",
-    "failFlags": [ "请等待网友当前提问回答完毕再试" ]
+    "method": "GET",
+    "respPatterns": { "fail": "请等待网友当前提问回答完毕再试", "watermark": "【本答案来自 toyaml.com】" },
+    "streamable": true
   }
 }
