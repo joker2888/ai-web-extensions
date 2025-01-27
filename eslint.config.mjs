@@ -9,7 +9,7 @@ import stylisticJS from '@stylistic/eslint-plugin-js'
 import yml from 'eslint-plugin-yml'
 
 export default [
-    { ignores: ['**/package-lock.json', '**/rising-stars/'] },
+    { ignores: ['**/*.min.js', '**/package-lock.json', '**/rising-stars/'] },
     {
         files: ['**/*.{js,mjs}'],
         languageOptions: {
