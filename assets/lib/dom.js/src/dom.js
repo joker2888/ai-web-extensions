@@ -55,16 +55,29 @@ window.dom = {
         targetNode.prepend(starsDivsContainer)
     },
 
-    getLoadedElem(selector, timeout = null) {
-        const timeoutPromise = timeout ? new Promise(resolve => setTimeout(() => resolve(null), timeout)) : null
-        const isLoadedPromise = new Promise(resolve => {
-            const elem = document.querySelector(selector)
-            if (elem) resolve(elem)
-            else new MutationObserver((_, obs) => {
+    get: {
+        computedWidth(...elems) { // including margins
+            let totalWidth = 0
+            elems.map(arg => arg instanceof NodeList ? [...arg] : arg).flat().forEach(elem => {
+                if (!(elem instanceof Element)) return
+                const elemStyle = getComputedStyle(elem) ; if (elemStyle.display == 'none') return
+                totalWidth += elem.getBoundingClientRect().width + parseFloat(elemStyle.marginLeft)
+                                                                 + parseFloat(elemStyle.marginRight)
+            })
+            return totalWidth
+        },
+
+        loadedElem(selector, timeout = null) {
+            const timeoutPromise = timeout ? new Promise(resolve => setTimeout(() => resolve(null), timeout)) : null
+            const isLoadedPromise = new Promise(resolve => {
                 const elem = document.querySelector(selector)
-                if (elem) { obs.disconnect() ; resolve(elem) }
-            }).observe(document.documentElement, { childList: true, subtree: true })
-        })
-        return ( timeoutPromise ? Promise.race([isLoadedPromise, timeoutPromise]) : isLoadedPromise )
+                if (elem) resolve(elem)
+                else new MutationObserver((_, obs) => {
+                    const elem = document.querySelector(selector)
+                    if (elem) { obs.disconnect() ; resolve(elem) }
+                }).observe(document.documentElement, { childList: true, subtree: true })
+            })
+            return ( timeoutPromise ? Promise.race([isLoadedPromise, timeoutPromise]) : isLoadedPromise )
+        }
     }
 };
