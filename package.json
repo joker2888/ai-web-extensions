@@ -38,6 +38,7 @@
     "bump:firefox": "bash utils/bump/extension-manifests.sh --ff"
   },
   "devDependencies": {
+    "@adamlui/minify.js": "^1.8.5",
     "@adamlui/scss-to-css": "^1.10.24",
     "@eslint/css": "^0.2.0",
     "@eslint/json": "^0.10.0",
