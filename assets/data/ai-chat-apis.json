@@ -42,7 +42,7 @@
     },
     "method": "POST",
     "parsingRequired": true,
-    "respPatterns": { "start": "data:message_start", "done": "data:(?:message_end|done)" },
+    "respPatterns": { "done": "data:(?:message_end|done)" },
     "streamable": true
   },
   "OpenAI": {
