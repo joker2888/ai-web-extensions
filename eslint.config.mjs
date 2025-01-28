@@ -47,12 +47,12 @@ export default [
     { files: ['**/chatgpt.js'], languageOptions: { globals: { chatgpt: 'off' }}},
     { files: ['**/*.css'], language: 'css/css', ...css.configs.recommended },
     {
-        files: ['**/*.html'], languageOptions: { parser: htmlParser }, plugins: { html },
+        files: ['**/*.html'], languageOptions: { parser: htmlParser }, plugins: { '@html-eslint': html },
         rules: {
             ...html.configs['flat/recommended'].rules,
-            'html/require-title': 'off', // allow missing title tags
-            'html/quotes': 'off', // allow unquoted attrs for compactness
-            'html/attrs-newline': 'off' // allow attrs on one line
+            '@html-eslint/require-title': 'off', // allow missing title tags
+            '@html-eslint/quotes': 'off', // allow unquoted attrs for compactness
+            '@html-eslint/attrs-newline': 'off' // allow attrs on one line
         }
     },
     { files: ['**/*.json'], language: 'json/json', ...json.configs.recommended },
