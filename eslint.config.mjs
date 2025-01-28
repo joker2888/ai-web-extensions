@@ -1,6 +1,8 @@
 import js from '@eslint/js'
 import globals from 'globals'
 import css from '@eslint/css'
+import html from '@html-eslint/eslint-plugin'
+import htmlParser from '@html-eslint/parser'
 import importPlugin from 'eslint-plugin-import'
 import json from '@eslint/json'
 import markdown from '@eslint/markdown'
@@ -32,7 +34,8 @@ export default [
                 'ignoreComments': true, 'ignoreStrings': true, // ...trailing/own-line comments, quoted strings...
                 'ignoreTemplateLiterals': true, 'ignoreRegExpLiterals': true }], // ...or template/regex literals
             'js-styles/no-extra-semi': 'error', // disallow unnecessary semicolons
-            'quotes': ['error', 'single', { 'allowTemplateLiterals': true }], // enforce single quotes except backticks to avoid escaping quotes
+            'quotes': ['error', 'single', // enforce single quotes...
+                { 'allowTemplateLiterals': true }], // ...except backticks to avoid escaping quotes
             'comma-dangle': ['error', 'never'], // enforce no trailing commas in arrays or objects
             'no-async-promise-executor': 'off', // allow promise executor functions to be async (to accomodate await lines)
             'no-constant-condition': 'off', // allow constant conditions
@@ -44,6 +47,15 @@ export default [
     },
     { files: ['**/chatgpt.js'], languageOptions: { globals: { chatgpt: 'off' }}},
     { files: ['**/*.css'], language: 'css/css', ...css.configs.recommended },
+    {
+        files: ['**/*.html'], languageOptions: { parser: htmlParser }, plugins: { '@html-eslint': html },
+        rules: {
+            ...html.configs['flat/recommended'].rules,
+            '@html-eslint/require-title': 'off', // allow missing title tags
+            '@html-eslint/quotes': 'off', // allow unquoted attrs for compactness
+            '@html-eslint/attrs-newline': 'off' // allow attrs on one line
+        }
+    },
     { files: ['**/*.json'], language: 'json/json', ...json.configs.recommended },
     {
         files: ['**/*.md'], language: 'markdown/commonmark', plugins: { markdown },
