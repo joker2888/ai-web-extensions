@@ -2,7 +2,6 @@ import js from '@eslint/js'
 import globals from 'globals'
 import css from '@eslint/css'
 import html from '@html-eslint/eslint-plugin'
-import htmlParser from '@html-eslint/parser'
 import importPlugin from 'eslint-plugin-import'
 import json from '@eslint/json'
 import markdown from '@eslint/markdown'
@@ -47,7 +46,7 @@ export default [
     { files: ['**/chatgpt.js'], languageOptions: { globals: { chatgpt: 'off' }}},
     { files: ['**/*.css'], language: 'css/css', ...css.configs.recommended },
     {
-        files: ['**/*.html'], languageOptions: { parser: htmlParser }, plugins: { '@html-eslint': html },
+        files: ['**/*.html'], plugins: { '@html-eslint': html },
         rules: {
             ...html.configs['flat/recommended'].rules,
             '@html-eslint/require-title': 'off', // allow missing title tags
