@@ -160,13 +160,13 @@
     let urlsUpdatedCnt = 0 ; let filesUpdatedCnt = 0
     for (const userJSfilePath of Object.keys(urlMap)) {
 
-        // Init repo props
+        // Init repo name
         let repoName = userJSfilePath.split('\\').pop().replace('.user.js', '')
         if (repoName.endsWith('-mode')) repoName = repoName.slice(0, -5) // for chatgpt-widescreen
 
         log.working(`\nProcessing ${repoName}...\n`)
 
-        // Fetch latest commit hash for repo/chrom<e|ium>/extension
+        // Fetch latest commit hash for repo/chromium/extension
         if (urlMap[userJSfilePath].some(url => url.includes(repoName))) {
             console.log('Fetching latest commit hash for Chromium extension...')
             latestCommitHashes.chromium = await getLatestCommitHash(`adamlui/${repoName}`, 'chromium/extension')
