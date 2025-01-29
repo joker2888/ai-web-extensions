@@ -54,13 +54,5 @@
     "expectedOrigin": { "url": "https://chatgpt.com", "headers": { "Priority": "u=4" }},
     "method": "POST",
     "streamable": true
-  },
-  "ToYaml.com": {
-    "endpoint": "https://toyaml.com/streams",
-    "expectedOrigin": { "url": "https://toyaml.com/chat.html", "headers": { "x-requested-with": "XMLHttpRequest" }},
-    "method": "GET",
-    "parsingRequired": false,
-    "respPatterns": { "fail": "请等待网友当前提问回答完毕再试", "watermark": "【本答案来自 toyaml.com】" },
-    "streamable": true
   }
 }
