@@ -5,10 +5,20 @@ window.dom = {
             for (const depName in deps) this[depName] = deps[depName] }
     },
 
-    cssSelectorize(classList) {
-        return classList.toString()
-            .replace(/([:[\]\\])/g, '\\$1') // escape special chars :[]\
-            .replace(/^| /g, '.') // prefix w/ dot, convert spaces to dots
+    addRisingParticles(targetNode) { // requires https://assets.aiwebextensions.com/styles/rising-particles/dist/<gray|white>.min.css
+        if (targetNode.querySelector('[id*=particles]')) return
+        const particlesDivsContainer = document.createElement('div')
+        particlesDivsContainer.style.cssText = 'position: absolute ; top: 0 ; left: 0 ;' // hug targetNode's top-left corner
+          + 'height: 100% ; width: 100% ; border-radius: 15px ; overflow: clip ;' // bound innards exactly by targetNode
+          + 'z-index: -1'; // allow interactive elems to be clicked
+        ['sm', 'med', 'lg'].forEach(particleSize => {
+            const particlesDiv = document.createElement('div')
+            particlesDiv.id = this.imports.config?.bgAnimationsDisabled ? `particles-${particleSize}-off`
+                : `${( this.imports.env?.ui?.scheme || this.imports.env?.ui?.app?.scheme ) == 'dark' ? 'white'
+                    : 'gray' }-particles-${particleSize}`
+            particlesDivsContainer.append(particlesDiv)
+        })
+        targetNode.prepend(particlesDivsContainer)
     },
 
     create: {
@@ -40,20 +50,10 @@ window.dom = {
         }
     },
 
-    addRisingParticles(targetNode) { // requires https://assets.aiwebextensions.com/styles/rising-particles/dist/<gray|white>.min.css
-        if (targetNode.querySelector('[id*=particles]')) return
-        const particlesDivsContainer = document.createElement('div')
-        particlesDivsContainer.style.cssText = 'position: absolute ; top: 0 ; left: 0 ;' // hug targetNode's top-left corner
-          + 'height: 100% ; width: 100% ; border-radius: 15px ; overflow: clip ;' // bound innards exactly by targetNode
-          + 'z-index: -1'; // allow interactive elems to be clicked
-        ['sm', 'med', 'lg'].forEach(particleSize => {
-            const particlesDiv = document.createElement('div')
-            particlesDiv.id = this.imports.config?.bgAnimationsDisabled ? `particles-${particleSize}-off`
-                : `${( this.imports.env?.ui?.scheme || this.imports.env?.ui?.app?.scheme ) == 'dark' ? 'white'
-                    : 'gray' }-particles-${particleSize}`
-            particlesDivsContainer.append(particlesDiv)
-        })
-        targetNode.prepend(particlesDivsContainer)
+    cssSelectorize(classList) {
+        return classList.toString()
+            .replace(/([:[\]\\])/g, '\\$1') // escape special chars :[]\
+            .replace(/^| /g, '.') // prefix w/ dot, convert spaces to dots
     },
 
     get: {
