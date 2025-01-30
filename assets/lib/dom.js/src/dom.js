@@ -49,7 +49,8 @@ window.dom = {
         ['sm', 'med', 'lg'].forEach(starSize => {
             const starsDiv = document.createElement('div')
             starsDiv.id = this.imports.config?.bgAnimationsDisabled ? `stars-${starSize}-off`
-                : `${ this.imports.env?.ui?.app?.scheme == 'dark' ? 'white' : 'black' }-stars-${starSize}`
+                : `${( this.imports.env?.ui?.scheme || this.imports.env?.ui?.app?.scheme ) == 'dark' ? 'white'
+                    : 'black' }-stars-${starSize}`
             starsDivsContainer.append(starsDiv)
         })
         targetNode.prepend(starsDivsContainer)
