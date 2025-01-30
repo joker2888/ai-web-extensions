@@ -50,7 +50,7 @@ window.dom = {
             const particlesDiv = document.createElement('div')
             particlesDiv.id = this.imports.config?.bgAnimationsDisabled ? `particles-${particleSize}-off`
                 : `${( this.imports.env?.ui?.scheme || this.imports.env?.ui?.app?.scheme ) == 'dark' ? 'white'
-                    : 'black' }-particles-${particleSize}`
+                    : 'gray' }-particles-${particleSize}`
             particlesDivsContainer.append(particlesDiv)
         })
         targetNode.prepend(particlesDivsContainer)
