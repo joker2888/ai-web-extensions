@@ -40,7 +40,7 @@ window.dom = {
         }
     },
 
-    addRisingParticles(targetNode) { // requires https://assets.aiwebextensions.com/styles/rising-particles/dist/<black|white>.min.css
+    addRisingParticles(targetNode) { // requires https://assets.aiwebextensions.com/styles/rising-particles/dist/<gray|white>.min.css
         if (targetNode.querySelector('[id*=particles]')) return
         const particlesDivsContainer = document.createElement('div')
         particlesDivsContainer.style.cssText = 'position: absolute ; top: 0 ; left: 0 ;' // hug targetNode's top-left corner
