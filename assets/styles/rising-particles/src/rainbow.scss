@@ -1,16 +1,23 @@
 /*          *     .        *  .    *    *   .
- .  *  Add white starry background using IDs
- *  .  .      .      *     .      .   *     
+ .  *  Add rising rainbow particles background using IDs
+ *  .  .      .      *     .      .          *     
   .   * © 2024 sarazond © 2024–2025 Adam Lui   
     *    .   *     .        *             .    */
 
 @use "sass:math";
 @use "sass:string";
 
+@function random-color() {
+  $red: math.random(255);
+  $green: math.random(255);
+  $blue: math.random(255);
+  @return rgba($red, $green, $blue, 1);
+}
+
 @function multiple-box-shadow($n) {
-  $value: "#{math.random(2000)}px #{math.random(2000)}px #332f2f";
+  $value: "#{math.random(2000)}px #{math.random(2000)}px #{random-color()}";
   @for $i from 2 through $n {
-    $value: "#{$value}, #{math.random(2000)}px #{math.random(2000)}px #332f2f";
+    $value: "#{$value}, #{math.random(2000)}px #{math.random(2000)}px #{random-color()}";
   }
   @return string.unquote($value);
 }
@@ -19,12 +26,12 @@ $shadows-sm: multiple-box-shadow(700);
 $shadows-med: multiple-box-shadow(200);
 $shadows-lg: multiple-box-shadow(100);
 
-#black-stars-sm {
+#rainbow-particles-sm {
   width: 1px;
   height: 1px;
   background: transparent;
   box-shadow: $shadows-sm;
-  animation: animStar 83s linear infinite;
+  animation: animate-particle 83s linear infinite;
 
   &:after {
     content: " ";
@@ -37,12 +44,12 @@ $shadows-lg: multiple-box-shadow(100);
   }
 }
 
-#black-stars-med {
+#rainbow-particles-med {
   width: 2px;
   height: 2px;
   background: transparent;
   box-shadow: $shadows-med;
-  animation: animStar 167s linear infinite;
+  animation: animate-particle 167s linear infinite;
 
   &:after {
     content: " ";
@@ -55,13 +62,13 @@ $shadows-lg: multiple-box-shadow(100);
   }
 }
 
-#black-stars-lg {
+#rainbow-particles-lg {
   width: 3px;
   height: 3px;
   border-radius: 3px;
   background: transparent;
   box-shadow: $shadows-lg;
-  animation: animStar 250s linear infinite;
+  animation: animate-particle 250s linear infinite;
 
   &:after {
     content: " ";
@@ -74,6 +81,6 @@ $shadows-lg: multiple-box-shadow(100);
   }
 }
 
-@keyframes animStar {
+@keyframes animate-particle {
   from { transform: translateY(0px); } to { transform: translateY(-2000px); }
 }
