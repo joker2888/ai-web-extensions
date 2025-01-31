@@ -1,3 +1,6 @@
+// Copyright © 2023–2025 Adam Lui (https://github.com/adamlui) under the MIT license
+// Source: https://assets.aiwebextensions.com/lib/dom.js/src/dom.js
+
 window.dom = {
 
     imports: {
