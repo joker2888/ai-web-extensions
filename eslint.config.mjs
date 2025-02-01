@@ -20,7 +20,8 @@ export default [
                 ...globals.browser, ...globals.greasemonkey, ...globals.node, buttons: 'writable', chatgpt: 'readonly',
                 chrome: 'readonly', config: 'writable', CryptoJS: 'readonly', cryptoUtils: 'readonly', dom: 'readonly',
                 GM_cookie: 'readonly', hljs: 'readonly', icons: 'writable', ipv4: 'readonly', marked: 'readonly',
-                modals: 'writable', renderMathInElement: 'readonly', settings: 'writable', toggles: 'writable'
+                modals: 'writable', renderMathInElement: 'readonly', settings: 'writable', toggles: 'writable',
+                webkitAudioContext: 'readonly'
             }
         },
         plugins: { 'import': importPlugin, 'js-styles': stylisticJS, regexp },
