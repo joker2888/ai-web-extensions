@@ -18,7 +18,7 @@
     },
     "method": "POST",
     "parsingRequired": false,
-    "respPatterns": { "fail": "{\"error\":{\"message\":\"" },
+    "respPatterns": { "fail": "{\"error\":{\"message\":\"|当日额度已用完,请明天再来吧" },
     "streamable": true
   },
   "GPTforLove": {
