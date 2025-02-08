@@ -66,8 +66,8 @@ window.dom = {
     get: {
 
         computedSize(elems, { prop } = {}) { // total width/height of elems (including margins)
-        // * Returns { width: X, height: Y } if multi or no props passed
-        // * Returns float if single prop passed
+        // * Returns { width: totalWidth, height: totalHeight } if no prop passed
+        // * Returns float if { prop: 'width' | 'height' } passed
 
             // Validate args
             elems = elems instanceof NodeList ? [...elems] : [].concat(elems)
@@ -78,20 +78,20 @@ window.dom = {
                 throw new Error('Invalid prop: Use \'width\' or \'height\'') })
 
             // Compute props
-            const computedProps = { width: 0, height: 0 }
+            const computedSizes = { width: 0, height: 0 }
             elems.forEach(elem => {
                 const elemStyle = getComputedStyle(elem) ; if (elemStyle.display == 'none') return
                 if (propsToCompute.includes('width'))
-                    computedProps.width += elem.getBoundingClientRect().width
+                    computedSizes.width += elem.getBoundingClientRect().width
                         + parseFloat(elemStyle.marginLeft) + parseFloat(elemStyle.marginRight)
                 if (propsToCompute.includes('height'))
-                    computedProps.height += elem.getBoundingClientRect().height
+                    computedSizes.height += elem.getBoundingClientRect().height
                         + parseFloat(elemStyle.marginTop) + parseFloat(elemStyle.marginBottom)
             })
 
             // Return props
-            return propsToCompute.length > 1 ? computedProps // obj w/ width/height
-                 : computedProps[propsToCompute[0]] // single total val
+            return propsToCompute.length > 1 ? computedSizes // obj w/ width/height
+                 : computedSizes[propsToCompute[0]] // single total val
         },
 
         computedHeight(elems) { return this.computedSize(elems, { prop: 'height' }) }, // including margins
