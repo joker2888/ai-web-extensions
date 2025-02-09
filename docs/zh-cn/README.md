@@ -483,7 +483,7 @@
 
 <h3>
     <a href="../../perplexity-omnibox">
-        <picture><source type="image/png" media="(prefers-color-scheme: dark)" srcset="https://assets.perplexityomnibox.com/images/icons/perplexity/white/icon32.png"><img width=19 src="https://assets.perplexityomnibox.com/images/icons/perplexity/turquoise/icon32.png"></picture></a>
+        <picture><source type="image/png" media="(prefers-color-scheme: dark)" srcset="https://assets.perplexityomnibox.com/images/icons/perplexity/white/icon32.png"><img width=20 src="https://assets.perplexityomnibox.com/images/icons/perplexity/purple-gradient/icon32.png"></picture></a>
     <a href="../../perplexity-omnibox">Perplexity Omnibox</a>
 </h3>
 
