@@ -260,6 +260,16 @@
         讨论</a>
 </blockquote>
 
+<!-- IDEA CTA -->
+
+<img height=6px width="100%" src="https://assets.aiwebextensions.com/images/separators/aqua-gradient.png">
+
+<h3>有扩展的想法或要求吗？</h3>
+
+创建新讨论：https://github.com/adamlui/ai-web-extensions/discussions/new?category=ideas
+
+<img height=6px width="100%" src="https://assets.aiwebextensions.com/images/separators/aqua-gradient.png">
+
 <!-- CHATGPT AUTO-TALK -->
 
 <h3>
@@ -331,16 +341,6 @@
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
         讨论</a>
 </blockquote>
-
-<!-- IDEA CTA -->
-
-<img height=6px width="100%" src="https://assets.aiwebextensions.com/images/separators/aqua-gradient.png">
-
-<h3>有扩展的想法或要求吗？</h3>
-
-创建新讨论：https://github.com/adamlui/ai-web-extensions/discussions/new?category=ideas
-
-<img height=6px width="100%" src="https://assets.aiwebextensions.com/images/separators/aqua-gradient.png">
 
 <!-- CHATGPT OMNIBOX -->
 
@@ -484,6 +484,16 @@
         讨论</a>
 </blockquote>
 
+<!-- SPONSOR BANNER -->
+
+<img height=6px width="100%" src="https://assets.aiwebextensions.com/images/separators/aqua-gradient.png">
+
+<br>
+
+<a href="https://github.com/sponsors/adamlui"><img width=830 src="https://assets.aiwebextensions.com/images/banners/sponsor/$10/banner1660x260.png"></a>
+
+<img height=6px width="100%" src="https://assets.aiwebextensions.com/images/separators/aqua-gradient.png">
+
 <!-- GOOGLEGPT -->
 
 <h3>
@@ -601,12 +611,6 @@
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
         讨论</a>
 </blockquote>
-
-<!-- SPONSOR BANNER -->
-
-<br>
-
-<a href="https://github.com/sponsors/adamlui"><img width=830 src="https://assets.aiwebextensions.com/images/banners/sponsor/$10/banner1660x260.png"></a>
 
 <!-- FOOTER -->
 

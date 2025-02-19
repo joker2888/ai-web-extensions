@@ -258,6 +258,16 @@ Keeps ChatGPT sessions fresh, eliminating chat time limits + network errors + Cl
         Discuss</a>
 </blockquote>
 
+<!-- IDEA CTA -->
+
+<img height=6px width="100%" src="https://assets.aiwebextensions.com/images/separators/aqua-gradient.png">
+
+<h3>Have an extension idea or request?</h3>
+
+Create a new discussion: https://github.com/adamlui/ai-web-extensions/discussions/new?category=ideas
+
+<img height=6px width="100%" src="https://assets.aiwebextensions.com/images/separators/aqua-gradient.png">
+
 <!-- CHATGPT AUTO-TALK -->
 
 <h3>
@@ -329,16 +339,6 @@ Auto-play ChatGPT responses.
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
         Discuss</a>
 </blockquote>
-
-<!-- IDEA CTA -->
-
-<img height=6px width="100%" src="https://assets.aiwebextensions.com/images/separators/aqua-gradient.png">
-
-<h3>Have an extension idea or request?</h3>
-
-Create a new discussion: https://github.com/adamlui/ai-web-extensions/discussions/new?category=ideas
-
-<img height=6px width="100%" src="https://assets.aiwebextensions.com/images/separators/aqua-gradient.png">
 
 <!-- CHATGPT OMNIBOX -->
 
@@ -483,6 +483,16 @@ Type @chatgpt in browser address bar to get answers from ChatGPT.
         Discuss</a>
 </blockquote>
 
+<!-- SPONSOR BANNER -->
+
+<img height=6px width="100%" src="https://assets.aiwebextensions.com/images/separators/aqua-gradient.png">
+
+<br>
+
+<a href="https://github.com/sponsors/adamlui"><img width=830 src="https://assets.aiwebextensions.com/images/banners/sponsor/$10/banner1660x260.png"></a>
+
+<img height=6px width="100%" src="https://assets.aiwebextensions.com/images/separators/aqua-gradient.png">
+
 <!-- GOOGLEGPT -->
 
 <h3>
@@ -600,12 +610,6 @@ Type @you in browser address bar to get results from You.com AI.
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
         Discuss</a>
 </blockquote>
-
-<!-- SPONSOR BANNER -->
-
-<br>
-
-<a href="https://github.com/sponsors/adamlui"><img width=830 src="https://assets.aiwebextensions.com/images/banners/sponsor/$10/banner1660x260.png"></a>
 
 <!-- FOOTER -->
 
