@@ -416,7 +416,7 @@ Type @chatgpt in browser address bar to get answers from ChatGPT.
 
 <h3>
     <a href="../deepseek-omnibox">
-        <img width=20 src="https://cdn.jsdelivr.net/gh/adamlui/deepseek-omnibox/assets/images/icons/deepseek-omnibox/purple-gradient/icon32.png"></a>
+        <img width=18 src="https://cdn.jsdelivr.net/gh/adamlui/deepseek-omnibox/assets/images/icons/deepseek-omnibox/purple-gradient/icon32.png"></a>
     <a href="../deepseek-omnibox">DeepSeek Omnibox</a>
 </h3>
 
