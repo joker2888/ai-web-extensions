@@ -27,7 +27,7 @@
 **Brave Omnibox** is a lightweight, easy-to-use extension that fetches AI search results from Brave AI.
 
 - **Easy to use —** Just type `@brave` in address bar + query
-- **Super lightweight —** Only 82 KB
+- **Super lightweight —** < 100 KB
 - **Multi-browser support —** Firefox + all Chromium browsers supported (e.g. Chrome + Edge + Opera)
 - **Privacy first —** No personal data collected
 
