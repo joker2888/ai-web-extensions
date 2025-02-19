@@ -347,7 +347,7 @@
 <h3>
     <a href="../../chatgpt-omnibox">
         <img width=19 src="https://assets.chatgptomnibox.com/images/icons/chatgpt/with-magnifying-glass/icon32.png?v=de19d04"></a>
-    <a href="../../chatgpt-omnibox">ChatGPT 多功能框</a>
+    <a href="../../chatgpt-omnibox">ChatGPT Omnibox</a>
 </h3>
 
 在地址栏中输入 @chatgpt 以从 ChatGPT 获得答案。
