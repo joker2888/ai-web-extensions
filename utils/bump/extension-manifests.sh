@@ -23,15 +23,6 @@ for arg in "$@" ; do case "$arg" in
     *) echo -e "${BR}Invalid argument: $arg.${NC}" && exit 1 ;;
 esac ; done
 
-# Log flag values
-echo -e "\n${BY}Parsed Arguments:${NC}"
-echo "  chromium_only = $chromium_only"
-echo "  ff_only = $ff_only"
-echo "  no_commit = $no_commit"
-
-# Exit early for testing
-exit 0
-
 # Init manifest PATHS
 echo -e "${BY}\nSearching for extension manifests...${NC}\n"
 mapfile -t MANIFEST_PATHS < <(find . -type f -name 'manifest.json')
