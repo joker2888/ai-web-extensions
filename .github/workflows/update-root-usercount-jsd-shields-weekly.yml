@@ -108,6 +108,21 @@ jobs:
             echo "$formatted_num"
           }
 
+          # Alphabetize arrays for more readable logging
+          for array_type in "CHROME_EXTENSIONS" "EDGE_ADDONS" "FF_ADDONS" ; do
+            # Extract IDs/names
+            eval ids=\${!$array_type[@]} names=(\"\${$array_type[@]}\")
+            IFS=' ' read -r -a ids <<< "$ids" # converted space-delimited IDs to actual array
+            for ((i = 0 ; i < ${#ids[@]} ; i++)) ; do
+              app_id="${ids[i]}" app_name="${names[i]}" ; done
+            # Create alphabetized arrays
+            sorted_array=()
+            for ((i = 0; i < ${#ids[@]}; i++)) ; do
+              sorted_array+=("${names[i]}:${ids[i]}") ; done
+            IFS=$'\n' sorted_array=($(sort <<<"${sorted_array[*]}"))
+            eval sorted_${array_type}=\(\"\${sorted_array[@]}\"\)
+          done
+
           # Init Greasy Fork user counts
           total_gf_users=200000
           echo -e "\n-----\nTotal Greasy Fork users: $total_gf_users\n-----\n"
