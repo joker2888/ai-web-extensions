@@ -94,5 +94,5 @@ jobs:
         run: |
           cd ${{ github.workspace }}/adamlui/deepseek-omnibox
           git pull # again to sync w/ concurrent workflow updates
-          git add . && git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from https://github.com/adamlui/ai-web-extensionss/tree/main/deepseek-omnibox]" || true
+          git add . && git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from https://github.com/adamlui/ai-web-extensions/tree/main/deepseek-omnibox]" || true
           git push
