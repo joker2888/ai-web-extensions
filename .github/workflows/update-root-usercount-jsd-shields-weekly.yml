@@ -23,19 +23,6 @@ jobs:
 
       - name: Fetch/sum user + JSD request counts
         run: |
-          declare -A GF_SCRIPTS=( # for Greasy Fork script user counts
-            ["460805"]="Autoclear ChatGPT History"
-            ["500663"]="AmazonGPT"
-            ["462440"]="BraveGPT"
-            ["466789"]="ChatGPT Auto-Continue"
-            ["462422"]="ChatGPT Auto Refresh"
-            ["500940"]="ChatGPT Auto-Talk"
-            ["465051"]="ChatGPT Infinity"
-            ["461473"]="ChatGPT Widescreen Mode"
-            ["459849"]="DuckDuckGPT"
-            ["478597"]="GoogleGPT"
-          )
-
           declare -A CHROME_EXTENSIONS=( # for Chrome extension user counts
             ["obnaimomofoogphlhlaipeflcbneamnj"]="Brave Omnibox"
             ["lbojnhaafilddefkdgmbplkafnckaoga"]="ChatGPT Auto-Continue"
@@ -120,23 +107,6 @@ jobs:
             else formatted_num="$num" ; fi # preserve <1K as is
             echo "$formatted_num"
           }
-
-          # Alphabetize arrays for more readable logging
-          for array_type in "GF_SCRIPTS" "CHROME_EXTENSIONS" "EDGE_ADDONS" "FF_ADDONS" ; do
-
-            # Extract IDs/names
-            eval ids=\${!$array_type[@]} names=(\"\${$array_type[@]}\")
-            IFS=' ' read -r -a ids <<< "$ids" # converted space-delimited IDs to actual array
-            for ((i = 0 ; i < ${#ids[@]} ; i++)) ; do
-              app_id="${ids[i]}" app_name="${names[i]}" ; done
-
-            # Create alphabetized arrays
-            sorted_array=()
-            for ((i = 0; i < ${#ids[@]}; i++)) ; do
-              sorted_array+=("${names[i]}:${ids[i]}") ; done
-            IFS=$'\n' sorted_array=($(sort <<<"${sorted_array[*]}"))
-            eval sorted_${array_type}=\(\"\${sorted_array[@]}\"\)
-          done
 
           # Init Greasy Fork user counts
           total_gf_users=200000
