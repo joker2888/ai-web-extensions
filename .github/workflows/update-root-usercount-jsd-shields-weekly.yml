@@ -37,10 +37,11 @@ jobs:
           )
 
           declare -A CHROME_EXTENSIONS=( # for Chrome extension user counts
+            ["obnaimomofoogphlhlaipeflcbneamnj"]="Brave Omnibox"
             ["lbojnhaafilddefkdgmbplkafnckaoga"]="ChatGPT Auto-Continue"
             ["amikeononomkhphopbflomhnmdijjpmb"]="ChatGPT Infinity"
             ["jgnjpnmofkalfliddjelaciggjgnphgm"]="ChatGPT Widescreen Mode"
-            ["obnaimomofoogphlhlaipeflcbneamnj"]="Brave Omnibox"
+            ["gcgfmipiaiopmjcmggnnehnehhdjdkgi"]="DeepSeek Omnibox"
             ["ckhgddjdjkphbaediggjdddjdjgkalom"]="Perplexity Omnibox"
           )
 
@@ -50,6 +51,7 @@ jobs:
             ["chatgpt-infinity"]="ChatGPT Infinity"
             ["chatgpt-omnibox"]="ChatGPT Omnibox"
             ["chatgpt-widescreen"]="ChatGPT Widescreen"
+            ["deepseek-omnibox"]="DeepSeek Omnibox"
             ["phind-omnibox"]="Phind Omnibox"
             ["you-com-omnibox"]="You.com Omnibox"
           )
@@ -59,6 +61,7 @@ jobs:
             ["kaicnimcjamamnlbaeaneofmdjibgepl"]="ChatGPT Auto-Continue"
             ["jgonecnbmehicpdpjkdekamhmlebfagb"]="ChatGPT Infinity"
             ["obnaaalnokmchdoagnhmllakaclaaooa"]="ChatGPT Widescreen Mode"
+            ["hghigiebpackbakklainbimglgiepfei"]="DeepSeek Omnibox"
             ["ffpccpmmcnampmlpdeioklmdjccfmpih"]="Perplexity Omnibox"
           )
 
