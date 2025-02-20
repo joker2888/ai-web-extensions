@@ -141,9 +141,9 @@
         <img height=14 src="https://assets.braveomnibox.com/images/icons/platforms/firefox/icon16.png"></a>
     <a href="https://ff.braveomnibox.com?utm_source=github&utm_medium=readme&utm_content=platform-link">
         Firefox</a> /
-    <a href="https://edge.braveomnibox.com/?utm_source=github&utm_medium=readme&utm_content=platform-link">
+    <a href=https://chrome.braveomnibox.com">
         <img height=12 src="https://assets.braveomnibox.com/images/icons/platforms/edge/icon16.png"></a>
-    <a href="https://edge.braveomnibox.com/?utm_source=github&utm_medium=readme&utm_content=platform-link">
+    <a href=https://chrome.braveomnibox.com">
         Edge</a> /
     <a href="../brave-omnibox/#readme">
         <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.aiwebextensions.com/images/icons/paper-sheet/white.svg"><img height=13 src="https://assets.aiwebextensions.com/images/icons/paper-sheet/black.svg"></picture></a>
@@ -213,9 +213,9 @@
         <img height=14 src="https://assets.chatgptautocontinue.com/images/icons/platforms/firefox/icon16.png"></a>
     <a href="https://ff.chatgptautocontinue.com/?utm_source=github&utm_medium=readme&utm_content=platform-link">
         Firefox</a> /
-    <a href="https://edge.chatgptautocontinue.com/?utm_source=github&utm_medium=readme&utm_content=platform-link">
+    <a href=https://chrome.chatgptautocontinue.com">
         <img height=12 src="https://assets.chatgptautocontinue.com/images/icons/platforms/edge/icon16.png"></a>
-    <a href="https://edge.chatgptautocontinue.com/?utm_source=github&utm_medium=readme&utm_content=platform-link">
+    <a href=https://chrome.chatgptautocontinue.com">
         Edge</a> /
     <a href="https://gm.chatgptautocontinue.com/?utm_source=github&utm_medium=readme&utm_content=platform-link">
         <img height=13 src="https://assets.chatgptautocontinue.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://assets.chatgptautocontinue.com/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://assets.aiwebextensions.com/images/icons/platforms/scriptcat/icon16.png"></a>
@@ -322,9 +322,9 @@ Auto-play ChatGPT responses.
         <img height=14 src="https://assets.chatgptinfinity.com/images/icons/platforms/firefox/icon16.png"></a>
     <a href="https://ff.chatgptinfinity.com/?utm_source=github&utm_medium=readme&utm_content=platform-link">
         Firefox</a> /
-    <a href="https://edge.chatgptinfinity.com">
+    <a href=https://chrome.chatgptinfinity.com">
         <img height=12 src="https://assets.chatgptinfinity.com/images/icons/platforms/edge/icon16.png"></a>
-    <a href="https://edge.chatgptinfinity.com">
+    <a href=https://chrome.chatgptinfinity.com">
         Edge</a> /
     <a href="https://gm.chatgptinfinity.com">
         <img height=13 src="https://assets.chatgptinfinity.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://assets.chatgptinfinity.com/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://assets.aiwebextensions.com/images/icons/platforms/scriptcat/icon16.png"></a>
@@ -394,9 +394,9 @@ Type @chatgpt in browser address bar to get answers from ChatGPT.
         <img height=14 src="https://assets.chatgptwidescreen.com/images/icons/platforms/firefox/icon16.png"></a>
     <a href="https://ff.chatgptwidescreen.com/?utm_source=github&utm_medium=readme&utm_content=platform-link">
         Firefox</a> /
-    <a href="https://edge.chatgptwidescreen.com">
+    <a href=https://chrome.chatgptwidescreen.com">
         <img height=12 src="https://assets.chatgptwidescreen.com/images/icons/platforms/edge/icon16.png"></a>
-    <a href="https://edge.chatgptwidescreen.com">
+    <a href=https://chrome.chatgptwidescreen.com">
         Edge</a> /
     <a href="https://gm.chatgptwidescreen.com">
         <img height=13 src="https://assets.chatgptwidescreen.com/images/icons/platforms/tampermonkey/icon28.png"><img height=13.5 src="https://assets.chatgptwidescreen.com/images/icons/platforms/violentmonkey/icon25.png"><img height=13 src="https://assets.aiwebextensions.com/images/icons/platforms/scriptcat/icon16.png"></a>
@@ -532,7 +532,7 @@ Type @chatgpt in browser address bar to get answers from ChatGPT.
     <a href="../perplexity-omnibox">
         <picture><source type="image/png" media="(prefers-color-scheme: dark)" srcset="https://assets.perplexityomnibox.com/images/icons/perplexity/white/icon32.png"><img width=20 src="https://assets.perplexityomnibox.com/images/icons/perplexity/turquoise/icon32.png"></picture></a>
     <a href="../perplexity-omnibox">Perplexity Omnibox</a>&nbsp;
-    <a href="https://edge.perplexityomnibox.com">
+    <a href=https://chrome.perplexityomnibox.com">
         <img height=20 alt="Trending on Microsoft Edge Add-ons" title="Trending on Microsoft Edge Add-ons" src="https://assets.perplexityomnibox.com/images/badges/microsoft-store/trending/trending-badge-500x91.png"></a>
 </h3>
 
@@ -549,9 +549,9 @@ Type @chatgpt in browser address bar to get answers from ChatGPT.
         <img height=13 src="https://assets.perplexityomnibox.com/images/icons/platforms/chrome/icon16.png"></a>
     <a href="https://chrome.perplexityomnibox.com?utm_source=github&utm_medium=readme&utm_content=platform-link">
         Chrome</a> /
-    <a href="https://edge.perplexityomnibox.com/?utm_source=github&utm_medium=readme&utm_content=platform-link">
+    <a href=https://chrome.perplexityomnibox.com">
         <img height=12 src="https://assets.perplexityomnibox.com/images/icons/platforms/edge/icon16.png"></a>
-    <a href="https://edge.perplexityomnibox.com/?utm_source=github&utm_medium=readme&utm_content=platform-link">
+    <a href=https://chrome.perplexityomnibox.com">
         Edge</a> /
     <a href="../perplexity-omnibox/#readme">
         <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.aiwebextensions.com/images/icons/paper-sheet/white.svg"><img height=13 src="https://assets.aiwebextensions.com/images/icons/paper-sheet/black.svg"></picture></a>
