@@ -42,7 +42,7 @@ for project_name in "${SORTED_PROJECTS[@]}" ; do echo "$project_name" ; done
 echo # line break
 
 # Iterate thru PROJECTS
-bumped_cnt=0
+bumped_manifests=() # for final summary
 TODAY=$(date +'%Y.%-m.%-d')  # YYYY.M.D format
 new_versions=() # for dynamic commit msg
 for project_name in "${SORTED_PROJECTS[@]}" ; do
@@ -80,16 +80,16 @@ for project_name in "${SORTED_PROJECTS[@]}" ; do
         # Bump old version
         sed -i "s/\"$old_ver\"/\"$new_ver\"/" "$manifest_path"
         echo -e "Updated: ${BW}v${old_ver}${NC} → ${BG}v${new_ver}${NC}\n"
-        ((bumped_cnt++))
+        bumped_manifests+=("$platform_manifest_path/manifest.json")
 
     done
 done
-if (( $bumped_cnt == 0 )) ; then echo -e "${BW}Completed. No manifests bumped.${NC}" ; exit 0 ; fi
+if (( ${#bumped_manifests[@]} == 0 )) ; then echo -e "${BW}Completed. No manifests bumped.${NC}" ; exit 0 ; fi
 
 # ADD/COMMIT/PUSH bump(s)
 if [[ "$no_commit" != true ]] ; then
-    plural_suffix=$((( $bumped_cnt > 1 )) && echo "s")
-    echo -e "${BG}${bumped_cnt} manifest${plural_suffix} bumped!\n${NC}"
+    plural_suffix=$((( ${#bumped_manifests[@]} > 1 )) && echo "s")
+    echo -e "${BG}${#bumped_manifests[@]} manifest${plural_suffix} bumped!\n${NC}"
     echo -e "${BY}Committing bump${plural_suffix} to Git...\n${NC}"
     COMMIT_MSG="Bumped \`version\`"
     unique_versions=($(printf "%s\n" "${new_versions[@]}" | sort -u))
@@ -103,7 +103,8 @@ if [[ "$no_commit" != true ]] ; then
     fi
 fi
 
-# FINAL log
+# Final SUMMARY log
 git_action="updated"$( [[ "$no_commit" != true ]] && echo -n "/committed" )$(
                        [[ "$no_push"   != true ]] && echo -n "/pushed" )
-echo -e "\n${BG}Success! ${bumped_cnt} manifest${plural_suffix} ${git_action} to GitHub${NC}"
+echo -e "\n${BG}Success! ${#bumped_manifests[@]} manifest${plural_suffix} ${git_action} to GitHub${NC}"
+for manifest in "${bumped_manifests[@]}" ; do echo -e "  ± $manifest" ; done # log manifests bumped
