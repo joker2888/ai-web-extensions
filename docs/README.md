@@ -122,7 +122,7 @@
 <h3>
     <a href="../brave-omnibox">
         <img width=20 src="https://assets.braveomnibox.com/images/icons/brave/icon32.png"></a>
-    <a href="../brave-omnibox">Brave Omnibox</a>
+    <a href="../brave-omnibox">Brave Omnibox</a>&nbsp;
     <a href="https://edge.braveomnibox.com">
         <img height=20 alt="Trending on Microsoft Edge Add-ons" title="Trending on Microsoft Edge Add-ons" src="https://assets.braveomnibox.com/images/badges/microsoft-store/trending/trending-badge-500x91.png"></a>
 </h3>
