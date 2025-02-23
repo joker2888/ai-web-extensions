@@ -8,7 +8,8 @@
     "method": "POST",
     "parsingRequired": false,
     "respPatterns": { "fail": "很抱歉地|系统公告|文字过长，请删减后重试" },
-    "streamable": true
+    "streamable": true,
+    "supportsLongPrompts": false
   },
   "FREEGPT": {
     "endpoint": "https://am.aifree.site/api/generate",
@@ -19,7 +20,8 @@
     "method": "POST",
     "parsingRequired": false,
     "respPatterns": { "fail": "{\"error\":{\"message\":\"|当日额度已用完,请明天再来吧" },
-    "streamable": true
+    "streamable": true,
+    "supportsLongPrompts": true
   },
   "GPTforLove": {
     "endpoint": "https://api11.gptforlove.com/chat-process",
@@ -33,7 +35,8 @@
     "method": "POST",
     "parsingRequired": true,
     "respPatterns": { "done": "\"finish_reason\":\"stop\"", "fail": "\"data\":null,\"status\":\"Fail\"}" },
-    "streamable": true
+    "streamable": true,
+    "supportsLongPrompts": true
   },
   "MixerBox AI": {
     "endpoint": "https://chatai.mixerbox.com/api/chat/stream",
@@ -43,7 +46,8 @@
     "method": "POST",
     "parsingRequired": true,
     "respPatterns": { "done": "data:(?:message_end|done)" },
-    "streamable": true
+    "streamable": true,
+    "supportsLongPrompts": true
   },
   "OpenAI": {
     "endpoints": {
