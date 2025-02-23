@@ -418,29 +418,29 @@ Type @chatgpt in browser address bar to get answers from ChatGPT.
 
 <h3>
     <a href="../deepseek-omnibox">
-        <img width=18 src="https://cdn.jsdelivr.net/gh/adamlui/deepseek-omnibox/assets/images/icons/deepseek-omnibox/purple-gradient/icon32.png"></a>
+        <img width=18 src="https://assets.deepseekomnibox.com/images/icons/deepseek-omnibox/purple-gradient/icon32.png"></a>
     <a href="../deepseek-omnibox">DeepSeek Omnibox</a>
 </h3>
 
 <details><summary>Type @deepseek in browser address bar to get answers from DeepSeek AI.</summary>
     <br><blockquote>
         <a href="../deepseek-omnibox">
-            <img width=600 src="https://cdn.jsdelivr.net/gh/adamlui/deepseek-omnibox/assets/images/tiles/marquee/chrome/tile625x250.png"></a>
+            <img width=600 src="https://assets.deepseekomnibox.com/images/tiles/marquee/chrome/tile625x250.png"></a>
     </blockquote>
 </details>
 
 <blockquote>
-    <a href="https://chromewebstore.google.com/detail/deepseek-omnibox/gcgfmipiaiopmjcmggnnehnehhdjdkgi?utm_source=github&utm_medium=readme&utm_content=platform-link">
-        <img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/deepseek-omnibox/assets/images/icons/platforms/chrome/icon16.png"></a>
-    <a href="https://chromewebstore.google.com/detail/deepseek-omnibox/gcgfmipiaiopmjcmggnnehnehhdjdkgi?utm_source=github&utm_medium=readme&utm_content=platform-link">
+    <a href="https://chrome.deepseekomnibox.com/?utm_source=github&utm_medium=readme&utm_content=platform-link">
+        <img height=13 src="https://assets.deepseekomnibox.com/images/icons/platforms/chrome/icon16.png"></a>
+    <a href="https://chrome.deepseekomnibox.com/?utm_source=github&utm_medium=readme&utm_content=platform-link">
         Chrome</a> /
-    <a href="https://addons.mozilla.org/firefox/addon/deepseek-omnibox?utm_source=github&utm_medium=readme&utm_content=platform-link">
-        <img height=14 src="https://cdn.jsdelivr.net/gh/adamlui/deepseek-omnibox/assets/images/icons/platforms/firefox/icon16.png"></a>
-    <a href="https://addons.mozilla.org/firefox/addon/deepseek-omnibox?utm_source=github&utm_medium=readme&utm_content=platform-link">
+    <a href="https://ff.deepseekomnibox.com/?utm_source=github&utm_medium=readme&utm_content=platform-link">
+        <img height=14 src="https://assets.deepseekomnibox.com/images/icons/platforms/firefox/icon16.png"></a>
+    <a href="https://ff.deepseekomnibox.com/?utm_source=github&utm_medium=readme&utm_content=platform-link">
         Firefox</a> /
-    <a href="https://chromewebstore.google.com/detail/deepseek-omnibox/gcgfmipiaiopmjcmggnnehnehhdjdkgi?utm_source=github&utm_medium=readme&utm_content=platform-link">
-        <img height=12 src="https://cdn.jsdelivr.net/gh/adamlui/deepseek-omnibox/assets/images/icons/platforms/edge/icon16.png"></a>
-    <a href="https://chromewebstore.google.com/detail/deepseek-omnibox/gcgfmipiaiopmjcmggnnehnehhdjdkgi?utm_source=github&utm_medium=readme&utm_content=platform-link">
+    <a href="https://edge.deepseekomnibox.com">
+        <img height=12 src="https://assets.deepseekomnibox.com/images/icons/platforms/edge/icon16.png"></a>
+    <a href="https://edge.deepseekomnibox.com">
         Edge</a> /
     <a href="../deepseek-omnibox/#readme">
         <picture><source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.aiwebextensions.com/images/icons/paper-sheet/white.svg"><img height=13 src="https://assets.aiwebextensions.com/images/icons/paper-sheet/black.svg"></picture></a>
