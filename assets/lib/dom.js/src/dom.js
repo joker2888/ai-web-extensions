@@ -94,7 +94,8 @@ window.dom = {
         computedWidth(elems) { return this.computedSize(elems, { dimension: 'width' }) }, // including margins
 
         loadedElem(selector, { timeout = null } = {}) {
-            const timeoutPromise = timeout ? new Promise(resolve => setTimeout(() => resolve(null), timeout)) : null
+            const timeoutPromise = new Promise(resolve =>
+                timeout ? setTimeout(() => resolve(null), timeout) : undefined)
             const isLoadedPromise = new Promise(resolve => {
                 const elem = document.querySelector(selector)
                 if (elem) resolve(elem)
@@ -103,7 +104,7 @@ window.dom = {
                     if (elem) { obs.disconnect() ; resolve(elem) }
                 }).observe(document.documentElement, { childList: true, subtree: true })
             })
-            return ( timeoutPromise ? Promise.race([isLoadedPromise, timeoutPromise]) : isLoadedPromise )
+            return Promise.race([isLoadedPromise, timeoutPromise])
         }
     }
 };
