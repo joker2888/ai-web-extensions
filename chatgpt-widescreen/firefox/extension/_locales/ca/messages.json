@@ -17,7 +17,6 @@
   "menuLabel_siteSettings": { "message": "Configuració del lloc" },
   "menuLabel_about": { "message": "Quant a" },
   "menuLabel_donate": { "message": "Envia una donació" },
-  "menuLabel_disabled": { "message": "Deshabilitat" },
   "menuLabel_extensionInstalled": { "message": "extensió instal·lada" },
   "about_author": { "message": "Autor" },
   "about_and": { "message": "i" },
