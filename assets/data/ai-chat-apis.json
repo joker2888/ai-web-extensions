@@ -19,7 +19,8 @@
     },
     "method": "POST",
     "parsingRequired": false,
-    "respPatterns": { "fail": "{\"error\":{\"message\":\"|当日额度已用完,请明天再来吧" },
+    "respPatterns": {
+      "fail": "{\"error\":{\"message\":\"|当日额度已用完,请明天再来吧|当前地区当日额度已消耗完, 请尝试更换网络环境" },
     "streamable": true,
     "supportsLongPrompts": true
   },
