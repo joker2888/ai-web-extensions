@@ -3,7 +3,7 @@
 // Opens Omnibox extension manifests in VS Code
 
 // NOTE: Pass --chrom<e|ium> to open Chromium files only
-// NOTE: Pass --<ff|fire> to open Firefox files only
+// NOTE: Pass --<ff|firefox> to open Firefox files only
 // NOTE: Pass --<project-name> to only include files from that project (partial match allowed)
 
 // Import LIBS
