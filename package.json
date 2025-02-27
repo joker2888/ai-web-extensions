@@ -22,6 +22,7 @@
     "dev:chatgpt-bg": "node utils/dev/extension/chatgpt/background-scripts",
     "dev:chatgpt-content": "node utils/dev/extension/chatgpt/content-scripts",
     "dev:chatgpt-popup": "node utils/dev/extension/chatgpt/popup",
+    "dev:chatgpt-settings": "node utils/dev/extension/chatgpt/settings",
     "dev:chatgpt-manifests": "node utils/dev/extension/chatgpt/manifests",
     "dev:chatgpt-manifests-chrome": "node utils/dev/extension/chatgpt/manifests --chrome",
     "dev:chatgpt-manifests-chromium": "node utils/dev/extension/chatgpt/manifests --chrome",
