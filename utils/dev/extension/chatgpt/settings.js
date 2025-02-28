@@ -7,7 +7,7 @@
 // NOTE: Pass --<project-name> to only include files from that project (partial match allowed)
 
 // Import LIBS
-const { execSync } = require('child_process'),
+const { execFileSync } = require('child_process'),
       { resolve, dirname } = require('path')
 
 const args = process.argv.slice(2)
@@ -29,4 +29,4 @@ const filePaths = projectsToOpen.flatMap(project =>
 ).filter(path => require('fs').existsSync(path))
 
 // OPEN files
-execSync(`code ${repoRoot} ${filePaths.join(' ')}`, { stdio: 'inherit' })
+execFileSync('code', [repoRoot, ...filePaths], { stdio: 'inherit' })
