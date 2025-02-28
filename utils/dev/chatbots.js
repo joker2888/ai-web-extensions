@@ -5,8 +5,7 @@
 const projects = ['amazongpt', 'bravegpt', 'duckduckgpt', 'googlegpt']
 
 // Import LIBS
-const { execSync } = require('child_process'),
-      { resolve, dirname } = require('path')
+const { resolve, dirname } = require('path')
 
 // Init PATHS
 const repoRoot = (dir => {
@@ -17,4 +16,4 @@ const filePaths = projects.map(
 ).filter(path => require('fs').existsSync(path))
 
 // OPEN files
-execSync(`code ${repoRoot} ${filePaths.join(' ')}`, { stdio: 'inherit' })
+require('child_process').execFileSync('code', [repoRoot, ...filePaths], { stdio: 'inherit' })

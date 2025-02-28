@@ -8,10 +8,7 @@
 // NOTE: Pass --all to open all popup files
 // NOTE: Pass --<project-name> to only include files from that project (partial match allowed)
 
-// Import LIBS
-const { execSync } = require('child_process'),
-      { resolve, dirname } = require('path')
-
+const { resolve, dirname } = require('path')
 const args = process.argv.slice(2)
 
 // Init FILES to open
@@ -34,4 +31,4 @@ const filePaths = projectsToOpen.flatMap(project =>
 ).filter(path => require('fs').existsSync(path))
 
 // OPEN files
-execSync(`code ${repoRoot} ${filePaths.join(' ')}`, { stdio: 'inherit' })
+require('child_process').execFileSync('code', [repoRoot, ...filePaths], { stdio: 'inherit' })
