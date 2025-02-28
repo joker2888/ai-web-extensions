@@ -23,17 +23,17 @@ window.settings = {
         get replyLanguage() { return { type: 'prompt', symbol: '🌐',
             label: settings.getMsg('menuLabel_replyLang'),
             helptip: settings.getMsg('prompt_updateReplyLang'),
-            status: window.config.replyLanguage
+            status: config.replyLanguage
         }},
         get replyTopic() { return { type: 'prompt', symbol: '🧠',
             label: settings.getMsg('menuLabel_replyTopic'),
             helptip: settings.getMsg('prompt_updateReplyTopic'),
-            status: window.config.replyTopic
+            status: config.replyTopic
         }},
         get replyInterval() { return { type: 'prompt', symbol: '⌚',
             label: settings.getMsg('menuLabel_replyInt'),
             helptip: settings.getMsg('prompt_updateReplyInt'),
-            status: `${window.config.replyInterval}s`
+            status: `${config.replyInterval}s`
         }}
     },
 
