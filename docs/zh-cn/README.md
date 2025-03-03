@@ -420,7 +420,13 @@
 <h3>
     <a href="../deepseek-omnibox">
         <img width=18 src="https://assets.deepseekomnibox.com/images/icons/deepseek-omnibox/purple-gradient/icon32.png"></a>
-    <a href="../deepseek-omnibox">DeepSeek Omnibox</a>
+    <a href="../deepseek-omnibox">DeepSeek Omnibox</a>&nbsp;
+    <a href="https://ff.deepseekomnibox.com/reviews">
+        <picture>
+            <source type="image/png" media="(prefers-color-scheme: dark)" srcset="https://assets.deepseekomnibox.com/images/badges/5-star/blue-stars.png">
+            <img height=22 alt="[Mozilla 附加组件商店 5 星评价]" title="Mozilla 附加组件商店 5 星评价" src="https://assets.deepseekomnibox.com/images/badges/5-star/yellow-stars-in-white-pill.png">
+        </picture>
+    </a>
 </h3>
 
 <details><summary>在地址栏中输入 @deepseek 以从 DeepSeek AI 获得答案。</summary>

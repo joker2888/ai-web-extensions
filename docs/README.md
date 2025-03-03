@@ -419,7 +419,13 @@ Type @chatgpt in browser address bar to get answers from ChatGPT.
 <h3>
     <a href="../deepseek-omnibox">
         <img width=18 src="https://assets.deepseekomnibox.com/images/icons/deepseek-omnibox/purple-gradient/icon32.png"></a>
-    <a href="../deepseek-omnibox">DeepSeek Omnibox</a>
+    <a href="../deepseek-omnibox">DeepSeek Omnibox</a>&nbsp;
+    <a href="https://ff.deepseekomnibox.com/reviews">
+        <picture>
+            <source type="image/png" media="(prefers-color-scheme: dark)" srcset="https://assets.deepseekomnibox.com/images/badges/5-star/blue-stars.png">
+            <img height=22 alt="[5-stars on Mozilla Add-ons Store]" title="5-stars on Mozilla Add-ons Store" src="https://assets.deepseekomnibox.com/images/badges/5-star/yellow-stars-in-white-pill.png">
+        </picture>
+    </a>
 </h3>
 
 <details><summary>Type @deepseek in browser address bar to get answers from DeepSeek AI.</summary>
