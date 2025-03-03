@@ -372,8 +372,7 @@
 
         function observeSidebars() {
             const sidebars = getSidebars() ; if (!sidebars.length) return
-            if (sidebarObserver.targets)
-                sidebarObserver.targets.forEach(target => sidebarObserver.unobserve(target))
+            sidebarObserver.targets?.forEach(target => sidebarObserver.unobserve(target))
             sidebars.forEach(sidebar => sidebarObserver.observe(sidebar))
             sidebarObserver.targets = sidebars
         }

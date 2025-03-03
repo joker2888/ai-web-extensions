@@ -235,7 +235,7 @@
 // @description:zu      Thuthukisa iChatGPT ngemodi zesikrini ezibanzi/egcwele/ephezulu + imodi yokuvimbela i-spam. Futhi isebenza ku-perplexity.ai + poe.com!
 // @author              Adam Lui
 // @namespace           https://github.com/adamlui
-// @version             2025.3.3
+// @version             2025.3.3.1
 // @license             MIT
 // @icon                https://assets.chatgptwidescreen.com/images/icons/widescreen-robot-emoji/icon48.png?v=844b16e
 // @icon64              https://assets.chatgptwidescreen.com/images/icons/widescreen-robot-emoji/icon64.png?v=844b16e
@@ -956,8 +956,7 @@
 
         function observeSidebars() {
             const sidebars = getSidebars() ; if (!sidebars.length) return
-            if (sidebarObserver.targets)
-                sidebarObserver.targets.forEach(target => sidebarObserver.unobserve(target))
+            sidebarObserver.targets?.forEach(target => sidebarObserver.unobserve(target))
             sidebars.forEach(sidebar => sidebarObserver.observe(sidebar))
             sidebarObserver.targets = sidebars
         }
