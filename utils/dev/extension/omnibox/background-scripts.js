@@ -6,8 +6,15 @@
 // NOTE: Pass --<ff|firefox> to open Firefox files only
 // NOTE: Pass --<project-name> to only include files from that project (partial match allowed)
 
-const { resolve, dirname } = require('path')
+// Import LIBS
+const { resolve, dirname } = require('path'),
+      spawn = require('cross-spawn')
+
 const args = process.argv.slice(2)
+
+// Init UI COLORS
+const br = '\x1b[91m', // bright red
+      nc = '\x1b[0m'   // no color
 
 // Filter PROJECTS
 const availProjects = require('./projects.json')
@@ -27,4 +34,5 @@ const filePaths = projectsToOpen.flatMap(project =>
 ).filter(path => require('fs').existsSync(path))
 
 // OPEN files
-require('child_process').execFileSync('code', [repoRoot, ...filePaths], { stdio: 'inherit' })
+spawn('code', [repoRoot, ...filePaths], { stdio: 'inherit' })
+    .on('error', err => console.error(`${br}Failed to open VS Code: ${err.message}${nc}`))

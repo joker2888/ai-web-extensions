@@ -5,7 +5,12 @@
 const projects = ['amazongpt', 'bravegpt', 'duckduckgpt', 'googlegpt']
 
 // Import LIBS
-const { resolve, dirname } = require('path')
+const { resolve, dirname } = require('path'),
+      spawn = require('cross-spawn')
+
+// Init UI COLORS
+const br = '\x1b[91m', // bright red
+      nc = '\x1b[0m'   // no color
 
 // Init PATHS
 const repoRoot = (dir => {
@@ -16,4 +21,5 @@ const filePaths = projects.map(
 ).filter(path => require('fs').existsSync(path))
 
 // OPEN files
-require('child_process').execFileSync('code', [repoRoot, ...filePaths], { stdio: 'inherit' })
+spawn('code', [repoRoot, ...filePaths], { stdio: 'inherit' })
+    .on('error', err => console.error(`${br}Failed to open VS Code: ${err.message}${nc}`))
