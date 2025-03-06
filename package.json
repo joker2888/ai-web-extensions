@@ -67,6 +67,7 @@
     "@html-eslint/eslint-plugin": "^0.35.1",
     "@html-eslint/parser": "^0.35.1",
     "@stylistic/eslint-plugin-js": "^4.2.0",
+    "cross-spawn": "^7.0.6",
     "eslint": "^9.21.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-regexp": "^2.7.0",
