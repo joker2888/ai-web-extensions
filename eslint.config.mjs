@@ -20,9 +20,9 @@ export default [
                 ...globals.browser, ...globals.greasemonkey, ...globals.node, buttons: 'writable', chatbar: 'writable',
                 chatgpt: 'readonly', chrome: 'readonly', config: 'writable', CryptoJS: 'readonly',
                 cryptoUtils: 'readonly', deepseek: 'readonly', dom: 'readonly', GM_cookie: 'readonly', hljs: 'readonly',
-                icons: 'writable', JSON5: 'readonly', ipv4: 'readonly', marked: 'readonly', modals: 'writable',
-                renderMathInElement: 'readonly', settings: 'writable', toggles: 'writable', tooltip: 'writable',
-                ui: 'readonly'
+                icons: 'writable', importScripts: 'readonly', JSON5: 'readonly', ipv4: 'readonly', marked: 'readonly',
+                modals: 'writable', renderMathInElement: 'readonly', settings: 'writable', toggles: 'writable',
+                tooltip: 'writable', ui: 'readonly'
             }
         },
         plugins: { 'import': importPlugin, 'js-styles': stylisticJS, regexp },
