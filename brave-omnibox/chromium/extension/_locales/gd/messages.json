@@ -1,5 +1,6 @@
 {
   "appName": { "message": "Brave Omnibox" },
   "appAuthor": { "message": "Adam Lui" },
-  "appDesc": { "message": "Cuir a - steach @brave ann am bàr seòlaidh gus toraidhean fhaighinn bho Brave AI" }
+  "appDesc": { "message": "Cuir a - steach @brave ann am bàr seòlaidh gus toraidhean fhaighinn bho Brave AI" },
+  "prefix_ask": { "message": "Iarr" }
 }

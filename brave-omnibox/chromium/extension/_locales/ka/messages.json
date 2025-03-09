@@ -1,5 +1,6 @@
 {
   "appName": { "message": "Brave Omnibox" },
   "appAuthor": { "message": "Adam Lui" },
-  "appDesc": { "message": "Აკრიფეთ @brave მისამართის ზოლში, რომ მიიღოთ შედეგები Brave AI-სგან" }
+  "appDesc": { "message": "Აკრიფეთ @brave მისამართის ზოლში, რომ მიიღოთ შედეგები Brave AI-სგან" },
+  "prefix_ask": { "message": "კითხვა" }
 }

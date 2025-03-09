@@ -1,5 +1,6 @@
 {
   "appName": { "message": "Brave Omnibox" },
   "appAuthor": { "message": "Adam Lui" },
-  "appDesc": { "message": "Type @brave mu kero nomuzariro kuwana migumisiro kubva Brave AI" }
+  "appDesc": { "message": "Type @brave mu kero nomuzariro kuwana migumisiro kubva Brave AI" },
+  "prefix_ask": { "message": "Bvunza" }
 }
