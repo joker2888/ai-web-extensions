@@ -17,7 +17,7 @@
 /perplexity-omnibox/* https://github.com/adamlui/ai-web-extensions/perplexity-omnibox#readme 301
 /phind-omnibox/* https://github.com/adamlui/ai-web-extensions/phind-omnibox#readme 301
 /you.com-omnibox/* https://github.com/adamlui/ai-web-extensions/you.com-omnibox#readme 301
-/* https://github.com/adamlui/ai-web-extensions#readme 301 # redir all else to GH root readme
+/* https://github.com/adamlui/ai-web-extensions#readme 301
 
 # Serve /<project>/pages/* normally
 /:project/pages/* /:project/pages/:splat 200
