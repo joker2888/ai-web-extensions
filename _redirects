@@ -1,8 +1,6 @@
 # https://developers.cloudflare.com/pages/configuration/redirects/
 
-/:project/pages/* /:project/pages/:splat 200 # serve /<project>/pages/* normally
-
-# Redir to GitHub
+# Redir non-Pages paths to GitHub
 /amazongpt/* https://github.com/adamlui/ai-web-extensions/amazongpt#readme 301
 /autoclear-chatgpt-history/* https://github.com/adamlui/ai-web-extensions/autoclear-chatgpt-history#readme 301
 /brave-omnibox/* https://github.com/adamlui/ai-web-extensions/brave-omnibox#readme 301
@@ -20,3 +18,6 @@
 /phind-omnibox/* https://github.com/adamlui/ai-web-extensions/phind-omnibox#readme 301
 /you.com-omnibox/* https://github.com/adamlui/ai-web-extensions/you.com-omnibox#readme 301
 /* https://github.com/adamlui/ai-web-extensions#readme 301 # redir all else to GH root readme
+
+# Serve /<project>/pages/* normally
+/:project/pages/* /:project/pages/:splat 200
