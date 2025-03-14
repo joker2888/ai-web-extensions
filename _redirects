@@ -1,2 +1,5 @@
-/pages/*  /pages/:splat 200
-/*        https://github.com/adamlui/ai-web-extensions#readme 301
+# https://developers.cloudflare.com/pages/configuration/redirects/
+
+/:project/pages/* /:project/pages/:splat 200 # serve /<project>/pages/* normally
+/:project/* https://github.com/adamlui/ai-web-extensions/:project#readme 301 # redir other project paths to GH readme
+/*  https://github.com/adamlui/ai-web-extensions#readme 301 # redir all else to GH root readme
