@@ -1,0 +1,2 @@
+/pages/*  /pages/:splat 200
+/*        https://github.com/adamlui/ai-web-extensions#readme 301
