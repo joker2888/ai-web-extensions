@@ -3,7 +3,7 @@
   "name": "__MSG_appName__",
   "short_name": "__MSG_prefix_ask__ Brave AI",
   "description": "__MSG_appDesc__",
-  "version": "2025.3.9.1",
+  "version": "2025.3.13",
   "author": "Adam Lui",
   "homepage_url": "https://www.braveomnibox.com",
   "default_locale": "en",
@@ -17,7 +17,7 @@
   "action": { "default_title": "__MSG_prefix_ask__ Brave AI" },
   "chrome_settings_overrides": {
     "search_provider": {
-      "name": "Brave AI",
+      "name": "__MSG_prefix_ask__ Brave AI",
       "search_url": "https://search.brave.com/search?q={searchTerms}&summary=1",
       "favicon_url": "icons/icon16.png",
       "keyword": "@brave",
