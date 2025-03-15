@@ -192,7 +192,7 @@
 
 <h3>
     <a href="../chatgpt-auto-continue">
-        <img width=20 src="https://assets.chatgptautocontinue.com/images/icons/continue-symbol/circled/icon32.png?0909ea8"></a>
+        <picture><source type="image/png" media="(prefers-color-scheme: dark)" srcset="https://assets.chatgptautocontinue.com/images/icons/continue-symbol/white/icon32.png?v=1f9acd8"><img height=20 src="https://assets.chatgptautocontinue.com/images/icons/continue-symbol/black/icon32.png?v=1f9acd8"></picture>
     <a href="../chatgpt-auto-continue">ChatGPT Auto-Continue</a>&nbsp;
     <a href="https://github.com/awesome-scripts/awesome-userscripts#chatgpt">
         <img src="https://assets.chatgptautocontinue.com/images/badges/awesome/badge.svg"></a>
