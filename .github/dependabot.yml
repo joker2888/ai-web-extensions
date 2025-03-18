@@ -14,9 +14,12 @@ updates:
       - brave-omnibox/
       - bravegpt/
       - chatgpt-auto-continue/
+      - chatgpt-auto-refresh/
       - chatgpt-auto-talk/
       - chatgpt-infinity/
+      - chatgpt-omnibox/
       - chatgpt-widescreen/
+      - deepseek-omnibox/
       - duckduckgpt/
       - googlegpt/
       - perplexity-omnibox/
