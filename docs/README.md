@@ -233,6 +233,16 @@
         Discuss</a>
 </blockquote>
 
+<!-- IDEA CTA -->
+
+<img height=6px width="100%" src="https://assets.aiwebextensions.com/images/separators/aqua-gradient.png">
+
+<h3>Have an extension idea or request?</h3>
+
+Create a new discussion: https://github.com/adamlui/ai-web-extensions/discussions/new?category=ideas
+
+<img height=6px width="100%" src="https://assets.aiwebextensions.com/images/separators/aqua-gradient.png">
+
 <!-- CHATGPT AUTO REFRESH -->
 
 <h3>
@@ -259,16 +269,6 @@ Keeps ChatGPT sessions fresh, eliminating chat time limits + network errors + Cl
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
         Discuss</a>
 </blockquote>
-
-<!-- IDEA CTA -->
-
-<img height=6px width="100%" src="https://assets.aiwebextensions.com/images/separators/aqua-gradient.png">
-
-<h3>Have an extension idea or request?</h3>
-
-Create a new discussion: https://github.com/adamlui/ai-web-extensions/discussions/new?category=ideas
-
-<img height=6px width="100%" src="https://assets.aiwebextensions.com/images/separators/aqua-gradient.png">
 
 <!-- CHATGPT AUTO-TALK -->
 
@@ -458,6 +458,21 @@ Type @chatgpt in browser address bar to get answers from ChatGPT.
         Discuss</a>
 </blockquote>
 
+<!-- WARP BANNER -->
+
+<img height=6px width="100%" src="https://assets.aiwebextensions.com/images/separators/aqua-gradient.png">
+
+<div id="warp" align="center">
+    <h5>Supported by:</h5>
+    <a href="https://www.warp.dev/chatgptjs" target="_blank">
+        <img width="600" src="https://assets.chatgptjs.org/images/banners/warp/banner-1500x500.png?v=476e837">
+    </a>
+    <h3><a href="https://www.warp.dev/chatgptjs" target="_blank">
+        Warp, the AI Devtool that lives in your terminal</a></h3>
+</div>
+
+<img height=6px width="100%" src="https://assets.aiwebextensions.com/images/separators/aqua-gradient.png">
+
 <!-- DUCKDUCKGPT -->
 
 <h3>
@@ -490,16 +505,6 @@ Type @chatgpt in browser address bar to get answers from ChatGPT.
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
         Discuss</a>
 </blockquote>
-
-<!-- SPONSOR BANNER -->
-
-<img height=6px width="100%" src="https://assets.aiwebextensions.com/images/separators/aqua-gradient.png">
-
-<br>
-
-<a href="https://github.com/sponsors/adamlui"><img width=830 src="https://assets.aiwebextensions.com/images/banners/sponsor/$10/bottom-padded/banner1660x270.png"></a>
-
-<img height=6px width="100%" src="https://assets.aiwebextensions.com/images/separators/aqua-gradient.png">
 
 <!-- GOOGLEGPT -->
 
@@ -620,6 +625,12 @@ Type @you in browser address bar to get results from You.com AI.
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
         Discuss</a>
 </blockquote>
+
+<!-- SPONSOR BANNER -->
+
+<br>
+
+<a href="https://github.com/sponsors/adamlui"><img width=830 src="https://assets.aiwebextensions.com/images/banners/sponsor/$10/bottom-padded/banner1660x270.png"></a>
 
 <!-- FOOTER -->
 

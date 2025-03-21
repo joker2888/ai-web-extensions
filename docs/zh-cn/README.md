@@ -235,6 +235,16 @@
         讨论</a>
 </blockquote>
 
+<!-- IDEA CTA -->
+
+<img height=6px width="100%" src="https://assets.aiwebextensions.com/images/separators/aqua-gradient.png">
+
+<h3>有扩展的想法或要求吗？</h3>
+
+创建新讨论：https://github.com/adamlui/ai-web-extensions/discussions/new?category=ideas
+
+<img height=6px width="100%" src="https://assets.aiwebextensions.com/images/separators/aqua-gradient.png">
+
 <!-- CHATGPT AUTO REFRESH -->
 
 <h3>
@@ -261,16 +271,6 @@
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
         讨论</a>
 </blockquote>
-
-<!-- IDEA CTA -->
-
-<img height=6px width="100%" src="https://assets.aiwebextensions.com/images/separators/aqua-gradient.png">
-
-<h3>有扩展的想法或要求吗？</h3>
-
-创建新讨论：https://github.com/adamlui/ai-web-extensions/discussions/new?category=ideas
-
-<img height=6px width="100%" src="https://assets.aiwebextensions.com/images/separators/aqua-gradient.png">
 
 <!-- CHATGPT AUTO-TALK -->
 
@@ -459,6 +459,21 @@
         讨论</a>
 </blockquote>
 
+<!-- WARP BANNER -->
+
+<img height=6px width="100%" src="https://assets.aiwebextensions.com/images/separators/aqua-gradient.png">
+
+<div id="warp" align="center">
+    <h5>支持：</h5>
+    <a href="https://www.warp.dev/chatgptjs" target="_blank">
+        <img width="600" src="https://assets.chatgptjs.org/images/banners/warp/banner-1500x500.png?v=476e837">
+    </a>
+    <h3><a href="https://www.warp.dev/chatgptjs" target="_blank">
+        Warp，存在于你的终端中的 AI Devtool</a></h3>
+</div>
+
+<img height=6px width="100%" src="https://assets.aiwebextensions.com/images/separators/aqua-gradient.png">
+
 <!-- DUCKDUCKGPT -->
 
 <h3>
@@ -491,16 +506,6 @@
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
         讨论</a>
 </blockquote>
-
-<!-- SPONSOR BANNER -->
-
-<img height=6px width="100%" src="https://assets.aiwebextensions.com/images/separators/aqua-gradient.png">
-
-<br>
-
-<a href="https://github.com/sponsors/adamlui"><img width=830 src="https://assets.aiwebextensions.com/images/banners/sponsor/$10/bottom-padded/banner1660x270.png"></a>
-
-<img height=6px width="100%" src="https://assets.aiwebextensions.com/images/separators/aqua-gradient.png">
 
 <!-- GOOGLEGPT -->
 
@@ -621,6 +626,12 @@
     <a href="https://github.com/adamlui/ai-web-extensions/discussions">
         讨论</a>
 </blockquote>
+
+<!-- SPONSOR BANNER -->
+
+<br>
+
+<a href="https://github.com/sponsors/adamlui"><img width=830 src="https://assets.aiwebextensions.com/images/banners/sponsor/$10/bottom-padded/banner1660x270.png"></a>
 
 <!-- FOOTER -->
 
