@@ -1,8 +1,8 @@
 <div align="right">
     <h6>
         <picture>
-            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://media.chatgptautocontinue.com/images/icons/earth/white/icon32.svg">
-            <img height=14 src="https://media.chatgptautocontinue.com/images/icons/earth/black/icon32.svg">
+            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.chatgptautocontinue.com/images/icons/earth/white/icon32.svg">
+            <img height=14 src="https://assets.chatgptautocontinue.com/images/icons/earth/black/icon32.svg">
         </picture>
         &nbsp;简体中文 |
         <a href="../../LICENSE.md">English</a>
@@ -11,7 +11,7 @@
 
 # 🏛️ MIT 许可证
 
-**版权所有 © 2023–2024 [刘展鹏 (Adam Lui)](https://github.com/adamlui) & [贡献者](./#-贡献者)**
+**版权所有 © 2023–2025 [刘展鹏 (Adam Lui)](https://github.com/adamlui) & [贡献者](./#-贡献者)**
 
 特此免费向任何获得副本的人授予许可本软件和相关文档文件（『软件』），处理在软件中不受限制，包括但不限于权利使用、复制、修改、合并、发布、分发、再许可和/或出售该软件的副本，并允许该软件是提供这样做，但须满足以下条件：
 

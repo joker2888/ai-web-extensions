@@ -1,5 +1,6 @@
 {
   "appName": { "message": "Brave Omnibox" },
   "appAuthor": { "message": "Adam Lui" },
-  "appDesc": { "message": "Барои ба даст овардани натиҷаҳо аз Brave AI дар сатри суроғаҳо @brave нависед" }
+  "appDesc": { "message": "Барои ба даст овардани натиҷаҳо аз Brave AI дар сатри суроғаҳо @brave нависед" },
+  "prefix_ask": { "message": "& Пурсидан" }
 }

@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: "25 2 * * 2" # every Tue @ 2:25 AM
 
+permissions:
+  contents: read
+
 jobs:
   update-root-usercount-jsd-shields:
     runs-on: ubuntu-latest
@@ -20,24 +23,12 @@ jobs:
 
       - name: Fetch/sum user + JSD request counts
         run: |
-          declare -A GF_SCRIPTS=( # for Greasy Fork script user counts
-            ["460805"]="Autoclear ChatGPT History"
-            ["500663"]="AmazonGPT"
-            ["462440"]="BraveGPT"
-            ["466789"]="ChatGPT Auto-Continue"
-            ["462422"]="ChatGPT Auto Refresh"
-            ["500940"]="ChatGPT Auto-Talk"
-            ["465051"]="ChatGPT Infinity"
-            ["461473"]="ChatGPT Widescreen Mode"
-            ["459849"]="DuckDuckGPT"
-            ["478597"]="GoogleGPT"
-          )
-
           declare -A CHROME_EXTENSIONS=( # for Chrome extension user counts
+            ["obnaimomofoogphlhlaipeflcbneamnj"]="Brave Omnibox"
             ["lbojnhaafilddefkdgmbplkafnckaoga"]="ChatGPT Auto-Continue"
             ["amikeononomkhphopbflomhnmdijjpmb"]="ChatGPT Infinity"
             ["jgnjpnmofkalfliddjelaciggjgnphgm"]="ChatGPT Widescreen Mode"
-            ["obnaimomofoogphlhlaipeflcbneamnj"]="Brave Omnibox"
+            ["gcgfmipiaiopmjcmggnnehnehhdjdkgi"]="DeepSeek Omnibox"
             ["ckhgddjdjkphbaediggjdddjdjgkalom"]="Perplexity Omnibox"
           )
 
@@ -45,32 +36,39 @@ jobs:
             ["brave-omnibox"]="Brave Omnibox"
             ["chatgpt-auto-continue"]="ChatGPT Auto-Continue"
             ["chatgpt-infinity"]="ChatGPT Infinity"
+            ["chatgpt-omnibox"]="ChatGPT Omnibox"
             ["chatgpt-widescreen"]="ChatGPT Widescreen"
+            ["deepseek-omnibox"]="DeepSeek Omnibox"
             ["phind-omnibox"]="Phind Omnibox"
             ["you-com-omnibox"]="You.com Omnibox"
           )
 
           declare -A EDGE_ADDONS=( # for Edge addon user counts
+            ["meolmkblenpohjlndodfbgpcfioampim"]="Brave Omnibox"
             ["kaicnimcjamamnlbaeaneofmdjibgepl"]="ChatGPT Auto-Continue"
             ["jgonecnbmehicpdpjkdekamhmlebfagb"]="ChatGPT Infinity"
             ["obnaaalnokmchdoagnhmllakaclaaooa"]="ChatGPT Widescreen Mode"
+            ["ffpccpmmcnampmlpdeioklmdjccfmpih"]="Perplexity Omnibox"
           )
 
           JSD_GH_REPOS=( # for jsDelivr request counts
             "adamlui/ai-web-extensions"
             "adamlui/autoclear-chatgpt-history"
             "adamlui/brave-omnibox"
-            "KudoAI/bravegpt"
             "adamlui/chatgpt-auto-continue"
             "adamlui/chatgpt-auto-refresh"
             "adamlui/chatgpt-auto-talk"
             "adamlui/chatgpt-infinity"
+            "adamlui/chatgpt-omnibox"
+            "adamlui/deepseek-omnibox"
             "adamlui/chatgpt-widescreen"
-            "KudoAI/duckduckgpt"
-            "KudoAI/googlegpt"
             "adamlui/perplexity-omnibox"
             "adamlui/phind-omnibox"
             "adamlui/you.com-omnibox"
+            "KudoAI/amazongpt"
+            "KudoAI/bravegpt"
+            "KudoAI/duckduckgpt"
+            "KudoAI/googlegpt"
           )
 
           expand_num() { # expand nums abbreviated w/ 'k' or 'm' suffix to integers
@@ -110,14 +108,12 @@ jobs:
           }
 
           # Alphabetize arrays for more readable logging
-          for array_type in "GF_SCRIPTS" "CHROME_EXTENSIONS" "EDGE_ADDONS" "FF_ADDONS" ; do
-
+          for array_type in "CHROME_EXTENSIONS" "EDGE_ADDONS" "FF_ADDONS" ; do
             # Extract IDs/names
             eval ids=\${!$array_type[@]} names=(\"\${$array_type[@]}\")
             IFS=' ' read -r -a ids <<< "$ids" # converted space-delimited IDs to actual array
             for ((i = 0 ; i < ${#ids[@]} ; i++)) ; do
               app_id="${ids[i]}" app_name="${names[i]}" ; done
-
             # Create alphabetized arrays
             sorted_array=()
             for ((i = 0; i < ${#ids[@]}; i++)) ; do
@@ -126,16 +122,9 @@ jobs:
             eval sorted_${array_type}=\(\"\${sorted_array[@]}\"\)
           done
 
-          # Fetch/sum Greasy Fork user counts
-          for tuple in "${sorted_GF_SCRIPTS[@]}" ; do
-            script_id="${tuple##*:}" script_name="${tuple%%:*}"
-            base_url="https://img.shields.io/greasyfork/dt/"
-            gf_users=$(curl -s "$base_url$script_id" |
-              sed -n 's/.*<title>installs: \([0-9.k]\+\)*<\/title>.*/\1/Ip')
-            gf_users=$(expand_num "$gf_users")
-            echo "$script_name GF users: $gf_users"
-            total_gf_users=$((total_gf_users + gf_users))
-          done ; echo -e "\n-----\nTotal Greasy Fork users: $total_gf_users\n-----\n"
+          # Init Greasy Fork user counts
+          total_gf_users=200000
+          echo -e "\n-----\nTotal Greasy Fork users: $total_gf_users\n-----\n"
 
           # Fetch/sum Chrome weekly user counts
           for tuple in "${sorted_CHROME_EXTENSIONS[@]}" ; do
@@ -226,7 +215,7 @@ jobs:
           shield_types_updated=0
           [ "$users_updated" = true ] && ((shield_types_updated+=1))
           [ "$requests_updated" = true ] && ((shield_types_updated+=1))
-          if [ "$shield_types_updated" -gt 1 ] ; then multi_shield_types_updated=true ; fi
+          if (( "$shield_types_updated" > 1 )) ; then multi_shield_types_updated=true ; fi
 
           # Define commit msg for push step next
           COMMIT_MSG="Updated "
@@ -237,7 +226,7 @@ jobs:
           echo "COMMIT_MSG=$COMMIT_MSG" >> $GITHUB_ENV # expose for push step
 
           # Set Updated flag to check in subsequent steps
-          if [ "$shield_types_updated" -gt 0 ] ; then echo "SHIELDS_UPDATED=true" >> $GITHUB_ENV ; fi
+          if (( "$shield_types_updated" > 0 )) ; then echo "SHIELDS_UPDATED=true" >> $GITHUB_ENV ; fi
       
       - name: Config committer
         if: env.SHIELDS_UPDATED == 'true'
@@ -253,6 +242,5 @@ jobs:
         run: |
           cd ${{ github.workspace }}/adamlui/ai-web-extensions
           git pull # again to sync w/ concurrent workflow updates
-          git add .
-          git commit -n -m "${{ env.COMMIT_MSG }}" || true
+          git add . && git commit -n -m "${{ env.COMMIT_MSG }}" || true
           git push

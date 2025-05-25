@@ -219,71 +219,89 @@
 // @description:zu      ⚡ Terus menghasilkan imibuzo eminingi ye-ChatGPT ngokwesizulu
 // @author              Adam Lui
 // @namespace           https://github.com/adamlui
-// @version             2024.10.20.2
+// @version             2025.3.15.1
 // @license             MIT
+// @icon                https://assets.chatgptautocontinue.com/images/icons/continue-symbol/circled/with-robot/icon48.png?v=8b39fb4
+// @icon64              https://assets.chatgptautocontinue.com/images/icons/continue-symbol/circled/with-robot/icon64.png?v=8b39fb4
 // @match               *://chatgpt.com/*
-// @match               *://chat.openai.com/*
-// @icon                https://media.chatgptautocontinue.com/images/icons/continue-symbol/circled/with-robot/icon48.png?de3b6bd
-// @icon64              https://media.chatgptautocontinue.com/images/icons/continue-symbol/circled/with-robot/icon64.png?de3b6bd
-// @require             https://cdn.jsdelivr.net/npm/@kudoai/chatgpt.js@3.3.5/dist/chatgpt.min.js#sha256-rfC4kk8q0byrafp7X0Qf9vaa3JNvkHRwNnUt6uL2hUE=
 // @connect             cdn.jsdelivr.net
-// @connect             update.greasyfork.org
+// @connect             gm.chatgptautocontinue.com
+// @connect             raw.githubusercontent.com
+// @require             https://cdn.jsdelivr.net/npm/@kudoai/chatgpt.js@3.7.1/dist/chatgpt.min.js#sha256-uv1k2VxGy+ri3+2C+D/kTYSBCom5JzvrNCLxzItgD6M=
+// @require             https://cdn.jsdelivr.net/gh/adamlui/chatgpt-auto-continue@274036c/chromium/extension/components/modals.js#sha256-8r+vAOuNqGSqk71EI5DlGyXbTLtcD21v64naKRJF5RI=
+// @require             https://cdn.jsdelivr.net/gh/adamlui/chatgpt-auto-continue@762a364/chromium/extension/lib/dom.js#sha256-U+SUWAkqLIY6krdR2WPhVy5/f+cTV03n3F8b+Y+/Py0=
+// @require             https://cdn.jsdelivr.net/gh/adamlui/chatgpt-auto-continue@c2aac90/chromium/extension/lib/settings.js#sha256-TuYeKA5lzdAQdgsZgR7TjlUamABhWwdfVgZsPM0+IJM=
+// @require             https://cdn.jsdelivr.net/gh/adamlui/chatgpt-auto-continue@80e800c/chromium/extension/lib/ui.js#sha256-/szI0bDpLL1aVTrc29iyToff58VMfeM/lSyjHWTipt0=
+// @resource rpgCSS     https://assets.aiwebextensions.com/styles/rising-particles/dist/gray.min.css?v=727feff#sha256-48sEWzNUGUOP04ur52G5VOfGZPSnZQfrF3szUr4VaRs=
+// @resource rpwCSS     https://assets.aiwebextensions.com/styles/rising-particles/dist/white.min.css?v=727feff#sha256-6xBXczm7yM1MZ/v0o1KVFfJGehHk47KJjq8oTktH4KE=
 // @grant               GM_setValue
 // @grant               GM_getValue
 // @grant               GM_registerMenuCommand
 // @grant               GM_unregisterMenuCommand
+// @grant               GM_getResourceText
 // @grant               GM_xmlhttpRequest
 // @grant               GM.xmlHttpRequest
 // @noframes
-// @downloadURL         https://update.greasyfork.org/scripts/466789/chatgpt-auto-continue.user.js
-// @updateURL           https://update.greasyfork.org/scripts/466789/chatgpt-auto-continue.meta.js
+// @downloadURL         https://gm.chatgptautocontinue.com
+// @updateURL           https://gm.chatgptautocontinue.com
 // @homepageURL         https://www.chatgptautocontinue.com
 // @supportURL          https://support.chatgptautocontinue.com
 // @contributionURL     https://github.com/sponsors/adamlui
 // ==/UserScript==
 
 // Documentation: https://docs.chatgptautocontinue.com
-// NOTE: This script relies on the powerful chatgpt.js library @ https://chatgpt.js.org © 2023–2024 KudoAI & contributors under the MIT license.
+// NOTE: This script relies on the powerful chatgpt.js library @ https://chatgpt.js.org
+//  © 2023–2025 KudoAI & contributors under the MIT license.
 
 (async () => {
 
-    // Init ENV vars
-    const env = { scriptManager: (() => { try { return GM_info.scriptHandler } catch (err) { return 'unknown' }})() },
-          xhr = env.scriptManager == 'OrangeMonkey' ? GM_xmlhttpRequest : GM.xmlHttpRequest
-
-    // Init APP info
-    const app = { configKeyPrefix: 'chatGPTautoContinue', latestAssetCommitHash: '0356c3d' },
-          assetHostURL = `https://cdn.jsdelivr.net/gh/adamlui/chatgpt-auto-continue@${app.latestAssetCommitHash}`
-    Object.assign(app, await new Promise(resolve => xhr({
-        method: 'GET', url: `${assetHostURL}/app.json`,
-        onload: resp => resolve(JSON.parse(resp.responseText))
-    })))
-    app.urls.update = app.urls.greasyFork.replace('https://', 'https://update.')
-        .replace(/(\d+)-?([a-zA-Z-]*)$/, (_, id, name) => `${id}/${ name || 'script' }.meta.js`)
-
-    // Init CONFIG
-    const config = { userLanguage: chatgpt.getUserLanguage() }
-    const settings = {
-        load(...keys) {
-            if (Array.isArray(keys[0])) keys = keys[0] // use 1st array arg, else all comma-separated ones
-            keys.forEach(key => config[key] = GM_getValue(app.configKeyPrefix + '_' + key, false))
+    // Init ENV context
+    const env = {
+        browser: {
+            language: chatgpt.getUserLanguage(), isFF: chatgpt.browser.isFirefox(), isMobile: chatgpt.browser.isMobile()
         },
-        save(key, value) { GM_setValue(app.configKeyPrefix + '_' + key, value) ; config[key] = value }
-    } ; settings.load('notifDisabled')
+        scriptManager: {
+            name: (() => { try { return GM_info.scriptHandler } catch (err) { return 'unknown' }})(),
+            version: (() => { try { return GM_info.version } catch (err) { return 'unknown' }})()
+        },
+        ui: { scheme: ui.getScheme() }
+    }
+    env.browser.isPortrait = env.browser.isMobile && (innerWidth < innerHeight)
+    env.scriptManager.supportsTooltips = env.scriptManager.name == 'Tampermonkey'
+                                      && parseInt(env.scriptManager.version.split('.')[0]) >= 5
+    const xhr = typeof GM != 'undefined' && GM.xmlHttpRequest || GM_xmlhttpRequest
 
-    // Init app MESSAGES
+    // Init APP data
+    const app = {
+        version: GM_info.script.version, configKeyPrefix: 'chatGPTautoContinue',
+        chatgptJSver: /chatgpt\.js@([\d.]+)/.exec(GM_info.scriptMetaStr)[1],
+        urls: { update: 'https://gm.chatgptautocontinue.com' },
+        latestResourceCommitHash: '2857f9a' // for cached app.json + messages.json
+    }
+    app.urls.resourceHost = `https://cdn.jsdelivr.net/gh/adamlui/chatgpt-auto-continue@${app.latestResourceCommitHash}`
+    const remoteAppData = await new Promise(resolve => xhr({
+        method: 'GET', url: `${app.urls.resourceHost}/assets/data/app.json`,
+        onload: resp => resolve(JSON.parse(resp.responseText))
+    }))
+    Object.assign(app, { ...remoteAppData, urls: { ...app.urls, ...remoteAppData.urls }})
     app.msgs = {
         appName: app.name,
         appAuthor: app.author.name,
         appDesc: 'Automatically continue generating multiple ChatGPT responses',
+        menuLabel_autoScroll: 'Auto-Scroll',
         menuLabel_modeNotifs: 'Mode Notifications',
         menuLabel_about: 'About',
         menuLabel_donate: 'Please send a donation',
-        menuLabel_disabled: 'Disabled (extension installed)',
+        menuLabel_extensionActive: 'extension active',
+        about_author: 'Author',
+        about_and: '&',
+        about_contributors: 'contributors',
         about_version: 'Version',
         about_poweredBy: 'Powered by',
-        about_sourceCode: 'Source code',
+        about_openSourceCode: 'Open source code',
         mode_autoContinue: 'Auto-Continue',
+        helptip_autoScroll: 'Automatically scroll to bottom as replies are generating',
+        helptip_modeNotifs: 'Show notifications when toggling modes/settings',
         alert_updateAvail: 'Update available',
         alert_newerVer: 'An update to',
         alert_isAvail: 'is available',
@@ -299,22 +317,25 @@
         alert_noMatterSize: 'no matter the size',
         alert_directlySupports: 'directly supports my unpaid efforts to ensure this project remains free and open for all to use',
         alert_tyForSupport: 'Thank you for your support',
-        alert_author: 'author',
         notif_chatAutoContinued: 'Chat Auto-Continued',
-        btnLabel_moreApps: 'More ChatGPT Apps',
+        btnLabel_moreAIextensions: 'More AI Extensions',
         btnLabel_rateUs: 'Rate Us',
+        btnLabel_discuss: 'Discuss',
         btnLabel_getSupport: 'Get Support',
-        btnLabel_updateCheck: 'Check for Updates',
+        btnLabel_checkForUpdates: 'Check for Updates',
         btnLabel_update: 'Update',
         btnLabel_dismiss: 'Dismiss',
         link_viewChanges: 'View changes',
+        state_disabled: 'disabled',
         state_on: 'on',
         state_off: 'off'
     }
-    if (!config.userLanguage.startsWith('en')) { // localize msgs for non-English users
+
+    // LOCALIZE app.msgs for non-English users
+    if (!env.browser.language.startsWith('en')) {
         const localizedMsgs = await new Promise(resolve => {
-            const msgHostDir = assetHostURL + '/chromium/extension/_locales/',
-                  msgLocaleDir = ( config.userLanguage ? config.userLanguage.replace('-', '_') : 'en' ) + '/'
+            const msgHostDir = app.urls.resourceHost + '/chromium/extension/_locales/',
+                  msgLocaleDir = ( env.browser.language ? env.browser.language.replace('-', '_') : 'en' ) + '/'
             let msgHref = msgHostDir + msgLocaleDir + 'messages.json', msgXHRtries = 0
             function fetchMsgs() { xhr({ method: 'GET', url: msgHref, onload: handleMsgs })}
             function handleMsgs(resp) {
@@ -325,8 +346,8 @@
                             flatMsgs[key] = msgs[key].message
                     resolve(flatMsgs)
                 } catch (err) { // if bad response
-                    msgXHRtries++ ; if (msgXHRtries == 3) return resolve({}) // try up to 3X (original/region-stripped/EN) only
-                    msgHref = config.userLanguage.includes('-') && msgXHRtries == 1 ? // if regional lang on 1st try...
+                    msgXHRtries++ ; if (msgXHRtries == 3) return resolve({}) // try original/region-stripped/EN only
+                    msgHref = env.browser.language.includes('-') && msgXHRtries == 1 ? // if regional lang on 1st try...
                         msgHref.replace(/([^_]+_[^_]+)_[^/]*(\/.*)/, '$1$2') // ...strip region before retrying
                             : ( msgHostDir + 'en/messages.json' ) // else use default English messages
                     fetchMsgs()
@@ -337,273 +358,172 @@
         Object.assign(app.msgs, localizedMsgs)
     }
 
-    // Init SETTINGS props
-    Object.assign(app, { settings: { notifDisabled: { type: 'toggle', label: app.msgs.menuLabel_modeNotifs }}})
+    // Export DEPENDENCIES to imported resources
+    dom.import({ scheme: env.ui.scheme }) // for dom.addRisingParticles()
+    modals.import({ app, env, updateCheck }) // for app data + env['<browser|ui>'] flags + modals.about() update btn
+    settings.import({ app }) // for app.configKeyPrefix
+
+    // Init SETTINGS
+    settings.load(Object.keys(settings.controls))
 
     // Define MENU functions
 
-    const menu = {
+    const toolbarMenu = {
         ids: [], state: {
-            symbols: ['❌', '✔️'], separator: env.scriptManager == 'Tampermonkey' ? ' — ' : ': ',
+            symbols: ['❌', '✔️'], separator: env.scriptManager.name == 'Tampermonkey' ? ' — ' : ': ',
             words: [app.msgs.state_off.toUpperCase(), app.msgs.state_on.toUpperCase()]
+        },
+
+        refresh() {
+            if (typeof GM_unregisterMenuCommand == 'undefined') return
+            for (const id of this.ids) { GM_unregisterMenuCommand(id) } this.register()
         },
 
         register() {
 
-            // Add toggles
-            Object.keys(app.settings).forEach(key => {
-                const settingIsEnabled = config[key] ^ /disabled|hidden/i.test(key),
-                      menuLabel = `${ app.settings[key].symbol || menu.state.symbols[+settingIsEnabled] } `
-                                + app.settings[key].label + menu.state.separator + menu.state.words[+settingIsEnabled]
-                menu.ids.push(GM_registerMenuCommand(menuLabel, () => {
-                    settings.save(key, !config[key]) ; syncConfigToUI()
-                    notify(`${app.settings[key].label}: ${menu.state.words[+(/disabled|hidden/i.test(key) ^ config[key])]}`)
-                }))
+            // Show "Disabled (extension active)"
+            if (env.extensionActive)
+                GM_registerMenuCommand(`${this.state.symbols[0]} ${
+                        toTitleCase(app.msgs.state_disabled)} (${app.msgs.menuLabel_extensionActive})`,
+                    () => modals.open('about'), env.scriptManager.supportsTooltips ? { title: ' ' } : undefined )
+
+            // ...or add settings toggles
+            else Object.keys(settings.controls).forEach(key => {
+                const menuLabel = `${ settings.controls[key].symbol || this.state.symbols[+settings.isEnabled(key)] } `
+                                + settings.controls[key].label
+                                + this.state.separator + this.state.words[+settings.isEnabled(key)]
+                this.ids.push(GM_registerMenuCommand(menuLabel, () => {
+                    settings.save(key, !config[key]) ; syncConfigToUI({ updatedKey: key })
+                    notify(`${settings.controls[key].label}: ${
+                        this.state.words[+(/disabled/i.test(key) ^ config[key])]}`)
+                }, env.scriptManager.supportsTooltips ? { title: settings.controls[key].helptip || ' ' } : undefined))
+            });
+
+            // Add About/Donate entries
+            ['about', 'donate'].forEach(entryType => {
+                if (entryType === 'donate' && env.extensionActive) return
+                this.ids.push(GM_registerMenuCommand(
+                    `${ entryType == 'about' ? '💡' : '💖' }`
+                        + ` ${app.msgs[`menuLabel_${entryType}`]} ${ entryType == 'about' ? app.msgs.appName : '' }`,
+                    () => modals.open(entryType), env.scriptManager.supportsTooltips ? { title: ' ' } : undefined
+                ))
             })
-    
-            // Add About entry
-            const aboutLabel = `💡 ${app.msgs.menuLabel_about} ${app.msgs.appName}`
-            menu.ids.push(GM_registerMenuCommand(aboutLabel, modals.about.show))
-
-            // Add Donate entry
-            const donateLabel = `💖 ${app.msgs.menuLabel_donate}`
-            menu.ids.push(GM_registerMenuCommand(donateLabel, modals.donate.show))
-        },
-
-        refresh() {
-            if (env.scriptManager == 'OrangeMonkey') return
-            for (const id of menu.ids) { GM_unregisterMenuCommand(id) } menu.register()
         }
     }
 
     function updateCheck() {
-
-        // Fetch latest meta
-        const currentVer = GM_info.script.version
         xhr({
             method: 'GET', url: app.urls.update + '?t=' + Date.now(),
             headers: { 'Cache-Control': 'no-cache' },
-            onload: response => { const updateAlertWidth = 377
+            onload: resp => {
 
-                // Compare versions
-                const latestVer = /@version +(.*)/.exec(response.responseText)[1]
-                for (let i = 0 ; i < 4 ; i++) { // loop thru subver's
-                    const currentSubVer = parseInt(currentVer.split('.')[i], 10) || 0,
-                          latestSubVer = parseInt(latestVer.split('.')[i], 10) || 0
+                // Compare versions, alert if update found
+                app.latestVer = /@version +(.*)/.exec(resp.responseText)?.[1]
+                if (app.latestVer) for (let i = 0 ; i < 4 ; i++) { // loop thru subver's
+                    const currentSubVer = parseInt(app.version.split('.')[i], 10) || 0,
+                          latestSubVer = parseInt(app.latestVer.split('.')[i], 10) || 0
                     if (currentSubVer > latestSubVer) break // out of comparison since not outdated
-                    else if (latestSubVer > currentSubVer) { // if outdated
+                    else if (latestSubVer > currentSubVer) // if outdated
+                        return modals.open('update', 'available')
+                }
 
-                        // Alert to update
-                        const updateModalID = siteAlert(`🚀 ${app.msgs.alert_updateAvail}!`, // title
-                            `${app.msgs.alert_newerVer} ${app.msgs.appName} `
-                                + `(v${latestVer}) ${app.msgs.alert_isAvail}!  `
-                                + '<a target="_blank" rel="noopener" style="font-size: 0.7rem" '
-                                    + 'href="' + app.urls.gitHub + '/commits/main/greasemonkey/'
-                                    + app.urls.update.replace(/.*\/(.*)meta\.js/, '$1user.js') + '"'
-                                    + `> ${app.msgs.link_viewChanges}</a>`,
-                            function update() { // button
-                                modals.safeWinOpen(app.urls.update.replace('meta.js', 'user.js') + '?t=' + Date.now())
-                            }, '', updateAlertWidth
-                        )
+                // Alert to no update found, nav back to About
+                modals.open('update', 'unavailable')
+        }})
+    }
 
-                        // Localize button labels if needed
-                        if (!config.userLanguage.startsWith('en')) {
-                            const updateAlert = document.querySelector(`[id="${updateModalID}"]`),
-                                  updateBtns = updateAlert.querySelectorAll('button')
-                            updateBtns[1].textContent = app.msgs.btnLabel_update
-                            updateBtns[0].textContent = app.msgs.btnLabel_dismiss
-                        }
-
-                        return
-                }}
-
-                // Alert to no update, return to About modal
-                siteAlert(`${app.msgs.alert_upToDate}!`, // title
-                    `${app.msgs.appName} (v${currentVer}) ${app.msgs.alert_isUpToDate}!`, // msg
-                    '', '', updateAlertWidth
-                )
-                modals.about.show()
-    }})}
+    function toTitleCase(str) {
+        if (!str) return ''
+        const words = str.toLowerCase().split(' ')
+        for (let i = 0 ; i < words.length ; i++) // for each word
+            words[i] = words[i][0].toUpperCase() + words[i].slice(1) // title-case it
+        return words.join(' ') // join'em back together
+    }
 
     // Define FEEDBACK functions
 
     function notify(msg, pos = '', notifDuration = '', shadow = '') {
+        if (config.notifDisabled && !msg.includes(app.msgs.menuLabel_modeNotifs)) return
 
         // Strip state word to append colored one later
-        const foundState = menu.state.words.find(word => msg.includes(word))
+        const foundState = toolbarMenu.state.words.find(word => msg.includes(word))
         if (foundState) msg = msg.replace(foundState, '')
 
         // Show notification
-        chatgpt.notify(`${app.symbol} ${msg}`, pos, notifDuration, shadow || chatgpt.isDarkMode() ? '' : 'shadow')
+        chatgpt.notify(`${app.symbol} ${msg}`, pos, notifDuration, shadow || env.ui.scheme == 'dark' ? '' : 'shadow')
         const notif = document.querySelector('.chatgpt-notif:last-child')
 
         // Append styled state word
         if (foundState) {
-            const styledState = document.createElement('span')
-            styledState.style.cssText = `color: ${
-                foundState == menu.state.words[0] ? '#ef4848 ; text-shadow: rgba(255, 169, 225, 0.44) 2px 1px 5px'
-                                                : '#5cef48 ; text-shadow: rgba(255, 250, 169, 0.38) 2px 1px 5px' }`
-            styledState.append(foundState) ; notif.append(styledState)
+            const stateStyles = {
+                on: {
+                    light: 'color: #5cef48 ; text-shadow: rgba(255,250,169,0.38) 2px 1px 5px',
+                    dark:  'color: #5cef48 ; text-shadow: rgb(55,255,0) 3px 0 10px'
+                },
+                off: {
+                    light: 'color: #ef4848 ; text-shadow: rgba(255,169,225,0.44) 2px 1px 5px',
+                    dark:  'color: #ef4848 ; text-shadow: rgba(255, 116, 116, 0.87) 3px 0 9px'
+                }
+            }
+            const styledStateSpan = dom.create.elem('span')
+            styledStateSpan.style.cssText = stateStyles[
+                foundState == toolbarMenu.state.words[0] ? 'off' : 'on'][env.ui.scheme]
+            styledStateSpan.append(foundState) ; notif.append(styledStateSpan)
         }
     }
 
-    function siteAlert(title = '', msg = '', btns = '', checkbox = '', width = '') {
-        return chatgpt.alert(title, msg, btns, checkbox, width )}
+    // Define UI functions
 
-    // Define MODAL functions
-
-    const modals = {
-
-        about: {
-            show() {
-
-                // Show alert
-                const chatgptJSver = (/chatgpt-([\d.]+)\.min/.exec(GM_info.script.header) || [null, ''])[1],
-                      headingStyle = 'font-size: 1.15rem',
-                      pStyle = 'position: relative ; left: 3px',
-                      pBrStyle = 'position: relative ; left: 4px ',
-                      aStyle = 'color: ' + ( chatgpt.isDarkMode() ? '#c67afb' : '#8325c4' ) // purple
-                const aboutModalID = siteAlert(
-                    app.msgs.appName, // title
-                    `<span style="${headingStyle}"><b>🏷️ <i>${app.msgs.about_version}</i></b>: </span>`
-                        + `<span style="${pStyle}">${GM_info.script.version}</span>\n`
-                    + `<span style="${headingStyle}"><b>⚡ <i>${app.msgs.about_poweredBy}</i></b>: </span>`
-                        + `<span style="${pStyle}"><a style="${aStyle}" href="${app.urls.chatgptJS}" target="_blank" rel="noopener">`
-                        + 'chatgpt.js</a>' + ( chatgptJSver ? ( ' v' + chatgptJSver ) : '' ) + '</span>\n'
-                    + `<span style="${headingStyle}"><b>📜 <i>${app.msgs.about_sourceCode}</i></b>:</span>\n`
-                        + `<span style="${pBrStyle}"><a href="${app.urls.gitHub}" target="_blank" rel="nopener">`
-                        + app.urls.gitHub + '</a></span>',
-                    [ // buttons
-                        function checkForUpdates() { updateCheck() },
-                        function getSupport() { modals.safeWinOpen(app.urls.support) },
-                        function rateUs() { modals.safeWinOpen(app.urls.review.greasyFork) },
-                        function moreChatGPTapps() { modals.safeWinOpen(app.urls.relatedApps) }
-                    ], '', 478 // set width
-                )
-        
-                // Re-format buttons to include emoji + localized label + hide Dismiss button
-                for (const button of document.getElementById(aboutModalID).querySelectorAll('button')) {
-                    button.style.cssText = 'cursor: pointer !important' // since tweaks won't load on auto-disable
-                    if (/updates/i.test(button.textContent)) button.textContent = (
-                        '🚀 ' + ( app.msgs.btnLabel_updateCheck ))
-                    else if (/support/i.test(button.textContent)) button.textContent = (
-                        '🧠 ' + ( app.msgs.btnLabel_getSupport ))
-                    else if (/rate/i.test(button.textContent)) button.textContent = (
-                        '⭐ ' + ( app.msgs.btnLabel_rateUs ))
-                    else if (/apps/i.test(button.textContent)) button.textContent = (
-                        '🤖 ' + ( app.msgs.btnLabel_moreApps ))
-                    else button.style.display = 'none' // hide Dismiss button
-                }
-            }
-        },
-
-        donate: {
-            longCOVIDwikiLink: 'https://en.wikipedia.org/wiki/Long_COVID',
-
-            show() {
-
-                // Show alert
-                const donateModalID = siteAlert(
-                    `💖 ${app.msgs.alert_showYourSupport}`, // title
-                        `<p>${app.msgs.appName} ${app.msgs.alert_isOSS}.</p>`
-                      + `<p>${app.msgs.alert_despiteAffliction} `
-                          + `<a target="_blank" rel="noopener" href="${modals.donate.longCOVIDwikiLink}">${app.msgs.alert_longCOVID}</a> `
-                          + `${app.msgs.alert_since2020}, ${app.msgs.alert_byDonatingResults}.</p>`
-                      + `<p>${app.msgs.alert_yourContrib}, <b>${app.msgs.alert_noMatterSize}</b>, ${app.msgs.alert_directlySupports}.</p>`
-                      + `<p>${app.msgs.alert_tyForSupport}!</p>`
-                      + `<img src="https://cdn.jsdelivr.net/gh/adamlui/adamlui/images/siggie/${ chatgpt.isDarkMode() ? 'white' : 'black' }.png"`
-                          + ' style="height: 54px ; margin: 5px 0 -2px 5px"></img>'
-                      + `<p>—<b><a target="_blank" rel="noopener" href="${app.author.url}">${app.msgs.appAuthor}</a></b>, ${app.msgs.alert_author}</p>`,
-                    [ // buttons
-                        function paypal() { modals.safeWinOpen(app.urls.donate.payPal) },
-                        function githubSponsors() { modals.safeWinOpen(app.urls.donate.gitHub) },
-                        function cashApp() { modals.safeWinOpen(app.urls.donate.cashApp) },
-                        function rateUs() { modals.safeWinOpen(app.urls.review.greasyFork) }
-                    ], '', 478 // set width
-                )
-
-                // Format text
-                const donateModal = document.getElementById(donateModalID)
-                donateModal.querySelectorAll('p').forEach(p => // v-pad text, shrink line height
-                    p.style.cssText = 'padding: 8px 0 ; line-height: 20px')
-
-                // Format buttons
-                const btns = donateModal.querySelectorAll('button')
-                btns.forEach((btn, idx) => {
-                    if (idx == 0) btn.style.display = 'none' // hide Dismiss button
-                    else {
-                        btn.style.cssText = 'padding: 8px 6px !important ; margin-top: -14px ; width: 107px ; line-height: 14px'
-                        if (idx == btns.length -1) // de-emphasize right-most button
-                            btn.classList.remove('primary-modal-btn')
-                        else if (/rate/i.test(btn.textContent)) // localize 'Rate Us' label
-                            btn.textContent = app.msgs.btnLabel_rateUs
-                    }
-                })
-            }
-        },
-
-        safeWinOpen(url) { open(url, '_blank', 'noopener') } // to prevent backdoor vulnerabilities
+    function checkBtnsToClick() {
+        let continueBtnClicked = false // to increase delay before next check if true to avoid repeated clicks
+        const btnTypesToCheck = ['Continue'] ; if (config.autoScroll) btnTypesToCheck.push('Scroll')
+        const btns = {} ; btnTypesToCheck.forEach(type => btns[type] = chatgpt[`get${type}Btn`]())
+        Object.entries(btns).forEach(([btnType, btn]) => {
+            if (!btn || btnType == 'Scroll' && ( !config.autoScroll || !chatgpt.isTyping() )) return
+            btn.click()
+            if (btnType == 'Continue') {
+                continueBtnClicked = true
+                notify(app.msgs.notif_chatAutoContinued, 'bottom-right')
+                if (config.autoScroll) try { chatgpt.scrollToBottom() } catch(err) {}
+        }})
+        setTimeout(checkBtnsToClick, continueBtnClicked ? 5000 : 500)
     }
 
-    // Define SYNC functions
-
-    function syncConfigToUI() { menu.refresh() /* symbols/suffixes */ }
+    function syncConfigToUI() { toolbarMenu.refresh() /* prefixes/suffixes */ }
 
     // Run MAIN routine
 
-    // Create browser TOOLBAR MENU or DISABLE SCRIPT if extension installed
-    const extensionInstalled = await Promise.race([
-        new Promise(resolve => {
-            (function checkExtensionInstalled() {
-                if (document.querySelector('[chatgpt-auto-continue-extension-installed]')) resolve(true)
-                else setTimeout(checkExtensionInstalled, 200)
-            })()
-        }), new Promise(resolve => setTimeout(() => resolve(false), 1500))])
-    if (extensionInstalled) { // disable script/menu
-        GM_registerMenuCommand(`${menu.state.symbols[0]} ${app.msgs.menuLabel_disabled}`, modals.about.show)
-        return // exit script
-    } else menu.register() // create functional menu
-
-    // Add/update TWEAKS style
-    const tweaksStyleUpdated = 20241002 // datestamp of last edit for this file's `tweaksStyle`
-    let tweaksStyle = document.getElementById('tweaks-style') // try to select existing style
-    if (!tweaksStyle || parseInt(tweaksStyle.getAttribute('last-updated'), 10) < tweaksStyleUpdated) { // if missing or outdated
-        if (!tweaksStyle) { // outright missing, create/id/attr/append it first
-            tweaksStyle = document.createElement('style') ; tweaksStyle.id = 'tweaks-style'
-            tweaksStyle.setAttribute('last-updated', tweaksStyleUpdated.toString())
-            document.head.append(tweaksStyle)
-        }
-        tweaksStyle.innerText = (
-            ( chatgpt.isDarkMode() ? '.chatgpt-modal > div { border: 1px solid white }' : '' )
-          + '.chatgpt-modal button {'
-              + 'font-size: 0.77rem ; text-transform: uppercase ;' // shrink/uppercase labels
-              + `border: 2px dashed ${ chatgpt.isDarkMode() ? 'white' : 'black' } !important ; border-radius: 0 !important ;` // thiccen/square/dash borders
-              + 'transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out ;' // smoothen hover fx
-              + 'cursor: pointer !important ;' // add finger cursor
-              + 'padding: 5px !important ; min-width: 102px }' // resize
-          + '.chatgpt-modal button:hover {' // add zoom, re-scheme
-              + 'transform: scale(1.055) ;'
-              + ( chatgpt.isDarkMode() ? 'background-color: #2cff00 !important ; box-shadow: 2px 1px 54px #38ff00 !important ; color: black !important'
-                                       : 'background-color: #c7ff006b !important ; box-shadow: 2px 1px 30px #97ff006b !important' ) + '}'
-          + '.modal-buttons { margin-left: -13px !important }'
-          + '* { scrollbar-width: thin }' // make FF scrollbar skinny to not crop toggle
-          + '.sticky div:active, .sticky div:focus {' // post-GPT-4o UI sidebar button container
-              + 'transform: none !important }' // disable distracting click zoom effect
-        )
+    // Init EXTENSION ACTIVE state
+    postMessage({ action: 'getExtensionInfo', source: `${app.slug}.user.js` }, location.origin)
+    addEventListener('message', handleMsgResp)
+    function handleMsgResp(resp) {
+        if (resp.origin != location.origin) return
+        const sender = resp.data.source
+        env.extensionActive = sender.includes(app.slug) && /extension/i.test(sender)
     }
+    await new Promise(resolve => setTimeout(resolve, 100)) // wait for extension response
+    removeEventListener('message', handleMsgResp)
+
+    // Create browser TOOLBAR MENU + DISABLE SCRIPT if extension active
+    toolbarMenu.register() ; if (env.extensionActive) return
+
+    // Add RISING PARTICLES styles
+    ['rpg', 'rpw'].forEach(cssType => document.head.append(dom.create.style(GM_getResourceText(`${cssType}CSS`))))
 
     // Observe DOM for need to continue generating response
-    (function checkContinueBtn() {
-        const continueBtn = chatgpt.getContinueBtn()
-        if (continueBtn) {
-            continueBtn.click()
-            notify(app.msgs.notif_chatAutoContinued, 'bottom-right')
-            try { chatgpt.scrollToBottom() } catch(err) {}
-            setTimeout(checkContinueBtn, 5000)
-        } else setTimeout(checkContinueBtn, 500)
-    })()
+    checkBtnsToClick()
 
     // NOTIFY of status on load
-    if (!config.notifDisabled) notify(`${app.msgs.mode_autoContinue}: ${app.msgs.state_on.toUpperCase()}`)
+    notify(`${app.msgs.mode_autoContinue}: ${app.msgs.state_on.toUpperCase()}`)
+
+    // Monitor SCHEME PREF changes to update sidebar toggle + modal colors
+    new MutationObserver(handleSchemePrefChange).observe( // for site scheme pref changes
+        document.documentElement, { attributes: true, attributeFilter: ['class'] })
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener( // for browser/system scheme pref changes
+        'change', () => requestAnimationFrame(handleSchemePrefChange))
+    function handleSchemePrefChange() {
+        const displayedScheme = ui.getScheme()
+        if (env.ui.scheme != displayedScheme) { env.ui.scheme = displayedScheme ;  modals.stylize() }
+    }
 
 })()

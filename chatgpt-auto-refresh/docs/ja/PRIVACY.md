@@ -1,8 +1,8 @@
 <div align="right">
     <h6>
         <picture>
-            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://media.chatgptautorefresh.com/images/icons/earth/white/icon32.svg">
-            <img height=14 src="https://media.chatgptautorefresh.com/images/icons/earth/black/icon32.svg">
+            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.chatgptautorefresh.com/images/icons/earth/white/icon32.svg">
+            <img height=14 src="https://assets.chatgptautorefresh.com/images/icons/earth/black/icon32.svg">
         </picture>
         &nbsp;日本語 |
         <a href="../PRIVACY.md">English</a> |
@@ -11,7 +11,7 @@
     </h6>
 </div>
 
-# 🕶️ プライバシーポリシー
+# プライバシーポリシー
 
 ChatGPT Auto Refreshは、ユーザーデータを収集または保存しません。個人を対象とした行動マーケティングやその他の目的で第三者と情報を共有することはありません。第三者から情報を収集することもありません。
 

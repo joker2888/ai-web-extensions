@@ -3,7 +3,7 @@
   "name": "__MSG_appName__",
   "short_name": "ChatGPT 🖥️",
   "description": "__MSG_appDesc__",
-  "version": "2024.10.20.1",
+  "version": "2025.3.16",
   "author": "Adam Lui",
   "homepage_url": "https://www.chatgptwidescreen.com",
   "default_locale": "en",
@@ -12,20 +12,22 @@
     "32": "icons/icon32.png",
     "48": "icons/icon48.png",
     "64": "icons/icon64.png",
-    "128": "icons/icon128.png",
-    "223": "icons/icon223.png"
+    "128": "icons/icon128.png"
   },
   "permissions": [ "activeTab", "storage" ],
   "action": { "default_popup": "popup/index.html" },
   "web_accessible_resources": [{
     "matches": [ "<all_urls>" ],
-    "resources": [ "lib/chatgpt.js", "lib/dom.js", "lib/settings.js" ]
+    "resources": [
+      "components/buttons.js", "components/icons.js", "components/modals.js", "components/tooltip.js",
+      "lib/chatbar.js", "lib/chatgpt.js", "lib/dom.js", "lib/settings.js", "lib/ui.js"
+    ]
   }],
   "content_scripts": [{
     "matches": [ "https://chatgpt.com/*", "https://www.perplexity.ai/*", "https://poe.com/*" ],
     "run_at": "document_end", "js": [ "content.js" ]
   }],
-  "background": { "scripts": [ "background.js" ]},
+  "background": { "scripts": [ "background.js", "lib/json5.min.js" ]},
   "browser_specific_settings": {
     "gecko": { 
       "id": "chatgpt.widescreen@chatgptevo.com",

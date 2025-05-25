@@ -3,7 +3,7 @@
   "name": "__MSG_appName__",
   "short_name": "ChatGPT ∞",
   "description": "__MSG_appDesc__",
-  "version": "2024.10.20",
+  "version": "2025.3.15",
   "author": "Adam Lui",
   "homepage_url": "https://www.chatgptinfinity.com",
   "default_locale": "en",
@@ -18,17 +18,16 @@
   "action": { "default_popup": "popup/index.html" },
   "web_accessible_resources": [{
     "matches": [ "<all_urls>" ],
-    "resources": [ "lib/chatgpt.js", "lib/dom.js", "lib/settings.js" ]
+    "resources": [
+      "lib/chatgpt.js", "lib/dom.js", "lib/settings.js", "lib/ui.js", "components/modals.js", "components/toggles.js" ]
   }],
-  "content_scripts": [{
-    "matches": [ "https://chatgpt.com/*" ],
-    "run_at": "document_end", "js": [ "content.js" ]
-  }],
+  "content_scripts": [{ "matches": [ "https://chatgpt.com/*" ], "run_at": "document_end", "js": [ "content.js" ] }],
   "background": { "scripts": [ "background.js" ]},
   "browser_specific_settings": {
     "gecko": { 
       "id": "chatgpt.infinity@chatgptevo.com",
       "strict_min_version": "109.0"
-    }
+    },
+    "gecko_android": { "strict_min_version": "120.0" }
   }
 }

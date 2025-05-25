@@ -125,8 +125,8 @@
 // @description:cy      *YN DIOGEL* cael gwared â 10 munud ailosod sgwrs + *gwallau rhwydwaith parhaus* + gwiriadau Cloudflare o ChatGPT.
 // @description:da      *SIKKERT* fjern 10-minutters chat-nulstillinger + *konstante netværksfejl* og Cloudflare-tjek fra ChatGPT.
 // @description:de      *SICHER* entfernen Sie 10-Minuten-Chat-Zurücksetzungen + *kontinuierliche Netzwerkfehler* und Cloudflare-Überprüfungen aus ChatGPT.
-// @description:dv      ChatGPT އިން ދޮގު ނަތީޖާ ގެ ގޮތުން ދިމާވާ މިނެޓުގެ އަޑުގަދަވުމުގެ ވަގުތު އަލުން ސެޓްކުރުން 10 ގެ އަދަދު އަނބުރާ ގެނެސްދިނުމާއެކު + *ތެރޭގައި ހުރި ނެޓްވޯކް މައްސަލަތަކާއި* ކްލައުޑްފްލެއަރގެ ޗެކްތައް ދޫކުރުން ބޭނުންވެއެވެ.  
-// @description:dz      *དགའ་བསྐྱིད་བཞུགས་བརྡ* མི་ཉུང་སྐར་མ་གི་ཟའ་གྲགས་རིམ་ལེབ་འགྱུར་བསྡད་མེད་པ། *ངོས་འཛིན་ཡོད་པ་* Cloudflare་བཤད་པ་བཟོ་བའི་ཕྱིར་ ChatGPT ནས་ཕྱི་ལོག །  
+// @description:dv      ChatGPT އިން ދޮގު ނަތީޖާ ގެ ގޮތުން ދިމާވާ މިނެޓުގެ އަޑުގަދަވުމުގެ ވަގުތު އަލުން ސެޓްކުރުން 10 ގެ އަދަދު އަނބުރާ ގެނެސްދިނުމާއެކު + *ތެރޭގައި ހުރި ނެޓްވޯކް މައްސަލަތަކާއި* ކްލައުޑްފްލެއަރގެ ޗެކްތައް ދޫކުރުން ބޭނުންވެއެވެ.
+// @description:dz      *དགའ་བསྐྱིད་བཞུགས་བརྡ* མི་ཉུང་སྐར་མ་གི་ཟའ་གྲགས་རིམ་ལེབ་འགྱུར་བསྡད་མེད་པ། *ངོས་འཛིན་ཡོད་པ་* Cloudflare་བཤད་པ་བཟོ་བའི་ཕྱིར་ ChatGPT ནས་ཕྱི་ལོག །
 // @description:el      *ΜΕ ΑΣΦΑΛΕΙΑ* εξαλείψτε τις επαναφορές συνομιλίας 10 λεπτών + *συνεχείς σφάλματα δικτύου* και ελέγχους Cloudflare από το ChatGPT.
 // @description:eo      *SEKURE* forigu 10-minutajn babiletajajn rekomencigojn + *konstantajn reto-erarojn* kaj Cloudflare-kontrolojn de ChatGPT.
 // @description:es      *SEGURO* elimine los reinicios de chat de 10 minutos + *errores de red constantes* y verificaciones de Cloudflare de ChatGPT.
@@ -136,7 +136,7 @@
 // @description:fi      *TURVALLISESTI* poista ChatGPT:stä 10 minuutin keskustelun nollaukset + *jatkuvat verkkovirheet* ja Cloudflare-tarkistukset.
 // @description:fo      *TRYGT* strika 10 minuttir endursetan av samrøðum + *staðug netbrek* og Cloudflare-royndir frá ChatGPT.
 // @description:fr      *EN TOUTE SÉCURITÉ* éliminez les réinitialisations de chat de 10 minutes + *les erreurs réseau constantes* et les vérifications Cloudflare de ChatGPT.
-// @description:fr-CA   *EN TOUTE SÉCURITÉ* éliminez les réinitialisations de chat de 10 minutes + *les erreurs réseau constantes* et les vérifications Cloudflare de ChatGPT. 
+// @description:fr-CA   *EN TOUTE SÉCURITÉ* éliminez les réinitialisations de chat de 10 minutes + *les erreurs réseau constantes* et les vérifications Cloudflare de ChatGPT.
 // @description:gd      *GU SÀBHALTE* thoir air falbh ath-shuidheachadh còmhraidh 10 mionaid + *mearachdan lìonraidh leantainneach* agus sgrùdaidhean Cloudflare à ChatGPT.
 // @description:gl      *SEGURAMENTE* elimine os reinicios de conversa de 10 minutos + *erros de rede constantes* e verificacións de Cloudflare de ChatGPT.
 // @description:gu      ChatGPT માંથી ૧૦ મિનિટના ચૅટ રીસેટ, *સ્થાયી નેટવર્ક ભૂલો* અને ક્લાઉડફ્લેર તપાસો *સુરક્ષિતપણે* દૂર કરો.
@@ -147,7 +147,7 @@
 // @description:ht      *AN SEKIRITE,* elimine resè chat 10 minit yo, *erè sou rezo ki konstan* epitou tchèk Cloudflare nan ChatGPT.
 // @description:hu      *BIZTONSÁGOSAN* távolítsa el a 10 perces csevegések visszaállításait, a *folyamatos hálózati hibákat* és a Cloudflare ellenőrzéseket a ChatGPT-ből.
 // @description:hy      *ԱՆՎՏԱՆԳՈՒԹՅՈՒՆ ՀԱՍԿԱՑՈՒՄԸ`* հեռացնել 10 րոպեանոց չատի վերագործարկումները, *մշտական ցանցային սխալները* եւ Cloudflare ստուգումները ChatGPT-ից:
-// @description:id      *AMAN* menghapus batas obrolan 10 menit, *kesalahan jaringan yang konstan*, dan pemeriksaan Cloudflare dari ChatGPT. 
+// @description:id      *AMAN* menghapus batas obrolan 10 menit, *kesalahan jaringan yang konstan*, dan pemeriksaan Cloudflare dari ChatGPT.
 // @description:is      *ÖRUGGLEGA* fjarlægðu endurstillingu spjalls í 10 mínútur, *sífelldum netvillum* og Cloudflare prófanir úr ChatGPT.
 // @description:it      *IN SICUREZZA* eliminare i reset della chat di 10 minuti, *gli errori di rete costanti* e i controlli Cloudflare da ChatGPT.
 // @description:ja      ChatGPTから10分のチャットのリセット、*定常的なネットワークのエラー*、Cloudflareのチェックを*安全に*削除してください。
@@ -184,19 +184,19 @@
 // @description:pt      *COM SEGURANÇA* elimine resets de chat de 10 minutos, *erros de rede constantes* e verificações do Cloudflare do ChatGPT.
 // @description:pt-BR   *COM SEGURANÇA* elimine as redefinições de chat de 10 minutos, *erros frequentes de rede* e checagens do do Cloudflare do ChatGPT.
 // @description:rn      *MU BUNYAMINE* gukuraho ingaruka zo gusegurira imyumvire icumi, amakosa akomeye yo mu murongo w'ubucuruzi no kugenzura amabuye ya Cloudflare ukufuma mu ChatGPT.
-// @description:ro      *ÎN SIGURANȚĂ* eliminați reinițializările de chat de 10 minute, erorile constante de rețea și verificările Cloudflare din ChatGPT.  
+// @description:ro      *ÎN SIGURANȚĂ* eliminați reinițializările de chat de 10 minute, erorile constante de rețea și verificările Cloudflare din ChatGPT.
 // @description:ru      *БЕЗОПАСНО* устраните 10-минутные сбросы чата, постоянные сетевые ошибки и проверки Cloudflare из ChatGPT.
 // @description:rw      *MU BUNYAMINE* ikuraho iseswa ry’iminota 10, amakosa akomeje kw’itumanaho mu rwego rw’ibikorwaremezo n’igenzura rya Cloudflare mu ChatGPT.
 // @description:sg      *NI ÌTỌJU* ṣe ìyọ̀sọ́wọ́jú ọrọ̀'lọ̀wọ́ mẹ́rinlelogun, awọn ṣiṣe ilana aláilóbájẹ́ + awọn adánilọ́jọ́ Cloudflare láti inú ChatGPT.
 // @description:si      *ආරක්ෂිතව* 10 මිනිත්තු චැට් යළි සැකසීම්, ස්ථිර ජාල දෝෂ සහ Cloudflare පරීක්ෂණ ChatGPT වෙතින් ඉවත් කරන්න.
 // @description:sk      *BEZPEČNE* odstráňte 10-minútové opätovné nastavenia četu, neustále sieťové chyby a kontroly Cloudflare z ChatGPT.
-// @description:sl      *VARNO* odstranite 10-minutna ponastavljanja klepetov, nenehne napake v omrežju in preverjanja cloudfare iz ChatGPT. 
+// @description:sl      *VARNO* odstranite 10-minutna ponastavljanja klepetov, nenehne napake v omrežju in preverjanja cloudfare iz ChatGPT.
 // @description:sm      *MA FA'AMANUIAGA* ia eseese fa'amalosi e tusi tulaga tautua ta'aloga e 10 minute + tala esemanuuga + nisi'i Cloudflare mai ChatGPT.
 // @description:sn      *KANA KUTAMBA WAKAWANDA* dzimba kupindura zvakare maonero echirongwa che10min + zvivi zvisingakoni nekupera + ruzivo rweCloudflare uye kubvisa zviri muChatGPT.
 // @description:so      *SI AMMAAN* ka saar 10 daqiiqo dib u habayn xidhiidh + xatooyin xaaladaha ah + baaritaan Cloudflare ka mid ah ChatGPT.
 // @description:sr      *BEZBEDNO* eliminišite 10-minutna resetovanja ćaska, konstantne mrežne greške i Cloudflare provere iz ChatGPT-a.
 // @description:sv      *SÄKERT* eliminera 10-minuters återställningar av chattar, konstanta nätverksfel och Cloudflare-kontroller från ChatGPT.
-// @description:sw      *KWA USALAMA* ondoa marejesho ya mazungumzo ya dakika 10, hitilafu endelevu za mtandao na ukaguzi wa Cloudflare kutoka ChatGPT.  
+// @description:sw      *KWA USALAMA* ondoa marejesho ya mazungumzo ya dakika 10, hitilafu endelevu za mtandao na ukaguzi wa Cloudflare kutoka ChatGPT.
 // @description:ta      *பாதுகாப்பாக* 10 நிமிட உரையாடல் மறுதொடக்கங்கள், தொடர்ச்சியான வலையமைப்பு பிழைகள், மேகக்கம்பெனி சோதனைகளை ChatGPT இருந்து அகற்றுங்கள்.
 // @description:te      *సురక్షితంగా* 10 నిమిషాల చాట్ రీసెట్లు, నిరంతర నెట్వర్క్ లోపాలు, క్లౌడ్ఫ్లేర్ తనిఖీలను ChatGPT నుండి తీసివేయండి.
 // @description:tg      *БО ҲИФЗИ АМНИЯТ* 10-дақиқагии бозсозии чат, хатогиҳои доимии шабака ва санҷиши Cloudflare-ро аз ChatGPT ҳазф намоед.
@@ -220,10 +220,10 @@
 // @description:zu      *NGOKUPHEPHA* susa ukusetha kabusha ingxoxo yemizuzu eyi-10 + amaphutha enethiwekhi ahlala njalo + Ukuhlolwa kwe-Cloudflare ku-ChatGPT.
 // @author              Adam Lui
 // @namespace           https://github.com/adamlui
-// @version             2024.10.20.1
+// @version             2025.3.15
 // @license             MIT
-// @match               *://chatgpt.com/*
-// @match               *://chat.openai.com/*
+// @icon                https://assets.chatgptautorefresh.com/images/icons/openai/black/icon48.png?v=f11a0a8
+// @icon64              https://assets.chatgptautorefresh.com/images/icons/openai/black/icon64.png?v=f11a0a8
 // @compatible          chrome
 // @compatible          firefox
 // @compatible          edge
@@ -234,90 +234,75 @@
 // @compatible          librewolf
 // @compatible          ghost
 // @compatible          qq
-// @icon                https://media.chatgptautorefresh.com/images/icons/openai/black/icon48.png?c56f963
-// @icon64              https://media.chatgptautorefresh.com/images/icons/openai/black/icon64.png?c56f963
-// @require             https://cdn.jsdelivr.net/npm/@kudoai/chatgpt.js@3.3.5/dist/chatgpt.min.js#sha256-rfC4kk8q0byrafp7X0Qf9vaa3JNvkHRwNnUt6uL2hUE=
+// @match               *://chatgpt.com/*
 // @connect             cdn.jsdelivr.net
-// @connect             update.greasyfork.org
+// @connect             gm.chatgptautorefresh.com
+// @connect             raw.githubusercontent.com
+// @require             https://cdn.jsdelivr.net/npm/@kudoai/chatgpt.js@3.7.1/dist/chatgpt.min.js#sha256-uv1k2VxGy+ri3+2C+D/kTYSBCom5JzvrNCLxzItgD6M=
+// @require             https://assets.aiwebextensions.com/lib/dom.js/dist/dom.min.js?v=607b343#sha256-p8+Cxb2EvM4F4H7nZbljakpZ+8H9wAgj6++MRErdXe8=
+// @resource rpgCSS     https://assets.aiwebextensions.com/styles/rising-particles/dist/gray.min.css?v=727feff#sha256-48sEWzNUGUOP04ur52G5VOfGZPSnZQfrF3szUr4VaRs=
+// @resource rpwCSS     https://assets.aiwebextensions.com/styles/rising-particles/dist/white.min.css?v=727feff#sha256-6xBXczm7yM1MZ/v0o1KVFfJGehHk47KJjq8oTktH4KE=
 // @grant               GM_setValue
 // @grant               GM_getValue
 // @grant               GM_registerMenuCommand
 // @grant               GM_unregisterMenuCommand
+// @grant               GM_getResourceText
 // @grant               GM_xmlhttpRequest
 // @grant               GM.xmlHttpRequest
-// @run-at              document-start
 // @noframes
-// @downloadURL         https://update.greasyfork.org/scripts/462422/chatgpt-auto-refresh.user.js
-// @updateURL           https://update.greasyfork.org/scripts/462422/chatgpt-auto-refresh.meta.js
+// @downloadURL         https://gm.chatgptautorefresh.com
+// @updateURL           https://gm.chatgptautorefresh.com
 // @homepageURL         https://www.chatgptautorefresh.com
 // @supportURL          https://support.chatgptautorefresh.com
 // @contributionURL     https://github.com/sponsors/adamlui
 // ==/UserScript==
 
 // Documentation: https://docs.chatgptautorefresh.com
-// NOTE: This script relies on the powerful chatgpt.js library @ https://chatgpt.js.org © 2023–2024 KudoAI & contributors under the MIT license.
+// NOTE: This script relies on the powerful chatgpt.js library @ https://chatgpt.js.org
+//  © 2023–2025 KudoAI & contributors under the MIT license.
 
 (async () => {
 
-    // Init APP info
+    // Init ENV context
+    const env = {
+        browser: {
+            language: chatgpt.getUserLanguage(), isMobile: chatgpt.browser.isMobile(), isFF: chatgpt.browser.isFirefox()
+        },
+        scriptManager: {
+            name: (() => { try { return GM_info.scriptHandler } catch (err) { return 'unknown' }})(),
+            version: (() => { try { return GM_info.version } catch (err) { return 'unknown' }})()
+        },
+        ui: { scheme: getScheme() }
+    }
+    env.browser.isPortrait = env.browser.isMobile && (innerWidth < innerHeight)
+    env.scriptManager.supportsTooltips = env.scriptManager.name == 'Tampermonkey'
+                                      && parseInt(env.scriptManager.version.split('.')[0]) >= 5
+    const xhr = typeof GM != 'undefined' && GM.xmlHttpRequest || GM_xmlhttpRequest
+
+    // Init APP data
     const app = {
-        name: 'ChatGPT Auto Refresh', symbol: '↻', configKeyPrefix: 'chatGPTautoRefresh',
+        name: 'ChatGPT Auto Refresh', version: GM_info.script.version, symbol: '↻', slug: 'chatgpt-auto-refresh',
+        configKeyPrefix: 'chatGPTautoRefresh', chatgptJSver: /chatgpt\.js@([\d.]+)/.exec(GM_info.scriptMetaStr)[1],
         author: { name: 'Adam Lui', url: 'https://github.com/adamlui' },
         urls: {
             chatgptJS: 'https://chatgpt.js.org',
+            contributors: 'https://docs.chatgptautorefresh.com/#-contributors',
+            discuss: 'https://github.com/adamlui/chatgpt-auto-refresh/discussions',
             donate: {
                 cashApp: 'https://cash.app/$adamlui',
                 gitHub: 'https://github.com/sponsors/adamlui',
                 payPal: 'https://paypal.me/adamlui'
             },
             gitHub: 'https://github.com/adamlui/chatgpt-auto-refresh',
-            greasyFork: 'https://greasyfork.org/scripts/462422-chatgpt-auto-refresh',
-            mediaHost: 'https://media.chatgptautorefresh.com',
-            relatedApps: 'https://github.com/adamlui/ai-web-extensions',
-            review: { greasyFork: 'https://greasyfork.org/scripts/462422-chatgpt-auto-refresh/feedback#post-discussion' },
-            support: 'https://support.chatgptautorefresh.com'
+            assetHost: 'https://assets.chatgptautorefresh.com',
+            relatedExtensions: 'https://github.com/adamlui/ai-web-extensions',
+            support: 'https://support.chatgptautorefresh.com',
+            update: 'https://gm.chatgptautorefresh.com'
         },
-        latestAssetCommitHash: '14a2767' // for cached messages.json + navicon
+        latestResourceCommitHash: '11d8353' // for cached messages.json + navicon in toggles.sidebar.insert()
     }
-    app.urls.assetHost = app.urls.gitHub.replace('github.com', 'cdn.jsdelivr.net/gh') + `@${app.latestAssetCommitHash}`
-    app.urls.update = app.urls.greasyFork.replace('https://', 'https://update.')
-        .replace(/(\d+)-?([a-zA-Z-]*)$/, (_, id, name) => `${id}/${ name || 'script' }.meta.js`)
-
-    // Init ENV info
-    const env = {
-        browser: { isMobile: chatgpt.browser.isMobile(), isFF: chatgpt.browser.isFirefox() },
-        scriptManager: (() => { try { return GM_info.scriptHandler } catch (err) { return 'unknown' }})()
-    }
-
-    // Init CONFIG
-    const config = { userLanguage: chatgpt.getUserLanguage() }
-    const settings = {
-        load(...keys) {
-            if (Array.isArray(keys[0])) keys = keys[0] // use 1st array arg, else all comma-separated ones
-            keys.forEach(key => config[key] = GM_getValue(app.configKeyPrefix + '_' + key, false))
-        },
-        save(key, value) { GM_setValue(app.configKeyPrefix + '_' + key, value) ; config[key] = value }
-    } ; settings.load('arDisabled', 'notifDisabled', 'refreshInterval', 'toggleHidden')
-    if (!config.refreshInterval) settings.save('refreshInterval', 30) // init refresh interval to 30 secs if unset
-
-    // Prevent sporadic convo RESETS
-    const ogAEL = EventTarget.prototype.addEventListener
-    EventTarget.prototype.addEventListener = function(type, listener, optionsOrUseCapture) {
-        let calledByOpenAI = false
-        if (type == 'focus' && this === unsafeWindow || type == 'visibilitychange') {
-            const callStack = new Error().stack + '\n',
-                  aelCaller = /-extension:\/\/.*\n(.+)/.exec(callStack)?.[1]
-            calledByOpenAI = !aelCaller?.includes('-extension://')
-            if (calledByOpenAI && type == 'visibilitychange') {
-                ogAEL.call(this, type, function(event) {
-                    if (document.visibilityState != 'visible') listener.call(this, event)
-                }, optionsOrUseCapture)
-        }}
-        if (!calledByOpenAI) ogAEL.apply(this, arguments)
-    }
-
-    // Init app MESSAGES
-    const xhr = env.scriptManager == 'OrangeMonkey' ? GM_xmlhttpRequest : GM.xmlHttpRequest
+    app.urls.resourceHost = app.urls.gitHub.replace('github.com', 'cdn.jsdelivr.net/gh')
+                          + `@${app.latestResourceCommitHash}`
     app.msgs = {
         appName: app.name,
         appAuthor: app.author.name,
@@ -328,10 +313,16 @@
         menuLabel_refreshInt: 'Refresh Interval',
         menuLabel_about: 'About',
         menuLabel_donate: 'Please send a donation',
+        about_author: 'Author',
+        about_and: '&',
+        about_contributors: 'contributors',
         about_version: 'Version',
         about_poweredBy: 'Powered by',
-        about_sourceCode: 'Source code',
+        about_openSourceCode: 'Open source code',
         prompt_updateInt: 'Update refresh interval (in secs)',
+        helptip_toggleVis: 'Show Auto-Refresh toggle in sidebar',
+        helptip_modeNotifs: 'Show notifications when toggling modes/settings',
+        helptip_refreshInt: 'Average delay between refreshes (in seconds)',
         alert_intUpdated: 'Interval updated',
         alert_willRefresh: 'ChatGPT session will auto-refresh every',
         alert_choosePlatform: 'Choose a platform',
@@ -349,12 +340,12 @@
         alert_noMatterSize: 'no matter the size',
         alert_directlySupports: 'directly supports my unpaid efforts to ensure this project remains free and open for all to use',
         alert_tyForSupport: 'Thank you for your support',
-        alert_author: 'author',
         alert_isUpToDate: 'is up-to-date',
-        btnLabel_moreApps: 'More ChatGPT Apps',
+        btnLabel_moreAIextensions: 'More AI Extensions',
         btnLabel_rateUs: 'Rate Us',
+        btnLabel_discuss: 'Discuss',
         btnLabel_getSupport: 'Get Support',
-        btnLabel_updateCheck: 'Check for Updates',
+        btnLabel_checkForUpdates: 'Check for Updates',
         btnLabel_update: 'Update',
         btnLabel_dismiss: 'Dismiss',
         link_viewChanges: 'View changes',
@@ -364,10 +355,12 @@
         state_on: 'on',
         state_off: 'off'
     }
-    if (!config.userLanguage.startsWith('en')) { // localize msgs for non-English users
+
+    // LOCALIZE app.msgs for non-English users
+    if (!env.browser.language.startsWith('en')) {
         const localizedMsgs = await new Promise(resolve => {
-            const msgHostDir = app.urls.assetHost + '/greasemonkey/_locales/',
-                  msgLocaleDir = ( config.userLanguage ? config.userLanguage.replace('-', '_') : 'en' ) + '/'
+            const msgHostDir = app.urls.resourceHost + '/greasemonkey/_locales/',
+                  msgLocaleDir = ( env.browser.language ? env.browser.language.replace('-', '_') : 'en' ) + '/'
             let msgHref = msgHostDir + msgLocaleDir + 'messages.json', msgXHRtries = 0
             function fetchMsgs() { xhr({ method: 'GET', url: msgHref, onload: handleMsgs })}
             function handleMsgs(resp) {
@@ -378,8 +371,8 @@
                             flatMsgs[key] = msgs[key].message
                     resolve(flatMsgs)
                 } catch (err) { // if bad response
-                    msgXHRtries++ ; if (msgXHRtries == 3) return resolve({}) // try up to 3X (original/region-stripped/EN) only
-                    msgHref = config.userLanguage.includes('-') && msgXHRtries == 1 ? // if regional lang on 1st try...
+                    msgXHRtries++ ; if (msgXHRtries == 3) return resolve({}) // try original/region-stripped/EN only
+                    msgHref = env.browser.language.includes('-') && msgXHRtries == 1 ? // if regional lang on 1st try...
                         msgHref.replace(/([^_]+_[^_]+)_[^/]*(\/.*)/, '$1$2') // ...strip region before retrying
                             : ( msgHostDir + 'en/messages.json' ) // else use default English messages
                     fetchMsgs()
@@ -390,428 +383,642 @@
         Object.assign(app.msgs, localizedMsgs)
     }
 
+    // Export DEPENDENCIES to imported resources
+    dom.import({ env }) // for dom.addRisingParticles()
+
+    // Init SETTINGS
+    const config = {}
+    const settings = {
+
+        controls: { // displays top-to-bottom in toolbar menu
+            arDisabled: { type: 'toggle', defaultVal: false,
+                label: app.msgs.menuLabel_autoRefresh },
+            toggleHidden: { type: 'toggle', defaultVal: false,
+                label: app.msgs.menuLabel_toggleVis, helptip: app.msgs.helptip_toggleVis },
+            notifDisabled: { type: 'toggle', defaultVal: false,
+                label: app.msgs.menuLabel_modeNotifs, helptip: app.msgs.helptip_modeNotifs },
+            refreshInterval: { type: 'prompt', symbol: '⌚',
+                label: app.msgs.menuLabel_refreshInt, helptip: app.msgs.helptip_refreshInt }
+        },
+
+        isEnabled(key) {
+            const reInvertFlags = /disabled|hidden/i
+            return reInvertFlags.test(key) // flag in control key name
+                && !reInvertFlags.test(this.controls[key]?.label || '') // but not in label msg key name
+                    ? !config[key] : config[key] // so invert since flag reps opposite state, else don't
+        },
+
+        load(...keys) {
+            keys.flat().forEach(key => {
+                config[key] = GM_getValue(`${app.configKeyPrefix}_${key}`,
+                    this.controls[key]?.defaultVal ?? this.controls[key]?.type == 'toggle')
+            })
+        },
+
+        save(key, val) { GM_setValue(`${app.configKeyPrefix}_${key}`, val) ; config[key] = val }
+    }
+    settings.load(Object.keys(settings.controls))
+    if (!config.refreshInterval) settings.save('refreshInterval', 30) // init refresh interval to 30 secs if unset
+
     // Define MENU functions
 
-    const menu = {
+    const toolbarMenu = {
         ids: [], state: {
-            symbols: ['❌', '✔️'], separator: env.scriptManager == 'Tampermonkey' ? ' — ' : ': ',
+            symbols: ['❌', '✔️'], separator: env.scriptManager.name == 'Tampermonkey' ? ' — ' : ': ',
             words: [app.msgs.state_off.toUpperCase(), app.msgs.state_on.toUpperCase()]
+        },
+
+        refresh() {
+            if (typeof GM_unregisterMenuCommand == 'undefined') return
+            for (const id of this.ids) { GM_unregisterMenuCommand(id) } this.register()
         },
 
         register() {
 
-            // Add Auto-Refresh toggle
-            const arLabel = menu.state.symbols[+!config.arDisabled] + ' '
-                          + ( app.msgs.menuLabel_autoRefresh ) + ' ↻ '
-                          + menu.state.separator + menu.state.words[+!config.arDisabled]
-            menu.ids.push(GM_registerMenuCommand(arLabel, () => {
-                document.getElementById('auto-refresh-switch-span').click()
-            }))
+            // Init prompt setting status labels
+            settings.controls.refreshInterval.status = `${config.refreshInterval}s`
 
-            // Add Toggle Visibility toggle
-            const tvLabel = menu.state.symbols[+!config.toggleHidden] + ' '
-                          + ( app.msgs.menuLabel_toggleVis )
-                          + menu.state.separator + menu.state.words[+!config.toggleHidden]
-            menu.ids.push(GM_registerMenuCommand(tvLabel, () => {
-                settings.save('toggleHidden', !config.toggleHidden)
-                navToggleDiv.style.display = config.toggleHidden ? 'none' : 'flex' // toggle visibility
-                notify(`${app.msgs.menuLabel_toggleVis}: ${menu.state.words[+!config.toggleHidden]}`)
-                menu.refresh()
-            }))
+            // Add toggles
+            Object.keys(settings.controls).forEach(key => {
+                const ctrlType = settings.controls[key].type
+                const ctrlStatus = settings.controls[key].status
+                const menuLabel = `${ settings.controls[key].symbol || this.state.symbols[+settings.isEnabled(key)] } `
+                                + settings.controls[key].label
+                                + ( ctrlType == 'toggle' ? this.state.separator
+                                                         + this.state.words[+settings.isEnabled(key)]
+                                                         : ctrlStatus ? `— ${settings.controls[key].status}` : '' )
+                this.ids.push(GM_registerMenuCommand(menuLabel, () => {
+                    if (ctrlType == 'toggle') {
+                        settings.save(key, !config[key])
+                        notify(`${settings.controls[key].label}: ${
+                            this.state.words[+(config[key] ^ /disabled/i.test(key))]}`)
+                    } else { // Refresh Interval prompt
+                        while (true) {
+                            const refreshInterval = prompt(
+                                `${app.msgs.prompt_updateInt}:`, config.refreshInterval)
+                            if (refreshInterval == null) break // user cancelled so do nothing
+                            else if (!isNaN(parseInt(refreshInterval, 10)) && parseInt(refreshInterval, 10) > 0) {
+                                settings.save('refreshInterval', parseInt(refreshInterval, 10))
+                                if (chatgpt.autoRefresh.isActive) { // reset running auto-refresh
+                                    chatgpt.autoRefresh.deactivate()
+                                    chatgpt.autoRefresh.activate(refreshInterval)
+                                }
+                                this.refresh()
+                                const minInterval = Math.max(2, config.refreshInterval - 10)
+                                const maxInterval = config.refreshInterval + 10
+                                modals.alert(`${app.msgs.alert_intUpdated}!`,
+                                    `${app.msgs.alert_willRefresh} ${minInterval}–${maxInterval} ${app.msgs.unit_secs}`)
+                                break
+                        }}
+                    }
+                    syncConfigToUI({ updatedKey: key })
+                }, env.scriptManager.supportsTooltips ? { title: settings.controls[key].helptip || ' ' } : undefined))
+            });
 
-            // Add Mode Notifications toggle
-            const mnLabel = menu.state.symbols[+!config.notifDisabled] + ' '
-                          + ( app.msgs.menuLabel_modeNotifs )
-                          + menu.state.separator + menu.state.words[+!config.notifDisabled]
-            menu.ids.push(GM_registerMenuCommand(mnLabel, () => {
-                settings.save('notifDisabled', !config.notifDisabled)
-                notify(`${app.msgs.menuLabel_modeNotifs}: ${menu.state.words[+!config.notifDisabled]}`)
-                menu.refresh()
-            }))
-
-            // Add Refresh Interval entry
-            const riLabel = '⌚ ' + ( app.msgs.menuLabel_refreshInt ) + ' '
-                          + menu.state.separator + config.refreshInterval + 's'
-            menu.ids.push(GM_registerMenuCommand(riLabel, () => {
-                while (true) {
-                    const refreshInterval = prompt(
-                        `${app.msgs.prompt_updateInt}:`, config.refreshInterval)
-                    if (refreshInterval === null) break // user cancelled so do nothing
-                    else if (!isNaN(parseInt(refreshInterval, 10)) && parseInt(refreshInterval, 10) > 0) { // valid int set
-                        settings.save('refreshInterval', parseInt(refreshInterval, 10))
-                        if (chatgpt.autoRefresh.isActive) { // reset running auto-refresh
-                            chatgpt.autoRefresh.deactivate()
-                            chatgpt.autoRefresh.activate(refreshInterval)
-                        }
-                        menu.refresh()
-                        const minInterval = Math.max(2, config.refreshInterval - 10),
-                            maxInterval = config.refreshInterval + 10
-                        siteAlert(( app.msgs.alert_intUpdated ) + '!',
-                            ( app.msgs.alert_willRefresh )
-                                + `${minInterval}–${maxInterval} ${app.msgs.unit_secs}`
-                        )
-                        break
-            }}}))
-
-            // Add About entry
-            const aboutLabel = `💡 ${app.msgs.menuLabel_about} ${app.msgs.appName}`
-            menu.ids.push(GM_registerMenuCommand(aboutLabel, modals.about.show))
-
-            // Add Donate entry
-            const donateLabel = `💖 ${app.msgs.menuLabel_donate}`
-            menu.ids.push(GM_registerMenuCommand(donateLabel, modals.donate.show))
-        },
-
-        refresh() {
-            if (env.scriptManager == 'OrangeMonkey') return
-            for (const id of menu.ids) { GM_unregisterMenuCommand(id) } menu.register()
+            // Add About/Donate entries
+            ['about', 'donate'].forEach(entryType => this.ids.push(GM_registerMenuCommand(
+                `${ entryType == 'about' ? '💡' : '💖' }`
+                    + ` ${app.msgs[`menuLabel_${entryType}`]} ${ entryType == 'about' ? app.msgs.appName : '' }`,
+                () => modals.open(entryType), env.scriptManager.supportsTooltips ? { title: ' ' } : undefined
+            )))
         }
     }
 
     function updateCheck() {
-
-        // Fetch latest meta
-        const currentVer = GM_info.script.version
         xhr({
             method: 'GET', url: app.urls.update + '?t=' + Date.now(),
             headers: { 'Cache-Control': 'no-cache' },
-            onload: response => { const updateAlertWidth = 377
+            onload: resp => {
 
-                // Compare versions
-                const latestVer = /@version +(.*)/.exec(response.responseText)[1]
-                for (let i = 0 ; i < 4 ; i++) { // loop thru subver's
-                    const currentSubVer = parseInt(currentVer.split('.')[i], 10) || 0,
-                          latestSubVer = parseInt(latestVer.split('.')[i], 10) || 0
+                // Compare versions, alert if update found
+                app.latestVer = /@version +(.*)/.exec(resp.responseText)?.[1]
+                if (app.latestVer) for (let i = 0 ; i < 4 ; i++) { // loop thru subver's
+                    const currentSubVer = parseInt(app.version.split('.')[i], 10) || 0,
+                          latestSubVer = parseInt(app.latestVer.split('.')[i], 10) || 0
                     if (currentSubVer > latestSubVer) break // out of comparison since not outdated
-                    else if (latestSubVer > currentSubVer) { // if outdated
+                    else if (latestSubVer > currentSubVer) // if outdated
+                        return modals.open('update', 'available')
+                }
 
-                        // Alert to update
-                        const updateModalID = siteAlert(`🚀 ${app.msgs.alert_updateAvail}!`, // title
-                            `${app.msgs.alert_newerVer} ${app.msgs.appName} `
-                                + `(v${latestVer}) ${app.msgs.alert_isAvail}!  `
-                                + '<a target="_blank" rel="noopener" style="font-size: 0.7rem" '
-                                    + 'href="' + app.urls.gitHub + '/commits/main/greasemonkey/'
-                                    + app.urls.update.replace(/.*\/(.*)meta\.js/, '$1user.js') + '"'
-                                    + `> ${app.msgs.link_viewChanges}</a>`,
-                            function update() { // button
-                                modals.safeWinOpen(app.urls.update.replace('meta.js', 'user.js') + '?t=' + Date.now())
-                            }, '', updateAlertWidth
-                        )
-
-                        // Localize button labels if needed
-                        if (!config.userLanguage.startsWith('en')) {
-                            const updateAlert = document.querySelector(`[id="${updateModalID}"]`),
-                                  updateBtns = updateAlert.querySelectorAll('button')
-                            updateBtns[1].textContent = app.msgs.btnLabel_update
-                            updateBtns[0].textContent = app.msgs.btnLabel_dismiss
-                        }
-
-                        return
-                }}
-
-                // Alert to no update, return to About modal
-                siteAlert(`${app.msgs.alert_upToDate}!`, // title
-                    `${app.msgs.appName} (v${currentVer}) ${app.msgs.alert_isUpToDate}!`, // msg
-                    '', '', updateAlertWidth
-                )
-                modals.about.show()
-    }})}
+                // Alert to no update found, nav back to About
+                modals.open('update', 'unavailable')
+        }})
+    }
 
     // Define FEEDBACK functions
 
     function notify(msg, pos = '', notifDuration = '', shadow = '') {
-        if (config.notifDisabled && !msg.includes(app.msgs.menuLabel_modeNotifs)) return
 
         // Strip state word to append colored one later
-        const foundState = menu.state.words.find(word => msg.includes(word))
+        const foundState = toolbarMenu.state.words.find(word => msg.includes(word))
         if (foundState) msg = msg.replace(foundState, '')
 
         // Show notification
-        chatgpt.notify(`${app.symbol} ${msg}`, pos, notifDuration, shadow || chatgpt.isDarkMode() ? '' : 'shadow')
+        chatgpt.notify(`${app.symbol} ${msg}`, pos, notifDuration, shadow || env.ui.scheme == 'dark' ? '' : 'shadow')
         const notif = document.querySelector('.chatgpt-notif:last-child')
 
         // Append styled state word
         if (foundState) {
-            const styledState = document.createElement('span')
-            styledState.style.cssText = `color: ${
-                foundState == menu.state.words[0] ? '#ef4848 ; text-shadow: rgba(255, 169, 225, 0.44) 2px 1px 5px'
-                                                : '#5cef48 ; text-shadow: rgba(255, 250, 169, 0.38) 2px 1px 5px' }`
-            styledState.append(foundState) ; notif.append(styledState)
+            const stateStyles = {
+                on: {
+                    light: 'color: #5cef48 ; text-shadow: rgba(255,250,169,0.38) 2px 1px 5px',
+                    dark:  'color: #5cef48 ; text-shadow: rgb(55,255,0) 3px 0 10px'
+                },
+                off: {
+                    light: 'color: #ef4848 ; text-shadow: rgba(255,169,225,0.44) 2px 1px 5px',
+                    dark:  'color: #ef4848 ; text-shadow: rgba(255, 116, 116, 0.87) 3px 0 9px'
+                }
+            }
+            const styledStateSpan = dom.create.elem('span')
+            styledStateSpan.style.cssText = stateStyles[
+                foundState == toolbarMenu.state.words[0] ? 'off' : 'on'][env.ui.scheme]
+            styledStateSpan.append(foundState) ; notif.append(styledStateSpan)
         }
     }
-
-    function siteAlert(title = '', msg = '', btns = '', checkbox = '', width = '') {
-        return chatgpt.alert(title, msg, btns, checkbox, width )}
 
     // Define MODAL functions
 
     const modals = {
+        stack: [], // of types of undismissed modals
+        class: `${app.slug}-modal`,
 
-        about: {
-            show() {
+        about() {
 
-                // Init data/styles
-                const chatgptJSver = (/chatgpt-([\d.]+)\.min/.exec(GM_info.script.header) || [null, ''])[1],
-                      headingStyle = 'font-size: 1.15rem',
-                      pStyle = 'position: relative ; left: 3px',
-                      pBrStyle = 'position: relative ; left: 4px ',
-                      aStyle = 'color: ' + ( chatgpt.isDarkMode() ? '#c67afb' : '#8325c4' ) // purple
-        
-                // Show modal
-                const aboutModalID = siteAlert(
-                    app.msgs.appName, // title
-                    `<span style="${headingStyle}"><b>🏷️ <i>${app.msgs.about_version}</i></b>: </span>`
-                        + `<span style="${pStyle}">${GM_info.script.version}</span>\n`
-                    + `<span style="${headingStyle}"><b>⚡ <i>${app.msgs.about_poweredBy}</i></b>: </span>`
-                        + `<span style="${pStyle}"><a style="${aStyle}" href="${app.urls.chatgptJS}" target="_blank" rel="noopener">`
-                        + 'chatgpt.js</a>' + ( chatgptJSver ? ( ' v' + chatgptJSver ) : '' ) + '</span>\n'
-                    + `<span style="${headingStyle}"><b>📜 <i>${app.msgs.about_sourceCode}</i></b>:</span>\n`
-                        + `<span style="${pBrStyle}"><a href="${app.urls.gitHub}" target="_blank" rel="nopener">`
-                        + app.urls.gitHub + '</a></span>',
-                    [ // buttons
-                        function checkForUpdates() { updateCheck() },
-                        function getSupport() { modals.safeWinOpen(app.urls.support) },
-                        function rateUs() { modals.safeWinOpen(app.urls.review.greasyFork) },
-                        function moreChatGPTapps() { modals.safeWinOpen(app.urls.relatedApps) }
-                    ], '', 478 // set width
-                )
-        
-                // Re-format buttons to include emoji + localized label + hide Dismiss button
-                for (const button of document.getElementById(aboutModalID).querySelectorAll('button')) {
-                    if (/updates/i.test(button.textContent)) button.textContent = (
-                        '🚀 ' + ( app.msgs.btnLabel_updateCheck ))
-                    else if (/support/i.test(button.textContent)) button.textContent = (
-                        '🧠 ' + ( app.msgs.btnLabel_getSupport ))
-                    else if (/rate/i.test(button.textContent)) button.textContent = (
-                        '⭐ ' + ( app.msgs.btnLabel_rateUs ))
-                    else if (/apps/i.test(button.textContent)) button.textContent = (
-                        '🤖 ' + ( app.msgs.btnLabel_moreApps ))
-                    else button.style.display = 'none' // hide Dismiss button
+            // Show modal
+            const labelStyles = 'text-transform: uppercase ; font-size: 17px ; font-weight: bold ;'
+                              + `color: ${ env.ui.scheme == 'dark' ? 'white' : '#494141' }`
+            const aboutModal = modals.alert(
+                `${app.symbol} ${app.msgs.appName}`, // title
+                `<span style="${labelStyles}">🧠 ${app.msgs.about_author}:</span> `
+                    + `<a href="${app.author.url}">${app.msgs.appAuthor}</a> ${app.msgs.about_and}`
+                        + ` <a href="${app.urls.contributors}">${app.msgs.about_contributors}</a>\n`
+                + `<span style="${labelStyles}">🏷️ ${app.msgs.about_version}:</span> `
+                    + `<span class="about-em">${app.version}</span>\n`
+                + `<span style="${labelStyles}">📜 ${app.msgs.about_openSourceCode}:</span> `
+                    + `<a href="${app.urls.gitHub}" target="_blank" rel="nopener">`
+                        + app.urls.gitHub + '</a>\n'
+                + `<span style="${labelStyles}">⚡ ${app.msgs.about_poweredBy}:</span> `
+                    + `<a href="${app.urls.chatgptJS}" target="_blank" rel="noopener">chatgpt.js</a>`
+                        + ` v${app.chatgptJSver}`,
+                [ // buttons
+                    function checkForUpdates() { updateCheck() },
+                    function getSupport(){},
+                    function discuss() {},
+                    function moreAIextensions(){}
+                ], '', 714 // set width
+            )
+
+            // Format text
+            aboutModal.querySelector('h2').style.cssText = (
+                'text-align: center ; font-size: 51px ; line-height: 46px ; padding: 15px 0' )
+            aboutModal.querySelector('p').style.cssText = (
+                'text-align: center ; overflow-wrap: anywhere ;'
+              + `margin: ${ env.browser.isPortrait ? '6px 0 -16px' : '3px 0 29px' }` )
+
+            // Hack buttons
+            aboutModal.querySelectorAll('button').forEach(btn => {
+                btn.style.cssText = 'height: 58px ; min-width: 136px ; text-align: center'
+
+                // Replace link buttons w/ clones that don't dismiss modal
+                if (/support|discuss|extensions/i.test(btn.textContent)) {
+                    btn.replaceWith(btn = btn.cloneNode(true))
+                    btn.onclick = () => modals.safeWinOpen(app.urls[
+                        btn.textContent.includes(app.msgs.btnLabel_getSupport) ? 'support'
+                      : btn.textContent.includes(app.msgs.btnLabel_discuss) ? 'discuss' : 'relatedExtensions'
+                    ])
                 }
-            }
+
+                // Prepend emoji + localize labels
+                if (/updates/i.test(btn.textContent))
+                    btn.textContent = `🚀 ${app.msgs.btnLabel_checkForUpdates}`
+                else if (/support/i.test(btn.textContent))
+                    btn.textContent = `🧠 ${app.msgs.btnLabel_getSupport}`
+                else if (/discuss/i.test(btn.textContent))
+                    btn.textContent = `🗨️ ${app.msgs.btnLabel_discuss}`
+                else if (/extensions/i.test(btn.textContent))
+                    btn.textContent = `🤖 ${app.msgs.btnLabel_moreAIextensions}`
+
+                // Hide Dismiss button
+                else btn.style.display = 'none' // hide Dismiss button
+            })
+
+            return aboutModal
         },
 
-        donate: {
-            longCOVIDwikiLink: 'https://en.wikipedia.org/wiki/Long_COVID',
+        alert(title = '', msg = '', btns = '', checkbox = '', width = '') { // generic one from chatgpt.alert()
+            const alertID = chatgpt.alert(title, msg, btns, checkbox, width),
+                  alert = document.getElementById(alertID).firstChild
+            this.init(alert) // add classes + rising particles bg
+            return alert
+        },
 
-            show() {
+        donate() {
 
-                // Show alert
-                const donateModalID = siteAlert(
-                    `💖 ${app.msgs.alert_showYourSupport}`, // title
-                        `<p>${app.msgs.appName} ${app.msgs.alert_isOSS}.</p>`
-                      + `<p>${app.msgs.alert_despiteAffliction} `
-                          + `<a target="_blank" rel="noopener" href="${modals.donate.longCOVIDwikiLink}">${app.msgs.alert_longCOVID}</a> `
-                          + `${app.msgs.alert_since2020}, ${app.msgs.alert_byDonatingResults}.</p>`
-                      + `<p>${app.msgs.alert_yourContrib}, <b>${app.msgs.alert_noMatterSize}</b>, ${app.msgs.alert_directlySupports}.</p>`
-                      + `<p>${app.msgs.alert_tyForSupport}!</p>`
-                      + `<img src="https://cdn.jsdelivr.net/gh/adamlui/adamlui/images/siggie/${ chatgpt.isDarkMode() ? 'white' : 'black' }.png"`
-                          + ' style="height: 54px ; margin: 5px 0 -2px 5px"></img>'
-                      + `<p>—<b><a target="_blank" rel="noopener" href="${app.author.url}">${app.msgs.appAuthor}</a></b>, ${app.msgs.alert_author}</p>`,
-                    [ // buttons
-                        function paypal() { modals.safeWinOpen(app.urls.donate.payPal) },
-                        function githubSponsors() { modals.safeWinOpen(app.urls.donate.gitHub) },
-                        function cashApp() { modals.safeWinOpen(app.urls.donate.cashApp) },
-                        function rateUs() { modals.safeWinOpen(app.urls.review.greasyFork) }
-                    ], '', 478 // set width
-                )
+            // Show modal
+            const donateModal = modals.alert(
+                `💖 ${app.msgs.alert_showYourSupport}`, // title
+                    `<p>${app.msgs.appName} ${app.msgs.alert_isOSS}.</p>`
+                    + `<p>${app.msgs.alert_despiteAffliction} `
+                        + '<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Long_COVID">'
+                            + `${app.msgs.alert_longCOVID}</a> `
+                        + `${app.msgs.alert_since2020}, ${app.msgs.alert_byDonatingResults}.</p>`
+                    + `<p>${app.msgs.alert_yourContrib}, <b>${app.msgs.alert_noMatterSize}</b>, `
+                        + `${app.msgs.alert_directlySupports}.</p>`
+                    + `<p>${app.msgs.alert_tyForSupport}!</p>`
+                    + '<img src="https://cdn.jsdelivr.net/gh/adamlui/adamlui/images/siggie/'
+                        + `${ env.ui.scheme == 'dark' ? 'white' : 'black' }.png" `
+                        + 'style="height: 54px ; margin: 5px 0 -2px 5px"></img>'
+                    + `<p>—<b><a target="_blank" rel="noopener" href="${app.author.url}">`
+                        + `${app.msgs.appAuthor}</a></b>, ${app.msgs.about_author.toLowerCase()}</p>`,
+                [ // buttons
+                    function paypal(){},
+                    function githubSponsors(){},
+                    function cashApp(){}
+                ], '', 478 // set width
+            )
 
-                // Format text
-                const donateModal = document.getElementById(donateModalID)
-                donateModal.querySelectorAll('p').forEach(p => // v-pad text, shrink line height
-                    p.style.cssText = 'padding: 8px 0 ; line-height: 20px')
+            // Format text
+            donateModal.querySelectorAll('p').forEach(p => // v-pad text, shrink line height
+                p.style.cssText = 'padding: 8px 0 ; line-height: 20px')
+
+            // Hack buttons
+            const btns = donateModal.querySelectorAll('button')
+            btns.forEach((btn, idx) => {
+
+                // Replace link buttons w/ clones that don't dismiss modal
+                if (!/dismiss/i.test(btn.textContent)) {
+                    btn.replaceWith(btn = btn.cloneNode(true))
+                    btn.onclick = () => modals.safeWinOpen(app.urls.donate[
+                        btn.textContent == 'Cash App' ? 'cashApp'
+                      : btn.textContent == 'Github Sponsors' ? 'gitHub' : 'payPal'
+                    ])
+                }
 
                 // Format buttons
-                const btns = donateModal.querySelectorAll('button')
-                btns.forEach((btn, idx) => {
-                    if (idx == 0) btn.style.display = 'none' // hide Dismiss button
-                    else {
-                        btn.style.cssText = 'padding: 8px 6px !important ; margin-top: -14px ; width: 107px ; line-height: 14px'
-                        if (idx == btns.length -1) // de-emphasize right-most button
-                            btn.classList.remove('primary-modal-btn')
-                        else if (/rate/i.test(btn.textContent)) // localize 'Rate Us' label
-                            btn.textContent = app.msgs.btnLabel_rateUs
-                    }
-                })
-            }
+                if (idx == 0) btn.style.display = 'none' // hide Dismiss button
+                else {
+                    btn.style.cssText = 'padding: 8px 6px !important ; margin-top: -14px ;'
+                                      + ' width: 107px ; line-height: 14px'
+                    if (idx == btns.length -1) // de-emphasize right-most button
+                        btn.classList.remove('primary-modal-btn')
+                }
+            })
+
+            return donateModal
         },
 
-        safeWinOpen(url) { open(url, '_blank', 'noopener') } // to prevent backdoor vulnerabilities
+        init(modal) {
+            if (!this.styles) this.stylize() // to init/append stylesheet
+            modal.classList.add('no-user-select', this.class) ; modal.parentNode.classList.add(`${this.class}-bg`)
+            dom.addRisingParticles(modal)
+        },
+
+        observeRemoval(modal, modalType, modalSubType) { // to maintain stack for proper nav
+            const modalBG = modal.parentNode
+            new MutationObserver(([mutation], obs) => {
+                mutation.removedNodes.forEach(removedNode => { if (removedNode == modalBG) {
+                    if (modals.stack[0].includes(modalSubType || modalType)) { // new modal not launched so nav back
+                        modals.stack.shift() // remove this modal type from stack 1st
+                        const prevModalType = modals.stack[0]
+                        if (prevModalType) { // open it
+                            modals.stack.shift() // remove type from stack since re-added on open
+                            modals.open(prevModalType)
+                        }
+                    }
+                    obs.disconnect()
+                }})
+            }).observe(modalBG.parentNode, { childList: true, subtree: true })
+        },
+
+        open(modalType, modalSubType) {
+            const modal = modalSubType ? this[modalType][modalSubType]() : this[modalType]() // show modal
+            if (!modal) return // since no div returned
+            this.stack.unshift(modalSubType ? `${modalType}_${modalSubType}` : modalType) // add to stack
+            this.init(modal) // add classes + rising particles bg
+            this.observeRemoval(modal, modalType, modalSubType) // to maintain stack for proper nav
+        },
+
+        safeWinOpen(url) { open(url, '_blank', 'noopener') }, // to prevent backdoor vulnerabilities
+
+        stylize() {
+            if (!this.styles) {
+                this.styles = dom.create.style(null, { id: `${this.class}-styles` })
+                document.head.append(this.styles)
+            }
+            this.styles.innerText = (
+                `.no-user-select {
+                    user-select: none ; -webkit-user-select: none ; -moz-user-select: none ; -ms-user-select: none }`
+              + `.${this.class} {` // modals
+                  + 'font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto,'
+                      + 'Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif ;'
+                  + 'padding: 20px 25px 24px 25px !important ; font-size: 20px ;'
+                  + `color: ${ env.ui.scheme == 'dark' ? 'white' : 'black' } !important ;`
+                  + `background-image: linear-gradient(180deg, ${
+                       env.ui.scheme == 'dark' ? '#99a8a6 -200px, black 200px' : '#b6ebff -296px, white 171px' }) }`
+              + `.${this.class} [class*=modal-close-btn] {`
+                  + 'position: absolute !important ; float: right ; top: 14px !important ; right: 16px !important ;'
+                  + 'cursor: pointer ; width: 33px ; height: 33px ; border-radius: 20px }'
+              + `.${this.class} [class*=modal-close-btn] svg { height: 10px }`
+              + `.${this.class} [class*=modal-close-btn] path {`
+                  + `${ env.ui.scheme == 'dark' ? 'stroke: white ; fill: white' : 'stroke: #9f9f9f ; fill: #9f9f9f' }}`
+              + ( env.ui.scheme == 'dark' ?  // invert dark mode hover paths
+                    `.${this.class} [class*=modal-close-btn]:hover path { stroke: black ; fill: black }` : '' )
+              + `.${this.class} [class*=modal-close-btn]:hover { background-color: #f2f2f2 }` // hover underlay
+              + `.${this.class} [class*=modal-close-btn] svg { margin: 11.5px }` // center SVG for hover underlay
+              + `.${this.class} a { color: #${ env.ui.scheme == 'dark' ? '00cfff' : '1e9ebb' } !important }`
+              + `.${this.class} h2 { font-weight: bold }`
+              + `.${this.class} button {`
+                  + '--btn-transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out ;'
+                  + 'font-size: 14px ; text-transform: uppercase ;' // shrink/uppercase labels
+                  + 'border-radius: 0 !important ;' // square borders
+                  + 'transition: var(--btn-transition) ;' // smoothen hover fx
+                      + '-webkit-transition: var(--btn-transition) ; -moz-transition: var(--btn-transition) ;'
+                      + '-o-transition: var(--btn-transition) ; -ms-transition: var(--btn-transition) ;'
+                  + 'cursor: pointer !important ;' // add finger cursor
+                  + `border: 1px solid ${ env.ui.scheme == 'dark' ? 'white' : 'black' } !important ;`
+                  + 'padding: 8px !important ; min-width: 102px }' // resize
+              + `.${this.class} button:hover {` // add zoom, re-scheme
+                  + 'transform: scale(1.055) ; color: black !important ;'
+                  + `background-color: #${ env.ui.scheme == 'dark' ? '00cfff' : '9cdaff' } !important }`
+              + ( !env.browser.isMobile ? `.${this.class} .modal-buttons { margin-left: -13px !important }` : '' )
+              + `.about-em { color: ${ env.ui.scheme == 'dark' ? 'white' : 'green' } !important }`
+            )
+        },
+
+        update: {
+            width: 377,
+
+            available() {
+
+                // Show modal
+                const updateAvailModal = modals.alert(`🚀 ${app.msgs.alert_updateAvail}!`, // title
+                    `${app.msgs.alert_newerVer} ${app.msgs.appName} ` // msg
+                        + `(v${app.latestVer}) ${app.msgs.alert_isAvail}!  `
+                        + '<a target="_blank" rel="noopener" style="font-size: 0.7rem" href="'
+                            + `${app.urls.gitHub}/commits/main/greasemonkey/${app.slug}.user.js`
+                        + `">${app.msgs.link_viewChanges}</a>`,
+                    function update() { // button
+                        modals.safeWinOpen(`${app.urls.update}?t=${Date.now()}`)
+                    }, '', modals.update.width
+                )
+
+                // Localize button labels if needed
+                if (!env.browser.language.startsWith('en')) {
+                    const updateBtns = updateAvailModal.querySelectorAll('button')
+                    updateBtns[1].textContent = app.msgs.btnLabel_update
+                    updateBtns[0].textContent = app.msgs.btnLabel_dismiss
+                }
+
+                return updateAvailModal
+            },
+
+            unavailable() {
+                return modals.alert(`${app.msgs.alert_upToDate}!`, // title
+                    `${app.msgs.appName} (v${app.version}) ${app.msgs.alert_isUpToDate}!`, // msg
+                    '', '', modals.update.width
+                )
+            }
+        }
     }
 
     // Define UI functions
 
-    const navToggle = {
-        insert() {
+    function getScheme() {
+        return document.documentElement.className
+          || ( window.matchMedia?.('(prefers-color-scheme: dark)')?.matches ? 'dark' : 'light' )
+    }
 
-            // Insert toggle
-            const toggleParent = document.querySelector('nav')
-            if (!toggleParent.contains(navToggleDiv))
-                 toggleParent.insertBefore(navToggleDiv, toggleParent.children[1])
-    
-            // Tweak styles
-            const knobSpan = document.getElementById('auto-refresh-toggle-knob-span'),
-                  navicon = document.getElementById('auto-refresh-toggle-navicon')
-            navToggleDiv.style.flexGrow = 'unset' // overcome OpenAI .grow
-            navToggleDiv.style.paddingLeft = '8px'
-            if (knobSpan) knobSpan.style.boxShadow = (
-                'rgba(0, 0, 0, .3) 0 1px 2px 0' + ( chatgpt.isDarkMode() ? ', rgba(0, 0, 0, .15) 0 3px 6px 2px' : '' ))
-            if (navicon) navicon.src = `${ // update navicon color in case scheme changed
-                app.urls.mediaHost}/images/icons/auto-refresh/`
-              + `${ chatgpt.isDarkMode() ? 'white' : 'black' }/icon32.png?${app.latestAssetCommitHash}`
-        },
+    function syncConfigToUI(options) {
+        if (options?.updatedKey == 'arDisabled') toggleAutoRefresh()
+        if (/arDisabled|toggleHidden/.test(options?.updatedKey)) toggles.sidebar.update.state()
+        toolbarMenu.refresh() // prefixes/suffixes
+    }
 
-        update() {
-            if (config.toggleHidden) navToggleDiv.style.display = 'none'
-            else {
+    const toggles = {
 
-                // Create/size/position navicon
-                const navicon = document.getElementById('auto-refresh-toggle-navicon') || document.createElement('img')
-                navicon.id = 'auto-refresh-toggle-navicon'
-                navicon.style.width = navicon.style.height = '1.25rem'
-                navicon.style.marginLeft = '2px' ; navicon.style.marginRight = '4px'
-        
-                // Create/ID/disable/hide/update checkbox
-                const toggleInput = document.getElementById('auto-refresh-toggle-input') || document.createElement('input')
-                toggleInput.id = 'auto-refresh-toggle-input' ; toggleInput.type = 'checkbox' ; toggleInput.disabled = true
-                toggleInput.style.display = 'none' ; toggleInput.checked = !config.arDisabled
-        
-                // Create/ID/stylize switch
-                const switchSpan = document.getElementById('auto-refresh-switch-span') || document.createElement('span')
-                switchSpan.id = 'auto-refresh-switch-span'
-                const switchStyles = {
-                    position: 'relative', left: `${ env.browser.isMobile ? 211 : !ui.firstLink ? 160 : 154 }px`,
-                    backgroundColor: toggleInput.checked ? '#ccc' : '#AD68FF', // init opposite  final color
-                    bottom: `${ !ui.firstLink ? -0.15 : env.browser.isFF ? 0.05 : 0 }em`,
-                    width: '30px', height: '15px', '-webkit-transition': '.4s', transition: '0.4s',  borderRadius: '28px'
+        sidebar: {
+            class: `${app.slug}-sidebar-toggle`,
+
+            create() {
+
+                // Init toggle elems
+                this.div = dom.create.elem('div', { class: this.class })
+                this.navicon = dom.create.elem('img')
+                this.toggleLabel = dom.create.elem('label')
+                this.toggleInput = dom.create.elem('input')
+                this.switchSpan = dom.create.elem('span')
+                this.knobSpan = dom.create.elem('span')
+
+                // Assemble elems into parent div
+                this.switchSpan.append(this.knobSpan)
+                this.div.append(this.navicon, this.toggleInput, this.switchSpan, this.toggleLabel)
+
+                // Stylize elems
+                this.stylize() // create/append stylesheet
+                if (env.ui.firstLink) { // borrow/assign classes from sidebar elems
+                    const firstIcon = env.ui.firstLink.querySelector('div:first-child'),
+                          firstLabel = env.ui.firstLink.querySelector('div:nth-child(2)')
+                    this.div.classList.add(
+                        ...env.ui.firstLink.classList, ...(firstLabel?.classList || []))
+                    this.div.querySelector('img')?.classList.add(...(firstIcon?.classList || []))
                 }
-                Object.assign(switchSpan.style, switchStyles)
-        
-                // Create/stylize knob, append to switch
-                const knobSpan = document.getElementById('auto-refresh-toggle-knob-span') || document.createElement('span')
-                knobSpan.id = 'auto-refresh-toggle-knob-span'
-                const knobStyles = {
-                    position: 'absolute', left: '3px', bottom: '1.25px',
-                    width: '12px', height: '12px', content: '""', borderRadius: '28px',
-                    transform: toggleInput.checked ? // init opposite final pos
-                        'translateX(0)' : 'translateX(13px) translateY(0)',
-                    backgroundColor: 'white',  '-webkit-transition': '0.4s', transition: '0.4s'
+
+                // Update scheme/state
+                this.update.scheme() ; this.update.state()
+
+                // Add hover/click listeners
+                this.div.onmouseover = this.div.onmouseout = ({ type }) => // trigger OpenAI hover overlay
+                    this.div.style.setProperty('--item-background-color',
+                        `var(--sidebar-surface-${ type == 'mouseover' ? 'secondary' : 'primary' })`)
+                this.div.onclick = () => {
+                    settings.save('arDisabled', this.toggleInput.checked) ; syncConfigToUI({ updatedKey: 'arDisabled' })
+                    notify(`${app.msgs.menuLabel_autoRefresh}: ${toolbarMenu.state.words[+!config.arDisabled]}`)
                 }
-                Object.assign(knobSpan.style, knobStyles) ; switchSpan.append(knobSpan)
-        
-                // Create/stylize/fill label
-                const toggleLabel = document.getElementById('auto-refresh-toggle-label') || document.createElement('label')
-                toggleLabel.id = 'auto-refresh-toggle-label'
-                if (!ui.firstLink) { // add font size/weight since no ui.firstLink to borrow from
-                    toggleLabel.style.fontSize = '0.875rem' ; toggleLabel.style.fontWeight = 600 }
-                toggleLabel.style.marginLeft = `-${ !ui.firstLink ? 23 : 41 }px` // left-shift to navicon
-                toggleLabel.style.cursor = 'pointer' // add finger cursor on hover
-                toggleLabel.style.width = `${ env.browser.isMobile ? 201 : 148 }px` // to truncate overflown text
-                toggleLabel.style.overflow = 'hidden' // to truncate overflown text
-                toggleLabel.style.textOverflow = 'ellipsis' // to truncate overflown text
-                toggleLabel.innerText = ( app.msgs.menuLabel_autoRefresh ) + ' '
-                                    + ( toggleInput.checked ? ( app.msgs.state_enabled  || 'enabled' )
-                                                            : ( app.msgs.state_disabled ))
-                // Append elements
-                for (const elem of [navicon, toggleInput, switchSpan, toggleLabel]) navToggleDiv.append(elem)
-        
-                // Update visual state
-                navToggleDiv.style.display = 'flex'
-                setTimeout(() => {
-                    switchSpan.style.backgroundColor = toggleInput.checked ? '#ad68ff' : '#ccc'
-                    switchSpan.style.boxShadow = toggleInput.checked ? '2px 1px 9px #d8a9ff' : 'none'
-                    knobSpan.style.transform = toggleInput.checked ? 'translateX(13px) translateY(0)' : 'translateX(0)'
-                }, 1) // min delay to trigger transition fx
+            },
+
+            stylize() {
+                this.styles = dom.create.style(null, { id: `${this.class}-styles` })
+                this.styles.innerText = (
+                    `:root { /* vars */
+                        --switch-enabled-bg-color: #ad68ff ; --switch-disabled-bg-color: #ccc ;
+                        --switch-enabled-box-shadow: 1px 2px 8px #d8a9ff ;
+                        --switch-enabled-hover-box-shadow: 0 1px 10px #9b5ad1 ;
+                        --knob-box-shadow: rgba(0,0,0,0.3) 0 1px 2px 0 ;
+                        --knob-box-shadow-dark: rgba(0,0,0,0.3) 0 1px 2px 0, rgba(0,0,0,0.15) 0 3px 6px 2px }`
+
+                    // Element styles
+                  + `.${this.class} { /* parent div */
+                        max-height: 37px ; margin: 2px 0 ; user-select: none ; cursor: pointer ;
+                        opacity: 1 !important ; /* overcome OpenAI click-dim */
+                        flex-grow: unset } /* overcome OpenAI .grow */
+                    .${this.class} > img { /* navicon */
+                        width: 1.25rem ; height: 1.25rem ; margin-left: 2px ; margin-right: 4px }
+                    .${this.class} > input { display: none } /* hide checkbox */
+                    .${this.class} > span { /* switch span */
+                        position: relative ; width: 30px ; height: 15px ; border-radius: 28px ;
+                        background-color: var(--switch-disabled-bg-color) ;
+                        bottom: ${ env.ui.firstLink ? 0 : -0.15 }em ;
+                        left: ${ env.browser.isMobile ? 169 : env.ui.firstLink ? 154 : 160 }px ;
+                        transition: 0.4s ; -webkit-transition: 0.4s ; -moz-transition: 0.4s ;
+                            -o-transition: 0.4s ; -ms-transition: 0.4s }
+                    .${this.class} > span.enabled { /* switch on */
+                        background-color: var(--switch-enabled-bg-color) ;
+                        box-shadow: var(--switch-enabled-box-shadow) ;
+                            -webkit-box-shadow: var(--switch-enabled-box-shadow) ;
+                            -moz-box-shadow: var(--switch-enabled-box-shadow) ;
+                        transition: 0.15s ; -webkit-transition: 0.15s ; -moz-transition: 0.15s ;
+                            -o-transition: 0.15s ; -ms-transition: 0.15s }
+                    .${this.class}:hover > span.enabled { /* switch on when hover on parent div */
+                        box-shadow: var(--switch-enabled-hover-box-shadow) ;
+                        -webkit-box-shadow: var(--switch-enabled-hover-box-shadow) ;
+                        -moz-box-shadow: var(--switch-enabled-hover-box-shadow) }
+                    .${this.class} > span.disabled { /* switch off */
+                        background-color: var(--switch-disabled-bg-color) ; box-shadow: none }
+                    .${this.class} > span > span { /* knob span */
+                        position: absolute ; width: 12px ; height: 12px ; content: "" ; border-radius: 28px ;
+                        background-color: white ; left: 3px ; bottom: 1.25px ;
+                        box-shadow: var(--knob-box-shadow) ;
+                            -webkit-box-shadow: var(--knob-box-shadow) ; -moz-box-shadow: var(--knob-box-shadow) ;
+                        transition: 0.4s ; -webkit-transition: 0.4s ; -moz-transition: 0.4s ;
+                            -o-transition: 0.4s ; -ms-transition: 0.4s }
+                    .${this.class} > label { /* toggle label */
+                        cursor: pointer ; overflow: hidden ; text-overflow: ellipsis ;
+                        width: ${ env.browser.isMobile ? 201 : 148 }px ;
+                        margin-left: -${ env.ui.firstLink ? 41 : 23 }px ; /* left-shift to navicon */
+                        ${ env.ui.firstLink ? '' : 'font-size: 0.875rem ; font-weight: 600' }}`
+
+                    // Dark scheme mods
+                  + `.${this.class}.dark > span.enabled { /* switch on */
+                        background-color: var(--switch-enabled-bg-color) ;
+                        box-shadow: var(--switch-enabled-hover-box-shadow) ; /* use hover style instead */
+                            -webkit-box-shadow: var(--switch-enabled-hover-box-shadow) ;
+                            -moz-box-shadow: var(--switch-enabled-hover-box-shadow) }
+                    .${this.class}.dark:hover > span.enabled { /* switch on when hover on parent div */
+                        box-shadow: var(--switch-enabled-box-shadow) ; /* use regular style instead */
+                            -webkit-box-shadow: var(--switch-enabled-box-shadow) ;
+                            -moz-box-shadow: var(--switch-enabled-box-shadow) }
+                    .${this.class}.dark > span > span { /* knob span */
+                        box-shadow: var(--knob-box-shadow-dark) ; /* make 3D-er */
+                            -webkit-box-shadow: var(--knob-box-shadow-dark) ;
+                            -moz-box-shadow: var(--knob-box-shadow-dark) }`
+                )
+                document.head.append(this.styles)
+            },
+
+            insert() {
+                if (this.status?.startsWith('insert') || document.querySelector(`.${this.class}`)) return
+                const sidebar = document.querySelectorAll('nav')[env.browser.isMobile ? 1 : 0] ; if (!sidebar) return
+                this.status = 'inserting' ; if (!this.div) this.create()
+                sidebar.children[1].before(this.div) ; this.status = 'inserted'
+            },
+
+            update: {
+
+                navicon({ preload = false } = {}) {
+                    const baseURL = `${app.urls.assetHost}/images/icons/auto-refresh`,
+                          schemeMap = { light: 'black', dark: 'white' },
+                          fileName = `icon32.png?v=${app.latestResourceCommitHash}`
+                    if (preload)
+                        Object.keys(schemeMap).forEach(scheme =>
+                            new Image().src = `${baseURL}/${schemeMap[scheme]}/${fileName}`)
+                    else toggles.sidebar.navicon.src = `${baseURL}/${schemeMap[env.ui.scheme]}/${fileName}`
+                },
+
+                scheme() { // to match UI scheme
+                    toggles.sidebar.div.classList.remove('dark', 'light')
+                    toggles.sidebar.div.classList.add(env.ui.scheme)
+                    toggles.sidebar.update.navicon()
+                },
+
+                state() {
+                    if (!toggles.sidebar.div) return // since toggle never created = sidebar missing
+                    toggles.sidebar.div.style.display = config.toggleHidden ? 'none' : 'flex'
+                    toggles.sidebar.toggleInput.checked = !config.arDisabled
+                    toggles.sidebar.toggleLabel.innerText = `${app.msgs.menuLabel_autoRefresh} `
+                        + app.msgs[`state_${ toggles.sidebar.toggleInput.checked ? 'enabled' : 'disabled' }`]
+                    requestAnimationFrame(() => {
+                        toggles.sidebar.switchSpan.className = toggles.sidebar.toggleInput.checked ? 'enabled'
+                                                                                                   : 'disabled'
+                        toggles.sidebar.knobSpan.style.transform = `translateX(${
+                            toggles.sidebar.toggleInput.checked ? 13 : 0 }px)`
+                    }) // to trigger 1st transition fx
+                }
             }
         }
     }
 
+    // Define AUTO-REFRESH function
+
+    function toggleAutoRefresh() {
+        if (!config.arDisabled && !chatgpt.autoRefresh.isActive)
+            chatgpt.autoRefresh.activate(config.refreshInterval)
+        else if (config.arDisabled && chatgpt.autoRefresh.isActive)
+            chatgpt.autoRefresh.deactivate()
+    }
+
     // Run MAIN routine
 
-    menu.register() // create browser toolbar menu
+    toolbarMenu.register() // create browser toolbar menu
+    toggles.sidebar.update.navicon({ preload: true }) // preload sidebar NAVICON variants
 
     // Init UI props
     await Promise.race([chatgpt.isLoaded(), new Promise(resolve => setTimeout(resolve, 5000))]) // initial UI loaded
     await chatgpt.sidebar.isLoaded()
-    const ui = { firstLink: chatgpt.getNewChatLink() }
+    env.ui.firstLink = chatgpt.getNewChatLink();
 
-    // Add/update TWEAKS style
-    const tweaksStyleUpdated = 20241002 // datestamp of last edit for this file's `tweaksStyle`
-    let tweaksStyle = document.getElementById('tweaks-style') // try to select existing style
-    if (!tweaksStyle || parseInt(tweaksStyle.getAttribute('last-updated'), 10) < tweaksStyleUpdated) { // if missing or outdated
-        if (!tweaksStyle) { // outright missing, create/id/attr/append it first
-            tweaksStyle = document.createElement('style') ; tweaksStyle.id = 'tweaks-style'
-            tweaksStyle.setAttribute('last-updated', tweaksStyleUpdated.toString())
-            document.head.append(tweaksStyle)
-        }
-        tweaksStyle.innerText = (
-            ( chatgpt.isDarkMode() ? '.chatgpt-modal > div { border: 1px solid white }' : '' )
-          + '.chatgpt-modal button {'
-              + 'font-size: 0.77rem ; text-transform: uppercase ;' // shrink/uppercase labels
-              + `border: 2px dashed ${ chatgpt.isDarkMode() ? 'white' : 'black' } !important ; border-radius: 0 !important ;` // thiccen/square/dash borders
-              + 'transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out ;' // smoothen hover fx
-              + 'cursor: pointer !important ;' // add finger cursor
-              + 'padding: 5px !important ; min-width: 102px }' // resize
-          + '.chatgpt-modal button:hover {' // add zoom, re-scheme
-              + 'transform: scale(1.055) ;'
-              + ( chatgpt.isDarkMode() ? 'background-color: #2cff00 !important ; box-shadow: 2px 1px 54px #38ff00 !important ; color: black !important'
-                                       : 'background-color: #c7ff006b !important ; box-shadow: 2px 1px 30px #97ff006b !important' ) + '}'
-          + '.modal-buttons { margin-left: -13px !important }'
-          + '* { scrollbar-width: thin }' // make FF scrollbar skinny to not crop toggle
-        )
-    }
+    // Add RISING PARTICLES styles
+    ['rpg', 'rpw'].forEach(cssType => document.head.append(dom.create.style(GM_getResourceText(`${cssType}CSS`))))
 
-    // Create NAV TOGGLE div, add styles
-    const navToggleDiv = document.createElement('div')
-    navToggleDiv.style.height = '37px'
-    navToggleDiv.style.margin = '2px 0' // add v-margins
-    navToggleDiv.style.userSelect = 'none' // prevent highlighting
-    navToggleDiv.style.cursor = 'pointer' // add finger cursor
-    navToggle.update() // create children
+    toggles.sidebar.insert()
 
-    if (ui.firstLink) { // borrow/assign CLASSES from sidebar div
-        const firstIcon = ui.firstLink.querySelector('div:first-child'),
-              firstLabel = ui.firstLink.querySelector('div:nth-child(2)')
-        navToggleDiv.classList.add(...ui.firstLink.classList, ...(firstLabel?.classList || []))
-        navToggleDiv.querySelector('img')?.classList.add(...(firstIcon?.classList || []))
-    }
-
-    navToggle.insert()
-
-    // Add LISTENER to toggle switch/label/config/menu/auto-refresh
-    navToggleDiv.onclick = () => {
-        const toggleInput = document.getElementById('auto-refresh-toggle-input')
-        toggleInput.checked = !toggleInput.checked ; config.arDisabled = !toggleInput.checked
-        navToggle.update() ; menu.refresh()
-        if (!config.arDisabled && !chatgpt.autoRefresh.isActive) {
-            chatgpt.autoRefresh.activate(config.refreshInterval)
-            notify(`${app.msgs.menuLabel_autoRefresh}: ON`)
-        } else if (config.arDisabled && chatgpt.autoRefresh.isActive) {
-            chatgpt.autoRefresh.deactivate()
-            notify(`${app.msgs.menuLabel_autoRefresh}: OFF`)
-        } settings.save('arDisabled', config.arDisabled)
+    // Prevent sporadic convo RESETS
+    const ogAEL = EventTarget.prototype.addEventListener
+    EventTarget.prototype.addEventListener = function(type, listener, optionsOrUseCapture) {
+        let calledByOpenAI = false
+        if (type == 'focus' && this == unsafeWindow || type == 'visibilitychange') {
+            const callStack = new Error().stack + '\n',
+                  aelCaller = /-extension:\/\/.*\n(.+)/.exec(callStack)?.[1]
+            calledByOpenAI = !aelCaller?.includes('-extension://')
+            if (calledByOpenAI && type == 'visibilitychange') {
+                ogAEL.call(this, type, function(event) {
+                    if (document.visibilityState != 'visible') listener.call(this, event)
+                }, optionsOrUseCapture)
+        }}
+        if (!calledByOpenAI) ogAEL.apply(this, arguments)
     }
 
     // Activate AUTO-REFRESH on first visit if enabled
     if (!config.arDisabled) {
         chatgpt.autoRefresh.activate(config.refreshInterval)
-        notify(`${app.msgs.menuLabel_autoRefresh}: ON`)
+        notify(`${app.msgs.menuLabel_autoRefresh}: ${app.msgs.state_on.toUpperCase()}`)
     }
 
-    // Monitor <html> to maintain NAV TOGGLE VISIBILITY on node changes
-    new MutationObserver(mutations => mutations.forEach(mutation => {
-        if (mutation.type == 'childList' && mutation.addedNodes.length && !config.toggleHidden)
-            navToggle.insert()
-    })).observe(document.documentElement, { childList: true, subtree: true })
+    // Monitor NODE CHANGES to maintain sidebar toggle visibility
+    new MutationObserver(() => {
+        if (!config.toggleHidden && !document.querySelector(`.${toggles.sidebar.class}`)
+            && toggles.sidebar.status != 'inserting') {
+                toggles.sidebar.status = 'missing' ; toggles.sidebar.insert() }
+    }).observe(document.body, { attributes: true, subtree: true })
+
+    // Monitor SCHEME PREF changes to update sidebar toggle + modal colors
+    new MutationObserver(handleSchemePrefChange).observe( // for site scheme pref changes
+        document.documentElement, { attributes: true, attributeFilter: ['class'] })
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener( // for browser/system scheme pref changes
+        'change', () => requestAnimationFrame(handleSchemePrefChange))
+    function handleSchemePrefChange() {
+        const displayedScheme = getScheme()
+        if (env.ui.scheme != displayedScheme) {
+            env.ui.scheme = displayedScheme ; toggles.sidebar.update.scheme() ; modals.stylize() }
+    }
 
     // Disable distracting SIDEBAR CLICK-ZOOM effect
-    if (!document.querySelector('[sidebar-click-zoom-observed]')) {
+    if (!document.documentElement.hasAttribute('sidebar-click-zoom-observed')) {
         new MutationObserver(mutations => mutations.forEach(({ target }) => {
-            if (target.closest('[class*="sidebar"]') // include sidebar divs
-                && !target.id.endsWith('-knob-span') // exclude our navToggle
+            if (target.closest('[class*=sidebar]') // include sidebar elems
+                && !target.closest('[class*=sidebar-toggle]') // exclude our toggles.sidebar's elems
                 && target.style.transform != 'none' // click-zoom occurred
             ) target.style.transform = 'none'
-        })).observe(document.body, { attributes: true, subtree: true, attributeFilter: [ 'style' ]})      
+        })).observe(document.body, { attributes: true, subtree: true, attributeFilter: ['style'] })
         document.documentElement.setAttribute('sidebar-click-zoom-observed', true)
     }
 

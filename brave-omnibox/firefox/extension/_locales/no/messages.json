@@ -1,5 +1,6 @@
 {
   "appName": { "message": "Brave Omnibox" },
   "appAuthor": { "message": "Adam Lui" },
-  "appDesc": { "message": "Skriv @brave i adressefeltet for å få resultater fra Brave AI" }
+  "appDesc": { "message": "Skriv @brave i adressefeltet for å få resultater fra Brave AI" },
+  "prefix_ask": { "message": "Ask" }
 }

@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_appName__",
+  "short_name": "__MSG_prefix_ask__ DeepSeek AI",
+  "description": "__MSG_appDesc__",
+  "version": "2025.3.9.4",
+  "author": "Adam Lui",
+  "homepage_url": "https://deepseekomnibox.com",
+  "default_locale": "en",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "64": "icons/icon64.png",
+    "128": "icons/icon128.png"
+  },
+  "action": { "default_title": "__MSG_prefix_ask__ DeepSeek AI" },
+  "omnibox": { "keyword" : "@deepseek" },
+  "web_accessible_resources": [{ "matches": [ "<all_urls>" ], "resources": [ "lib/deepseek.js", "lib/dom.js" ]}],
+  "content_scripts": [{
+    "matches": [ "https://chat.deepseek.com/*" ], "run_at": "document_end", "js": [ "content.js" ]}],
+  "background": { "service_worker": "service-worker.js" },
+  "minimum_chrome_version": "88"
+}

@@ -1,5 +1,6 @@
 {
   "appName": { "message": "Brave Omnibox" },
   "appAuthor": { "message": "Adam Lui" },
-  "appDesc": { "message": "Di barika navnîşanê de @brave binivîsin da ku ji Brave AI encam bistînin" }
+  "appDesc": { "message": "Di barika navnîşanê de @brave binivîsin da ku ji Brave AI encam bistînin" },
+  "prefix_ask": { "message": "Bipirse" }
 }

@@ -1,19 +1,53 @@
-const config = {}, settings = {
-    availKeys: [ 'extensionDisabled', 'notifDisabled' ],
+// Requires app (Greasemonkey only)
 
-    load() {
-        const keys = ( // original array if array, else new array from multiple args
-            Array.isArray(arguments[0]) ? arguments[0] : Array.from(arguments))
-        return Promise.all(keys.map(key => // resolve promise when all keys load
-            new Promise(resolve => // resolve promise when single key value loads
-                chrome.storage.sync.get(key, result => { // load from Chrome
-                    config[key] = result[key] || false ; resolve()
-    }))))},
+window.config = {}
+window.settings = {
+    import(deps) { Object.assign(this.imports = this.imports || {}, deps) },
+
+    controls: { // displays top-to-bottom in toolbar menu
+        get autoScroll() { return { type: 'toggle', defaultVal: false,
+            label: settings.getMsg('menuLabel_autoScroll'),
+            helptip: settings.getMsg('helptip_autoScroll')
+        }},
+        get notifDisabled() { return { type: 'toggle', defaultVal: false,
+            label: settings.getMsg('menuLabel_modeNotifs'),
+            helptip: settings.getMsg('helptip_modeNotifs')
+        }}
+    },
+
+    getMsg(key) {
+        this._msgKeys ??= new Map() // to cache keys for this.isEnabled() inversion logic
+        const msg = typeof GM_info != 'undefined' ? this.imports.app.msgs[key] : chrome.i18n.getMessage(key)
+        this._msgKeys.set(msg, key)
+        return msg
+    },
+
+    isEnabled(key) {
+        const reInvertFlags = /disabled|hidden/i
+        return reInvertFlags.test(key) // flag in control key name
+            && !reInvertFlags.test(this._msgKeys.get(this.controls[key]?.label) || '') // but not in label msg key name
+                ? !config[key] : config[key] // so invert since flag reps opposite state, else don't
+    },
+
+    load(...keys) {
+        keys = keys.flat() // flatten array args nested by spread operator
+        if (typeof GM_info != 'undefined') // synchronously load from userscript manager storage
+            keys.forEach(key => config[key] = GM_getValue(
+                `${this.imports.app.configKeyPrefix}_${key}`,
+                this.controls[key]?.defaultVal ?? this.controls[key]?.type == 'toggle')
+            )
+        else // asynchronously load from browser extension storage
+            return Promise.all(keys.map(async key => // resolve promise when all keys load
+                config[key] = (await chrome.storage.local.get(key))[key]
+                    ?? this.controls[key]?.defaultVal ?? this.controls[key]?.type == 'toggle'
+            ))
+    },
 
     save(key, val) {
-        chrome.storage.sync.set({ [key]: val }) // save to Chrome
+        if (typeof GM_info != 'undefined') // save to userscript manager storage
+            GM_setValue(`${this.imports.app.configKeyPrefix}_${key}`, val)
+        else // save to browser extension storage
+            chrome.storage.local.set({ [key]: val })
         config[key] = val // save to memory
     }
-}
-
-export { config, settings }
+};

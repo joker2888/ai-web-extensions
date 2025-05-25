@@ -1,5 +1,6 @@
 {
   "appName": { "message": "Brave Omnibox" },
   "appAuthor": { "message": "Adam Lui" },
-  "appDesc": { "message": "Andika @brave muri adresse kugirango ubone ibisubizo bivuye muri Brave AI" }
+  "appDesc": { "message": "Andika @brave muri adresse kugirango ubone ibisubizo bivuye muri Brave AI" },
+  "prefix_ask": { "message": "Public files of %s%.0s" }
 }

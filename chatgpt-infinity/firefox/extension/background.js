@@ -1,36 +1,44 @@
+const chatgptURL = 'https://chatgpt.com';
+
+// Init APP data
 (async () => {
-
-    // Init APP data
-    const app = { latestAssetCommitHash: 'ebf1306' },
-          assetHostURL = `https://cdn.jsdelivr.net/gh/adamlui/chatgpt-infinity@${app.latestAssetCommitHash}`
-    Object.assign(app, await (await fetch(`${assetHostURL}/app.json`)).json())
-    Object.assign(app, { settings: {
-        autoStart: { type: 'toggle',
-            label: chrome.i18n.getMessage('menuLabel_autoStart') },
-        toggleHidden: { type: 'toggle',
-            label: chrome.i18n.getMessage('menuLabel_toggleVis') },
-        autoScrollDisabled: { type: 'toggle',
-            label: chrome.i18n.getMessage('menuLabel_autoScroll') },
-        replyLanguage: { type: 'prompt', symbol: '🌐',
-            label: chrome.i18n.getMessage('menuLabel_replyLang') },
-        replyTopic: { type: 'prompt', symbol: '🧠',
-            label: chrome.i18n.getMessage('menuLabel_replyTopic') },
-        replyInterval: { type: 'prompt', symbol: '⌚',
-            label: chrome.i18n.getMessage('menuLabel_replyInt') }
-    }})
-    chrome.storage.sync.set({ app })
-
-    // Launch ChatGPT on install
-    chrome.runtime.onInstalled.addListener(details => {
-        if (details.reason == 'install')
-            chrome.tabs.create({ url: 'https://chatgpt.com/' })
-    })
-
-    // Sync settings to activated tabs
-    chrome.tabs.onActivated.addListener(activeInfo =>
-        chrome.tabs.sendMessage(activeInfo.tabId, {
-            action: 'sync.storageToUI',
-            sender: 'background.js' // for content.js to reset config.infinityMode
-    }))
-
+    const app = {
+        version: chrome.runtime.getManifest().version,
+        latestResourceCommitHash: '3975f24', // for cached app.json...
+            // ... + navicon in toggles.sidebar.insert() + icons.questionMark.src
+        urls: {},
+        chatgptJSver: /v(\d+\.\d+\.\d+)/.exec(await (await fetch(chrome.runtime.getURL('lib/chatgpt.js'))).text())[1]
+    }
+    app.urls.resourceHost = `https://cdn.jsdelivr.net/gh/adamlui/chatgpt-infinity@${app.latestResourceCommitHash}`
+    const remoteAppData = await (await fetch(`${app.urls.resourceHost}/assets/data/app.json`)).json()
+    Object.assign(app, { ...remoteAppData, urls: { ...app.urls, ...remoteAppData.urls }})
+    chrome.storage.local.set({ app }) // save to browser storage
 })()
+
+// Launch CHATGPT on install
+chrome.runtime.onInstalled.addListener(details => {
+    if (details.reason == 'install') // to exclude updates
+    chrome.tabs.create({ url: chatgptURL })
+})
+
+// Sync SETTINGS to activated tabs
+chrome.tabs.onActivated.addListener(activeInfo =>
+    chrome.tabs.sendMessage(activeInfo.tabId, {
+        action: 'syncConfigToUI',
+        fromBG: true // for content.js to reset config.infinityMode
+}))
+
+// Show ABOUT modal on ChatGPT when toolbar button clicked
+chrome.runtime.onMessage.addListener(async req => {
+    if (req.action == 'showAbout') {
+        const [activeTab] = await chrome.tabs.query({ active: true, currentWindow: true })
+        const chatgptTab = new URL(activeTab.url).hostname == 'chatgpt.com' ? activeTab
+            : await chrome.tabs.create({ url: chatgptURL })
+        if (activeTab != chatgptTab) await new Promise(resolve => // after new tab loads
+            chrome.tabs.onUpdated.addListener(function loadedListener(tabId, changeInfo) {
+                if (tabId == chatgptTab.id && changeInfo.status == 'complete') {
+                    chrome.tabs.onUpdated.removeListener(loadedListener) ; setTimeout(resolve, 500)
+        }}))
+        chrome.tabs.sendMessage(chatgptTab.id, { action: 'showAbout' })
+    }
+})

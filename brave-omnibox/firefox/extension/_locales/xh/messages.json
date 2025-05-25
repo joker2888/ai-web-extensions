@@ -1,5 +1,6 @@
 {
   "appName": { "message": "Brave Omnibox" },
   "appAuthor": { "message": "Adam Lui" },
-  "appDesc": { "message": "Chwetheza @brave kwibha yedilesi ukuze ufumane iziphumo kwi-Brave AI" }
+  "appDesc": { "message": "Chwetheza @brave kwibha yedilesi ukuze ufumane iziphumo kwi-Brave AI" },
+  "prefix_ask": { "message": "Buza" }
 }

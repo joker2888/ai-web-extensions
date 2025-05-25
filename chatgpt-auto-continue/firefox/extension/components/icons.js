@@ -1,14 +1,15 @@
-// Requires lib/dom.js
+// Requires lib/dom.js + app
 
-const icons = {
+window.icons = {
+    import(deps) { Object.assign(this.imports = this.imports || {}, deps) },
 
-    create({ name, size = 16, width, height, ...additionalAttrs }) {
+    create(name, { size = 16, width, height, ...additionalAttrs } = {}) {
         const iconData = icons[name],
               iconAttrs = { width: width || size, height: height || size, ...additionalAttrs }
         if (iconData.type == 'svg') {
             const svg = dom.create.svgElem('svg', { viewBox: iconData.viewBox, ...iconAttrs  })
             iconData.elems.forEach(([tag, attrs]) => svg.append(dom.create.svgElem(tag, attrs)))
-            return svg            
+            return svg
         } else // img w/ src
             return dom.create.elem('img', { src: iconData.src, ...iconAttrs })
     },
@@ -22,8 +23,9 @@ const icons = {
 
     questionMark: {
         type: 'png',
-        get src() {  return `${icons.appProps.urls.mediaHost}/images/icons/question-mark/icon16.png?${icons.appProps.latestAssetCommitHash}` }
+        get src() {
+            return `${icons.imports.app.urls.assetHost}/images/icons/question-mark/icon16.png?v=${
+                icons.imports.app.latestResourceCommitHash}`
+        }
     }
-}
-
-export { icons }
+};

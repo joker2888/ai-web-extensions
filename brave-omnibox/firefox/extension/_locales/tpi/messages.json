@@ -1,5 +1,6 @@
 {
   "appName": { "message": "Brave Omnibox" },
   "appAuthor": { "message": "Adam Lui" },
-  "appDesc": { "message": "Tik @brave long adres bar bilong kisim ol result bilong Brave AI" }
+  "appDesc": { "message": "Tik @brave long adres bar bilong kisim ol result bilong Brave AI" },
+  "prefix_ask": { "message": "Askim" }
 }

@@ -1,8 +1,8 @@
 <div align="right">
     <h6>
         <picture>
-            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://media.chatgptinfinity.com/images/icons/earth/white/icon32.svg">
-            <img height=14 src="https://media.chatgptinfinity.com/images/icons/earth/black/icon32.svg">
+            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.chatgptinfinity.com/images/icons/earth/white/icon32.svg">
+            <img height=14 src="https://assets.chatgptinfinity.com/images/icons/earth/black/icon32.svg">
         </picture>
         &nbsp;日本語 |
         <a href="../../LICENSE.md">English</a> |
@@ -13,7 +13,7 @@
 
 # 🏛️ MIT ライセンス
 
-**著作権 © 2023–2024 [Adam Lui](https://github.com/adamlui) と貢献者。**
+**著作権 © 2023–2025 [Adam Lui](https://github.com/adamlui) と貢献者。**
 
 ここに、コピーを入手する人には無償で許可が与えられます。 このソフトウェアおよび関連ドキュメント ファイル (以下「ソフトウェア」) を取り扱うため、権利を含むがこれに限定されない、ソフトウェア内の使用、コピー、変更、マージ、公開、配布、サブライセンス、および/または販売することソフトウェアのコピー、およびソフトウェアのコピーを他人に許可すること以下の条件に従って、そうするために提供されます:
 

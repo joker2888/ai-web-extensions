@@ -3,36 +3,49 @@
 <div align="right">
     <h6>
         <picture>
-            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://media.chatgptautocontinue.com/images/icons/earth/white/icon32.svg">
-            <img height=14 src="https://media.chatgptautocontinue.com/images/icons/earth/black/icon32.svg">
+            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.chatgptautocontinue.com/images/icons/earth/white/icon32.svg">
+            <img height=14 src="https://assets.chatgptautocontinue.com/images/icons/earth/black/icon32.svg">
         </picture>
         &nbsp;English |
         <a href="zh-cn/#readme">简体中文</a>
     </h6>
 </div>
 
-<img src="https://media.chatgptautocontinue.com/images//tiles/marquee/tile1400x560.png">
+<img src="https://assets.chatgptautocontinue.com/images//tiles/marquee/tile1400x560.png">
 
 <div align="center">
 
-<img height=31 src="https://img.shields.io/badge/Users-10,000+-af68ff?logo=weightsandbiases&logoColor=white&labelColor=464646&style=for-the-badge"></img>
-<a href="../LICENSE.md"><img height=31 alt="[License: MIT]" src="https://img.shields.io/badge/License-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-<a href="https://www.codefactor.io/repository/github/adamlui/chatgpt-auto-continue"><img height=31 alt="[CodeFactor grade]" src="https://img.shields.io/codefactor/grade/github/adamlui/chatgpt-auto-continue?label=Code+Quality&logo=codefactor&logoColor=white&labelColor=464646&color=b5fc7b&style=for-the-badge"></a>
-<a href="https://github.com/KudoAI/chatgpt.js?utm_source=chatgpt_auto_continue&utm_content=github_shield"><img height=31 alt="[Powered by chatgpt.js]" src="https://img.shields.io/badge/Powered_by-chatgpt.js-black?logo=gamejolt&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-<a href="https://sonarcloud.io/component_measures?metric=new_vulnerabilities&id=adamlui_chatgpt-auto-continue"><img height=31 alt="[SonarCloud vulnerabilities]" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3Dadamlui_chatgpt-auto-continue%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonarcloud&logoColor=white&labelColor=464646&label=Vulnerabilities&color=gold"></a>
-<a href="https://github.com/awesome-scripts/awesome-userscripts#chatgpt"><img height=31 alt="[Mentioned in Awesome]" src="https://img.shields.io/badge/Mentioned_in-Awesome-fc7bb7?logo=awesomelists&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-<a href="https://www.jsdelivr.com/package/gh/adamlui/chatgpt-auto-continue?tab=stats"><img height=31 alt="[jsDelivr stats]" src="https://img.shields.io/jsdelivr/gh/hm/adamlui/chatgpt-auto-continue?style=for-the-badge&logo=jsdelivr&logoColor=white&label=jsDelivr%20Requests&labelColor=464646&color=2bbbd8"></a>
+<a href="#">
+    <img height=31 src="https://img.shields.io/badge/Users-10,000+-blue?logo=weightsandbiases&logoColor=white&labelColor=464646&style=for-the-badge"></img></a>
+<a href="../LICENSE.md">
+    <img height=31 alt="[License: MIT]" src="https://img.shields.io/badge/License-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://www.codefactor.io/repository/github/adamlui/chatgpt-auto-continue">
+    <img height=31 alt="[CodeFactor grade]" src="https://img.shields.io/codefactor/grade/github/adamlui/chatgpt-auto-continue?label=Code+Quality&logo=codefactor&logoColor=white&labelColor=464646&color=b5fc7b&style=for-the-badge"></a>
+<a href="https://github.com/KudoAI/chatgpt.js?utm_source=chatgpt_auto_continue&utm_content=github_shield">
+    <img height=31 alt="[Powered by chatgpt.js]" src="https://img.shields.io/badge/Powered_by-chatgpt.js-black?logo=gamejolt&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://sonarcloud.io/component_measures?metric=new_vulnerabilities&id=adamlui_chatgpt-auto-continue">
+    <img height=31 alt="[SonarCloud vulnerabilities]" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3Dadamlui_chatgpt-auto-continue%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonarcloud&logoColor=white&labelColor=464646&label=Vulnerabilities&color=gold"></a>
+<a href="https://github.com/awesome-scripts/awesome-userscripts#chatgpt">
+    <img height=31 alt="[Mentioned in Awesome]" src="https://img.shields.io/badge/Mentioned_in-Awesome-cb48dc?logo=awesomelists&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://www.jsdelivr.com/package/gh/adamlui/chatgpt-auto-continue?tab=stats">
+    <img height=31 alt="[jsDelivr stats]" src="https://img.shields.io/jsdelivr/gh/hm/adamlui/chatgpt-auto-continue?style=for-the-badge&logo=jsdelivr&logoColor=white&label=jsDelivr%20Requests&labelColor=464646&color=2bbbd8"></a>
+<br><br>
 
-<br>
+</div>
 
-<a href="https://chrome.chatgptautocontinue.com/?source=github&medium=readme&content=platform-badge">
-    <img width=auto height=60 src="https://media.chatgptautocontinue.com/images/badges/chrome-web-store/available-in-the-chrome-web-store-green-square-border-light-498x152.png"></a>
+> [!IMPORTANT]
+> _**Greasy Fork users:** If you installed ChatGPT Auto-Continue **before January 18, 2025**, auto-updates no longer work because the script's update mechanism has migrated to GitHub. To continue receiving updates, click the 'Install Greasemonkey Userscript' button below (once) or click [this link](https://gm.chatgptautocontinue.com) (once)_
+
+<div align="center">
+
+<a href="https://chrome.chatgptautocontinue.com/?utm_source=github&utm_medium=readme&utm_content=platform-badge">
+    <img alt="[Get for Chrome]" width=auto height=60 src="https://assets.chatgptautocontinue.com/images/badges/chrome-web-store/available-in-the-chrome-web-store-green-square-border-light-498x152.png"></a>
 <a href="https://edge.chatgptautocontinue.com">
-    <img width=auto height=60 src="https://media.chatgptautocontinue.com/images/badges/microsoft-store/get-it-from-microsoft-blue-square-border-light-457x157.png"></a>
-<a href="https://ff.chatgptautocontinue.com/?source=github&medium=readme&content=platform-badge">
-    <img width=auto height=60 src="https://media.chatgptautocontinue.com/images/badges/firefox/available-for-firefox/raspberry-border-334x128.png"></a>
+    <img alt="[Get for Edge]" width=auto height=60 src="https://assets.chatgptautocontinue.com/images/badges/microsoft-store/get-it-from-microsoft-blue-square-border-light-457x157.png"></a>
+<a href="https://ff.chatgptautocontinue.com/?utm_source=github&utm_medium=readme&utm_content=platform-badge">
+    <img alt="[Get for Firefox]" width=auto height=60 src="https://assets.chatgptautocontinue.com/images/badges/firefox/available-for-firefox/raspberry-border-334x128.png"></a>
 <a href="https://gm.chatgptautocontinue.com">
-    <img width=auto height=60 src="https://media.chatgptautocontinue.com/images/badges/greasy-fork/available-on-greasy-fork-gold-square-border-light-816x262.png"></a>
+    <img alt="[Get for Greasemonkey]" width=auto height=60 src="https://assets.chatgptautocontinue.com/images/badges/greasemonkey/install-userscript/en/badge860x262.png"></a>
 
 </div>
 
@@ -42,7 +55,7 @@
 
 <div align="center">
 
-<img width=388 src="https://media.chatgptautocontinue.com/images/screenshots/continue-button-crossed.png"> <img width=321 src="https://media.chatgptautocontinue.com/images/screenshots/auto-continue-on-notification-checked.png">
+<img width=388 src="https://assets.chatgptautocontinue.com/images/screenshots/continue-button-crossed.png"> <img width=321 src="https://assets.chatgptautocontinue.com/images/screenshots/auto-continue-on-notification-checked.png">
 
 </div>
 
@@ -50,13 +63,13 @@
 
 ## 🚀 Installation
 
-### <img height=16 src="https://media.chatgptautocontinue.com/images/icons/platforms/chrome/icon16.png"><img height=17 src="https://media.chatgptautocontinue.com/images/icons/platforms/firefox/icon16.png"><img height=16 src="https://media.chatgptautocontinue.com/images/icons/platforms/edge/icon16.png"> Browser extension:
+### <img height=16 src="https://assets.chatgptautocontinue.com/images/icons/platforms/chrome/icon16.png"><img height=17 src="https://assets.chatgptautocontinue.com/images/icons/platforms/firefox/icon16.png"><img height=16 src="https://assets.chatgptautocontinue.com/images/icons/platforms/edge/icon16.png"> Browser extension:
 
-1. Install ChatGPT Auto-Continue extension ([Chrome](https://chrome.chatgptautocontinue.com/?source=github&medium=readme&content=platform-link), [Edge](https://edge.chatgptautocontinue.com), [Firefox](https://ff.chatgptautocontinue.com/?source=github&medium=readme&content=platform-link))
+1. Install ChatGPT Auto-Continue extension ([Chrome](https://chrome.chatgptautocontinue.com/?utm_source=github&utm_medium=readme&utm_content=platform-link), [Edge](https://edge.chatgptautocontinue.com), [Firefox](https://ff.chatgptautocontinue.com/?utm_source=github&utm_medium=readme&utm_content=platform-link))
 
 2. Visit [chatgpt.com](https://chatgpt.com) as normal, and multi-reply conversations will automatically continue generating when cut-off!
 
-### <img height=17 src="https://media.chatgptautocontinue.com/images/icons/platforms/tampermonkey/icon28.png"><img height=17.5 src="https://media.chatgptautocontinue.com/images/icons/platforms/violentmonkey/icon25.png"> Greasemonkey userscript:
+### <img height=17 src="https://assets.chatgptautocontinue.com/images/icons/platforms/tampermonkey/icon28.png"><img height=17.5 src="https://assets.chatgptautocontinue.com/images/icons/platforms/violentmonkey/icon25.png"><img height=16 src="https://assets.aiwebextensions.com/images/icons/platforms/scriptcat/icon16.png"> Greasemonkey userscript:
 
 1. Install a userscript manager:
     - ScriptCat for [Chrome](https://chromewebstore.google.com/detail/scriptcat/ndcooeababalnlpkfedmmbbbgkljhpjf), [Firefox](https://addons.mozilla.org/firefox/addon/scriptcat/) or [Edge](https://microsoftedge.microsoft.com/addons/detail/scriptcat/liilgpjgabokdklappibcjfablkpcekh)
@@ -76,14 +89,14 @@
 
 <a href="https://chatgpt.js.org">
     <picture>
-        <source type="image/png" media="(prefers-color-scheme: dark)" srcset="https://media.chatgptjs.org/images/logos/chatgpt.js/with-reflection/darkmode.png">
-        <img width=546 src="https://media.chatgptjs.org/images/logos/chatgpt.js/with-reflection/lightmode.png">
+        <source type="image/png" media="(prefers-color-scheme: dark)" srcset="https://assets.chatgptjs.org/images/logos/chatgpt.js/with-reflection/darkmode/logo-6014x1334.png?v=8169c77">
+        <img width=546 src="https://assets.chatgptjs.org/images/logos/chatgpt.js/with-reflection/lightmode/logo-6014x1334.png?v=8169c77">
     </picture>
 </a>
 <br><br>
 
 ChatGPT Auto-Continue relies on code from the powerful [chatgpt.js](https://github.com/KudoAI/chatgpt.js) library
-<br>© 2023–2024 KudoAI & contributors under the MIT license.
+<br>© 2023–2025 KudoAI & contributors under the MIT license.
 
 </div>
 </h6>
@@ -94,14 +107,14 @@ ChatGPT Auto-Continue relies on code from the powerful [chatgpt.js](https://gith
 
 <div align="center">
 
-<a href="https://chrome.chatgptautocontinue.com/?source=github&medium=readme&content=install-button">
-    <img height=75 src="https://media.chatgptautocontinue.com/images/buttons/add-to-chrome-button.png"></a>
+<a href="https://chrome.chatgptautocontinue.com/?utm_source=github&utm_medium=readme&utm_content=install-button">
+    <img alt="[Get for Chrome]" height=75 src="https://assets.chatgptautocontinue.com/images/buttons/add-to-chrome-button.png"></a>
 <a href="https://edge.chatgptautocontinue.com">
-    <img height=75 src="https://media.chatgptautocontinue.com/images/buttons/add-to-edge-button.png"></a>
-<a href="https://ff.chatgptautocontinue.com/?source=github&medium=readme&content=install-button">
-    <img height=75 src="https://media.chatgptautocontinue.com/images/buttons/add-to-firefox-button.png"></a>
+    <img alt="[Get for Edge]" height=75 src="https://assets.chatgptautocontinue.com/images/buttons/add-to-edge-button.png"></a>
+<a href="https://ff.chatgptautocontinue.com/?utm_source=github&utm_medium=readme&utm_content=install-button">
+    <img alt="[Get for Firefox]" height=75 src="https://assets.chatgptautocontinue.com/images/buttons/add-to-firefox-button.png"></a>
 <a href="https://gm.chatgptautocontinue.com">
-    <img height=75 src="https://media.chatgptautocontinue.com/images/buttons/add-userscript-button.png"></a>
+    <img alt="[Get for Greasemonkey]" height=75 src="https://assets.chatgptautocontinue.com/images/buttons/add-userscript-button.png"></a>
 
 <br>
 
@@ -114,42 +127,51 @@ ChatGPT Auto-Continue relies on code from the powerful [chatgpt.js](https://gith
 
 This project exists thanks to code, testing, issues, translations & ideas from the following contributors:
 
-[![](https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/10906554?first-contrib=2023.04.28&h=50&w=50&mask=circle&maxage=7d "@adamlui")](https://github.com/adamlui)
-[![](https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/84412716?first-contrib=2023.08.02-ux-update-bug-report&h=50&w=50&mask=circle&maxage=7d "@a12930")](https://github.com/a12930)
-[![](https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/64159148?first-contrib=2023.08.10-observer-freeze-bug-report&h=50&w=50&mask=circle&maxage=7d "@thijsi123")](https://github.com/thijsi123)
-[![](https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/7357354?first-contrib=2023.10.31-observer-freeze-bug-report&h=50&w=50&mask=circle&maxage=7d "@SapitoSucio")](https://github.com/SapitoSucio)
-[![](https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/158176338?first-contrib=2024.3.1-button-click-fails-bug-report&h=50&w=50&mask=circle&maxage=7d "@whz-pku")](https://github.com/whz-pku)
-[![](https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/144692196?first-contrib=2024.5.14-post-gpt-4o-ui-update-broke-script-alert&h=50&w=50&mask=circle&maxage=7d "@vw911")](https://github.com/vw911)
-<a href="https://greasyfork.org/users/670188-hacker09"><picture><source type="image/png" media="(prefers-color-scheme: dark)" srcset="https://media.chatgptautocontinue.com/images/icons/web-stores/greasy-fork/white/icon50.png"><img width=50 src="https://media.chatgptautocontinue.com/images/icons/web-stores/greasy-fork/black/icon50.png?first-contrib=2024.6.27-portuguese-translation-corrections" title="hacker09"></picture></a>
-[![](https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/96548841?first-contrib=2024.9.7-improved-chinese-msgs&h=50&w=50&mask=circle&maxage=7d "@ChinaGodMan")](https://github.com/ChinaGodMan)
-[![](https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/69102590?first-contrib=2024.9.15-stopped-working-alert&h=50&w=50&mask=circle&maxage=7d "@Mailootje")](https://github.com/Mailootje)
-[![](https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/94939237?first-contrib=2024.9.25-dark-reader-interference-alert&h=50&w=50&mask=circle&maxage=7d "@andrew-bierman")](https://github.com/andrew-bierman)
-[![](https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/12082594?first-contrib=2024.10.11-gpt-editor-bug-report&h=50&w=50&mask=circle&maxage=7d "@thepick")](https://github.com/thepick)
-[![](https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/31427850?h=50&w=50&mask=circle&maxage=7d "@ImgBotApp")](https://github.com/ImgBotApp)
-[![](https://images.weserv.nl/?url=https://avatars.githubusercontent.com/in/29110&h=50&w=50&mask=circle&maxage=7d "Dependabot")](https://github.com/dependabot)
-<a href="https://chatgpt.com"><picture><source type="image/png" media="(prefers-color-scheme: dark)" srcset="https://images.weserv.nl/?url=https://media.chatgptautocontinue.com/images/icons/platforms/chatgpt/black-on-white/icon50.png?h=50&w=50&mask=circle&maxage=7d"><img src="https://images.weserv.nl/?url=https://media.chatgptautocontinue.com/images/icons/platforms/chatgpt/white-on-black/icon50.png?h=50&w=50&mask=circle&maxage=7d" title="ChatGPT"></picture></a>
+<a href="https://github.com/adamlui"><img width=47 title="@adamlui" src="https://avatars.githubusercontent.com/u/10906554?first-contrib=2023.04.28"></img></a>
+<a href="https://github.com/a12930"><img width=47 title="@a12930" src="https://avatars.githubusercontent.com/u/84412716?first-contrib=2023.08.02-ux-update-bug-report"></img></a>
+<a href="https://github.com/thijsi123"><img width=47 title="@thijsi123" src="https://avatars.githubusercontent.com/u/64159148?first-contrib=2023.08.10-observer-freeze-bug-report"></img></a>
+<a href="https://github.com/SapitoSucio"><img width=47 title="@SapitoSucio" src="https://avatars.githubusercontent.com/u/7357354?first-contrib=2023.10.31-observer-freeze-bug-report"></img></a>
+<a href="https://github.com/whz-pku"><img width=47 title="@whz-pku" src="https://avatars.githubusercontent.com/u/158176338?first-contrib=2024.3.1-button-click-fails-bug-report"></img></a>
+<a href="https://github.com/vw911"><img width=47 title="@vw911" src="https://avatars.githubusercontent.com/u/144692196?first-contrib=2024.5.14-post-gpt-4o-ui-update-broke-script-alert"></img></a>
+<a href="https://greasyfork.org/users/670188-hacker09"><picture><source type="image/png" media="(prefers-color-scheme: dark)" srcset="https://assets.chatgptautocontinue.com/images/icons/web-stores/greasy-fork/white/icon50.png"><img width=47 src="https://assets.chatgptautocontinue.com/images/icons/web-stores/greasy-fork/black/icon50.png?first-contrib=2024.6.27-portuguese-translation-corrections" title="hacker09"></picture></a>
+<a href="https://github.com/ChinaGodMan"><img width=47 title="@ChinaGodMan" src="https://avatars.githubusercontent.com/u/96548841?first-contrib=2024.9.7-improved-chinese-msgs"></img></a>
+<a href="https://github.com/Mailootje"><img width=47 title="@Mailootje" src="https://avatars.githubusercontent.com/u/69102590?first-contrib=2024.9.15-stopped-working-alert"></img></a>
+<a href="https://github.com/andrew-bierman"><img width=47 title="@andrew-bierman" src="https://avatars.githubusercontent.com/u/94939237?first-contrib=2024.9.25-dark-reader-interference-alert"></img></a>
+<a href="https://github.com/thepick"><img width=47 title="@thepick" src="https://avatars.githubusercontent.com/u/12082594?first-contrib=2024.10.11-gpt-editor-bug-report"></img></a>
+<a href="#"><img width=47 title="Copilot Autofix" src="https://github.githubassets.com/favicons/favicon.svg?first-contrib=2024.12.9-cmd-injection-autofix"></a>
+<a href="https://github.com/9romise"><img width=47 title="@9romise" src="https://avatars.githubusercontent.com/u/38204901?first-contrib=2024.12.13-revealed-unneeded-semicolons"></img></a>
+<a href="https://github.com/ImgBotApp"><img width=47 title="@ImgBotApp" src="https://avatars.githubusercontent.com/u/31427850"></img></a>
+<a href="https://github.com/dependabot"><img width=47 title="Dependabot" src="https://avatars.githubusercontent.com/in/29110"></img></a>
+<a href="https://chatgpt.com"><picture><source type="image/png" media="(prefers-color-scheme: dark)" srcset="https://assets.chatgptautocontinue.com/images/icons/platforms/chatgpt/black-on-white/icon50.png"><img width=47 title="ChatGPT" src="https://assets.chatgptautocontinue.com/images/icons/platforms/chatgpt/white-on-gray/icon50.png"></img></picture></a>
 
-#
+<img height=6px width="100%" src="https://assets.aiwebextensions.com/images/separators/aqua-gradient.png">
 
-<div align="center">
-
+<div id="sponsors" align="center">
 <br>
 
-<a href="https://star-history.com/#adamlui/chatgpt-auto-continue">
-    <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=adamlui/chatgpt-auto-continue&type=Timeline&theme=dark" />
-        <img width=665 src="https://api.star-history.com/svg?repos=adamlui/chatgpt-auto-continue&type=Timeline" />
-    </picture>
-</a>
+### Supported by:
 
-<br>_Consider giving this repo a ⭐ if it helped you!_
+<div id="warp">
+    <br><br>
+    <a href="https://www.warp.dev/chatgptjs" target="_blank">
+        <img width="600" src="https://assets.chatgptjs.org/images/banners/warp/banner-1500x500.png?v=476e837">
+    </a>
+    <h3><a href="https://www.warp.dev/chatgptjs" target="_blank">
+        Warp, the AI Devtool that lives in your terminal</a></h3>
+    <i><a href="https://www.warp.dev/chatgptjs" target="_blank">
+        Available for MacOS, Linux, & Windows</a></i>
+</div>
+<br><br>
 
 </div>
+
+<img height=6px width="100%" src="https://assets.aiwebextensions.com/images/separators/aqua-gradient.png">
 
 ## 🤖 More ChatGPT apps
 
 For even more epic ChatGPT apps, visit: https://github.com/adamlui/ai-web-extensions
-<br><br>
+
+<br>
 
 ## 📜 Related scripts
 
@@ -160,21 +182,21 @@ For even more epic ChatGPT apps, visit: https://github.com/adamlui/ai-web-extens
 [Readme](https://github.com/adamlui/chatgpt-auto-talk/#readme) /
 [Discuss](https://github.com/adamlui/chatgpt-auto-talk/discussions)
 
-### <img width=16 src="https://media.chatgptinfinity.com/images/icons/infinity-symbol/circled/icon32.png?65fcf31"> [ChatGPT Infinity](https://chatgptinfinity.com) &nbsp;<a href="https://chrome.chatgptinfinity.com/?source=github&medium=readme&content=featured-by-google-badge"><img height=20 src="https://media.chatgptinfinity.com/images/badges/chrome-web-store/featured-by-google/badge500x91.png"></a>
+### <img width=16 src="https://assets.chatgptinfinity.com/images/icons/infinity-symbol/circled/icon32.png?65fcf31"> [ChatGPT Infinity](https://chatgptinfinity.com) &nbsp;<a href="https://chrome.chatgptinfinity.com/?utm_source=github&utm_medium=readme&utm_content=featured-by-google-badge"><img height=20 src="https://assets.chatgptinfinity.com/images/badges/chrome-web-store/featured-by-google/badge500x91.png"></a>
 
 > Generate endless answers from all-knowing ChatGPT (in any language!)
 <br>[Install](https://docs.chatgptinfinity.com/#-installation) / 
 [Readme](https://docs.chatgptinfinity.com/#readme) / 
 [Discuss](https://github.com/adamlui/chatgpt-infinity/discussions)
 
-### <img width=17 src="https://media.chatgptwidescreen.com/images/icons/widescreen-robot-emoji/icon32.png"> [ChatGPT Widescreen Mode](https://chatgptwidescreen.com) &nbsp;<img src="https://media.chatgptwidescreen.com/images/badges/product-hunt/product-of-the-week-2-larger-centered-rounded-light.svg" width="auto" height="24" />
+### <img width=17 src="https://assets.chatgptwidescreen.com/images/icons/widescreen-robot-emoji/icon32.png"> [ChatGPT Widescreen Mode](https://chatgptwidescreen.com) &nbsp;<img src="https://assets.chatgptwidescreen.com/images/badges/product-hunt/product-of-the-week-2-larger-centered-rounded-light.svg" width="auto" height="24" />
 
-> Adds Widescreen + Fullscreen modes to ChatGPT for enhanced viewing.
+> Enhances ChatGPT with wide/full/tall-screen + spamblock modes. Also works on perplexity.ai + poe.com!
 <br>[Install](https://docs.chatgptwidescreen.com/#-installation) / 
 [Readme](https://docs.chatgptwidescreen.com/#readme) / 
 [Discuss](https://github.com/adamlui/chatgpt-widescreen/discussions)
 
-<img height=6px width="100%" src="https://media.chatgptautocontinue.com/images/separators/gradient-aqua.png">
+<img height=6px width="100%" src="https://assets.chatgptautocontinue.com/images/separators/gradient-aqua.png">
   
 <a href="https://github.com/adamlui/ai-web-extensions">**More ChatGPT add-ons**</a> / 
 <a href="#top">Back to top ↑</a>
